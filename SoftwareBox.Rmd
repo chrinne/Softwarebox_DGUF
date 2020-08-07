@@ -1,7 +1,10 @@
 ---
 title: "Softwarebox. IT-Ausstattung fürs Studium."
 subtitle: "DGUF-Handreichung für Studierende der Ur- und Frühgeschichte & Archäologie"
-author: Christoph Rinne
+author: 
+ - Christoph Rinne^[Christian-Albrechts Universität zu Kiel (D)]
+ - Jochen Reinhard^[Amt für Denkmalpflege und Archäologie Zug (CH)]
+ - Frank Siegmund^[]
 email: crinne@ufg.uni-kiel.de
 date: "`r format(Sys.time(), '%d. %B %Y')`"
 license: "CC-BY 4.0"
@@ -10,16 +13,16 @@ header-includes:
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
 output:
-  html_document:
-    toc: true
-    toc_depth: 2
-    toc_float: true
-    number_sections: true
   pdf_document:
     number_sections: true
     toc: true
     toc_depth: 2
     df_print: kable
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -331,28 +334,28 @@ Layout wissenschaftlicher Arbeit am PC: Eine kurze Einführung in wesentliche As
 Mit diesen Programmen schreiben und gestalten Sie Text. Nehmen Sie sich vor Ihrer ersten Hausarbeit etwas Zeit, sich mit der Gliederung, den Formatvorlagen, dem Einbinden von Grafik und der Beschriftung von Abbildungen vertraut zu machen.
 
 ### LO/O- Calc, MS Excel:
-Dies sind Tabellenkalkulationsprogramme, mit denen Daten in begrenztem Umfang verwaltet (sortiert, filtert) und berechnet oder verknüpft werden können. Zellverweise („=A1“, „=A1:A15“), Statistik („=Mittelwert(A1:A15)“), Zusammenfassung (Pivotieren), diverse Grafiken (z. B. Balkendiagramm) und eine einfache Handhabung für ein ansprechendes Design der Tabellen sind ihre Stärke.
+Dies sind Tabellenkalkulationsprogramme, mit denen Daten in begrenztem Umfang verwaltet (sortiert, gefiltert) und berechnet oder verknüpft werden können. Zellverweise („=A1“, „=A1:A15“), Statistik („=Mittelwert(A1:A15)“), Zusammenfassung (Pivotieren), diverse Grafiken (z. B. Balkendiagramm) und eine einfache Handhabung für ein ansprechendes Design der Tabellen sind ihre Stärke.
 
 ### LO/O- Impress, MS Powerpoint:
 Mit diesen Programmen erstellen Sie Präsentationen, als- eine Abfolge von Bild- und Textinformationen, die den Zuhörern das Verständnis Ihres Vortrags erleichtern. Neben dem Schreiben sind Vorträge und die zugehörigen Diskussionen das wichtigste Medium im wissenschaftlichen Diskurs. Machen Sie sich frühzeitig mit diesen Medien vertraut.
 
-> Wichtig: Die Präsentation unterstützt Ihren Vortrag, die technischen Möglichkeiten dürfen nicht im Vordergrund stehen. Fokussieren Sie den Zuhörer auf Kerninformation oder präsentieren Sie eine erläuternde Grafik zu ihrem Vortrag. Eine schlichte Schrift und klares einheitliches Design erleichtern die Wahrnehmung. Geben Sie dem Zuhörer die Zeit, Vortrag und Folie zu erfassen.
-
-> In vielen öffentlichen Einrichtungen (z. B. Unis) ist die Präsentationstechnik (Beamer und Leinwand) noch auf das Bildformat 4:9 eingestellt. Bedenken Sie dies bei der Gestaltung Ihrer Präsentation.
-
-> Häufig wird vorausgesetzt, dass PowerPoint zur Gestaltung der Präsentation verwendet wird – wenn Sie LO/O- Impress oder das allerneuste Office verwenden, klären Sie vorher ab, ob Ihr Format gelesen werden kann! Erstellen Sie vorscihtshalber immer ein PDF.
-
-> Literatur: PowerPoint: H. Plasa, Microsoft PowerPoint 2010. Einfach besser präsentieren. Microsoft Press (Köln 2011).
-
-> Weitere Handbücher zu den Programmen gibt es u.a. vom Regionalen Rechenzentrum Hannover (RRZN): https://www.luis.uni-hannover.de/buecher.html
+| Info |
+|-----|
+| Wichtig: Die Präsentation unterstützt Ihren Vortrag, die technischen Möglichkeiten dürfen nicht im Vordergrund stehen. Fokussieren Sie den Zuhörer auf Kerninformation oder präsentieren Sie eine erläuternde Grafik zu ihrem Vortrag. Eine schlichte Schrift und klares einheitliches Design erleichtern die Wahrnehmung. Geben Sie dem Zuhörer die Zeit, Vortrag und Folie zu erfassen. |
+| In vielen öffentlichen Einrichtungen (z. B. Unis) ist die Präsentationstechnik (Beamer und Leinwand) noch auf das Bildformat 4:9 eingestellt. Bedenken Sie dies bei der Gestaltung Ihrer Präsentation. |
+| Häufig wird vorausgesetzt, dass PowerPoint zur Gestaltung der Präsentation verwendet wird – wenn Sie LO/O- Impress oder das allerneuste Office verwenden, klären Sie vorher ab, ob Ihr Format gelesen werden kann! Erstellen Sie vorscihtshalber immer ein PDF. |
+| Literatur: PowerPoint: H. Plasa, Microsoft PowerPoint 2010. Einfach besser präsentieren. Microsoft Press (Köln 2011). |
+| Weitere Handbücher zu den Programmen gibt es u.a. vom Regionalen Rechenzentrum Hannover (RRZN): https://www.luis.uni-hannover.de/buecher.html |
 
 ## Bildbearbeitung und Grafik
 
 Nach dem Einscannen eines Bildes wollen Sie die Grafik noch ausschneiden, drehen, in Graustufen umwandeln, die deutlich sichtbare Rasterung des Druckes verwischen oder noch Flecken entfernen, um die Qualität Ihrer Präsentation oder Arbeit zu steigern? Das geht alles auch ohne teure Programme und viel Kenntnis.
 
-> Es gibt zwei grundlegend unterschiedliche Arten von Grafik. Eine [Rastergrafik](https://de.wikipedia.org/wiki/Rastergrafik) besteht aus Rasterpunkten die unterschiedliche Farbwerte darstellen. Gängige Formate sind JPG, PNG und TIF. Eine [Vektorgrafik](https://de.wikipedia.org/wiki/Vektorgrafik) besteht dagegen aus Vektoren (Linien, Kurven etc.) die ggf. auch Farbflächen definieren. Im Unterschied zur Rastergrafik sind bekannte Dateiformate hier oft proprietär (AI von Adobe, CDR von Corel), eine Ausnahme ist SVG (scalable vector graphics, genutzt u. a. von Inkscape). Rastergrafik führt bei großen Bildern zu sehr großen Dateien und unschönen Effekten beim Skalieren. Dateien im Vektorformat werden mit zunehmender Komplexität größer, nicht aber durch die Dimension des Bildes und eine Linie bleibt stets eine Linie, während sie bei einer Rastergrafik beim Vergrößern in einzelne Pixel zerfällt. Beide Formate haben als- Vor- und Nachteile.
+| Info |
+|-----|
+| Es gibt zwei grundlegend unterschiedliche Arten von Grafik. Eine [Rastergrafik](https://de.wikipedia.org/wiki/Rastergrafik) besteht aus Rasterpunkten die unterschiedliche Farbwerte darstellen. Gängige Formate sind JPG, PNG und TIF. Eine [Vektorgrafik](https://de.wikipedia.org/wiki/Vektorgrafik) besteht dagegen aus Vektoren (Linien, Kurven etc.) die ggf. auch Farbflächen definieren. Im Unterschied zur Rastergrafik sind bekannte Dateiformate hier oft proprietär (AI von Adobe, CDR von Corel), eine Ausnahme ist SVG (scalable vector graphics, genutzt u. a. von Inkscape). Rastergrafik führt bei großen Bildern zu sehr großen Dateien und unschönen Effekten beim Skalieren. Dateien im Vektorformat werden mit zunehmender Komplexität größer, nicht aber durch die Dimension des Bildes und eine Linie bleibt stets eine Linie, während sie bei einer Rastergrafik beim Vergrößern in einzelne Pixel zerfällt. Beide Formate haben als- Vor- und Nachteile. |
 
-### Irfan View (Windows)
+#### Irfan View (Windows) \newline
 Diese Software ist viel mehr als ein Bildbetrachter und in vielen Bereichen nützlicher Paint oder 3D Paint von Windows. Neben den oben genannten Optionen bietet das Programm eine Stapelverarbeitung für alle Konvertierungen und das Umbenennungen der Dateien. Sie können mit dem Programm zeichnen (<F12>) und es kann durch zahlreiche Plugins erweitert werden.
 
 - Offizielle Website: https://www.irfanview.com/
