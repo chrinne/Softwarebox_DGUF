@@ -40,10 +40,10 @@ Studierende der Ur- und Frühgeschichte oder anderer archäologischer Fächer so
 - Informieren Sie sich gleich zu Studienbeginn, welche Softwareangebote an Ihrer Hochschule bestehen. Ihre Fachschaft oder die Website des Rechenzentrums Ihrer Hochschule gibt Ihnen hierzu Auskunft. Diese Angebote sind oft kostenlos (z. B. Virenschutz) oder kostengünstig, und vor allem gibt es hierzu in der Regel auch Beratung und Schulung am jeweiligen Rechenzentrum.
 - Beachten Sie die Empfehlungen Ihrer Dozenten, denn die von ihnen genannte Software wird in den Lehrveranstaltungen sicher auch eingesetzt.
 - Die Entwicklung von Hard- und Software ist hochdynamisch. Aus diesem Grund gehen wir hier nicht in Details, sondern nöchten Sie auffordern am Ball zu bleiben und sich mit anderen auszutauschen. 
-- Für viele Programme gibt es neben informativen Webseiten auch günstige und gut geschriebene Handbücher vom Regionalen Rechenzentrum Hannover (RRZN): https://www.luis.uni-hannover.de/buecher.html. Sie werden an vielen Universitätsbibliotheken auch direkt verkauft. Zudem möchten wir auf das Angebot von Rheinwerk (Galileo) Openbook verweisen https://www.rheinwerk-verlag.de/openbook/.
-- Software ist ein Produkt geistiger Leistung. Im Zuge einer guten Wissenschaft bezahlen wir kostenpflichtige Produkte und wir verweisen, w- es angebracht ist, auf die von uns genutzte Software.
+- Für viele Programme gibt es neben informativen Webseiten auch günstige und gut geschriebene [Handbücher vom Regionalen Rechenzentrum Hannover (RRZN)]( https://www.luis.uni-hannover.de/buecher.html){target="_blank"}. Sie werden an vielen Universitätsbibliotheken auch direkt verkauft. Zudem möchten wir auf das Angebot von [Rheinwerk (Galileo) Openbook] (https://www.rheinwerk-verlag.de/openbook/){target="_blank"} verweisen.
+- Software ist ein Produkt geistiger Leistung. Im Zuge einer guten Wissenschaft bezahlen wir kostenpflichtige Produkte und wir verweisen, wenn es angebracht ist, auf die von uns genutzte Software.
 
-Am Anfang stehen allgemeinen Informationen zur Hardware (Kap. 1) und zu grundlegender Software für die Büro- bzw. Studienarbeit (Kap. 2), als- einem „Starter-Set“. Die im Kapitel 3 „Erweitert“ genannte Software ist sicher noch von allgemeinem Interesse im Verlauf des Studiums, während der Bereich „Fortge­schritten“ (Kap. 4) sich bereits auf den deutlich fortgeschrittenen und zunehmend spezialisierten Nutzungsumfang im Verlauf Ihres Studiums bezieht. Unter Spezialauf­gaben (Kap. 5) wird interessante Software für sehr spezielle Aufgaben oder Probleme genannt, und der letzte Abschnitt (Kap. 6) gilt allgemein interessanter Software (Apps) für das Mobiltelefon.
+Am Anfang stehen allgemeinen Informationen zur Hardware (Kap. 1) und zu grundlegender Software für die Büro- bzw. Studienarbeit (Kap. 2), als- einem „Starter-Set“. Die im Kapitel 3 „Erweitert“ genannte Software ist sicher noch von allgemeinem Interesse im Verlauf des Studiums, während der Bereich „Fortgeschritten“ (Kap. 4) sich bereits auf den deutlich fortgeschrittenen und zunehmend spezialisierten Nutzungsumfang im Verlauf Ihres Studiums bezieht. Unter Spezialauf­gaben (Kap. 5) wird interessante Software für sehr spezielle Aufgaben oder Probleme genannt, und der letzte Abschnitt (Kap. 6) gilt allgemein interessanter Software (Apps) für das Mobiltelefon.
 
 \newpage
 # Hardware
@@ -95,7 +95,7 @@ Diese Frage stellt sich oft bereits beim Kauf der Hardware, da beides fest verbu
 - Entscheidungshilfen können sein: Was haben alle Anderen, mit denen ich mich austausche und die ich ggf. um Rat fragen kann?
 - Es gibt Programme, die nur auf bestimmten OS laufen: z. B. AutoCAD, ArcGIS, MS Access (Windows). Faustregel: kostenpflichtige Software läuft auf kostenfreiem OS nicht. Kostenfreie Software auf kostenpflichtigem OS aber schon.
 - Früher war für Linux etwas mehr Know-how notwendig und nicht alle Geräte (Scanner, Drucker etc.) wurden unterstützt. Diese Zeiten sind schon sehr lange vorbei. Für viele Probleme – und die gibt es immer – ist bei allen OS ein wenig Know-how (und Expertise im Freundeskreis) ganz wesentlich von Vorteil.
-- Sicherheit: IT-Sicherheit liegt heute ganz wesentlich beim Verhalten des Nutzers, weniger beim Betriebssystem. Bei Android, Google, iOS und Windows 10 lassen sich viele „Lauschprozesse“ abstellen (z. B. [O&O ShutUp](https://www.oo-software.com/en/shutup10)). Allerdings ist Windows wegen der relativ lockeren Vergabe von Administratorrechten und vieler ausführbarer und standardmäßig nicht angezeigter Dateiendungen etwas anfälliger für Trojaner (unwillkommene „Gast“-Programme auf Ihrem Rechner). Es empfiehlt sich aber immer, Meldungen des Systems wenigstens zu lesen und nicht gleich wegzuklicken oder alles zu starten.
+- Sicherheit: IT-Sicherheit liegt heute ganz wesentlich beim Verhalten des Nutzers, weniger beim Betriebssystem. Bei Android, Google, iOS und Windows 10 lassen sich viele „Lauschprozesse“ abstellen (z. B. [DoNotSpy10](https://pxc-coding.com/donotspy10/){target="_blank"} oder [O&O ShutUp](https://www.oo-software.com/en/shutup10){target="_blank"}). Allerdings ist Windows wegen der relativ lockeren Vergabe von Administratorrechten und vieler ausführbarer und standardmäßig nicht angezeigter Dateiendungen etwas anfälliger für Trojaner (unwillkommene „Gast“-Programme auf Ihrem Rechner). Es empfiehlt sich aber immer, Meldungen des Systems wenigstens zu lesen und nicht gleich wegzuklicken oder alles zu starten.
 - Die nachfolgende Software ist zwar bevorzugt mindestens Freeware, ist aber doch durch Windows dominiert. An den meisten Universitäten und archäologischen Institutionen wird überwiegend Windows als OS eingesetzt.
 - Nutzer von Linux-Distributionen erkundigen sich bitte selbstständig, ob die genannte Software über die jeweilige Paketverwaltung angeboten wird.
 - Zuletzt: Es ist durchaus möglich, mehr als ein OS auf einem Computer zu verwenden, typischerweise sind das Windows und ein Linux, z. B. Ubuntu. Solche Rechner werden „Multi-Boot-Systeme“ genannt – beim Starten des Computers muss man sich für ein OS entscheiden, das dann hochgefahren wird. Mehrere OS gleichzeitig sind per Virtualisierung möglich (vgl. Kap. 5.1), dabei wird ein OS in einer sog. virtuellen Maschine nachgebildet. Hierbei handelt es sich jedoch um Spezialanwendungen, die über die Notwendigkeiten eines Archäologie-Studiums hinausgehen. Windows 10 bietet bei den Zusatzprogrammen ein Linux OS an, dieses kann aber nur auf der Befehlszeile genutzt werden. Damit ist es z.Z. eher nur von „sportlichem“ Interesse. Für ein reales Arbeiten und als Einstieg zum Umstieg von Windows ist es ungeeignet.
@@ -125,35 +125,34 @@ Betriebssysteme stellten früher die grundlegende Software für die Nutzung der 
 Sehr weit verbreitetes OS und auf vielen Geräten vorinstalliert. Die Software ist dann günstiger, aber ggf. im Umfang etwas eingeschränkt und vor allem an das Gerät gebunden. Einige ergänzende Informationen:
 - Bei der Installation von Windows 10 müssen Sie **kein Online-Konto** einrichten, auch wenn dies suggeriert wird. Dies kann auf diverse Arten übersprungen werden. Achten Sie hier auf eher diskrete Hinweise oder verbinden Sie den Rechner erst nach der Installation mit dem Internet.
 - Wenn Sie bei der Installation kein Passwort vergeben, erscheinen **keine ergänzenden Sicherheitsabfragen** nach Eltern, Haustieren & Co. Vergeben Sie ein Passwort aber unbedingt  nach der Installation. 
-- Bei der „persönlichen“ statt der automatischen Einrichtung können bereits zahlreiche „Lauschprozesse“ abgestellt werden. Nachträglich und sehr effizient geht dies mit der Software [O&O ShutUp10](https://www.oo-software.com/en/shutup10). Die Software wird nicht installiert, in einem Fenster können alle relevanten Einstellungen selbständig oder entsprechend dreier vorkonfigurierten Auswahlen bei den Aktionen vorgenommen werden. Führen Sie dies nach jedem größeren Update erneut aus.
+- Bei der „persönlichen“ statt der automatischen Einrichtung können bereits zahlreiche „Lauschprozesse“ abgestellt werden. Nachträglich und sehr effizient geht dies mit der Software [DoNotSpy10](https://pxc-coding.com/donotspy10/){target="_blank"} oder [O&O ShutUp10](https://www.oo-software.com/en/shutup10){target="_blank"}. Die Software wird nicht installiert, in einem Fenster können alle relevanten Einstellungen selbständig oder entsprechend dreier vorkonfigurierten Auswahlen bei den Aktionen vorgenommen werden. Führen Sie dies nach jedem größeren Update erneut aus.
 
 ### Mac
 
 Ein in sich abgestimmtes Paket aus Hardware und Betriebssystem, damit können aber einzelne Komponenten, z. B. die Grafikkarte, nicht ohne weiteres ausgetauscht werden. Integrale Bestandteile von Mac OS entsprechen Linux, dies hilft bei Hintergrundwissen in beiden OS. Einige Programme, z. B. MS Access, sind nicht für Mac verfügbar.
 
 ### Linux
-Linux steht in zahlreichen Distributionen zur Verfügung, auch in abgespeckten Versionen für Netbooks (z. B. Lubuntu). Einen schnellen Überblick mit den aktuellen Download-Zahlen bietet https://distrowatch.com/dwres.php?resource=popularity, woran Sie ablesen können, welche Linux-Distributionen derzeit besonders beliebt sind.
+Linux steht in zahlreichen, für eden Einsteiger verwirrend vielen Distributionen zur Verfügung. Einen ersten Überblick mit den aktuellen Top-Ten nach Download-Zahlen bietet [Distrowatch](https://distrowatch.com/dwres.php?resource=major){target=_blank}. Die Distributionen unterscheiden sich teilweise deutlich in der Dateigröße (download), den Anforderungen an die Hardware, der Oberfläche und integrierten oder nachzuinstallierenden Anwendungen. Auch hier gilt: fragen Sie auch Kommilitoninnen oder Kommilitonen, die Ihnen ggf. bei Problemen helfen können. 
 
 #### Ubuntu \newline
 Gilt als sehr nutzerfreundlich und ist z. Z. weit verbreitet. Zur Wahl stehen zahlreiche Desktop-Oberflächen (Lubuntu, Kubuntu, Xubuntu), auch solche für schwache Hardware.
-- Offizielle Website: https://www.ubuntu.com/
-- Deutschsprachiges Forum: https://ubuntuusers.de/
-- Onlinebuch: https://www.rheinwerk-verlag.de/openbook/
+- Offizielle Website: [https://www.ubuntu.com/](https://www.ubuntu.com/){target=_blank}
+- Deutschsprachiges Forum: [https://ubuntuusers.de/](https://ubuntuusers.de/){target=_blank}
+- Onlinebuch: [https://www.rheinwerk-verlag.de/openbook/](https://www.rheinwerk-verlag.de/openbook){target=_blank}
 
 #### Linux Mint / Linux Mint Debian Edition \newline
 Ersteres beruht auf Ubuntu und bindet im Unterschied „nicht freie Software“ in die Paketverwaltung direkt mit ein, was für Anfänger die bequemere Lösung ist.
 
-- Offizielle Website: https://www.linuxmint.com
-
+- Offizielle Website: [https://www.linuxmint.com](https://www.linuxmint.com){target=_blank}
 #### Debian \newline
 Dank der sehr langen Entwicklungsgeschichte mit zahlreichen „Ablegern“, z. B. Ubuntu, ist es sehr weit verbreitet. Raspbian für den Minirechner Raspberry Pi beruht ebenfalls auf Debian.
 
-- Offizielle Website: https://www.debian.org/
-- Deutschsprachiges Forum: https://debianforum.de/forum/
+- Offizielle Website: [https://www.debian.org/](https://www.debian.org/){target=_blank}
+- Deutschsprachiges Forum: [https://debianforum.de/forum/](https://debianforum.de/forum/){target=_blank}
 
 #### openSUSE \newline
 Ein vor allem in Deutschland verbreitetes Derivat, welches als benutzerfreundliches Betriebssystem für Arbeitsplatzrechner konzipiert ist. Je nach Version wird KDE oder GNOME als Desktop-Oberfläche favorisiert.
-- Offizielle Website: https://www.opensuse.org/
+- Offizielle Website: [https://www.opensuse.org/](https://www.opensuse.org/){target=_blank}
 
 ## Internet
 
@@ -167,7 +166,7 @@ Nicht alle Browser können oder wollen alles unterstützen, z.B. Skype & Firefox
 
 Firefox wird wegen seiner zahlreichen Addons erwähnt, z. B. für KeePass (s. u.) und Adblock Plus, das unliebsame Werbebanner unterdrückt.
 
-- Offizielle Website: https://www.mozilla.org
+- Offizielle Website: [https://www.mozilla.org](https://www.mozilla.org){target=_blank}
 
 ### E-Mail-Programm
 
@@ -176,12 +175,12 @@ E-Mails können nicht nur im Browser geschrieben und gelesen werden, sondern auc
 #### Thunderbird (und Lightning) \newline
 Eine einfach zu bedienende, aber umfangreiche und mit vielen Addons erweiterbare E-Mail-Anwendung. Die einzelnen E-Mail-Konten können jeweils als IMAP- oder POP3-Konto eingerichtet werden. Bei IMAP werden nur die grundlegenden Informationen des „mail headers“ heruntergeladen und lokal vorgehalten; die E-Mail verbleibt auf dem Server, so dass der Zugriff auf die E-Mails von unterschiedlichen Standorten oder auch im Browser möglich ist. Bei POP3 wird die gesamte E-Mail auf den lokalen Rechner heruntergeladen und je nach Einstellung vom Mailserver gelöscht. Dies spart Speicher auf dem Server und die Mails können dort nicht abgegriffen werden, die E-Mails sind dann aber nur auf einem Endgerät gespeichert.
 
-- Offizielle Website: https://www.mozilla.org/de/thunderbird/
+- Offizielle Website: [https://www.mozilla.org/de/thunderbird/](https://www.mozilla.org/de/thunderbird/){target=_blank}
 
 #### Lightning \newline
 Der Kalender und Aufgabenplaner ist inzwischen standardmäßig integriert, wählen Sie dazu nach der Installation und der Einrichtung des Mailkontos im Startfenster die Option „Kalender erstellen“. Sollte ein Register „Kalender“ nicht angezeigt werden ergänzen Sie diese Einstellung über die Einstellungen für das Menü am rechten Menürand.
 
-- Offizielle Website: https://addons.mozilla.org/de/thunderbird/addon/lightning/
+- Offizielle Website: [https://addons.mozilla.org/de/thunderbird/addon/lightning/](https://addons.mozilla.org/de/thunderbird/addon/lightning/){target=_blank}
 
 ### Synchronisation mit dem Mobiltelefon
 
@@ -190,7 +189,7 @@ Die Adresslisten von Thunderbird als auch die Termine, die Aufgaben und die Noti
 #### MyPhoneExplorer [Windows, Android] \newline
 Die Software wird auf dem PC und dem Smartphone („client“) installiert. Prinzipiell gilt: Jedes Mobiltelefon, welches mindestens auf Android 1.6 basiert, wird unterstützt. Die Software synchronisiert, Kontakte, Termine, Anruferliste, SMS, Fotos und Dateien mit zahlreichen konfigurierbaren Optionen.
 
-- Offizielle Website: https://www.fjsoft.at
+- Offizielle Website: [https://www.fjsoft.at](https://www.fjsoft.at){target=_blank}
 
 ## Sicherheit und Dateien
 
@@ -198,7 +197,7 @@ Aktualisieren Sie ihr Betriebssystem regelmäßig, aktivieren Sie bei Windows un
 
 ### Datei- und Orndernamen
 
-Nicht alles, was auf ihrem PC (Windows?) möglich ist, wird in anderen Systemen korrekt dargestellt oder kann sogar ungültig sein (z.B. auf CD/DVD). Weitere Informationen finden Sie bei [Wikipedia](https://de.wikipedia.org/wiki/Dateiname). Sinnvolle  Datei- und Ordnernamen: 
+Nicht alles, was auf ihrem PC (Windows?) möglich ist, wird in anderen Systemen korrekt dargestellt oder kann sogar ungültig sein (z.B. auf CD/DVD). Weitere Informationen finden Sie bei [Wikipedia](https://de.wikipedia.org/wiki/Dateiname){target=_blank}.  Sinnvolle  Datei- und Ordnernamen:
 - sind möglichst kurz aber zugleich verständlich,
 - beschreiben den Inhalt der Datei,
 - beinhalten keine Sonderzeichen (ä, ö, ü, ß, *, <, ? etc.) oder Leerzeichen.
@@ -209,17 +208,17 @@ Sicherheit in diesem Bereich ist ein Muss, Sie gefährden sonst sich und andere.
 
 #### Avira free Antivirus \newline
 
-- Offizielle Website: https://www.avira.com
+- Offizielle Website: [https://www.avira.com](https://www.avira.com){target=_blank}
 
 #### McAfee Security Scan Plus \newline
 Ein Virenscanner mit einer sehr langen Entwicklungsgeschichte.
 
-- Offizielle Website: https://home.mcafee.com/downloads/free-virus-scan
+- Offizielle Website: [https://home.mcafee.com/downloads/free-virus-scan](https://home.mcafee.com/downloads/free-virus-scan){target=_blank}
 
 #### Panda \newline
 Ein sehr schlanker Virenscanner, der Cloud-Funktionen und die „Intelligenz“ des Web nutzt.
 
-- Offizielle Website: https://www.pandasecurity.com
+- Offizielle Website: [https://www.pandasecurity.com](https://www.pandasecurity.com){target=_blank}
 
 **Installieren Sie niemals zwei unterschiedliche Virenscanner auf einem System!**
 
@@ -237,7 +236,7 @@ Arbeiten Sie möglichst lokal und kopieren Sie in regelmäßigen Abständen die 
 
 ### Datensicherheit: Löschen
 
-Datensicherheit schließt ggf. auch das vollständige Löschen von Daten ein. Denn auch nach dem Leeren des „Papierkorbs“ sind die Daten nur mit einem Löschvermerk versehen und mit entsprechender Software zur Datenrettung wieder herstellbar, sofern die betreffenden Bereiche auf der Festplatte nicht neu beschrieben wurden. Wenn Sie z. B. USB-Sticks oder Festplatten weitergeben oder Ihren Laptop verkaufen wollen, können dort eventuell auch vermeintlich gelöschte Informationen für Experten noch lesbar sein. Weitere aktuelle Informationen zur Datensicherheit finden Sie beim Bundesamt für Sicherheit in der Informationstechnik ([BSI](https://www.bsi.bund.de/)).
+Datensicherheit schließt ggf. auch das vollständige Löschen von Daten ein. Denn auch nach dem Leeren des „Papierkorbs“ sind die Daten nur mit einem Löschvermerk versehen und mit entsprechender Software zur Datenrettung wieder herstellbar, sofern die betreffenden Bereiche auf der Festplatte nicht neu beschrieben wurden. Wenn Sie z. B. USB-Sticks oder Festplatten weitergeben oder Ihren Laptop verkaufen wollen, können dort eventuell auch vermeintlich gelöschte Informationen für Experten noch lesbar sein. Weitere aktuelle Informationen zur Datensicherheit finden Sie beim Bundesamt für Sicherheit in der Informationstechnik ([BSI](https://www.bsi.bund.de/){target=_blank}.
 
 #### Befehlszeile: \newline
 **cipher /w** (Windows), **shred**, **wipe** (Ubuntu) löscht die Dateien oder Ordner und überschreibt den Bereich direkt
@@ -256,21 +255,21 @@ können auf der Oberseite bis in die Aluminiumschicht radial zerkratzt werden.
 Der Dateiexplorer von Windows erlaubt die grundlegenden Funktionen wie Kopieren und Suchen. In vielen Fällen reicht dies nicht aus, hier ist z. B. folgendes Programm hilfreich:
 
 #### Totalcommander (Windows) \newline
-Neben dem einfachen Kopieren von Dateien können Sie mit diesem Programm auch Verzeichnisse synchronisieren, komplexe Mehrfach-Umbenennungen durchführen, nach Änderungsdatum suchen und noch vieles mehr. Totalcommander ist ein Schweizer Taschenmesser im Bereich des Dateimanagements. Die Komplexität der Optionen kann mit zunehmendem Anspruch durch viele Plugins ausgebaut werden. Die Testversion hat einen so genannten *[nag screen](https://en.wiktionary.org/wiki/nag_screen)*.
+Neben dem einfachen Kopieren von Dateien können Sie mit diesem Programm auch Verzeichnisse synchronisieren, komplexe Mehrfach-Umbenennungen durchführen, nach Änderungsdatum suchen und noch vieles mehr. Totalcommander ist ein Schweizer Taschenmesser im Bereich des Dateimanagements. Die Komplexität der Optionen kann mit zunehmendem Anspruch durch viele Plugins ausgebaut werden. Die Testversion hat einen so genannten *[nag screen](https://en.wiktionary.org/wiki/nag_screen){target=_blank}*.
 
-- Offizielle Website: https://www.ghisler.com/deutsch.htm
+- Offizielle Website: [https://www.ghisler.com/deutsch.htm](https://www.ghisler.com/deutsch.htm){target=_blank}
 
 #### AltapSalamander \newline
 Dieses Programm zur Dateiverwaltung bietet einen, dem Totalcommander vergleichbaren Umfang. Die freie Testversion kann 30 Tage genutzt werden, der Preis beträgt dann 24,95 EUR und ist demnach etwas günstiger als die Linzenz für den Totalkommander (Stand: 03.06.2018). Für Bildungseinrichtungen kostet die pauschale Lizenz 44,80 EUR (Stand: 03.06.2018).
 
-- Offizielle Website: https://www.altap.cz
+- Offizielle Website: [https://www.altap.cz](https://www.altap.cz){target=_blank}
 
 ### CDs und DVDs brennen
 
 #### CDBurner XP (Windows) \newline
 Einfach zu bedienende Brennersoftware für diverse Formate. Kann ISO-Dateien erstellen und auch brennen.
 
-- Offizielle Website: https://cdburnerxp.se/de/
+- Offizielle Website: [https://cdburnerxp.se/de/](https://cdburnerxp.se/de/){target=_blank}
 
 ### Dateien packen / komprimieren
 
@@ -279,28 +278,28 @@ Dateien können komprimiert werden oder müssen bisweilen nach dem Download entp
 #### 7-Zip (Windows) \newline
 Das Programm kann über ein schlichtes Fenster bedient werden oder Sie markieren mehrere Ordner/Dateien im Explorer und nutzen den Eintrag von 7-Zip im Kontextmenü (rechter Mausklick)
 
-- Offizielle Website: https://www.7-zip.org/
+- Offizielle Website: [https://www.7-zip.org/](https://www.7-zip.org/){target=_blank}
 
 ## Austausch und Archivierung: Portable Document Format (PDF)
 
-PDF ist ein Dateiformat für elektronische Dokumente, das unabhängig vom ursprünglichen Anwendungsprogramm, vom Betriebssystem oder von der Hardwareplattform originalgetreu weitergegeben werden kann. Zudem können unterschiedliche Sicherheitsvorkehrungen aktiviert werden: Das Kopieren, Editieren, Drucken etc. der Datei kann so verhindert werden. PDF ist ein Containerformat mit vielen Optionen, nur die Spezifikation „PDF/A“ eignet sich zur Langzeitarchivierung. Weitere Informationen finden Sie bei [IANUS-FDZ](https://www.ianus-fdz.de/it-empfehlungen/node/186).
+PDF ist ein Dateiformat für elektronische Dokumente, das unabhängig vom ursprünglichen Anwendungsprogramm, vom Betriebssystem oder von der Hardwareplattform originalgetreu weitergegeben werden kann. Zudem können unterschiedliche Sicherheitsvorkehrungen aktiviert werden: Das Kopieren, Editieren, Drucken etc. der Datei kann so verhindert werden. PDF ist ein Containerformat mit vielen Optionen, nur die Spezifikation „PDF/A“ eignet sich zur Langzeitarchivierung. Weitere Informationen finden Sie bei [IANUS-FDZ]([https://www.ianus-fdz.de/it-empfehlungen/node/186).](https://www.ianus-fdz.de/it-empfehlungen/node/186).){target=_blank}
 
 Das Format PDF wurde von Adobe entwickelt, viele Programme schreiben und lesen inzwischen PDF und Windows bietet vom System aus direkt einen PDF-Drucker an.
 
 #### PDF24 Creator (Windows) \newline
 In PDF-Dateien aus jedem installierten Programm drucken, einzelne PDF-Dateien zusammenführen, einzelne Seiten entnehmen oder verschieben, Metadaten ergänzen und vieles mehr. Die Möglichkeiten gehen weit über den Export in PDF oder die Funktionalität des Adobe Readers hinaus. ** Wichtig: Sie können die Abfrage zu einem Account überspringen!**
 
-- Offizielle Website: https://de.pdf24.org/creator.html
+- Offizielle Website: [https://de.pdf24.org/creator.html](https://de.pdf24.org/creator.html){target=_blank}
 
 #### PDF-XChange Viewer (Windows) \newline
 Dieses Programm bietet die automatische Texterkennung von gescannten Dokumenten (OCR) und ist damit eine sehr wichtige Ergänzung zum vorigen Programm. Texte können damit schnell nach Stichwörtern durchsucht werden. Standardsprachen sind Deutsch, Englisch, Französisch und Spanisch, diese können aber umfangreich ergänzt werden.
 
-- Offizielle Website: https://www.tracker-software.com/
+- Offizielle Website: [https://www.tracker-software.com/](https://www.tracker-software.com/){target=_blank}
 
 #### PDF tk free \newline
-Seiten entnehmen, zusammenführen und einiges mehr. Der Autor Sid Steward hat ein sehr informatives Buch zu PDF veröffentlicht „PDF Hacks: 100 Industrial-Strength Tips & Tools“ (2004), online lesbar: https://blog.rubypdf.com/preview-pdf-hacks-online/
+Seiten entnehmen, zusammenführen und einiges mehr. Der Autor Sid Steward hat ein sehr informatives Buch zu PDF veröffentlicht „PDF Hacks: 100 Industrial-Strength Tips & Tools“ (2004), online lesbar: [https://blog.rubypdf.com/preview-pdf-hacks-online/](https://blog.rubypdf.com/preview-pdf-hacks-online/){target=_blank}
 
-- Offizielle Website: https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/
+- Offizielle Website: [https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/){target=_blank}
 
 ## Bürosoftware / Office-Paket
 
@@ -310,42 +309,44 @@ Folgende Programmpakete ermöglichen eine grundlegende Büroarbeit, neben dem Sc
 Ein freies umfangreiches Softwarepaket mit einzelnen Programmen für Text (Writer), Tabellenkalkulation (Calc), Präsentationen (Impress), Datenbanken (Base), Grafikerstellung (Draw) und einem Formeleditor (Math). \newline
 Die Datenbank Base nutzt mit „HSQL“ genuin eine eher untypische SQL-Version. Die Stärke und der Schwerpunkt der Entwicklung in Libre Office liegen eindeutig nicht im Bereich Datenbank.
 
-- Offizielle Website: https://de.libreoffice.org
-- Handbücher: https://de.libreoffice.org/get-help/documentation
-- Wiki: https://www.ooowiki.de
+- Offizielle Website: [https://de.libreoffice.org](https://de.libreoffice.org){target=_blank}
+- Handbücher: [https://de.libreoffice.org/get-help/documentation](https://de.libreoffice.org/get-help/documentation){target=_blank}
+- Wiki: [https://www.ooowiki.de](https://www.ooowiki.de){target=_blank}
 
 ### OpenOffice (OO) (Windows, Mac, Linux)
 LibreOffice ist aus OpenOffice hervorgegangen, nachdem dieses von der Firma Oracle übernommen wurde. Seitdem entwickeln sich diese Produkte unterschiedlich.
 
-- Offizielle Website: https://www.openoffice.de/
-Wiki: https://www.ooowiki.de
+- Offizielle Website: [https://www.openoffice.de/](https://www.openoffice.de/){target=_blank}
+Wiki: [https://www.ooowiki.de](https://www.ooowiki.de){target=_blank}
 
-### MS Office (Windows)
+### MS Office (Windows, Mac)
 Das weit verbreitete Office-Paket von Microsoft. Es gibt eine stark vergünstigte Lizenz für Studierende. Manche Universitäten bzw. Fakultäten bieten in einer Allianz mit Microsoft weitere Vergünstigungen an. MS Access für Datenbanken ist nur Teil von MS Office Professional.
 Microsoft bietet zwei Versionen mit unterschiedlichem Umfang:
 
 - Office 365 University: Mieten (jährlich) der jeweils aktuellsten Version mit zahlreichen weiteren Ergänzungen des Angebotes.
 - Office Home & Student: Kauf der Software zur Installation auf einem PC.
-- Offizielle Website: https://www.microsoftstore.com
+- Offizielle Website: [https://www.microsoftstore.com](https://www.microsoftstore.com){target=_blank}
 
-Layout wissenschaftlicher Arbeit am PC: Eine kurze Einführung in wesentliche Aspekte in MS Word bietet u.a. der Text von [K. Hoffmann](https://www.fk-reha.tu-dortmund.de/fk13/de/Aktuelles/Aktuelles_zum_Studium/Bachelorarbeit/Layout_am_PC_Hoffmann) (fügen Sie an den Dateinamen des Downloads ein „.pdf“ an).
+Auf der Homepage von [Martina Hoffmann-Seidel](https://hoffmann-seidel.de){target=_blank} werden zwei Anleitungen (PDF) in MS Word angeboten:
+- eine grundlegende [Einführung](https://hoffmann-seidel.de/fileadmin/schulungsunterlagen_neu/Word_16_Einfuehrung.pdf){target=_blank} und
+- eine umfangreichere [Weiterführung](https://hoffmann-seidel.de/fileadmin/schulungsunterlagen_neu/Word_16_Weiterfuehrung.pdf)
 
-### LO/O- Writer, MS Word:
+### LO/O- Writer oder MS Word:
 Mit diesen Programmen schreiben und gestalten Sie Text. Nehmen Sie sich vor Ihrer ersten Hausarbeit etwas Zeit, sich mit der Gliederung, den Formatvorlagen, dem Einbinden von Grafik und der Beschriftung von Abbildungen vertraut zu machen.
 
-### LO/O- Calc, MS Excel:
+### LO/O- Calc oder MS Excel:
 Dies sind Tabellenkalkulationsprogramme, mit denen Daten in begrenztem Umfang verwaltet (sortiert, gefiltert) und berechnet oder verknüpft werden können. Zellverweise („=A1“, „=A1:A15“), Statistik („=Mittelwert(A1:A15)“), Zusammenfassung (Pivotieren), diverse Grafiken (z. B. Balkendiagramm) und eine einfache Handhabung für ein ansprechendes Design der Tabellen sind ihre Stärke.
 
-### LO/O- Impress, MS Powerpoint:
-Mit diesen Programmen erstellen Sie Präsentationen, als- eine Abfolge von Bild- und Textinformationen, die den Zuhörern das Verständnis Ihres Vortrags erleichtern. Neben dem Schreiben sind Vorträge und die zugehörigen Diskussionen das wichtigste Medium im wissenschaftlichen Diskurs. Machen Sie sich frühzeitig mit diesen Medien vertraut.
+### LO/O- Impress oder MS Powerpoint:
+Mit diesen Programmen erstellen Sie Präsentationen, als eine Abfolge von Bild- und Textinformationen, die den Zuhörern das Verständnis Ihres Vortrags erleichtern. Neben dem Schreiben sind Vorträge und die zugehörigen Diskussionen das wichtigste Medium im wissenschaftlichen Diskurs. Machen Sie sich frühzeitig mit diesen Medien vertraut.
 
 | Info |
 |-----|
 | Wichtig: Die Präsentation unterstützt Ihren Vortrag, die technischen Möglichkeiten dürfen nicht im Vordergrund stehen. Fokussieren Sie den Zuhörer auf Kerninformation oder präsentieren Sie eine erläuternde Grafik zu ihrem Vortrag. Eine schlichte Schrift und klares einheitliches Design erleichtern die Wahrnehmung. Geben Sie dem Zuhörer die Zeit, Vortrag und Folie zu erfassen. |
 | In vielen öffentlichen Einrichtungen (z. B. Unis) ist die Präsentationstechnik (Beamer und Leinwand) noch auf das Bildformat 4:9 eingestellt. Bedenken Sie dies bei der Gestaltung Ihrer Präsentation. |
-| Häufig wird vorausgesetzt, dass PowerPoint zur Gestaltung der Präsentation verwendet wird – wenn Sie LO/O- Impress oder das allerneuste Office verwenden, klären Sie vorher ab, ob Ihr Format gelesen werden kann! Erstellen Sie vorscihtshalber immer ein PDF. |
+| Häufig wird vorausgesetzt, dass PowerPoint zur Gestaltung der Präsentation verwendet wird – wenn Sie LO/O- Impress oder das allerneuste Office verwenden, klären Sie vorher ab, ob Ihr Format gelesen werden kann! Erstellen Sie vorsichtshalber immer ein PDF. |
 | Literatur: PowerPoint: H. Plasa, Microsoft PowerPoint 2010. Einfach besser präsentieren. Microsoft Press (Köln 2011). |
-| Weitere Handbücher zu den Programmen gibt es u.a. vom Regionalen Rechenzentrum Hannover (RRZN): https://www.luis.uni-hannover.de/buecher.html |
+| Weitere Handbücher zu den Programmen gibt es u.a. vom Regionalen Rechenzentrum Hannover (RRZN): [https://www.luis.uni-hannover.de/buecher.html](https://www.luis.uni-hannover.de/buecher.html){target=_blank} |
 
 ## Bildbearbeitung und Grafik
 
@@ -353,17 +354,17 @@ Nach dem Einscannen eines Bildes wollen Sie die Grafik noch ausschneiden, drehen
 
 | Info |
 |-----|
-| Es gibt zwei grundlegend unterschiedliche Arten von Grafik. Eine [Rastergrafik](https://de.wikipedia.org/wiki/Rastergrafik) besteht aus Rasterpunkten die unterschiedliche Farbwerte darstellen. Gängige Formate sind JPG, PNG und TIF. Eine [Vektorgrafik](https://de.wikipedia.org/wiki/Vektorgrafik) besteht dagegen aus Vektoren (Linien, Kurven etc.) die ggf. auch Farbflächen definieren. Im Unterschied zur Rastergrafik sind bekannte Dateiformate hier oft proprietär (AI von Adobe, CDR von Corel), eine Ausnahme ist SVG (scalable vector graphics, genutzt u. a. von Inkscape). Rastergrafik führt bei großen Bildern zu sehr großen Dateien und unschönen Effekten beim Skalieren. Dateien im Vektorformat werden mit zunehmender Komplexität größer, nicht aber durch die Dimension des Bildes und eine Linie bleibt stets eine Linie, während sie bei einer Rastergrafik beim Vergrößern in einzelne Pixel zerfällt. Beide Formate haben als- Vor- und Nachteile. |
+| Es gibt zwei grundlegend unterschiedliche Arten von Grafik. Eine [Rastergrafik](https://de.wikipedia.org/wiki/Rastergrafik){target=_blank} besteht aus Rasterpunkten die unterschiedliche Farbwerte darstellen. Gängige Formate sind JPG, PNG und TIF. Eine [Vektorgrafik](https://de.wikipedia.org/wiki/Vektorgrafik){target=_blank} besteht dagegen aus Vektoren (Linien, Kurven etc.) die ggf. auch Farbflächen definieren. Im Unterschied zur Rastergrafik sind bekannte Dateiformate hier oft proprietär (AI von Adobe, CDR von Corel), eine Ausnahme ist SVG (scalable vector graphics, genutzt u. a. von Inkscape). Rastergrafik führt bei großen Bildern zu sehr großen Dateien und unschönen Effekten beim Skalieren. Dateien im Vektorformat werden mit zunehmender Komplexität größer, nicht aber durch die Dimension des Bildes und eine Linie bleibt stets eine Linie, während sie bei einer Rastergrafik beim Vergrößern in einzelne Pixel zerfällt. Beide Formate haben also Vor- und Nachteile.
 
 #### Irfan View (Windows) \newline
-Diese Software ist viel mehr als ein Bildbetrachter und in vielen Bereichen nützlicher Paint oder 3D Paint von Windows. Neben den oben genannten Optionen bietet das Programm eine Stapelverarbeitung für alle Konvertierungen und das Umbenennungen der Dateien. Sie können mit dem Programm zeichnen (<F12>) und es kann durch zahlreiche Plugins erweitert werden.
+Diese Software ist viel mehr als ein Bildbetrachter und in vielen Bereichen nützlicher als Paint oder 3D Paint von Windows. Neben den oben genannten Optionen bietet das Programm eine Stapelverarbeitung für alle Konvertierungen und das Umbenennungen der Dateien. Sie können mit dem Programm zeichnen (<F12>) und es kann durch zahlreiche Plugins erweitert werden bis hin zu einer einfachen persektivischen Entzerrung.
 
-- Offizielle Website: https://www.irfanview.com/
+- Offizielle Website: [https://www.irfanview.com/](https://www.irfanview.com/){target=_blank}
 
 ### XnView und XmpView (Windows)
 Programm zum Verwalten und Betrachten von Bildern. Dazu bietet es zahlreiche weitere Optionen, von denen die Bearbeitung der IPTC-Daten einschließlich Im- und Export für ganze Bildsammlungen hervorzuheben ist. IPTC-Daten sind Metadaten zum Copyright, der Herkunft und dem Bildinhalt. Diese Daten sind von exorbitanter Bedeutung für die Recherche innerhalb einer umfangreichen Bildersammlung.
 
-- Offizielle Website: https://www.xnview.con/de
+- Offizielle Website: [https://www.xnview.con/de](https://www.xnview.con/de){target=_blank}
 
 # Erweitert
 
@@ -377,71 +378,73 @@ Das „Ob“ ist nicht die Frage, sondern das „Wie“. Nachfolgend werden mög
 
 Das Backup sollte physikalisch getrennt von der Quelle liegen, also mindestens auf der externen Festplatte neben dem Rechner wie vom Windows-Backup gefordert oder auf der Festplatte am Router (z. B. FritzBox mit USB-Anschluss) im Nachbarzimmer oder in einer anderen Wohnung. Die in der letzten Zeit aktiven Verschlüsselungstrojaner verschlüsseln die Daten aller an den befallenen Rechner angeschlossenen Festplatten – eine dauerhaft an ihrem Rechner hängende Festplatte bietet somit keinen Schutz. Ob Sie für Ihr Backup Internetdienste nutzen wollen, bedarf einer Abwägung der Vorteile und Kosten.
 
-#### Aufgabenplanung (Task Scheduler) von Windows
+#### Aufgabenplanung (Task Scheduler) von Windows \newline
 Regelmäßige Aufgaben können in Windows mit der „Aufgabenplanung“ (Task Scheduler) durchgeführt werden (vgl. cronjob bei Linux). Erstellen Sie unter Aufgabenplanungsbibliothek eine neue Aufgabe. Unter Aktionen können Sie Programme (z. B. Traybackup) oder kleine Skripte (Batch-Dateien mit dem Befehl mirror) aufrufen. Mit einem Doppelklick auf die Aufgabe in der Liste oben können Sie alte Aufgaben erneut bearbeiten.
 
-#### Traybackup (Windows)
+#### Traybackup (Windows) \newline 
 Die Software bietet eine übersichtliche Konfiguration mit zahlreichen Optionen, aber leider keine Kompression beim Backup (FAQ). Das Programm lässt sich in der Aufgabenplanung (s. o.) z. B. mit folgender Befehlszeile einbinden und starten “C:\\Program Files (x86)\\traybackup\\traybackup.exe" /X meine.bpr
 
-- Offizielle Website: https://www.traybackup.de/
+- Offizielle Website: [https://www.traybackup.de/](https://www.traybackup.de/){target=_blank}
 
 ## Editoren
 
 Oft müssen einfache Textdateien editiert werden, sie wollen z. B. in einer Datei alle „,“ durch „.“ ersetzen. Der Editor von Windows ist hier sehr schlicht, d. h. mühsam.
 
-#### Notepad++ (Windows)
+#### Notepad++ (Windows) 
+ewline 
 Ein potenter Texteditor, bei dem kein Wunsch offen bleibt: Zeilenumbrüche oder Tabulatoren suchen und ersetzen, Zeilen sortieren, Spalten und Blöcke ausschneiden, Konvertierung des Zeichensatzes (ASCII, ANSI, UTF-8), Markdown-Editor mit Exportfunktionen oder auch komplexe Programmierung mit Syntax-Highlighting für viele Sprachen (u. a. HTML, SQL, R).
 
-- Offizielle Website: https://notepad-plus-plus.org/
+- Offizielle Website: [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/){target=_blank}
 
-#### PSPad
+#### PSPad 
+ewline 
 Dieser Editor spricht Programmierer als Zielgruppe an, er bietet gegenüber Notepad++ zusätzlich u. a. ein Browserfenster einschließlich ftp-Verbindungen und einer Logdatei.
 
-- Offizielle Website: https://www.pspad.com
+- Offizielle Website: [https://www.pspad.com](https://www.pspad.com){target=_blank}
 
 ## Literaturverwaltung
 
 Eine Literaturdatenbank ist ein Must-have für effizientes wissenschaftliches Arbeiten. Mit aktueller Software verwalten Sie nicht nur Ihre Literatur einschließlich digitaler Kopien (d. h. Ihren gesammelten PDFs), sondern auch Websites, Podcasts und vieles mehr. Sie fügen hiermit Zitate in Ihren Text ein, lassen die zugehörige Literaturliste automatisch erstellen, übernehmen Zitate direkt aus Bibliothekskatalogen und Online-Repositorien (z. B. www.jstor.org) und synchronisieren Ihre Daten über einen Webaccount mit anderen Endgeräten.
 
-#### Zotero (Windows, Mac, Linux)
-Diese Software ist in der aktuellen Version inzwischen Standalone und kein Addon mehr für den Browser Firefox von Mozilla. Es bietet alle oben genannten Funktionen. Eine Einführung in die Benutzung von Zotero und die Umsetzung der Zitierstile nach den RGK-Regeln mit Hilfe von Zotero finden Sie auf der [Website der DGUF](https://www.dguf.de/index.php?id=203).
+#### Zotero (Windows, Mac, Linux) \newline 
+Diese Software ist in der aktuellen Version inzwischen Standalone und kein Addon mehr für den Browser Firefox von Mozilla. Es bietet alle oben genannten Funktionen. Eine Einführung in die Benutzung von Zotero und die Umsetzung der Zitierstile nach den RGK-Regeln mit Hilfe von Zotero finden Sie auf der [Website der DGUF](https://www.dguf.de/index.php?id=203){target=_blank}.
 
-- Offizielle Website: https://www.zotero.org/
-Einführung, Zitierstil und weitere Infos: https://www.dguf.de/index.php?id=203
+- Offizielle Website: [https://www.zotero.org/](https://www.zotero.org/){target=_blank}
+Einführung, Zitierstil und weitere Infos: [https://www.dguf.de/index.php?id=203](https://www.dguf.de/index.php?id=203){target=_blank}
 
-#### Citavi (Windows, Mac)
+#### Citavi (Windows, Mac) \newline 
 Eine Literaturdatenbank, die an einigen Universitäten für Studierende vergünstigt oder auch kostenfrei angeboten wird. Citavi Free ist kostenlos, es bietet alle Profi-Funktionen der anderen Citavi-Editionen, nur die Titelzahl ist aber auf 100 begrenzt.
 
-- Offizielle Website: https://www.citavi.de
+- Offizielle Website: [https://www.citavi.de](https://www.citavi.de){target=_blank}
 
-#### Endnote (Windows, Mac)
+#### Endnote (Windows, Mac) \newline 
 Eine Literaturdatenbank, die an einigen Universitäten für Studierende vergünstigt oder auch kostenfrei angeboten wird. Endnote stellt eine freie Testversion bereit, deren Nutzung ist auf 30 Tage begrenzt.
 
-- Offizielle Website: https://endnote.com
+- Offizielle Website: [https://endnote.com](https://endnote.com){target=_blank}
 
 ## Bildbearbeitung und Grafik
 
-Grafik und Design kann professionell betrieben werden, das hier weit verbreitete Programmpaket (d. h. der Quasi-Standard) ist die [Adobe Creative Suite (CS)](https://www.adobe.com/de/creativecloud.html), die seit 2015 unter der Bezeichnung „Cloud“ nur noch im Abonnement bezogen werden kann. IT-Mitarbeiter an deutschen Hochschulen haben eine Liste von Alternativen zu den Adobe-Produkten zusammengestellt ([PDF](https://www.rz.uni-kiel.de/de/angebote/software/adobe-software/adobe-alternativen)). Eine ebenfalls kommerzielle Alternative ist das Paket [CorelDRAW Graphics Suite](https://www.coreldraw.com/de/product/grafikprogramm/), das weiterhin zum Kauf auch als deutlich vergünstigte [Studentenversion](https://www.coreldraw.com/de/product/home-student) angeboten wird. Freie Alternativen sind:
+Grafik und Design kann professionell betrieben werden, das hier weit verbreitete Programmpaket (d. h. der Quasi-Standard) ist die [Adobe Creative Suite (CS)](https://www.adobe.com/de/creativecloud.html){target=_blank}, die seit 2015 unter der Bezeichnung „Cloud“ nur noch im Abonnement bezogen werden kann. IT-Mitarbeiter an deutschen Hochschulen haben eine Liste von Alternativen zu den Adobe-Produkten zusammengestellt ([PDF](https://www.rz.uni-kiel.de/de/angebote/software/adobe-software/adobe-alternativen){target=_blank}. Eine ebenfalls kommerzielle Alternative ist das Paket [CorelDRAW Graphics Suite](https://www.coreldraw.com/de/product/grafikprogramm/){target=_blank}, das weiterhin zum Kauf auch als deutlich vergünstigte [Studentenversion](https://www.coreldraw.com/de/product/home-student){target=_blank} angeboten wird. Freie Alternativen sind:
 
-#### Gimp (Windows, Mac, Linux)
+#### Gimp (Windows, Mac, Linux) \newline 
 Ein freies Grafikprogramm für Rastergrafik mit umfassender Funktionalität, die weit über den üblichen Bedarf hinausreicht.
 
-- Offizielle Website: https://www.gimp.org/
+- Offizielle Website: [https://www.gimp.org/](https://www.gimp.org/){target=_blank}
 Offizielle Tutorials und Dokumentation finden sich auf der Website.
-Deutschsprachige Einführungen auch auf: https://www.gimp-tutorials.de
+Deutschsprachige Einführungen auch auf: [https://www.gimp-tutorials.de](https://www.gimp-tutorials.de){target=_blank}
 
-#### Inkscape (Windows, Mac, Linux)
+#### Inkscape (Windows, Mac, Linux) \newline 
 Ein freies Grafikprogramm für Vektorgrafik inzwischen mit umfassender Funktionalität.
 
-- Offizielle Website: https://inkscape.org
-Offizielle Seite für Hilfe, Tutorials: https://inkscape.org/de/lernen
-weitere Hilfe: https://inkscapetutorials.org/
+- Offizielle Website: [https://inkscape.org](https://inkscape.org){target=_blank}
+Offizielle Seite für Hilfe, Tutorials: [https://inkscape.org/de/lernen](https://inkscape.org/de/lernen){target=_blank}
+weitere Hilfe: [https://inkscapetutorials.org/](https://inkscapetutorials.org/){target=_blank}
 
-#### Darktable (Windows, Mac, Linux)
+#### Darktable (Windows, Mac, Linux) \newline 
 Darktable ist ein freies und offenes Grafikprogramm mit einem besonderen Fokus auf der Fotobearbeitung. Deshalb kann es insbesondere die unkomprimierten und informationsreichen RAW-Daten der Kamera bearbeiten.
 
-- Offizielle Website: https://www.darktable.org
-Hilfe, Handbuch, Screencast: https://www.darktable.org/resources/
+- Offizielle Website: [https://www.darktable.org](https://www.darktable.org){target=_blank}
+Hilfe, Handbuch, Screencast: [https://www.darktable.org/resources/](https://www.darktable.org/resources/){target=_blank}
 
 ## Geoinformation
 
@@ -449,7 +452,7 @@ Kartierungen gehören in der Archäologie zu den alltäglichen Aufgaben. Mit dem
 
 ### Datenbeschaffung und -verwaltung
 
-#### Google Earth (Windows, Mac, Linux)
+#### Google Earth (Windows, Mac, Linux) \newline 
 Die ganze Welt am Schreibtisch. In den Satelliten- und Luftbildern lassen sich nicht nur Archäologie entdecken oder Distanzen und Flächen messen, sondern es bietet Zugriff auf eine potente Ortsnamendatenbank. Mit dieser Software „fliegen“ Sie zu unterschiedlichen Fundstellen, setzen nacheinander Ortsmarken und speichern diese als KML-Datei. KML-Dateien können von allen gängigen Geografischen Informationssystemen (GIS) gelesen werden. Verbreitungskarten sind so schnell erzeugbar und übertragbar.
 
 > KML ist eine objektorientierte Programmiersprache vergleichbar XML und kann im Editor Notepad++ visualisiert werden. Es kann sich lohnen, die zugrunde liegende Syntax in den Grundzügen zu verstehen.
@@ -457,21 +460,21 @@ Die ganze Welt am Schreibtisch. In den Satelliten- und Luftbildern lassen sich n
 > KMZ-Dateien sind gezippte (komprimierte) KML-Dateien einschließlich ergänzender zugehöriger Objekte.
 
 
-- Offizielle Website: https://www.google.com/earth/
-Offizielle Einführung und Hilfe: https://www.google.com/intl/de/earth/learn/
+- Offizielle Website: [https://www.google.com/earth/](https://www.google.com/earth/){target=_blank}
+Offizielle Einführung und Hilfe: [https://www.google.com/intl/de/earth/learn/](https://www.google.com/intl/de/earth/learn/){target=_blank}
 
-#### Diercke Globus Online (Windows, Mac)
+#### Diercke Globus Online (Windows, Mac) \newline 
 Sie suchen eine physische Karte einer Region für die Einführung in Ihr Thema und wollen nicht einen Screenshot von Google Earth oder Google Maps verwenden? Die Demoversion von Diercke Globus Online ist eine perfekte Alternative.
 
-- Offizielle Website: https://www.diercke.de/diercke-globus
+- Offizielle Website: [https://www.diercke.de/diercke-globus](https://www.diercke.de/diercke-globus){target=_blank}
 
-> Anmerkung: Wenn Sie detaillierte Verkehrswege und moderne Bebauung darstellen wollen: https://www.opencyclemap.org/
+> Anmerkung: Wenn Sie detaillierte Verkehrswege und moderne Bebauung darstellen wollen: [https://www.opencyclemap.org/](https://www.opencyclemap.org/){target=_blank}
 
-#### Geosetter (Windows)
+#### Geosetter (Windows) \newline 
 Diese Software verbindet Bilder mit Koordinaten aus GPS-Tracks (Mobiltelefon, Navi, GPS-Maus etc.) oder anhand einer Markierung in einer Onlinekarte. Das Verorten der Bilder von Exkursionen, Bodendenkmälern oder auch Ausgrabungen heißt Geotaggen. Zudem können automatisch Höhen und Verwaltungsgrenzen (Ort, Kreis, Land) in den Metadaten der Bilder ergänzt werden.
 
-- Offizielle Website: https://www.geosetter.de
-Einführung und Hilfe zur Software: https://www.golem.de/1002/73301.html
+- Offizielle Website: [https://www.geosetter.de](https://www.geosetter.de){target=_blank}
+Einführung und Hilfe zur Software: [https://www.golem.de/1002/73301.html](https://www.golem.de/1002/73301.html){target=_blank}
 
 ### Geoinformationssysteme (GIS)
 
@@ -479,71 +482,71 @@ GIS sind, zumindest wenn Sie mit Fundorten arbeiten, in der aktuellen wissenscha
 
 > GIS haben ihre Wurzeln in der Kartografie, die Vektordaten sind deshalb a priori oft nur 2D. Sie verlieren also ggf. wichtige 3D-Informationen des ursprünglichen Datenbestandes der Ausgrabung.
 
-#### Quantum GIS (Windows, Mac, Linux)
+#### Quantum GIS (Windows, Mac, Linux) \newline 
 Ein GIS mit einer sehr großen und aktiven Entwicklergemeinschaft. Die Lernkurve ist bei QGIS anfänglich flach und steigt dann aber beständig an. Will sagen: Aller Anfang ist leicht und der Rest ist eine Frage von Anforderung und Ehrgeiz.
 
-- Offizielle Website: https://www.qgis.org
-Offizielle Dokumentation und Einführung: https://www.qgis.org/de/docs/index.html
-Einführung und Spezialthemen (engl.): https://www.qgistutorials.com/en/
-Anmerkung: viele Optionen müssen bei QGIS zusätzlich geladen werden: Erweiterungen à Erweiterungen verwalten.
+- Offizielle Website: [https://www.qgis.org](https://www.qgis.org){target=_blank}
+Offizielle Dokumentation und Einführung: [https://www.qgis.org/de/docs/index.html](https://www.qgis.org/de/docs/index.html){target=_blank}
+Einführung und Spezialthemen (engl.): [https://www.qgistutorials.com/en/](https://www.qgistutorials.com/en/){target=_blank}
+Anmerkung: viele Optionen müssen bei QGIS zusätzlich geladen werden: Erweiterungen > Erweiterungen verwalten.
 
-#### gvSIG (Windows, Mac, Linux)
-Ein freies Geoinformationssystem (GIS), welches ursprünglich von der Verwaltung in Valencia (Spanien) zusammen mit spanischen Universitäten initiiert und nun auf internationaler Platform weiter entwickelt wird (Generaltitat de Valencia, Sistema de Informacón Geográfica). Die Oberfläche und damit die Wege zum Ziel unterscheiden sich deutlich von QGIS, das Ergebnis eher weniger.
+#### gvSIG (Windows, Mac, Linux) \newline 
+Ein freies Geoinformationssystem (GIS), welches ursprünglich von der Verwaltung in Valencia (Spanien) zusammen mit spanischen Universitäten initiiert und nun auf internationaler Platform weiter entwickelt wird (gvSIG: Generaltitat de Valencia, Sistema de Informacón Geográfica). Die Oberfläche und damit die Wege zum Ziel unterscheiden sich deutlich von QGIS, das Ergebnis eher weniger.
 Es liegen zwei inzwischen getrennte Entwicklungen vor:
-gvSIG Association: https://www.gvsig.com/en
-gvSIG Community Edition: https://csgis.de/gvsigce/
-Tutorial für den Einstieg von Ulrich Werz: https://blog.gvsig.org/2016/04/01/tutorial-kurzanleitung-fur-die-erstellung-von-fundverteilungskarten-mit-gvsig-2-2/
+gvSIG Association: [https://www.gvsig.com/en](https://www.gvsig.com/en){target=_blank}
+gvSIG Community Edition: [https://csgis.de/gvsigce/](https://csgis.de/gvsigce/){target=_blank}
+Tutorial für den Einstieg von Ulrich Werz: [https://blog.gvsig.org/2016/04/01/tutorial-kurzanleitung-fur-die-erstellung-von-fundverteilungskarten-mit-gvsig-2-2/](https://blog.gvsig.org/2016/04/01/tutorial-kurzanleitung-fur-die-erstellung-von-fundverteilungskarten-mit-gvsig-2-2/){target=_blank}
 
 ## Daten und Statistik
 
-#### PAST (Windows, Mac)
+#### PAST (Windows, Mac) \newline 
 Ein kleines, kostenloses und dennoch sehr umfangreiches Statistikprogramm. Die Bedienung ist bei Zeilen- und Spaltenbezeichnungen und der davon abhängigen Farbe und Form der Symbole in Grafiken etwas gewöhnungsbedürftig. Die resultierenden Grafiken sind bisweilen etwas schlicht, können aber als SVG exportiert und in Inkscape bearbeitet werden. Die Datei past.exe ist alles, was man braucht und kann auf jedem USB-Stick mitgeführt werden.
 
-- Offizielle Website: https://folk.uio.no/ohammer/past
-Hilfeseite: https://folk.uio.no/ohammer/past/faq.html
-Handbuch: https://folk.uio.no/ohammer/past/past3manual.pdf
+- Offizielle Website: [https://folk.uio.no/ohammer/past](https://folk.uio.no/ohammer/past){target=_blank}
+Hilfeseite: [https://folk.uio.no/ohammer/past/faq.html](https://folk.uio.no/ohammer/past/faq.html){target=_blank}
+Handbuch: [https://folk.uio.no/ohammer/past/past3manual.pdf](https://folk.uio.no/ohammer/past/past3manual.pdf){target=_blank}
 
 > Mehr? – siehe unter 4.5 für Fortgeschrittene.
 
 ## Kalibration von Radiokarbon-Daten
 
-#### OxCal Online (Windows, Mac, Linux)
+#### OxCal Online (Windows, Mac, Linux) \newline 
 Software zur Kalibration von Radiokarbondaten. Die Kalibration kann online (nach der Registrierung) auf dem Server der Universität von Oxford erfolgen oder mit einem Addon für den Browser Firefox auch lokal. Letzteres hat sich mit den konstanten Sicherheitsupdates im Browser als fehleranfällig erwiesen. Die resultierende Grafik kann als SVG gespeichert und in Inkscape geöffnet werden.
 
-- Offizielle Website: https://c14.arch.ox.ac.uk/embed.php?File=oxcal.html
-Hilfeseite: https://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html
+- Offizielle Website: [https://c14.arch.ox.ac.uk/embed.php?File=oxcal.html](https://c14.arch.ox.ac.uk/embed.php?File=oxcal.html){target=_blank}
+Hilfeseite: [https://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html](https://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html){target=_blank}
 Allgemeine Einführung in die Bedienung von J. Kneisel, Kiel: PDF
 
-#### CalPal (Windows) und CalPalOnline
+#### CalPal (Windows) und CalPalOnline \newline 
 Software zur Kalibration von Radiokarbondaten, die vor allem für die glaziale Kalibration eine Auswahl unterschiedlicher Kalibrationskurven zur Verfügung stellt. Die CalPal-online-Kalibration kann ohne Registrierung genutzt werden, sie verwendet alternativ die CalPalHulu-Kurve für die glaziale Kalibration.
-Download: https://monrepos-rgzm.de/forschung/ausstattung.html#calpal
+Download: [https://monrepos-rgzm.de/forschung/ausstattung.html#calpal](https://monrepos-rgzm.de/forschung/ausstattung.html#calpal){target=_blank}
 
-- Offizielle Website: https://www.calpal-online.de/index.html
+- Offizielle Website: [https://www.calpal-online.de/index.html](https://www.calpal-online.de/index.html){target=_blank}
 
-#### RADON & RADON-B
+#### RADON & RADON-B \newline 
 Bevor Sie Unmengen an 14C-Daten abtippen und dann kalibrieren, recherchieren Sie doch mal bei der 14C-Datenbank RADON im Web und kalibrieren Sie die Daten dort gleich online.
-Neolithikum: https://radon.ufg.uni-kiel.de/ und
-Bronzezeit: https://radon-b.ufg.uni-kiel.de/
+Neolithikum: [https://radon.ufg.uni-kiel.de/ und](https://radon.ufg.uni-kiel.de/ und){target=_blank}
+Bronzezeit: [https://radon-b.ufg.uni-kiel.de/](https://radon-b.ufg.uni-kiel.de/){target=_blank}
 
 ## Arbeitsgruppe - Arbeiten im Team
 
-#### DFN Terminplaner (Cloud)
+#### DFN Terminplaner (Cloud) \newline 
 Doodle, den Terminplaner von Google, kennen viele. Einen identischen Dienst bietet aber auch der Verein zur Förderung eines Deutschen Forschungsnetzes e.V. an. Damit bleiben Sie nicht nur formal im Forschungsnetz, sondern auch rechtlich in einem anderen (besseren) Rahmen.
 
-- Offizielle Website: https://terminplaner2.dfn.de/
+- Offizielle Website: [https://terminplaner2.dfn.de/](https://terminplaner2.dfn.de/){target=_blank}
 
-#### Speicherdienst (Cloud)
+#### Speicherdienst (Cloud) \newline 
 Viele Universitäten bieten eine Lernplattform an order arbeiten an einem Speicherdienst wie Dropbox. Informieren Sie sich hierzu.
 
-#### Dropbox
+#### Dropbox \newline 
 Dropbox ist z. Z. wohl der bekannteste Speicherdienst für Teamarbeit im Web. Die Anmeldung und Nutzung bis 2 GB (Basic) ist kostenlos (Stand: 06/2018). Sie können Ordner und Dokumente für ein Gruppe weiterer Dropboxnutzer zur Bearbeitung freigeben, das schließt das unmittelbare Editieren in Dokumenten von MS Office (z.B. docx, xlsx) ein. Alternativ können Sie Ordner nur freigeben und den angezeigten Link per Mail versenden. Dieser Link stellt dann einen Zugang ohne Anmeldung zu den hinterlegten Daten dar.
 Sie können Dropbox auch ausschließlich im Browser nutzen, die Installation der angebotenen Software ist hierfür nicht notwendig, letztere erleichtert aber vor allem das Synchronisieren mit dem lokalen Datenbestand, hat dabei aber einen hohen Ressourcenbedarf.
 Ihre Daten werden weltweit gespeichert, die Nutzungsvereinbarung wird mit Dropbox Irland geschlossen.
-Einige Universitäten reagieren inzwischen „allergisch“ auf Dropbox oder bezeichnen diesen Dienst ausdrücklich als unerwünscht.
-Eventuell sind Github (s. u.) oder Quip (https://quip.com/) eine Alternative. Wer einen eigenen Server betreibt kann auch die freie Software Seafile (https://www.seafile.com) nutzen.
-Weitere Informationen und Verweise auf Kritik finden Sie u. a. bei Wikipedia: https://de.wikipedia.org/wiki/Dropbox
+Zahlreiche Universitäten reagieren inzwischen „allergisch“ auf Dropbox oder bezeichnen diesen Dienst ausdrücklich als unerwünscht. Eventuell bietet Ihre Uni ja bereits einen eigenen Cloud-Dienst an, informieren Sie sich auf der Homepage Ihres Rechenzentrums.
+Eventuell sind Github (s. u.) oder [Quip](https://quip.com/){target=_blank} eine Alternative. Wer einen eigenen Server betreibt kann auch die freie Software [Seafile](https://www.seafile.com){target=_blank} nutzen.
+Weitere Informationen und Verweise auf Kritik an dropbox finden Sie u. a. bei Wikipedia: [https://de.wikipedia.org/wiki/Dropbox](https://de.wikipedia.org/wiki/Dropbox){target=_blank}
 
-- Offizielle Website: https://www.dropbox.com/
+- Offizielle Website: [https://www.dropbox.com/](https://www.dropbox.com/){target=_blank}
 
 # Fortgeschritten
 
@@ -553,78 +556,77 @@ Weitere Informationen und Verweise auf Kritik finden Sie u. a. bei Wikipedia: ht
 
 Der alltägliche Umgang mit dem Rechner führt zwangsläufig zu einer Werkzeugsammlung. Wie im eigenen Haushalt kommt zu Hammer und Schraubendreher das eine oder andere hinzu. Interessant könnten folgende Programme sein.
 
-#### CCleaner (Windows)
+#### CCleaner (Windows) \newline 
 Software zum Bereinigen der Festplatte von „Altdaten“ und der Windowsregistrierung von unzusammenhängenden (veralteten) Einträgen. Letzteres ist für neuere Windows-Versionen (8 ff.) angeblich obsolet.
 Mit der Funktion Tools - Drive Wiper können Datenbereiche und ganze Festplatten durch mehrfaches Überschreiben definitiv gelöscht werden.
 
-- Offizielle Website: https://www.piriform.com/ccleaner
+- Offizielle Website: [https://www.piriform.com/ccleaner](https://www.piriform.com/ccleaner){target=_blank}
 
-#### Putty (Windows)
+#### Putty (Windows) \newline 
 Es handelt sich um ein sog. Terminalprogramm. Dieses sehr kleine Programm läuft ohne Installation und dient u.a. auch der Kommunikation mit den Schnittstellen des Rechners (COM, USB). Son können z. B. die Daten aus dem Speicher eines Tachymeters oder aus dem GPS-Gerät ausgelesen werden (als konstanter Datenstrom und in eine Datei).
 
-- Offizielle Website: https://www.putty.org/
-Handbuch: https://www.chiark.greenend.org.uk/~sgtatham/putty/docs.html
+- Offizielle Website: [https://www.putty.org/](https://www.putty.org/){target=_blank}
+Handbuch: [https://www.chiark.greenend.org.uk/~sgtatham/putty/docs.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/docs.html){target=_blank}
 oder knappe aber bildreiche Anleitung.
 
-#### MobaXterm (Windows)
+#### MobaXterm (Windows) \newline 
 Dieses Programm ist der „große Bruder“ zu Putty. Die Home Edition kann kostenlos genutzt werden. Die Software läuft ohne Installation und bietet alle wesentlichen Protokolle für die Terminalkommunikation (SSH, X11, RDP, VNC, FTP, MOSH, ...) und dazu noch die gängigen Unix Befehle (bash, ls, cat, sed, grep, awk, rsync, ...). Mit Archäologie hat das nichts mehr zu tun, dennoch nützlich ;-).
 
-- Offizielle Website: https://mobaxterm.mobatek.net/
+- Offizielle Website: [https://mobaxterm.mobatek.net/](https://mobaxterm.mobatek.net/){target=_blank}
 
-#### LicenseCrawler (Windows)
+#### LicenseCrawler (Windows) \newline 
 Dieses kleine Programm läuft ohne Installation und liest wesentliche Lizenzdaten ihres Rechners aus, die Sie zur Dokumentation und Sicherung archivieren können. Ein umfangreicheres Ergebnis zum gesamten System mit intensiverer Suche liefert BelarcAdvisor.
 
-- Offizielle Website: https://www.klinzmann.name/licensecrawler_de.htm
+- Offizielle Website: [https://www.klinzmann.name/licensecrawler_de.htm](https://www.klinzmann.name/licensecrawler_de.htm){target=_blank}
 
-#### SequoiaView (Windows)
+#### SequoiaView (Windows) \newline 
 Dieses kleine Programm läuft ohne Installation, es analysiert den Speicherbedarf auf ihrer Festplatte und visualisiert unterschiedliche Dateitypen und deren Größe mit farbigen Kacheln. Dies erlaubt eine schnelle Analyse des Speicherbedarfs einzelner Bereiche.
 
-- Offizielle Website: https://www.win.tue.nl/sequoiaview/
+- Offizielle Website: [https://www.win.tue.nl/sequoiaview/](https://www.win.tue.nl/sequoiaview/){target=_blank}
 
-#### Desinfec’t (ehem. Knoppicillin)
+#### Desinfec’t (ehem. Knoppicillin) \newline 
 Wenn Sie den Verdacht haben, Ihr System sei von Viren befallen, kommt Desinfec’t ins Spiel. Es startet ein virenfreies Linux-System von einer CD aus und bietet neben dem Virenscan noch zahlreiche weitere Optionen.
-Website: https://www.heise.de/ct/projekte/Desinfec-t-1213110.html
-Weitere Infos: https://de.wikipedia.org/wiki/Desinfec%E2%80%99t
+Website: [https://www.heise.de/ct/projekte/Desinfec-t-1213110.html](https://www.heise.de/ct/projekte/Desinfec-t-1213110.html){target=_blank}
+Weitere Infos: [https://de.wikipedia.org/wiki/Desinfec%E2%80%99t](https://de.wikipedia.org/wiki/Desinfec%E2%80%99t){target=_blank}
 
 ## Bildbearbeitung und Video
 
-#### VLC media player
+#### VLC media player \newline 
 Ein mächtiger, plattformunabhängiger Mediaplayer für die meisten Media-Codecs und Videoformate. Kann zudem zum Konvertieren von Dateien und zum Aufzeichnen aus dem Netz (streaming) verwendet werden.
 
-- Offizielle Website: https://www.videolan.org/index.de.html
+- Offizielle Website: [https://www.videolan.org/index.de.html](https://www.videolan.org/index.de.html){target=_blank}
 
-#### Paint.NET (Windows)
+#### Paint.NET (Windows) \newline 
 Ein alternatives Programm für das Erstellen und Bearbeiten von Pixelgrafiken. Eine Stärke liegt in den zahlreichen Dateiformaten und Kompressions-Algorithmen.
 
-- Offizielle Website: https://www.getpaint.net/index.html
+- Offizielle Website: [https://www.getpaint.net/index.html](https://www.getpaint.net/index.html){target=_blank}
 
-#### Draw.io
+#### Draw.io \newline 
 Ist ein online Grafikprogramm im Internet. Die besondere Stärke sind die vielen Vorlagen für diverse Diagramme: Flussdiagramme, Mindmaps, Netzwerke etc. Der Export als PDF und weitere gängige Formate ist einfach möglich. Dahinter steht mxGraph, eine kostenpflichtige Software. Wollen Sie nur Flussdiagramme oder einen Datenbankentwurf (ERM) gestalten, ist DIA ggf. eine gute Alternative.
 
-- Offizielle Website: https://www.draw.io/
+- Offizielle Website: [https://www.draw.io/](https://www.draw.io/){target=_blank}
 
-#### Engauge Digitizer [Windows, Linux]
+#### Engauge Digitizer [Windows, Linux] \newline 
 Dieses kleine Programm digitalisiert eingescannte Rasterbilder und exzerpiert automatisch die Koordinatenwerte zu den dargestellten Kurven oder Punktwolken anhand der nachgezeichneten Achsen. So können z.B. verlorenen Altdaten aus der Grafik automatisch näherungsweise ausgelesen und in einer CSV-Datei gespeichert werden.
 
-- Offizielle Website: https://markummitchell.github.io/engauge-digitizer/
+- Offizielle Website: [https://markummitchell.github.io/engauge-digitizer/](https://markummitchell.github.io/engauge-digitizer/){target=_blank}
 
 ## CAD
 
 CAD steht für „Computer Aided Design“. Die Wurzeln liegen im Maschinenbau und in der Steuerungssoftware, woher wohl auch die Stärke der Programme im 3D-Bereich herrührt. Über die Themen Architektur und Bauaufmaß ist die Software mit den Tachymetern seit den 1990er Jahren verstärkt auch auf archäologischen Ausgrabungen zum Einsatz gekommen. Seitdem ist ein sehr umfangreicher Datenbestand entstanden. Erst allmählich findet von dort aus eine Hinwendung zu GIS statt, welches genuin aus der Kartografie (2D-Bereich) kommt.
 
-#### AutoCAD [Windows, MacOS]
+#### AutoCAD [Windows, MacOS] \newline 
 Das sehr umfangreiche Programm ist seit Jahrzehnten der Marktführer mit zahlreichen fachspezifischen Programm-Derivaten und Ergänzungen. Der Lernaufwand für einen versierten Umgang mit AutoCAD in der Archäologie ist hoch und lohnend für alle, die oft mit Plänen und Feld- oder Architekturvermessung zu tun haben.
 AutoCAD ist teuer, für Universitäten und Studierende gibt es deutlich vergünstigte Angebote:
 a) Kostenlose Nutzung der Schulversion für 3 Jahre mit einem Hinweis auf dem Rand aller Plots. Für die Anmeldung ist eine E-Mail der Universität notwendig.
 
-- Offizielle Website: https://www.autodesk.com/education/home https://www.autodesk.com/education/free-software/all
-b) Kauf: Autodesk stellt 2016 auf das Mietmodell um (Subscription). Eventuell finden Sie ja noch die letzte Kaufversion: Autodesk AutoCAD Design Suite Ultimate 2015 EDU. BricsCAD liest sowohl DWG- als auch DXF-Dateien und in vielem AutoCAD vergleichbar (https://bricscad-deutschland.de/). Die Demoversion kann 30 Tage kostenlos genutzt werden.
+- Offizielle Website: [https://www.autodesk.com/education/home https://www.autodesk.com/education/free-software/all](https://www.autodesk.com/education/home https://www.autodesk.com/education/free-software/all){target=_blank}
+b) Kauf: Autodesk stellt 2016 auf das Mietmodell um (Subscription). Eventuell finden Sie ja noch die letzte Kaufversion: Autodesk AutoCAD Design Suite Ultimate 2015 EDU. [BricsCAD](https://bricscad-deutschland.de/){target=_blank} liest sowohl DWG- als auch DXF-Dateien und ist in Vielem AutoCAD vergleichbar. Die Demoversion kann 30 Tage kostenlos genutzt werden. Die Demoversion kann 30 Tage kostenlos genutzt werden.
 
-#### FreeCAD [Windows, Ubuntu, MacOS]
-Als kostenloses CAD-Programm durchaus interessant, beherrscht es doch echtes 3D, mehrere Ansichten, 3D-Darstellung und zahlreiche weitere interessante Aspekte. Editieren von Objekten via Python ist möglich und könnte als Schnittstelle zu elektronischen Vermessungsgeräten (Tachy) genutzt werden. Auf Ausgrabungen ist es zurzeit wohl aber keine Alternative zu AutoCAD; auf der Website wird auf intensive Entwicklungsarbeit und mögliche Einschränkungen im produktiven Einsatz hingewiesen.
+#### FreeCAD [Windows, Ubuntu, MacOS] \newline 
+Als kostenloses CAD-Programm durchaus interessant, beherrscht es doch echtes 3D, mehrere Ansichten, 3D-Darstellung und zahlreiche weitere interessante Aspekte. Editieren von Objekten via Python ist möglich und könnte als Schnittstelle zu elektronischen Vermessungsgeräten (Tachy) genutzt werden. 
 
-- Offizielle Website: https://www.freecadweb.org/
-Daneben ist LibreCAD (Windows, MacOS, Linux) etwas weiter verbreitet, jedoch auf 2D limitiert und somit für archäologische Ausgrabungen ungeeignet.
+- Offizielle Website: [https://www.freecadweb.org/](https://www.freecadweb.org/){target=_blank}
 
 ## Geoinformation und Datenbank
 
@@ -632,120 +634,120 @@ Geographische Informations-Systeme (GIS) dienen der Verwaltung, Analyse und Dars
 
 ### GIS
 
-Neben Quantum GIS (QGIS, s. o.) sind weitere freie GIS verfügbar. Grass (https://grass.osgeo.org) weist eine lange Entwicklungstradition mit einem umfangreichen Satz an vielfältigen Werkzeugen für diverse Analysen auf. Bei vielen Spezialisten gilt die Arbeit mit Grass als „Königsdisziplin“. SAGA kommt aus den Geowissenschaften (https://saga-gis.org) und bietet deshalb zahlreiche auf diesen Fachbereich spezialisierte Werkzeuge und anpassbare Algorithmen. Die Werkzeuge von Grass und SAGA sind in QGIS integriert. Das Programm gvSIG CE wird zum Teil von Archäologen und Grass-Anwendern entwickelt. Die umfangreichen Funktionen werden deshalb auch mit für die Archäologie spezifischen Anwendungen erweitert, z. B. Rasterdaten aus der geomagnetischen Prospektion.
+Neben Quantum GIS (QGIS, s. o.) sind weitere freie GIS verfügbar. [Grass](https://grass.osgeo.org){target=_blank} weist eine lange Entwicklungstradition mit einem umfangreichen Satz an vielfältigen Werkzeugen für diverse Analysen auf. Bei vielen Spezialisten gilt die Arbeit mit Grass als „Königsdisziplin“. [SAGA](https://saga-gis.org){target=_blank} kommt aus den Geowissenschaften und bietet deshalb zahlreiche auf diesen Fachbereich spezialisierte Werkzeuge und anpassbare Algorithmen. Die Werkzeuge von Grass und SAGA sind in QGIS integriert. Das Programm [gvSIG CE](https://csgis.de/gvsigce/){target=_blank} wird zum Teil von Archäologen und Grass-Anwendern entwickelt. Die umfangreichen Funktionen werden deshalb auch mit für die Archäologie spezifischen Anwendungen erweitert, z. B. Rasterdaten aus der geomagnetischen Prospektion.
 
-#### GaiaSINS & SpatiaLite
+#### GaiaSINS & SpatiaLite \newline 
 Ein sehr schlankes und zugleich umfassendes System für die Arbeit mit Raumdaten in einer auf SQLite (s.u.) basierenden Umgebung (Open Data). Für die Installation unter Windows entpacken Sie die unter „MS Windows binaries“ zur Verfügung gestellten Dateien in ein Verzeichnis in Ihrem Programmordner. Die Datei spatialite_gui.exe erlaubt die Arbeit mit der Software. Mit seinen zahlreichen Funktionen bietet es eine gute Ergänzung zu der QGIS eigenen Erweiterung QSpatiaLite. SpatiaLite importiert u.a. 3D-Informationen aus DXF-Dateien (AutoCAD) und WKT (Well Known Koordinate, ein textbasiertes Format für Koordinaten).
 
-- Offizielle Website: https://www.gaia-gis.it/gaia-sins/
-Dokumentation und Hilfe: https://www.gaia-gis.it/gaia-sins/spatialite-gui-docs/
-Spatialite-gis: https://www.gaia-gis.it/fossil/spatialite_gis/index
+- Offizielle Website: [https://www.gaia-gis.it/gaia-sins/](https://www.gaia-gis.it/gaia-sins/){target=_blank}
+Dokumentation und Hilfe: [https://www.gaia-gis.it/gaia-sins/spatialite-gui-docs/](https://www.gaia-gis.it/gaia-sins/spatialite-gui-docs/){target=_blank}
+Spatialite-gis: [https://www.gaia-gis.it/fossil/spatialite_gis/index](https://www.gaia-gis.it/fossil/spatialite_gis/index){target=_blank}
 
 ### Datenbanken
 
-Datenbanken dienen der Verwaltung (Erhebung, Recherche, Nachnutzung) und Sicherung von Informationen, ihre Aufgaben unterscheiden sich somit grundlegend von denen einer Tabellenkalkulationen (MS Excel, LO/OO Calc). Im Desktopbereich werden vor allem relationale Datenbanksysteme angeboten, bei denen die Daten in einzelnen, jeweils spezifisch strukturierten, in Relation zueinander stehenden Tabellen gespeichert werden. Eine Datenbank soll die Arbeit mit konsistenten und widerspruchsfreien Daten ermöglichen, sie bietet deshalb neben der Datenstruktur und den Daten selbst Formulare für die kontrollierte Interaktion, Abfragen für die Auswahl, die Rekombination und die Manipulation von Daten und den Export in Berichte (Papier) und Listen. Die Gestaltung einer guten Datenbank unterliegt Regeln, informieren Sie sich hierzu in der zahlreichen Literatur, z. B. den Handbüchern des RRZN Hannover ([LUIS](https://www.luis.uni-hannover.de/buecher.html)).
+Datenbanken dienen der Verwaltung (Erhebung, Recherche, Nachnutzung) und Sicherung von Informationen, ihre Aufgaben unterscheiden sich somit grundlegend von denen einer Tabellenkalkulationen (MS Excel, LO/OO Calc). Im Desktopbereich werden vor allem relationale Datenbanksysteme angeboten, bei denen die Daten in einzelnen, jeweils spezifisch strukturierten, in Relation zueinander stehenden Tabellen gespeichert werden. Eine Datenbank soll die Arbeit mit konsistenten und widerspruchsfreien Daten ermöglichen, sie bietet deshalb neben der Datenstruktur und den Daten selbst Formulare für die kontrollierte Interaktion, Abfragen für die Auswahl, die Rekombination und die Manipulation von Daten und den Export in Berichte (Papier) und Listen. Die Gestaltung einer guten Datenbank unterliegt Regeln, informieren Sie sich hierzu in der zahlreichen Literatur, z. B. den Handbüchern des RRZN Hannover [LUIS](https://www.luis.uni-hannover.de/buecher.html){target=_blank}.
 
-#### SQLite
-Eine extrem schlankes und weit verbreitetes Datenbanksystem auf SQL-Basis (structured query language), wodurch es ein optimales Austausch- und Archivmedium ist (Open Data). Es läuft bei vielen bekannten Software­produkten im Hintergrund (z. B. Firefox) oder als Datenbanksystem (z. B. für Quantum GIS). Es ist genuin auf der Befehlszeile zu bedienen, es stehen aber diverse grafische Oberflächen zur Verfügung. SQLite stellt die Grundlagen für eine relationale Datenstruktur in Tabellen für die Daten, Abfragen (selektierte und kombinierte Daten) und Sichten (gespeicherte Abfragen). Für die Arbeit mit Formularen zur Eingabe und zum Lesen oder mit Berichten zur Erstellung eines Katalogs benötigen Sie zudem ein sogenanntes Frontend. Dies kann Microsoft Access oder Libre Office Base sein. Hierfür muss ggf. zudem eine ODBC-Schnittstelle eingerichtet werden (open database connectivity).
+#### SQLite \newline 
+Eine extrem schlankes und weit verbreitetes Datenbanksystem auf SQL-Basis (structured query language), wodurch es ein optimales Austausch- und Archivmedium ist (Open Data). Es läuft bei vielen bekannten Softwareprodukten im Hintergrund (z. B. Firefox) oder als Datenbanksystem (z. B. für Quantum GIS). Es ist genuin auf der Befehlszeile zu bedienen, es stehen aber diverse grafische Oberflächen zur Verfügung. SQLite stellt die Grundlagen für eine relationale Datenstruktur in Tabellen für die Daten, Abfragen (selektierte und kombinierte Daten) und Sichten (gespeicherte Abfragen). Für die Arbeit mit Formularen zur Eingabe und zum Lesen oder mit Berichten zur Erstellung eines Katalogs benötigen Sie zudem ein sogenanntes Frontend. Dies kann Microsoft Access oder Libre Office Base sein. Hierfür muss ggf. zudem eine ODBC-Schnittstelle eingerichtet werden (open database connectivity).
 
-- Offizielle Website: https://sqlite.org/
-GUI für SQLite: DB Browser for SQLite: (https://sqlitebrowser.org/)
-ODBC-Schnittstelle: https://www.ch-werner.de/sqliteodbc/
-Kurze Tutorials auf je einem A4-Blatt zum SQLiteManager und der Anbindung an MS Access (UFG Kiel) https://www.ufg.uni-kiel.de/de/professuren-bereiche/archaeoinformatik.
+- Offizielle Website: [https://sqlite.org/](https://sqlite.org/){target=_blank}
+GUI für SQLite: DB Browser for SQLite: ([https://sqlitebrowser.org/)](https://sqlitebrowser.org/)){target=_blank}
+ODBC-Schnittstelle: [https://www.ch-werner.de/sqliteodbc/](https://www.ch-werner.de/sqliteodbc/){target=_blank}
+Kurze Tutorials auf je einem A4-Blatt zum SQLiteManager und der Anbindung an MS Access (UFG Kiel) [https://www.ufg.uni-kiel.de/de/professuren-bereiche/archaeoinformatik](https://www.ufg.uni-kiel.de/de/professuren-bereiche/archaeoinformatik){target=_blank}.
 
-#### Microsoft Access (Windows)
+#### Microsoft Access (Windows) \newline 
 Ein umfassendes Datenbanksystem im Desktopbereich, proprietär. Zahlreiche Vorlagen und Assistenten für Formulare und Berichte helfen bei der Bewältigung diverser Aufgaben. Die einfache Handhabung verleitet dazu, die Anforderungen bei der Konzeption von Datenbanken zu unterschätzen. MS Access ist Teil vom MS Office Professional.
 
-- Offizielle Website: https://products.office.com/de-de/access
-Eine gute Einführung und Hilfen: https://www.donkarl.com/
-Hilfen, Tricks, Code-Schnipsel: https://www.yaccess.de/
-Kostenpflichtiges Infoportal (1 Woche gratis): https://www.access-im-unternehmen.de/
-Handbuch des RRZN zu MS Access 2013: [Grundlagen für Anwender](https://www.luis.uni-hannover.de/buch.html?&no_cache=1&titel=acc2013), [Grundlagen für Datenbank-Entwickler](https://www.luis.uni-hannover.de/buch.html?&no_cache=1&titel=acc2013d), [Fortgeschrittene Techniken für Datenbank Entwickler](https://www.luis.uni-hannover.de/buch.html?&no_cache=1&titel=acc2013p)
-Eine Einführung zu MS Access 2010 von den Tabellen über Abfragen, Formulare, Berichte bis hin zu VBA anhand einer Datenerfassung aus der Literatur ([PDF](https://www.ufg.uni-kiel.de/de/professuren-bereiche/ai/archinf-material/tpc-3-3-einfuehrung-ms-access-2010-einschliesslich-vba)).
+- Offizielle Website: [https://products.office.com/de-de/access](https://products.office.com/de-de/access){target=_blank}
+Eine gute Einführung und Hilfen: [https://www.donkarl.com/](https://www.donkarl.com/){target=_blank}
+Hilfen, Tricks, Code-Schnipsel: [https://www.yaccess.de/](https://www.yaccess.de/){target=_blank}
+Kostenpflichtiges Infoportal (1 Woche gratis): [https://www.access-im-unternehmen.de/](https://www.access-im-unternehmen.de/){target=_blank}
+Handbuch des RRZN zu MS Access 2013: [Grundlagen für Anwender]([https://www.luis.uni-hannover.de/buch.html?&no_cache=1&titel=acc2013){target=_blank}, [Grundlagen für Datenbank-Entwickler](https://www.luis.uni-hannover.de/buch.html?&no_cache=1&titel=acc2013d){target=_blank}, [Fortgeschrittene Techniken für Datenbank Entwickler](https://www.luis.uni-hannover.de/buch.html?&no_cache=1&titel=acc2013p){target=_blank}.
+Eine Einführung zu MS Access 2010 von den Tabellen über Abfragen, Formulare, Berichte bis hin zu VBA anhand einer Datenerfassung aus der Literatur ([PDF](https://www.ufg.uni-kiel.de/de/professuren-bereiche/ai/archinf-material/tpc-3-3-einfuehrung-ms-access-2010-einschliesslich-vba){target=_blank}.
 
-#### Filemaker (Windows, Mac)
+#### Filemaker (Windows, Mac) \newline 
 Wie MS Access bietet es umfassende Möglichkeiten und einen leichten Einstieg. Proprietär.
 
-- Offizielle Website: https://www.filemaker.com
+- Offizielle Website: [https://www.filemaker.com](https://www.filemaker.com){target=_blank}
 
 ## Daten und Statistik
 
-#### SPSS, SAS, S, STATISTICA …
+#### SPSS, SAS, S, STATISTICA … \newline 
 ...sind umfangreiche kommerzielle Programmpakete für die Lösung anspruchsvoller statistischer Aufgaben und daher unter Profis weit verbreitet. Im universitären Kontext werden sie zumeist sehr preiswert für Studierende und Doktoranden angeboten und dazu ebenfalls Kurse, die in ihre (nicht triviale) Bedienung einführen. So lohnend und effizient die Anwendung dieser Programmpakete für die universitären Projekte auch sein mag: Nach dem Studium stehen diese Programme in der Regel nicht mehr zur Verfügung. Sie sind in den meisten Museen und Landesarchäologien unbekannt. Daher sollte man frühzeitig erwägen, stattdessen ein freies Statistikprogramm zu erlernen, z. B. „R“.
 
-#### R & RStudio
+#### R & RStudio \newline 
 R ist ein umfassendes und sehr potentes Statistikprogramm, das durch zahlreiche Pakete von Servern rund um die Welt (CRAN) für unterschiedliche Ansprüche erweitert werden kann. Für das ursprünglich auf der Befehlszeile zu bedienende Programm gibt es zahlreiche grafische Oberflächen (z. B. das Paket Rcmdr).
 
-- Offizielle Website: https://cran.r-project.org/
-RStudio ist eine umfassende Oberfläche für R mit Fenstern für Skripte, Befehlseingabe, Datenliste oder Verzeichnisbaum und erzeugte Grafiken oder Hilfetexte. Einen kompakten Einstieg (sog. „nutshell“) für R-Studio finden Sie hier ([PDF](https://www.ufg.uni-kiel.de/de/professuren-bereiche/ai/archinf-material/pc-5-1-rstudio-statistik-mit-r-im-browser)).
+- Offizielle Website: [https://cran.r-project.org/](https://cran.r-project.org/){target=_blank}
+RStudio ist eine umfassende Oberfläche für R mit Fenstern für Skripte, Befehlseingabe, Datenliste oder Verzeichnisbaum und erzeugte Grafiken oder Hilfetexte. 
 
-- Offizielle Website: https://www.rstudio.com/products/RStudio/
-Im Internet finden sie zahlreiche Einführungen und Hilfen zu R, u.a. auf der Seite r-project selbst: https://www.r-project.org/doc/bib/R-books.html .
-R-Commander ist eine Bibliothek für R, die eine etwas schlichtere Oberfläche als RStudio bietet. Der Vorteil hier ist der geführte Zugang zu diversen Aufgaben (Datenmanagement, Grafik, Analyse) über das Menü.
+- Offizielle Website: [https://www.rstudio.com/products/RStudio/](https://www.rstudio.com/products/RStudio/){target=_blank}
+Im Internet finden sie zahlreiche Einführungen und Hilfen zu R, u.a. auf der Seite r-project selbst: [https://www.r-project.org/doc/bib/R-books.html](https://www.r-project.org/doc/bib/R-books.html){target=_blank}
 
-- Offizielle Website: https://rcommander.com/. Die Syntax kann nachfolgend leicht kopiert und verändert werden. Damit bietet es eine gute Möglichkeit R zu lernen.
+R-Commander ist eine Bibliothek für R, die eine etwas schlichtere Oberfläche als RStudio bietet. Der Vorteil hier ist der geführte Zugang zu diversen Aufgaben (Datenmanagement, Grafik, Analyse) über das Menü. Die so vom R-Commander generierte Syntax kann nachfolgend leicht kopiert und verändert werden. Damit bietet es eine gute Möglichkeit, R zu lernen. 
 
-> Eine gute Einführung in R/R-Studio auf Deutsch bietet das R-Tutorial von D. Seidensticker und C. Schmid: https://isaakiel.github.io/1-1_Motivation.html
+- Offizielle Website: [https://rcommander.com/]((https://rcommander.com/){target=_blank}
 
-> Für den Einstieg in die Statistik (Schwerpunkt) mit R als Werkzeug und bewusst unorthodox geschrieben zum Selbststudium geeignet:
-A. Field, Discovering statistics using R (Los Angeles 2012).
+> Eine gute Einführung in R/R-Studio auf Deutsch bietet das R-Tutorial von D. Seidensticker und C. Schmid: [https://isaakiel.github.io/1-1_Motivation.html](https://isaakiel.github.io/1-1_Motivation.html){target=_blank}
 
-> Einen grundlegenden Einstieg (engl.) bietet: https://www.cookbook-r.com
+> Für den Einstieg in die Statistik (Schwerpunkt) mit R als Werkzeug speziell für Archäologen und für das Selbststudium geschrieben: F. Siegmund, Statistik in der Archäologie: eine anwendungsorientierte Einführung auf Basis freier Software. Kostenlose PrePrint-Version der im Februar 2020 bei BoD erschienenen gedruckten Fassung. [academia](https://uni-m.academia.edu/FrankSiegmund){target=_blank) oder [ResearchGate](http://www.researchgate.net/){target=_blank}
+
+> Einen grundlegenden Einstieg (engl.) bietet: [https://www.cookbook-r.com](https://www.cookbook-r.com){target=_blank}
 
 > Einen stärkeren Fokus auf die Arbeitsweise mit R und die Möglichkeiten:
 P. Teetor, R cookbook (Beijing; Sebastopol 2011).
 
-> In R bieten diverse Pakete besondere Möglichkeiten. Ein zunehmend eingesetztes Paket für Grafiken ist ggplot2 von Hadley Wickham. Zum Thema Grafik kann helfen:W. Chang, R graphics cookbook [practical recipes for visualizing data] (Beijing 2013).
-https://ggplot2.org/, https://github.com/hadley/ggplot2
+> In R bieten diverse Pakete besondere Möglichkeiten. Ein zunehmend eingesetztes Paket für Grafiken ist [ggplot2](https://ggplot2.org){target=_blank} von [Hadley Wickham] (https://github.com/hadley/ggplot2){target=_blank}. Zum Thema Grafik kann helfen: W. Chang, R graphics cookbook \[practical recipes for visualizing data\] (Beijing 2013). 
 
 > Ein besonderer Aspekt in R ist die Verarbeitung von Raum- und Rasterdaten, einen Einstieg und Ausblick auf die Möglichkeiten bietet:
 O. Nakoinz/D. Knitter, Modelling Human Behaviour in Landscapes: Basic Concepts and Modelling Elements. Quantitative Archaeology and Archaeological Modelling (Cham 2016).
 
 > Weitere Einführungen zu Statistik auf der Grundlage von R bieten:
-D. Dolić, Statistik mit R: Einführung für Wirtschafts- und Sozialwissenschaftler (München 2010). <https://www.oldenbourg-link.com/doi/book/10.1524/9783486599534>
-J. Verzani, Using R for introductory statistics. Chapman & Hall / CRC The R Series (Boca Raton 2005). Oder kompakt <https://cran.r-project.org/doc/contrib/Verzani-SimpleR.pdf>
-L. Sachs/J. Hedderich, Angewandte Statistik: Methodensammlung mit R 12 (Dordrecht u. a. 2006). <https://www.springerlink.com/content/l32744/>
-Als Buch bietet ein Heft des RRZN einen guten Einstieg: https://www.luis.uni-hannover.de/buch.html?&titel=statistik_r
+D. Dolić, Statistik mit R: Einführung für Wirtschafts- und Sozialwissenschaftler (München 2010). <[https://www.oldenbourg-link.com/doi/book/10.1524/9783486599534](https://www.oldenbourg-link.com/doi/book/10.1524/9783486599534){target=_blank}
+J. Verzani, Using R for introductory statistics. Chapman & Hall / CRC The R Series (Boca Raton 2005). Oder kompakt [https://cran.r-project.org/doc/contrib/Verzani-SimpleR.pdf](https://cran.r-project.org/doc/contrib/Verzani-SimpleR.pdf){target=_blank}
+L. Sachs/J. Hedderich, Angewandte Statistik: Methodensammlung mit R 12 (Dordrecht u. a. 2006). [https://www.springerlink.com/content/l32744/](https://www.springerlink.com/content/l32744/){target=_blank}
+Als Buch bietet ein Heft des RRZN einen guten Einstieg: [https://www.luis.uni-hannover.de/buch.html?&titel=statistik_r](https://www.luis.uni-hannover.de/buch.html?&titel=statistik_r){target=_blank}
 
-> Eine ausführliche Anleitung für eine Korrespondenzanalyse und weitere Anleitungen finden Sie unter: https://www.rchaeology.eu/
-Screencasts zu Statistik mit archäologischen Beispielen finden Sie hier: https://martinhinz.info/screencasts/
+> Eine ausführliche Anleitung für eine Korrespondenzanalyse und weitere Anleitungen finden Sie unter: [https://www.rchaeology.eu/](https://www.rchaeology.eu/){target=_blank}
+Screencasts zu Statistik mit archäologischen Beispielen finden Sie hier: [https://martinhinz.info/screencasts/](https://martinhinz.info/screencasts/){target=_blank}
 
-#### Capca (Windows)
-Capca ist ein spezielles Statistikpaket, das in MS Excel integriert werden kann. Capca rechnet eine Hauptkomponentenanalyse (PCA), Korrespondenz­analyse (CA) und metrische multidimensionale Skalierung (MS).
+#### Capca (Windows) \newline 
+Capca ist ein spezielles Statistikpaket, das in MS Excel integriert werden kann. Capca rechnet eine Hauptkomponentenanalyse (PCA), Korrespondenzanalyse (CA) und metrische multidimensionale Skalierung (MS).
 
-- Offizielle Website: https://www.archaeoinfo.dk/
-Das aktuelle Handbuch (engl.) finden Sie auf derselben Website ([PDF](https://www.archaeoinfo.dk/PDF%20files/CAPCA%20version%203.0%20manual.pdf)), ebenso eine Einführung zu der Statistik anhand der älteren Programmversion ([PDF](https://www.archaeoinfo.dk/PDF%20files/2007%20Multivariate%20data%20analysis.pdf)).
+- Offizielle Website: [https://www.archaeoinfo.dk/](https://www.archaeoinfo.dk/){target=_blank}
+Das aktuelle Handbuch (engl.) finden Sie auf derselben Website ([PDF](https://www.archaeoinfo.dk/PDF%20files/CAPCA%20version%203.0%20manual.pdf){target=_blank}), ebenso eine Einführung zu der Statistik anhand der älteren Programmversion ([PDF](https://www.archaeoinfo.dk/PDF%20files/2007%20Multivariate%20data%20analysis.pdf){target=_blank}.
 
-#### Winserion (Windows)
+#### Winserion (Windows) \newline 
 Software für Seriation. Steht Projektteilnehmern kostenlos zur Verfügung.
 
-- Offizielle Website: https://www.winserion.org/
+- Offizielle Website: [https://www.winserion.org/](https://www.winserion.org/){target=_blank}
 
-#### Gephi
+#### Gephi \newline 
 Programm für Netzwerkanalysen, auch für größere Datenmengen geeignet. Neben den statistischen Möglichkeiten ist der Export der Grafiken in Vektorformaten hervorzuheben.
 
-- Offizielle Website: https://gephi.github.io/
-Einführungen und Tutorials auf derselben Website: https://gephi.github.io/users/
+- Offizielle Website: [https://gephi.github.io/](https://gephi.github.io/){target=_blank}
+Einführungen und Tutorials auf derselben Website: [https://gephi.github.io/users/](https://gephi.github.io/users/){target=_blank}
 
-#### Stratify (Windows)
+#### Stratify (Windows) \newline 
 Das Programm analysiert stratigrafische Angaben auf Fehler und visualisiert die Daten.
 
-- Offizielle Website: https://www.stratify.org/
-Handbuch und Tutorials unter: https://www.stratify.org/Download/Download.htm
+- Offizielle Website: [https://www.stratify.org/](https://www.stratify.org/){target=_blank}
+Handbuch und Tutorials unter: [https://www.stratify.org/Download/Download.htm](https://www.stratify.org/Download/Download.htm){target=_blank}
 Ergänzende Informationen:
-I. Herzog/J. Hansohm, Monotone Regression – A Method for Combining Dates and Stratigraphy. In: Museen der Stadt Wien (Hrsg.) Archäologie und Computer : kulturelles Erbe und neue Technologien; Workshop (Wien 1999) <https://www.stratify.org/Whatis/Stratify_4.pdf>.
+I. Herzog/J. Hansohm, Monotone Regression – A Method for Combining Dates and Stratigraphy. In: Museen der Stadt Wien (Hrsg.) Archäologie und Computer : kulturelles Erbe und neue Technologien; Workshop (Wien 1999) [https://www.stratify.org/Whatis/Stratify_4.pdf](https://www.stratify.org/Whatis/Stratify_4.pdf){target=_blank}.
 
 ## Arbeitsgruppe: Arbeiten im Team
 
-#### Github
-Github ist a priori eine Plattform für Softwareentwicklung, kann aber ebenfalls sehr gut zur Teamarbeit an Dokumenten verwendet werden. Der Umgang ist weniger intuitiv und damit aber auch wesentlich komplexer. „Gute“ Softwarentwicklung ist öffentlich, entsprechend sind öffentlich sichtbare Repositorien kostenlos, private hingegen kostenpflichtig. Es ist also keine direkte Alternative zu Dropbox - zumal dann nicht, wenn Sie Dropbox als Austauschplattform für große Dateien nutzen, hier ist Github klar limitiert. Mit der Übernahme von Github durch Microsoft (06/2018) ist eine heftige Diskussion in der Gemeischaft der Github-Nutzer entstanden.
+#### GitHub oder GitLab \newline 
+GitHub und GitLab sind *a priori* Plattformen für Softwareentwicklung, können aber ebenfalls sehr gut zur Teamarbeit an Dokumenten verwendet werden. Der Umgang ist weniger intuitiv und damit zugleich auch wesentlich komplexer. "Gute" Softwarentwicklung ist öffentlich, entsprechend sind öffentlich sichtbare Repositorien kostenlos, private hingegen kostenpflichtig. Beide sind also keine direkte Alternative zu Dropbox - zumal dann nicht, wenn Sie Dropbox als Austauschplattform für große Dateien nutzen, hier ist GitHub/GitLab klar limitiert. Mit der Übernahme von GitHub durch Microsoft (06/2018) ist eine heftige Diskussion in der Gemeischaft der GitHub-Nutzer entstanden.
 
-- Offizielle Website: https://github.com/
-Einstiegstutorial bei Github: https://guides.github.com/activities/hello-world/
-Ein Intro bei YouTube: https://www.youtube.com/watch?v=0fKg7e37bQE
+- Offizielle Website: [https://github.com/](https://github.com/){target=_blank}
+- Offizielle Website: [https://about.gitlab.com/](https://about.gitlab.com/){target=_blank}
+Einstiegstutorial bei GitHub: [https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/){target=_blank}
+Ein Intro bei YouTube: [https://www.youtube.com/watch?v=0fKg7e37bQE](https://www.youtube.com/watch?v=0fKg7e37bQE){target=_blank}
 Github kann unterschiedlich genutzt werden, hier nachfolgend zwei Beispiele aus der Archäologie in Deutschland:
-Forschungsprojekt: https://i3mainz.github.io/chronOntology/
-Arbeitsgruppe: https://isaakiel.github.io/, https://github.com/ISAAKiel
+Forschungsprojekt: [https://i3mainz.github.io/chronOntology/](https://i3mainz.github.io/chronOntology/){target=_blank}
+Arbeitsgruppe: [https://isaakiel.github.io](https://isaakiel.github.io){target=_blank}
 
 # Spezialaufgaben
 
@@ -753,185 +755,181 @@ Die folgende Software kann bei besonderen Aufgaben oder Problemen von Interesse 
 
 ## IT-Tools
 
-#### Virtual Box [Linux, Windows, Mac]
+#### Virtual Box [Linux, Windows, Mac] \newline 
 Die Software von Oracle ermöglicht es, virtuelle Rechner auf dem eigenen PC mit unterschiedlichen Betriebssystemen einzurichten. Als Windowsnutzer können Sie so auf ihrem PC ein Linux OS einrichten und testen. Oder Sie schaffen sich einen Test-PC für diverse neue Software, ohne damit Ihren realen PC zu belasten oder zu gefährden. Die Einrichtung eines virtuellen Rechners auf Ihrem PC gibt z. B. die Möglichkeit, virtuell ein älteres Betriebssystem zu installieren und dann auch alte Software auf dem Rechner zu nutzen, wie z.B. das Programm WinBASP (Seriation & Korrespondenzanalyse).
 
-- Offizielle Website: https://www.virtualbox.org/
+- Offizielle Website: [https://www.virtualbox.org/](https://www.virtualbox.org/){target=_blank}
 
-#### PC Inspector file recovery (Windows)
+#### PC Inspector file recovery (Windows) \newline 
 Datenrettung von gelöschten Dateien.
 
-- Offizielle Website: https://www.pcinspector.de
+- Offizielle Website: [https://www.pcinspector.de](https://www.pcinspector.de){target=_blank}
 
 ## Verschlüsselung
 
-Zwischen Paranoia, Naivität, Ignoranz und Dummheit ist viel Raum für einen sinnvollen Umgang mit den eigenen, persönlichen, personenbezogenen und sicherheitsrelevanten Daten. Die eigene Hausarbeit gehört möglicherweise nicht zu den besonders schützenswerten Daten. Aber wie sieht es mit den persönlichen Informationen in der E-Mail oder der Datei mit all den sinnlosen und unterschiedlichen (!) Passwörtern aus?
+Zwischen Paranoia, Naivität, Ignoranz und Dummheit ist viel Raum für einen sinnvollen Umgang mit den eigenen, persönlichen, personenbezogenen und sicherheitsrelevanten Daten. Die eigene Hausarbeit gehört möglicherweise nicht zu den besonders schützenswerten Daten, mal abgesehen von der eigenen Adresse und E-Mail auf dem Vorsatz oder am Ende. Aber wie sieht es mit den persönlichen Informationen in der E-Mail oder der Datei mit all den sinnlosen und unterschiedlichen (!) Passwörtern aus?
 
 Die nachfolgend genannte Software und die Websites sollen zum Nachdenken und Handeln animieren, es ist keine unmittelbare Empfehlung der genannten Software.
 
 Allgemeine Informationen:
 
-> Kryptologie: Bundesamt für Sicherheit in der Informationstechnik [BSI](https://www.bsi.bund.de/DE/Themen/Kryptotechnologie/kryptotechnologie_node.html)
+> Kryptologie: Bundesamt für Sicherheit in der Informationstechnik [BSI](https://www.bsi.bund.de/DE/Themen/Kryptotechnologie/kryptotechnologie_node.html){target=_blank}
 
-> Datenschutz: [Netzpolitik.org](https://netzpolitik.org/category/datenschutz/)
+> Datenschutz: [Netzpolitik.org](https://netzpolitik.org/category/datenschutz/){target=_blank}
 
-#### Enigmail
-Enigmail ist eine freie Software zum digitalen Unterschreiben oder zur Verschlüsselung von E-Mails, die besonders leicht in Thunderbird (s. o.) integriert werden kann. Die jeweiligen Schlüssel können einfach erstellt, ausgetauscht und verwaltet werden. Unterschrieben E-Mails authentifizieren Sie an Ihrem Rechner als Absender und bieten so Ihrem Empfänger ein mehr an Sicherheit. Aufgrund der Technik ist dies bei der Verwendung von Webmail nicht möglich. Das Plus an Sicherheit beim Verschlüsseln von Nachrichten kann nerven, wenn sie das Passwort nach einer gewissen Zeit bei jedem wiederholten Zugriff auf eine E-Mail erneut angeben müssen. Zudem bedeutet ein verlorener Schlüssel auch den Verlust aller verschlüsselten E-Mails.
+#### Enigmail \newline 
+Enigmail ist eine freie Software zum digitalen Unterschreiben oder zur Verschlüsselung von E-Mails. Die jeweiligen Schlüssel können einfach erstellt, ausgetauscht und verwaltet werden. Unterschriebene E-Mails authentifizieren Sie an Ihrem Rechner als Absender und bieten so Ihrem Empfänger ein mehr an Sicherheit. Aufgrund der Technik ist dies bei der Verwendung von Webmail nicht möglich. Das Plus an Sicherheit beim Verschlüsseln von Nachrichten kann nerven, wenn sie das Passwort nach einer gewissen Zeit bei jedem wiederholten Zugriff auf eine E-Mail erneut angeben müssen. Zudem bedeutet ein verlorener Schlüssel auch den Verlust aller verschlüsselten E-Mails.
 
-- Offizielle Website: https://www.enigmail.net
-Hilfe und Tutorial: https://enigmail.wiki/
+- Offizielle Website: [https://www.enigmail.net](https://www.enigmail.net){target=_blank}
+Hilfe und Tutorial: [https://enigmail.wiki/](https://enigmail.wiki/){target=_blank}
 
-#### KeePass Password Safe (Windows, Mac, Linux)
+#### KeePass Password Safe (Windows, Mac, Linux) \newline 
 Ein freier Password Manager der mit einem Addon in Mozilla Firefox eingebunden werden kann und für den es auch nicht offizielle Versionen für Windows Phone, Android und iOS gibt.
 
-- Offizielle Website: https://keepass.info
+- Offizielle Website: [https://keepass.info](https://keepass.info){target=_blank}
 
 ## Editoren
 
 Markdown
 
-Markdown (*.md) ist eine Auszeichnungssprache für das schnelle Erstellen von ansprechenden Texten in einem Editor (https://markdown.de/). Es ähnelt damit HTML sowohl in der Syntax als auch im Arbeitsablauf. Ziel ist ein Entschlacken der Programmoberfläche zugunsten der Fokussierung auf den Schreibvorgang bei gleichzeitiger Plattformunabhängigkeit. Die verwendete Software setzt die Handvoll an Markdown-Auszeichnungen, die grundlegend benötigt werden, im Layout um: # (Überschrift), - Gliederung, --- horizontale Linie und |--- für Tabellen. Markdown kann dann in HTML- oder PDF-Dokumente exportiert werden. Für den Einstieg ist ein Editor mit einer kleinen Menüleiste und einer optionalen Voransicht hilfreich.
-Markdown-Dokumente werden auch in R-Studio eingesetzt und erlauben dort das Erstellen umfangreicher Dokumente mit grafisch hervorgehobenem Code und dem hieraus erstellten Ergebnis (z. B. https://github.com/hadley/ggplot2-book). Im Kern bietet dies die bis in die Berechnung und die Daten – sofern online – unmittelbar nachvollziehbare und überprüfbare Publikation und damit das Ziel guter wissenschaftlicher Praxis.
+[Markdown](https://markdown.de/){target=_blank} (\*.md) ist eine Auszeichnungssprache für das schnelle Erstellen von ansprechenden Texten in einem Editor. Es ähnelt HTML sowohl in der Syntax als auch im Arbeitsablauf. Ziel ist ein Entschlacken der Programmoberfläche zugunsten der Fokussierung auf den Schreibvorgang bei gleichzeitiger Plattformunabhängigkeit. Die verwendete Software setzt die Handvoll an Markdown-Auszeichnungen, die grundlegend benötigt werden, im Layout um: # (Überschrift), - Gliederung, --- horizontale Linie und |--- für Tabellen. Markdown kann dann in HTML- oder PDF-Dokumente exportiert werden. Für den Einstieg ist ein Editor mit einer kleinen Menüleiste und einer optionalen Voransicht hilfreich. 
+Markdown-Dokumente werden auch in R-Studio eingesetzt (\*.Rmd) und erlauben dort das Erstellen umfangreicher Dokumente mit grafisch hervorgehobenem Code und dem hieraus generierten Ergebnis (z. B. [https://github.com/hadley/ggplot2-book](https://github.com/hadley/ggplot2-book){target=_blank}). Im Kern bietet dies die bis in die Berechnung und die Daten – sofern online – unmittelbar nachvollziehbare und überprüfbare Publikation und damit das Ziel guter wissenschaftlicher Praxis.
 
-#### Markdownpad2 (Windows)
+#### Markdownpad2 (Windows) \newline 
 Die Software bietet eine Menü- und Iconleiste, wodurch das Einfügen von Auszeichnungen in der Lernphase beträchtlich erleichtert wird. Hinzu kommt die Layoutansicht neben der Textansicht. Neben der kostenpflichtigen Vollversion steht auch eine freie Version zur Verfügung. Bei letzterer ist der PDF-Export deaktiviert, lässt sich aber über den Druck von HTML in ein PDF-Dokument (z. B. mit PDF24 Creator) bewerkstelligen.
 
-- Offizielle Website: https://markdownpad.com/
+- Offizielle Website: [https://markdownpad.com/](https://markdownpad.com/){target=_blank}
 
-#### MarkdownViewer++
+#### MarkdownViewer++ \newline 
 ist ein Plugin für Notepad++. Das Editorfenster wird geteilt und rechts das Layout unmittelbar angezeigt. Eine Menüleiste für die Auszeichnungen fehlt, der Export in HTML und PDF ist aber unmittelbar möglich.
 
-- Offizielle Website: https://github.com/nea/MarkdownViewerPlusPlus
+- Offizielle Website: [https://github.com/nea/MarkdownViewerPlusPlus](https://github.com/nea/MarkdownViewerPlusPlus){target=_blank}
 
 ## Bildbearbeitung und Multimedia
 
-#### Luminance HDR (Windows, Mac, Linux)
+#### Luminance HDR (Windows, Mac, Linux) \newline 
 HDR (High Dynamic Range Imaging) erlaubt es, mit einer Bildserie Belichtungsprobleme auszugleichen. Viele Mobiltelefone bietet diese Technik bereits automatisch an.
 
-- Offizielle Website: https://qtpfsgui.sourceforge.net/
+- Offizielle Website: [https://qtpfsgui.sourceforge.net/](https://qtpfsgui.sourceforge.net/){target=_blank}
 
-#### Dia Zeichenprogramm (Windows, Mac, Linux)
+#### Dia Zeichenprogramm (Windows, Mac, Linux) \newline 
 Ein vektororientiertes Zeichenprogramm. Von besonderem Interesse sind die optional zusätzlich integrierbaren Objekte (auch Symbole, Shape oder Stencils genannt), die der Dia-Werkzeugkiste hinzugefügt werden können, z. B. Flussdiagramme.
 
-- Offizielle Website: https://dia-installer.de
+- Offizielle Website: [https://dia-installer.de](https://dia-installer.de){target=_blank}
 
-#### ImageMagic (Windows, Mac, Linux)
+#### ImageMagic (Windows, Mac, Linux) \newline 
 Grafikprogramm mit umfangreichen Optionen auf der Befehlszeile, erlaubt u. a. das Auswerten von Farbanteilen oder der Koordinaten mit bestimmten Farbwerten. Somit sind viele automatisierte Prozesse zur Metrik von eingescannten Objektzeichnungen und statistische Analysen möglich.
 
-- Offizielle Website: https://www.imagemagick.org
+- Offizielle Website: [https://www.imagemagick.org](https://www.imagemagick.org){target=_blank}
 
-#### Audacity (Windows, Mac, Linux)
+#### Audacity (Windows, Mac, Linux) \newline 
 Aufnahme und Schnitt von Audiodateien mit einer umfangreichen Funktionalität.
 
-- Offizielle Website: https://www.audacity.de/
+- Offizielle Website: [https://www.audacity.de/](https://www.audacity.de/){target=_blank}
 
-#### Ffmpeg (Windows, Mac, Linux)
+#### Ffmpeg (Windows, Mac, Linux) \newline 
 Video- und Audio-Bearbeitung auf der Befehlszeile, u. a. können einzelne Tonspuren aus Videos entfernt werden.
 
-- Offizielle Website: https://www.ffmpeg.org/
+- Offizielle Website: [https://www.ffmpeg.org/](https://www.ffmpeg.org/){target=_blank}
 
 ## Datenbank
 
-Das Installieren eines professionellen Datenbankmanagementsystems (DBMS) wie Postgres und MySQL auf Ihrem privaten Rechner ist nicht wirklich kompliziert. Die wesentlichen Aufgaben beginnen bei der Gestaltung der dort aufgesetzten Datenbanken als auch beim Betrieb auf einem Server mit den Zugriffsmöglichkeiten und -rechten (Rollen). Sie können hiermit aber durchaus auf Ihrem privaten PC und ggf. innerhalb eines kleinen geschlossenen Netzwerkes beginnen. Mit dem Zugriff auf den Server begeben Sie sich aber in die komplexeren Bereiche der IT-Sicherheit, handeln Sie umsichtig.
+Das Installieren eines professionellen Datenbankmanagementsystems (DBMS) wie PostgreSQL und MySQL auf Ihrem privaten Rechner ist nicht wirklich kompliziert. Die wesentlichen Aufgaben beginnen bei der Gestaltung der dort aufgesetzten Datenbanken als auch beim Betrieb auf einem Server mit den Zugriffsmöglichkeiten und -rechten (Rollen). Sie können hiermit aber durchaus auf Ihrem privaten PC und ggf. innerhalb eines kleinen geschlossenen Netzwerkes beginnen. Mit dem Zugriff auf den Server begeben Sie sich aber in die komplexeren Bereiche der IT-Sicherheit, handeln Sie umsichtig.
 
-#### PostgreSQL, PostGIS & PGAdmin
-PostgreSQL wird in der Archäologie gerne wegen der guten Einbindung von GIS-Funktionalität mit PostGIS verwendet (vgl. Spatialite im Desktop). Zur einfacheren Administration bietet sich die Oberfläche pdAdmin an.
-Einen Einstieg bietet: https://www.giswiki.org/wiki/PostGIS_Tutorial
+#### PostgreSQL, PostGIS & PGAdmin \newline 
+PostgreSQL wird in der Archäologie gerne wegen der guten Einbindung von GIS-Funktionalität mit PostGIS verwendet (vgl. Spatialite im Desktop). Zur einfacheren Administration bietet sich die Oberfläche pgAdmin an.
+Einen Einstieg bietet: [https://www.giswiki.org/wiki/PostGIS_Tutorial](https://www.giswiki.org/wiki/PostGIS_Tutorial){target=_blank}
 Offizielle Websites:
 
-o https://www.postgresql.org/
+- [https://www.postgresql.org/](https://www.postgresql.org/){target=_blank}
+- [https://postgis.net/](https://postgis.net/){target=_blank}
+- [https://www.pgadmin.org/](https://www.pgadmin.org/){target=_blank}
 
-o https://postgis.net/
-
-o https://www.pgadmin.org/
-
-#### MySQL & phpMyAdmin
+#### MySQL & phpMyAdmin \newline 
 MySQL ist ein sehr populäres freies DBMS, welches u. a. für bekannte Contentmanagmentsysteme (CMS) zur Gestaltung von Websites eingesetzt wird (z. B. Joomla, Typo3). Die Administration erfolgt im Browser mit phpMyAdmin. Die Nutzung eines MySQL Serbers und das Erstellen von Datenbanken wird mit MySQL Workbench deutlich erleichtert.
 Offizielle Websites:
 
-o https://www.mysql.de/
+- [https://www.mysql.de/](https://www.mysql.de/){target=_blank}
+- [https://www.phpmyadmin.net/](https://www.phpmyadmin.net/){target=_blank}
+- [https://www.mysql.com/de/products/workbench/](https://www.mysql.com/de/products/workbench/){target=_blank}
 
-o https://www.phpmyadmin.net/
+#### SQLPowerArchitect CE \newline 
+Diese Software unterstützt Sie beim Erstellen Ihrer Datenbank, Sie können sich als- auf die Struktur konzentrieren. Die in der grafischen Oberfläche erstellen Tabellen und deren Relationen werden direkt in SQL-Anweisungen übersetzt und können in dem jeweils verknüpften DBMS umgesetzt werden (forward/reverse engineering, data modeling).
 
-o https://www.mysql.com/de/products/workbench/
+- Offizielle Website: [https://www.sqlpower.ca/page/architect](https://www.sqlpower.ca/page/architect){target=_blank}
+Download: [https://www.sqlpower.ca/page/architect_download_os](https://www.sqlpower.ca/page/architect_download_os){target=_blank}
+Tutorials/Demos: [https://www.sqlpower.ca/page/architect-start](https://www.sqlpower.ca/page/architect-start){target=_blank}
 
-#### SQLPowerArchitect CE
-Diese Software unterstützt Sie beim Erstellen Ihrer Datenbank, Sie können sich also auf die Struktur konzentrieren. Die in der grafischen Oberfläche erstellen Tabellen und deren Relationen werden direkt in SQL-Anweisungen übersetzt und können in dem jeweils verknüpften DBMS umgesetzt werden (forward/reverse engineering, data modeling).
-
-- Offizielle Website: https://www.sqlpower.ca/page/architect
-Download: https://www.sqlpower.ca/page/architect_download_os
-Tutorials/Demos: https://www.sqlpower.ca/page/architect-start
-
-#### OssoBook
+#### OssoBook \newline 
 Eine Software zur Organisation und Bearbeitung von archäozoologischen Daten im Frame von xBook. Die Nutzung setzt eine Registrierung voraus.
 
-- Offizielle Website: https://www.archaeobiocenter.uni-muenchen.de/forschung/datenbank/index.html
+- Offizielle Website: [https://www.archaeobiocenter.uni-muenchen.de/forschung/datenbank/index.html](https://www.archaeobiocenter.uni-muenchen.de/forschung/datenbank/index.html){target=_blank}
 
-#### Protege und SKOSEditor
+#### Protege und SKOSEditor \newline 
 Thesaurus-Entwicklung
 
-- Offizielle Website: https://protege.stanford.edu/
-Tutorial: https://code.google.com/p/skoseditor/wiki/SKOSEditorTutorial
+- Offizielle Website: [https://protege.stanford.edu/](https://protege.stanford.edu/){target=_blank}
+Tutorial: [https://code.google.com/p/skoseditor/wiki/SKOSEditorTutorial](https://code.google.com/p/skoseditor/wiki/SKOSEditorTutorial){target=_blank}
 
 ## 3D, Virtual Reality (VR)
 
 ### Image based modeling
 
-Beim Image based modeling oder auch Stucture from motion (SFM) werden aus einer Serie sich überlappender Fotos die Kamera-Perspektiven, gemeinsame Punkte und aus diesen wiederum eine dichte 3D-Punktewolke des Motivs abgeleitet. Die anschließende Vermaschung und Texturierung führt zu einem fotorealistischen 3D-Modell. Der Softwaremarkt expandiert in diesem Segment aktuell sehr stark. Die Technik bedarf zumeist vor allem eines potenten Grafikprozessors.
+Beim *image based modeling* oder auch *stucture from motion* (SFM) werden aus einer Serie sich überlappender Fotos die Kamera-Perspektiven, gemeinsame Punkte und aus diesen wiederum eine dichte 3D-Punktewolke des Motivs abgeleitet. Die anschließende Vermaschung und Texturierung führt zu einem fotorealistischen 3D-Modell. Der Softwaremarkt expandiert in diesem Segment aktuell sehr stark. Die Technik bedarf zumeist vor allem eines potenten Grafikprozessors.
 
-Einstiegs Infoseite bei der [TU Dresden](https://tu-dresden.de/bu/umwelt/geo/ipf/photogrammetrie/studium/materialien/software_sfm).
+Einstiegs Infoseite bei der [TU Dresden]([https://tu-dresden.de/bu/umwelt/geo/ipf/photogrammetrie/studium/materialien/software_sfm).](https://tu-dresden.de/bu/umwelt/geo/ipf/photogrammetrie/studium/materialien/software_sfm).){target=_blank}
 
-#### Meshroom [Linux, Windows]
+#### Meshroom [Linux, Windows] \newline 
 Die Software von AliceVision bietet den gesamten Workflow zum Erstellen von 3D-Modellen aus Fotos. Das Programm ist frei verfügbar und wird auf Github gehostet. Hervorzuheben ist der Modular gestaltete Workflow, bei dem einzelne Bausteine auch doppelt eingefügt und mit unterschieclichen Parametern wahlweise per drag & drop eingebunden werden können. Die Software setzt für die Modellierung auf CUDA und setzt damit eine NVIDIA-Grafikkarte voraus.
 
-- Offizielle Website: https://alicevision.github.io/
+- Offizielle Website: [https://alicevision.github.io/](https://alicevision.github.io/){target=_blank}
 
-#### Visual SFM
+#### Visual SFM \newline 
 SfM-Tool von Changchang Wu mit GUI, 3DViewer.
 
-- Offizielle Website: https://ccwu.me/vsfm/
+- Offizielle Website: [https://ccwu.me/vsfm/](https://ccwu.me/vsfm/){target=_blank}
 
-#### Bundler & PMVS2/CMVS
+#### Bundler & PMVS2/CMVS \newline 
 SfM-Tool, welches die komplette Prozesskette in einem Programm implementiert hat. Zusammen mit PMVS2 ein flexibles Werkzeug mit vielen Einstellungsmöglichkeiten.
 
-- Offizielle Website: https://phototour.cs.washington.edu/bundler/
+- Offizielle Website: [https://phototour.cs.washington.edu/bundler/](https://phototour.cs.washington.edu/bundler/){target=_blank}
 
-- Offizielle Website: https://www.di.ens.fr/cmvs/
+- Offizielle Website: [https://www.di.ens.fr/cmvs/](https://www.di.ens.fr/cmvs/){target=_blank}
 
-#### Agisoft PhotoScan (Windows, Mac, Linux)
+#### Agisoft PhotoScan (Windows, Mac, Linux) \newline 
 Die proprietäre Software bietet in der Vollversion (Pro) einen vollständigen, leicht zu bedienenden Workflow inklusive der (für die Archäologie wichtigen!) Georeferenzierung, es sind somit direkt GIS-taugliche Ergebnisse exportierbar.
-Offizielle Website (mit Tutorials): https://www.agisoft.com/
+Offizielle Website (mit Tutorials): [https://www.agisoft.com/](https://www.agisoft.com/){target=_blank}
 
-#### Pix4Dmapper (Windows, Mac)
-Die Software ist speziell für die Verarbeitung von Luftaufnahmen mit Drohnen entwickelt. Neben den kostenpflichtigen Versionen gibt nach der Registrierung eine auf 15 Tage limitierte Testversion (Stand: 06/2018).
+#### Pix4Dmapper (Windows, Mac) \newline 
+Die Software ist speziell für die Verarbeitung von Luftaufnahmen mit Drohnen entwickelt. Neben den kostenpflichtigen Versionen gibt es nach der Registrierung eine auf 15 Tage limitierte Testversion (Stand: 06/2018).
 
-- Offizielle Website: https://pix4d.com.
+- Offizielle Website: [https://pix4d.com](https://pix4d.com){target=_blank}
 
-#### 3DF Zephyr (Windows)
+#### 3DF Zephyr (Windows) \newline 
 Eine auf Projekte mit bis zu 50 Bildern limitierte Programmversion steht kostenfrei zur Verfügung – für Einsteigerprojekte somit sehr gut geeignet [Stand: 08.2018]. Die kostenpflichtigen Versionen ermöglichen einen kompletten und unlimitierten Workflow.
-Offizielle Webseite: https://www.3dflow.net/
+Offizielle Webseite: [https://www.3dflow.net/](https://www.3dflow.net/){target=_blank}
 
 ### 3D
 
-#### Google SketchUp (Windows)
+#### Google SketchUp (Windows) \newline 
 Im Einstieg einfach, mit sehr vielen Video-Tutorials, kann es von der einfachen 3D-Konstruktion bis hin zu komplexen Modellen eingesetzt werden. Es gibt eine freie und eine sehr teure professionelle Version (u. a. mit dxf-Import). Zahlreiche Erweiterungen und die Programmierung mit Ruby eröffnen umfangreiche Optionen.
 
-- Offizielle Website: https://www.sketchup.com/de
+- Offizielle Website: [https://www.sketchup.com/de](https://www.sketchup.com/de){target=_blank}
 
-#### MeshLab
+#### MeshLab \newline 
 3D-Bearbeitung (z. B. Nacharbeit für Image based modeling)
 
-- Offizielle Website: https://meshlab.sourceforge.net/
+- Offizielle Website: [https://meshlab.sourceforge.net/](https://meshlab.sourceforge.net/){target=_blank}
 
-#### Autodesk Meshmixer (Windows, Mac)
+#### Autodesk Meshmixer (Windows, Mac) \newline 
 Gratis-Werkzeug zur Bearbeitung von 3D-Modellen (z.B. zur Nachbearbeitung von SfM-Modellen).
 
-- Offizielle Website: https://meshmixer.com/
+- Offizielle Website: [https://meshmixer.com/](https://meshmixer.com/){target=_blank}
 
-#### Blender
+#### Blender \newline 
 VR-Rekonstruktion auf professionellem Niveau
 
-- Offizielle Website: https://www.blender.org/
+- Offizielle Website: [https://www.blender.org/](https://www.blender.org/){target=_blank}
 
 ## ToDo-Listen, Projektmanagement
 
@@ -941,46 +939,46 @@ Komplexe, umfangreichere Projekte wie z. B. eine Examensarbeit oder eine örtlic
 
 Die Entwicklung von Apps für Mobiltelefone und Tabletts ist unüberschaubar. Die hier aufgeführten Apps sollen auf mögliche Anwendungsbereiche hinweisen. Achten Sie neben der Funktionalität auch immer auf die Rechte, die eine App beansprucht.
 
-#### OruxMaps [Android]
-Viewer für Online- und Offline-Karten mit Routenplanung, Trackaufzeichnung und Wegpunkten. Liest diverse Kartenformate (Raster und Vektor) und kann WMS (Web Map Services) und KML-Dateien darstellen. In Abhängigkeit von der Präzision des GPS eignet es sich hervorragend für die Dokumentation von Prospektionen oder die Navigation zu Fundstellen im Gelände.
+#### F-Droid \newline 
+F-Droid ist ein installierbarer Katalog mit FOSS-Apps (Free and Open Source Software) für Android. Also eine freie Alternative zum Google Playstore für freie Software.
 
-- Offizielle Website: https://www.oruxmaps.com/index_en.html
-Handbuch (dt. u. a.): https://www.oruxmaps.com/manual_en.html
+- Offizielle Website: [https://f-droid.org/](https://f-droid.org/){target=_blank) 
 
-#### ODMAND [Android]
-Das Programm verwendet Open Street Map Karten offline und bietet zudem die Suche von POI (point of interest).
+#### OSMAND [Android, iOS] \newline 
+Das Programm verwendet Open Street Map Karten offline und bietet zudem viele weitere Funktionen, z.B. Navigation und die Suche von Adressen.
 
-- Offizielle Website: https://osmand.net/
+- Offizielle Website: [https://osmand.net/](https://osmand.net/){target=_blank}
+- [OSM Wiki](https://wiki.openstreetmap.org/wiki/OsmAnd){target=_blank}
 
-#### Mobile Atlas Creator (Windows)
-Das Programm wird auf dem PC installiert und ermöglicht das Erstellen von Offline-Karten für GPS-Handgeräte und Mobiltelefone, u. a. zur Verwendung in OruxMaps. Kartenquelle sind u. a. Open-Street-Map-Karten aus dem Internet.
+#### Physics Toolbox Sensor Suite \newline 
+Dies App bietet Anwendungen für alle Sensoren eines Mobiltelefons. Hervorzuheben sind **GPS**, **Kompass**, **Wasserwaage bzw. Neigungsmessung**, **Schallstärke**, **Lichtmesser**, **Tonerzeuger**, **Oszilloskop (Ton)** und **Farbanalysator**. Hinzu kommen g-Kraft, ein Lineal, Magnetfeldmesser ... . Für die meisten Sensoren gibt es Infotexte zu den physikalischen Grundlage, den Sensoren und Übungen zum Lernen. [MacGyver](https://de.wikipedia.org/wiki/MacGyver){target=_blank} lässt grüßen.
 
-- Offizielle Website: https://mobac.sourceforge.net/index.html
+- Offizielle Website: [https://www.vieyrasoftware.net/](https://www.vieyrasoftware.net/){target=_blank}
 
-#### DFS-DrohnenApp
+#### DFS-DrohnenApp \newline 
 Die App informiert den Nutzer über geltende Regeln und Vorschriften. Durch die Aktivierung des GPS wird u.a. unmittelbar geprüft, ob man sich in einem kontrollierten Luftraum oder in einem Gebiet mit eingeschränkten Flugbereichen befindet.
-Offizielle Infosite: https://www.dfs.de/dfs_homepage/de/Drohnenflug/Regeln/ DFS-DrohnenApp/
-Erläuterung zur App: https://www.youtube.com/watch?v=D8TuvuuCHx8
+Offizielle Infosite: [https://www.dfs.de/dfs_homepage/de/Drohnenflug/Regeln/DFS-DrohnenApp/](https://www.dfs.de/dfs_homepage/de/Drohnenflug/Regeln/DFS-DrohnenApp/){target=_blank}
+Erläuterung zur App: [youtube](https://www.youtube.com/watch?v=D8TuvuuCHx8){target=_blank}
 
-#### Totalcommander Dateimanager (Android, Windows Phone)
+#### Totalcommander Dateimanager (Android, Windows Phone) \newline 
 Wer den Totalcommander bereits auf dem PC nutzt, wird diese App auf seinem Smartphone nicht missen wollen.
 
-- Offizielle Website: https://www.ghisler.com/ce.htm
+- Offizielle Website: [https://www.ghisler.com/ce.htm](https://www.ghisler.com/ce.htm){target=_blank}
 
-#### CamScanner - Phone PDF-Creator (Android)
-Eine der zahlreichen Scan-Apps, mit überwiegend guten Bewertungen. Das Einrichten eines Accounts während der Installation kann übersprungen werden! Da die App erweitert werden kann, wird leider u. a. auch der Zugriff auf die Geräteidentität und den Google-Play-Rechnungsdienst gefordert. Wirklich positiv sind die Funktionalität und das Ergebnis. Eine mögliche Alternative ist Tiny Scanner, die Zugriffsrechte beschränken sich hier auf die Kamera, Speicher und WLAN.
+#### CamScanner - Phone PDF-Creator (Android) \newline 
+Eine der zahlreichen Scan-Apps, mit überwiegend guten Bewertungen. Das Einrichten eines Accounts während der Installation kann übersprungen werden! Da die App erweitert werden kann, wird leider u. a. auch der Zugriff auf die Geräteidentität und den Google-Play-Rechnungsdienst gefordert. Wirklich positiv sind die Funktionalität und das Ergebnis. Eine mögliche Alternative ist [Tiny Scanner](https://play.google.com/store/apps/details?id=com.appxy.tinyscanner&hl=en){target=_blank), die Zugriffsrechte beschränken sich hier auf die Kamera, Speicher und WLAN.
 
-- Offizielle Website: https://camscanner-pdf-creator.en.uptodown.com/android
+- Offizielle Website: [https://camscanner-pdf-creator.en.uptodown.com/android](https://camscanner-pdf-creator.en.uptodown.com/android){target=_blank}
 
-#### Textfee (Android)
-Kann Text aus PNG und JPG Bilder oder direkt aus einer Scan-App übernehmen. Die Texterkennung erfolgt offline, das Ergebnis wird als PDF (Bild+Text) gespeichert. Die Textfee is Open Source! https://github.com/renard314/textfairy
+#### Textfee (Android) \newline 
+Kann Text aus PNG und JPG Bilder oder direkt aus einer Scan-App übernehmen. Die Texterkennung erfolgt offline, das Ergebnis wird als PDF (Bild+Text) gespeichert. Die Textfee is Open Source! [https://github.com/renard314/textfairy](https://github.com/renard314/textfairy){target=_blank}
 
-- Offizielle Website: https://play.google.com/store/apps/details?id=com.renard.ocr
+- Offizielle Website: [https://play.google.com/store/apps/details?id=com.renard.ocr](https://play.google.com/store/apps/details?id=com.renard.ocr){target=_blank}
 
-#### Wasserwaage „bubble“
+#### Wasserwaage „bubble“ \newline 
 Eine der zahlreichen Wasserwaagen-Apps, Schnüre für Profilzeichnungen können im Notfall einfach horizontal ausgerichtet werden. Verwenden Sie bei der regulären Feldarbeit jedoch bitte professionelles Vermessungsgerät!
 
-- Offizielle Website: https://play.google.com/store/apps/details?id=net.androgames.level
+- Offizielle Website: [https://play.google.com/store/apps/details?id=net.androgames.level](https://play.google.com/store/apps/details?id=net.androgames.level){target=_blank}
 
 
 ----
