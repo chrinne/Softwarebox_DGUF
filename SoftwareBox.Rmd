@@ -35,12 +35,12 @@ lang: de-DE
 
 Studierende der Ur- und Frühgeschichte oder anderer archäologischer Fächer sollten für ihr anspruchsvolles Studium gute, effiziente Hilfsmittel und Werkzeuge einsetzen. Dazu gehört auch ein angemessener Computer und entsprechende Programmen. Diese Handreichung soll Ihnen helfen, den richtigen Computer zu wählen und insbesondere die richtige Software-Ausstattung. Wenn Sie es besser wissen: prima! Wenn Sie gute persönliche Beratung haben: bestens! Aber wenn es Ihnen daran mangelt und Sie Rat suchen und lesen möchten, was ein DGUF-Expertenteam empfiehlt, dann lesen Sie weiter.
 
-- Die nachfolgende Zusammenstellung bevorzugt – auch aus Kostengründen - sogenannte Freeware, Shareware und Freie Software, letztere mit den weitesten Rechten für den Nutzer.
+- Die nachfolgende Zusammenstellung bevorzugt – auch aus Kostengründen - sogenannte Freeware, Shareware und vor allem Freie Software, letztere mit den weitesten Rechten für den Nutzer.
 - Unsere Liste hat keinen Anspruch auf Vollständigkeit. Wir stellen eine knappe Zusammenstellung vor, die von einigen (IT-erfahrenen) Archäologen und DGUF-Mitgliedern für ihre Arbeit als wichtig erachtet wird. Sie werden nicht alles davon brauchen – statten Sie Ihren Rechner nach Ihren Bedürfnissen und Arbeitsschwerpunkten mit Software aus.
 - Informieren Sie sich gleich zu Studienbeginn, welche Softwareangebote an Ihrer Hochschule bestehen. Ihre Fachschaft oder die Website des Rechenzentrums Ihrer Hochschule gibt Ihnen hierzu Auskunft. Diese Angebote sind oft kostenlos (z. B. Virenschutz) oder kostengünstig, und vor allem gibt es hierzu in der Regel auch Beratung und Schulung am jeweiligen Rechenzentrum.
 - Beachten Sie die Empfehlungen Ihrer Dozenten, denn die von ihnen genannte Software wird in den Lehrveranstaltungen sicher auch eingesetzt.
-- Die Entwicklung von Hard- und Software ist hochdynamisch. Aus diesem Grund gehen wir hier nicht in Details, sondern nöchten Sie auffordern am Ball zu bleiben und sich mit anderen auszutauschen. 
-- Für viele Programme gibt es neben informativen Webseiten auch günstige und gut geschriebene [Handbücher vom Regionalen Rechenzentrum Hannover (RRZN)]( https://www.luis.uni-hannover.de/buecher.html){target="_blank"}. Sie werden an vielen Universitätsbibliotheken auch direkt verkauft. Zudem möchten wir auf das Angebot von [Rheinwerk (Galileo) Openbook] (https://www.rheinwerk-verlag.de/openbook/){target="_blank"} verweisen.
+- Die Entwicklung von Hard- und Software ist hochdynamisch. Aus diesem Grund gehen wir hier nicht in Details, sondern möchten Sie auffordern, am Ball zu bleiben und sich mit anderen auszutauschen. 
+- Für viele Programme gibt es neben informativen Webseiten auch günstige und gut geschriebene [Handbücher vom Regionalen Rechenzentrum Hannover (RRZN)](https://www.luis.uni-hannover.de/buecher.html){target="_blank"}. Sie werden an vielen Universitätsbibliotheken auch direkt verkauft. Zudem möchten wir auf das Angebot von [Rheinwerk (Galileo) Openbook](https://www.rheinwerk-verlag.de/openbook/){target="_blank"} verweisen.
 - Software ist ein Produkt geistiger Leistung. Im Zuge einer guten Wissenschaft bezahlen wir kostenpflichtige Produkte und wir verweisen, wenn es angebracht ist, auf die von uns genutzte Software.
 
 Am Anfang stehen allgemeinen Informationen zur Hardware (Kap. 1) und zu grundlegender Software für die Büro- bzw. Studienarbeit (Kap. 2), als- einem „Starter-Set“. Die im Kapitel 3 „Erweitert“ genannte Software ist sicher noch von allgemeinem Interesse im Verlauf des Studiums, während der Bereich „Fortgeschritten“ (Kap. 4) sich bereits auf den deutlich fortgeschrittenen und zunehmend spezialisierten Nutzungsumfang im Verlauf Ihres Studiums bezieht. Unter Spezialauf­gaben (Kap. 5) wird interessante Software für sehr spezielle Aufgaben oder Probleme genannt, und der letzte Abschnitt (Kap. 6) gilt allgemein interessanter Software (Apps) für das Mobiltelefon.
@@ -58,7 +58,7 @@ Die eigentliche Frage lautet daher:
 
 Sie haben sich für ein Studium entschieden, bei dem die Erstellung längerer Texte mit Fußnoten und Abbildungen besonders wichtig ist. Bei den Abbildungen spielen neben Fotos auch Verbreitungs- und Übersichtskarten eine wichtige Rolle. Hinzu kommen Grafiken wie z. B. Balkendiagramme. Außerdem sollte Ihre EDV-Ausstattung Sie bei der Vorbereitung von Vorträgen und ggf. auch einem ersten Tagungsposter unterstützen.
 
-Wenn Sie den Computer ausschließlich für Ihr Studium einsetzen, dann reicht ein normaler Bürocomputer. Die nachfolgend aufgeführte Software für diverse Aufgaben ist auf diesen ohne Probleme zu verwenden. Wenn es unbedingt etwas mehr sein soll, dann investieren Sie in Arbeitsspeicher (RAM), s- manche Software kann hier fast nicht genug haben. Moderne Festplatten werden Sie mit Ihren Hausarbeiten nicht füllen, wohl aber mit Programmen, Filmen, Bildern und Musik. Ein schneller Prozessor (hohe Taktrate) braucht viel Energie, muss stärker gekühlt werden (Lärm und Energie) und ist für viele Büroanwendungen nicht nötig. Gerade bei Laptops wird deshalb zugunsten der Akkulaufzeit auf „langsamere“ Prozessoren gesetzt. Wenn Sie etwas mehr Geld ausgeben können und Geschwindigkeit kaufen wollen, könnten Sie statt über mehr Prozessorleistung besser über eine SSD-Festplatte nachdenken, auf der Sie das Betriebssystem und die Programme installieren, während Ihre Daten auf einer zweiten, gewöhnlichen Harddisk lagern.
+Wenn Sie den Computer ausschließlich für Ihr Studium einsetzen, dann reicht ein normaler Bürocomputer. Die nachfolgend aufgeführte Software für diverse Aufgaben ist auf diesen ohne Probleme zu verwenden. Wenn es unbedingt etwas mehr sein soll, dann investieren Sie in Arbeitsspeicher (RAM), manche Software kann hier fast nicht genug haben. Moderne Festplatten werden Sie mit Ihren Hausarbeiten nicht füllen, wohl aber mit Programmen, Filmen, Bildern und Musik. Ein schneller Prozessor (hohe Taktrate) braucht viel Energie, muss stärker gekühlt werden (Lärm und Energie) und ist für viele Büroanwendungen nicht nötig. Gerade bei Laptops wird deshalb zugunsten der Akkulaufzeit auf „langsamere“ Prozessoren gesetzt. Wenn Sie etwas mehr Geld ausgeben können und Geschwindigkeit kaufen wollen, könnten Sie statt über mehr Prozessorleistung besser über eine SSD-Festplatte nachdenken, auf der Sie das Betriebssystem und die Programme installieren, während Ihre Daten auf einer zweiten, gewöhnlichen Harddisk lagern.
 
 Bedenkenswert ist auch die Größe des Monitors, sogenannte Widescreen-Formate (16:9, 16:10 oder 21:9) sind heute Standard und 24-29 Zoll sind oft nicht teurer als 21 Zoll. Bei 16:9 sollten 1920 x 1080 Pixel (Full-HD) möglich sein. Bei der Arbeit mit diversen Programmfenstern steigt der Platzbedarf auf dem Bildschirm und es ist vorteilhaft, wenn dann ein zweiter Monitor angeschlossen werden kann. Für Notebooks ist ein lokaler Bildschirm am Schreibtisch für ein entspanntes Arbeiten zu empfehlen. Achten Sie deshalb in beiden Fällen auf die unterschiedlichen Anschlüsse (HDMI, DVI (rückläufig), VGA [veralter Standard]).
 
@@ -88,9 +88,13 @@ Auch hier gilt: Was wollen Sie? Für zahlreiche der nachfolgenden Anwendungen, z
 | | leidvolle Erfahrung: Laptops werden eher geklaut und leichter beschädigt, |
 | | achten Sie auf den Monitor: brillante Displays wirken wie Spiegel mit Lichtreflexen bei Sonneneinfall. |
 
+| Tip |
+|------|
+|Wenn's ein Laptop sein soll und das Budget sehr knapp ist: Denken Sie über den Kauf eines Gebrauchtgerätes mit Garantie bei einem seriösen Händler nach. Viele Firmen stoßen ihre sehr hochwertigen Geräte nach ca. 3 Jahren ab. |
+
 ## Die Gretchenfrage: Welches Betriebssystem (Operating System, OS)?
 
-Diese Frage stellt sich oft bereits beim Kauf der Hardware, da beides fest verbunden ist (Mac) oder beim Kauf schon vorinstalliert dabei ist (Windows). Beides ist proprietär (Eigentum des Herstellers) und kostenpflichtig. Alternativen stellen diverse Linux-Distributionen dar, z. B. Debian, Ubuntu, Gentoo, Red Hat, Suse, ArchLinux etc. Diese können kostenfrei bezogen und genutzt werden.
+Diese Frage stellt sich oft bereits beim Kauf der Hardware, da beides fest verbunden ist (Mac) oder beim Kauf schon vorinstalliert dabei ist (Windows). Beides ist proprietär (Eigentum des Herstellers) und kostenpflichtig. Alternativen stellen diverse Linux-Distributionen dar, z. B. Debian, Ubuntu, Gentoo, Red Hat, Suse, ArchLinux etc. Diese können kostenfrei bezogen und genutzt werden (s. [Betriebssysteme](#OS)).
 
 - Entscheidungshilfen können sein: Was haben alle Anderen, mit denen ich mich austausche und die ich ggf. um Rat fragen kann?
 - Es gibt Programme, die nur auf bestimmten OS laufen: z. B. AutoCAD, ArcGIS, MS Access (Windows). Faustregel: kostenpflichtige Software läuft auf kostenfreiem OS nicht. Kostenfreie Software auf kostenpflichtigem OS aber schon.
@@ -116,7 +120,7 @@ Shareware ist eine grundsätzlich kostenpflichtige Software, die aber zu Probezw
 
 Open Source bedeutet, dass der Quelltext des Programms offen liegt, er kann somit in einer Gemeinschaft weiter entwickelt werden. Ein Beispiel hierfür ist Mozilla Firefox (s. u.). Im Unterschied zum Vorangehenden ist es demnach keine Aussage zum Vertriebsmodell.
 
-## Betriebssysteme (OS)
+## Betriebssysteme (OS) {#OS}
 
 Betriebssysteme stellten früher die grundlegende Software für die Nutzung der Hardware bereit. Heute bieten sie zusätzlich eine umfangreiche Sammlung an Programmen für diverse Aufgaben, von der Text- über die Bildbearbeitung bis hin zur multimedialen Unterhaltung.
 
@@ -132,10 +136,11 @@ Sehr weit verbreitetes OS und auf vielen Geräten vorinstalliert. Die Software i
 Ein in sich abgestimmtes Paket aus Hardware und Betriebssystem, damit können aber einzelne Komponenten, z. B. die Grafikkarte, nicht ohne weiteres ausgetauscht werden. Integrale Bestandteile von Mac OS entsprechen Linux, dies hilft bei Hintergrundwissen in beiden OS. Einige Programme, z. B. MS Access, sind nicht für Mac verfügbar.
 
 ### Linux
-Linux steht in zahlreichen, für eden Einsteiger verwirrend vielen Distributionen zur Verfügung. Einen ersten Überblick mit den aktuellen Top-Ten nach Download-Zahlen bietet [Distrowatch](https://distrowatch.com/dwres.php?resource=major){target=_blank}. Die Distributionen unterscheiden sich teilweise deutlich in der Dateigröße (download), den Anforderungen an die Hardware, der Oberfläche und integrierten oder nachzuinstallierenden Anwendungen. Auch hier gilt: fragen Sie auch Kommilitoninnen oder Kommilitonen, die Ihnen ggf. bei Problemen helfen können. 
+Linux steht in zahlreichen, für jeden Einsteiger verwirrend vielen Distributionen zur Verfügung. Einen ersten Überblick mit den aktuellen Top-Ten nach Download-Zahlen bietet [Distrowatch](https://distrowatch.com/dwres.php?resource=major){target=_blank}. Die Distributionen unterscheiden sich teilweise deutlich in der Dateigröße (download), den Anforderungen an die Hardware, der Oberfläche und integrierten oder nachzuinstallierenden Anwendungen. Auch hier gilt: fragen Sie auch Kommilitoninnen oder Kommilitonen, die Ihnen ggf. bei Problemen helfen können. 
 
 #### Ubuntu \newline
 Gilt als sehr nutzerfreundlich und ist z. Z. weit verbreitet. Zur Wahl stehen zahlreiche Desktop-Oberflächen (Lubuntu, Kubuntu, Xubuntu), auch solche für schwache Hardware.
+
 - Offizielle Website: [https://www.ubuntu.com/](https://www.ubuntu.com/){target=_blank}
 - Deutschsprachiges Forum: [https://ubuntuusers.de/](https://ubuntuusers.de/){target=_blank}
 - Onlinebuch: [https://www.rheinwerk-verlag.de/openbook/](https://www.rheinwerk-verlag.de/openbook){target=_blank}
@@ -144,6 +149,7 @@ Gilt als sehr nutzerfreundlich und ist z. Z. weit verbreitet. Zur Wahl stehen za
 Ersteres beruht auf Ubuntu und bindet im Unterschied „nicht freie Software“ in die Paketverwaltung direkt mit ein, was für Anfänger die bequemere Lösung ist.
 
 - Offizielle Website: [https://www.linuxmint.com](https://www.linuxmint.com){target=_blank}
+
 #### Debian \newline
 Dank der sehr langen Entwicklungsgeschichte mit zahlreichen „Ablegern“, z. B. Ubuntu, ist es sehr weit verbreitet. Raspbian für den Minirechner Raspberry Pi beruht ebenfalls auf Debian.
 
@@ -158,13 +164,13 @@ Ein vor allem in Deutschland verbreitetes Derivat, welches als benutzerfreundlic
 
 ### Browser
 
-Gängige Browser zum Surfen im Internet sind z. B. Microsoft Edge, Mozilla Firefox, Google Chrome, Safari (Mac) usw. 
+Gängige Browser zum Surfen im Internet sind z. B. Microsoft Edge (Windows), [Mozilla Firefox](https://www.mozilla.org/de/firefox/){target=_blank}, [Google Chrome](https://www.google.de/intl/de/chrome/){target=_blank}, [Brave](https://brave.com/de/), [Opera](https://www.opera.com/de){target=_blank}, Safari (Mac) usw. 
 
-Nicht alle Browser können oder wollen alles unterstützen, z.B. Skype & Firefox oder DFN-Konferenz & Safari. 
+Nicht alle Browser können oder wollen alles unterstützen, z.B. Skype & Firefox oder [DFN-Konferenz](https://www.conf.dfn.de/){target=_blank} & Safari. Hinzu kommt die Diskussion um die Privatsphäre des Nutzers,  Sicherheitsaspekte und Geschwindigkeit. Bei jedem Browser entscheiden persönliche Einstellungen und ergänzende Add-ons ebenfalls über die vorgenannten Aspekte. Die Autoren bevorzugen Firefox und Brave.
 
 #### Mozilla Firefox \newline
 
-Firefox wird wegen seiner zahlreichen Addons erwähnt, z. B. für KeePass (s. u.) und Adblock Plus, das unliebsame Werbebanner unterdrückt.
+Firefox wird wegen seiner zahlreichen Add-ons erwähnt, z. B. für KeePass (s. u.) und Adblock Plus, das unliebsame Werbebanner unterdrückt.
 
 - Offizielle Website: [https://www.mozilla.org](https://www.mozilla.org){target=_blank}
 
@@ -195,36 +201,33 @@ Die Software wird auf dem PC und dem Smartphone („client“) installiert. Prin
 
 Aktualisieren Sie ihr Betriebssystem regelmäßig, aktivieren Sie bei Windows unbedingt die Firewall und seien Sie umsichtig bei der Freigabe für Programme oder Prozesse. Bitter aber wahr, das Problem sitzt oft vor dem PC, auch bei Datenverlust. 
 
-### Datei- und Orndernamen
+### Datei- und Ordnernamen
 
 Nicht alles, was auf ihrem PC (Windows?) möglich ist, wird in anderen Systemen korrekt dargestellt oder kann sogar ungültig sein (z.B. auf CD/DVD). Weitere Informationen finden Sie bei [Wikipedia](https://de.wikipedia.org/wiki/Dateiname){target=_blank}.  Sinnvolle  Datei- und Ordnernamen:
+
 - sind möglichst kurz aber zugleich verständlich,
 - beschreiben den Inhalt der Datei,
 - beinhalten keine Sonderzeichen (ä, ö, ü, ß, *, <, ? etc.) oder Leerzeichen.
 
 ### Virenscanner
 
-Sicherheit in diesem Bereich ist ein Muss, Sie gefährden sonst sich und andere. Windows 10 hat mit Defender einen eigenen, gut integrierten Virenschutz. Zusätzliche Scanner können das System bremsen. Mit sehr großer Wahrscheinlichkeit bietet Ihre Universität kostenlos eine Anti-Viren-Software an. Informieren Sie sich auf der Website Ihres Rechenzentrums. Sollte es wider Erwarten kein Angebot geben:
+Sicherheit in diesem Bereich ist ein Muss, Sie gefährden sonst sich und andere. Dieser kurze [Text des BSI](https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Schutzprogramme/Virenschutzprogramme/virenschutzprogramme.html){target=_blank} informiert über wichtige Grundlagen. Windows 10 hat mit Defender einen eigenen, gut integrierten Virenschutz. Zusätzliche Scanner können das System bremsen. Mit sehr großer Wahrscheinlichkeit bietet Ihre Universität kostenlos eine Anti-Viren-Software an. Informieren Sie sich auf der Website Ihres Rechenzentrums. Sollte es wider Erwarten kein Angebot geben:
 
-#### Avira free Antivirus \newline
+#### Avira Free Free Security for Windows \newline
 
 - Offizielle Website: [https://www.avira.com](https://www.avira.com){target=_blank}
 
-#### McAfee Security Scan Plus \newline
-Ein Virenscanner mit einer sehr langen Entwicklungsgeschichte.
+#### McAfee Total Protection \newline
 
-- Offizielle Website: [https://home.mcafee.com/downloads/free-virus-scan](https://home.mcafee.com/downloads/free-virus-scan){target=_blank}
+Ein kostenpflichtiger Virenscanner mit einer sehr langen Entwicklungsgeschichte. Inzwischen ist nur noch eine Testversion für 30 Tage kostenlos.
 
-#### Panda \newline
-Ein sehr schlanker Virenscanner, der Cloud-Funktionen und die „Intelligenz“ des Web nutzt.
+- Offizielle Website: [https://www.mcafee.com](https://www.mcafee.com){target=_blank}
 
-- Offizielle Website: [https://www.pandasecurity.com](https://www.pandasecurity.com){target=_blank}
-
-**Installieren Sie niemals zwei unterschiedliche Virenscanner auf einem System!**
+**Wichtig: Installieren Sie niemals zwei unterschiedliche Virenscanner auf einem System!** 
 
 ### Datensicherheit: Backup
 
-Sichern Sie einzelne Arbeitsschritte bzw. Dateiversionen, um notfalls nachträglich bemerkte Fehler mit alten Daten beheben zu können (Versionierung). Achten Sie auf sinnvolle Namen, z.B. eine einfache Zählung oder das Datum mit Jahr-Monat-Tag (meine_Datei-01.txt, meine_Datei-20150901.txt).
+Sichern Sie einzelne Arbeitsschritte bzw. Dateiversionen, um notfalls nachträglich bemerkte Fehler mit alten Daten beheben zu können (Versionierung). Achten Sie auf sinnvolle Namen, z.B. eine einfache Zählung oder das Datum mit Jahr-Monat-Tag (meine-Datei_01.txt, meine-Datei_20150901.txt).
 
 Arbeiten Sie möglichst lokal und kopieren Sie in regelmäßigen Abständen die Daten auf einen weiteren Datenträger, z. B. externe Festplatte oder USB-Stick. Lagern Sie ein Backup auch räumlich getrennt, z.B. in einer anderen Wohnung, im Keller oder bei ihren Eltern. Die einzelnen Datenträger haben Vor- und Nachteile: 
 
@@ -239,10 +242,13 @@ Arbeiten Sie möglichst lokal und kopieren Sie in regelmäßigen Abständen die 
 Datensicherheit schließt ggf. auch das vollständige Löschen von Daten ein. Denn auch nach dem Leeren des „Papierkorbs“ sind die Daten nur mit einem Löschvermerk versehen und mit entsprechender Software zur Datenrettung wieder herstellbar, sofern die betreffenden Bereiche auf der Festplatte nicht neu beschrieben wurden. Wenn Sie z. B. USB-Sticks oder Festplatten weitergeben oder Ihren Laptop verkaufen wollen, können dort eventuell auch vermeintlich gelöschte Informationen für Experten noch lesbar sein. Weitere aktuelle Informationen zur Datensicherheit finden Sie beim Bundesamt für Sicherheit in der Informationstechnik ([BSI](https://www.bsi.bund.de/){target=_blank}.
 
 #### Befehlszeile: \newline
-**cipher /w** (Windows), **shred**, **wipe** (Ubuntu) löscht die Dateien oder Ordner und überschreibt den Bereich direkt
+
+**cipher /w** (Windows), **shred**, **wipe** (Ubuntu) löscht die Dateien oder Ordner und überschreibt den Bereich direkt.
+
+cipher wird im Terminal ausgeführt und zeigt genuin die Verschlüsselung von Dateien und Verzeichnissen. Mit 'cipher /w:laufwerk:\\ordner\\datei' wird die zuvor gelöschte Datei endgültig entfernt. Rufen Sie zuvor 'cipher /?' für umfangreiche Infos auf.
 
 #### CCleaner (Windows) \newline
-(s. u.) bietet eine Wipe-Option
+([s. u.](#ccleaner)) bietet eine Wipe-Option
 
 #### Ganze Festplatten \newline 
 sollten von einer Linux-Live-CD aus gelöscht werden, z. B. mit secure-delete.
@@ -556,7 +562,7 @@ Weitere Informationen und Verweise auf Kritik an dropbox finden Sie u. a. bei Wi
 
 Der alltägliche Umgang mit dem Rechner führt zwangsläufig zu einer Werkzeugsammlung. Wie im eigenen Haushalt kommt zu Hammer und Schraubendreher das eine oder andere hinzu. Interessant könnten folgende Programme sein.
 
-#### CCleaner (Windows) \newline 
+#### CCleaner{#ccleaner} (Windows) \newline 
 Software zum Bereinigen der Festplatte von „Altdaten“ und der Windowsregistrierung von unzusammenhängenden (veralteten) Einträgen. Letzteres ist für neuere Windows-Versionen (8 ff.) angeblich obsolet.
 Mit der Funktion Tools - Drive Wiper können Datenbereiche und ganze Festplatten durch mehrfaches Überschreiben definitiv gelöscht werden.
 
