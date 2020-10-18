@@ -261,12 +261,12 @@ können auf der Oberseite bis in die Aluminiumschicht radial zerkratzt werden.
 Der Dateiexplorer von Windows erlaubt die grundlegenden Funktionen wie Kopieren und Suchen. In vielen Fällen reicht dies nicht aus, hier ist z. B. folgendes Programm hilfreich:
 
 #### Totalcommander (Windows) \newline
-Neben dem einfachen Kopieren von Dateien können Sie mit diesem Programm auch Verzeichnisse synchronisieren, komplexe Mehrfach-Umbenennungen durchführen, nach Änderungsdatum suchen und noch vieles mehr. Totalcommander ist ein Schweizer Taschenmesser im Bereich des Dateimanagements. Die Komplexität der Optionen kann mit zunehmendem Anspruch durch viele Plugins ausgebaut werden. Die Testversion hat einen so genannten *[nag screen](https://en.wiktionary.org/wiki/nag_screen){target=_blank}*.
+Neben dem einfachen Kopieren von Dateien können Sie mit diesem Programm auch Verzeichnisse synchronisieren, komplexe Mehrfach-Umbenennungen durchführen, nach Änderungsdatum suchen und noch vieles mehr. Totalcommander ist ein Schweizer Taschenmesser im Bereich des Dateimanagements. Die Komplexität der Optionen kann mit zunehmendem Anspruch durch viele Plugins ausgebaut werden. Die Testversion hat einen so genannten *[nag screen](https://en.wiktionary.org/wiki/nag_screen){target=_blank}*. Die Lizenz kostet für Studentinnen und Studenten EUR: 27,75 + MWSt (18.10.2020). 
 
 - Offizielle Website: [https://www.ghisler.com/deutsch.htm](https://www.ghisler.com/deutsch.htm){target=_blank}
 
 #### AltapSalamander \newline
-Dieses Programm zur Dateiverwaltung bietet einen, dem Totalcommander vergleichbaren Umfang. Die freie Testversion kann 30 Tage genutzt werden, der Preis beträgt dann 24,95 EUR und ist demnach etwas günstiger als die Linzenz für den Totalkommander (Stand: 03.06.2018). Für Bildungseinrichtungen kostet die pauschale Lizenz 44,80 EUR (Stand: 03.06.2018).
+Dieses Programm zur Dateiverwaltung bietet einen, dem Totalcommander vergleichbaren Umfang. Die Version 4.0 *freeware* kann privat und kommerziell mit allen Plugins genutzt werden (18.10.2020).
 
 - Offizielle Website: [https://www.altap.cz](https://www.altap.cz){target=_blank}
 
@@ -286,26 +286,29 @@ Das Programm kann über ein schlichtes Fenster bedient werden oder Sie markieren
 
 - Offizielle Website: [https://www.7-zip.org/](https://www.7-zip.org/){target=_blank}
 
-## Austausch und Archivierung: Portable Document Format (PDF)
+## Austausch und Archivierung
 
-PDF ist ein Dateiformat für elektronische Dokumente, das unabhängig vom ursprünglichen Anwendungsprogramm, vom Betriebssystem oder von der Hardwareplattform originalgetreu weitergegeben werden kann. Zudem können unterschiedliche Sicherheitsvorkehrungen aktiviert werden: Das Kopieren, Editieren, Drucken etc. der Datei kann so verhindert werden. PDF ist ein Containerformat mit vielen Optionen, nur die Spezifikation „PDF/A“ eignet sich zur Langzeitarchivierung. Weitere Informationen finden Sie bei [IANUS-FDZ]([https://www.ianus-fdz.de/it-empfehlungen/node/186).](https://www.ianus-fdz.de/it-empfehlungen/node/186).){target=_blank}
+### Portable Document Format (PDF)
 
-Das Format PDF wurde von Adobe entwickelt, viele Programme schreiben und lesen inzwischen PDF und Windows bietet vom System aus direkt einen PDF-Drucker an.
+PDF ist ein Dateiformat für elektronische Dokumente (mehrheitlich Text und Bilder), das unabhängig vom ursprünglichen Anwendungsprogramm, vom Betriebssystem oder von der Hardwareplattform originalgetreu weitergegeben werden kann. Es ist damit das führende Austauschformat für Dokumente. Zudem können unterschiedliche Sicherheitsvorkehrungen aktiviert werden: Das Kopieren, Editieren, Drucken etc. der Datei kann so verhindert werden. PDF ist ein Containerformat mit vielen Optionen, nur die Spezifikation „PDF/A“ eignet sich zur Langzeitarchivierung. Weitere Informationen finden Sie bei [IANUS-FDZ](https://www.ianus-fdz.de/it-empfehlungen/node/186){target=_blank}.
+
+Das Format PDF wurde von Adobe entwickelt, viele Programme schreiben und lesen inzwischen PDF, z.B. LO Writer oder MS Word, und Windows bietet vom System aus einen PDF-Drucker an.
 
 #### PDF24 Creator (Windows) \newline
 In PDF-Dateien aus jedem installierten Programm drucken, einzelne PDF-Dateien zusammenführen, einzelne Seiten entnehmen oder verschieben, Metadaten ergänzen und vieles mehr. Die Möglichkeiten gehen weit über den Export in PDF oder die Funktionalität des Adobe Readers hinaus. ** Wichtig: Sie können die Abfrage zu einem Account überspringen!**
 
 - Offizielle Website: [https://de.pdf24.org/creator.html](https://de.pdf24.org/creator.html){target=_blank}
 
-#### PDF-XChange Viewer (Windows) \newline
-Dieses Programm bietet die automatische Texterkennung von gescannten Dokumenten (OCR) und ist damit eine sehr wichtige Ergänzung zum vorigen Programm. Texte können damit schnell nach Stichwörtern durchsucht werden. Standardsprachen sind Deutsch, Englisch, Französisch und Spanisch, diese können aber umfangreich ergänzt werden.
+#### PDF-XChange Editor (Windows) \newline
+Dieses Programm bietet die automatische Texterkennung von gescannten Dokumenten (OCR) und ist damit eine sehr wichtige Ergänzung zum vorigen Programm. Texte können damit schnell nach Stichwörtern durchsucht werden. Standardsprachen sind Deutsch, Englisch, Französisch und Spanisch, diese können aber umfangreich ergänzt werden. Die Plus Version bietet die Möglichkeit Formulare zu erstellen.
 
 - Offizielle Website: [https://www.tracker-software.com/](https://www.tracker-software.com/){target=_blank}
 
-#### PDF tk free \newline
-Seiten entnehmen, zusammenführen und einiges mehr. Der Autor Sid Steward hat ein sehr informatives Buch zu PDF veröffentlicht „PDF Hacks: 100 Industrial-Strength Tips & Tools“ (2004), online lesbar: [https://blog.rubypdf.com/preview-pdf-hacks-online/](https://blog.rubypdf.com/preview-pdf-hacks-online/){target=_blank}
+### Archivierung
 
-- Offizielle Website: [https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/){target=_blank}
+Die Archivierung digitaler Objekte ist ein komplexes Thema. Ganz grundlegend besteht es einerseits aus der Erhaltung der digitalen Information (bitstream preservation) und andererseits dem "Verstehen" der digitalen Information. Nicht alle Dateiformate sind gleichermaßen für die Archivierung geeignet. Als grobe Faustregel kann gelten: 1. je schlichter das Format ist, z.B. textbasiertes Markdown, oder 2. je weiter verbreitet das Format ist (JPG) umso länger gibt es Software, die das Format noch liest. Aktuelle Office-Formate (LO und MS) setzen auf eine XML-Struktur ([Extensible Markup Language](https://de.wikipedia.org/wiki/Extensible_Markup_Language){target=blank}).  
+
+Einen nach Aufgabenbereichen bzw. Formatgruppen gut gegliederten Einstieg in das Thema Archivierung bieten die [IT-Empfehlungen von IANUS FDZ](https://www.ianus-fdz.de/it-empfehlungen/inhalt){target=blank}. 
 
 ## Bürosoftware / Office-Paket
 
