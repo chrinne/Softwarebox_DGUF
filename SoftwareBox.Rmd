@@ -432,7 +432,9 @@ Eine Literaturdatenbank, die an einigen Universitäten für Studierende vergüns
 
 ## Bildbearbeitung und Grafik
 
-Grafik und Design kann professionell betrieben werden, das hier weit verbreitete Programmpaket (d. h. der Quasi-Standard) ist die [Adobe Creative Suite (CS)](https://www.adobe.com/de/creativecloud.html){target=_blank}, die seit 2015 unter der Bezeichnung „Cloud“ nur noch im Abonnement bezogen werden kann. IT-Mitarbeiter an deutschen Hochschulen haben eine Liste von Alternativen zu den Adobe-Produkten zusammengestellt ([PDF](https://www.rz.uni-kiel.de/de/angebote/software/adobe-software/adobe-alternativen){target=_blank}. Eine ebenfalls kommerzielle Alternative ist das Paket [CorelDRAW Graphics Suite](https://www.coreldraw.com/de/product/grafikprogramm/){target=_blank}, das weiterhin zum Kauf auch als deutlich vergünstigte [Studentenversion](https://www.coreldraw.com/de/product/home-student){target=_blank} angeboten wird. Freie Alternativen sind:
+Grafik und Design kann professionell betrieben werden, das hier weit verbreitete Programmpaket (d. h. der Quasi-Standard) ist die [Adobe Creative Cloud (CC)](https://www.adobe.com/de/creativecloud.html){target=_blank}, und kann nur noch im Abonnement bezogen werden. IT-Mitarbeiter an deutschen Hochschulen haben eine Liste von Alternativen zu den Adobe-Produkten zusammengestellt ([PDF](https://www.rz.uni-kiel.de/de/angebote/software/adobe-software/adobe-alternativen){target=_blank}). Eine ebenfalls kommerzielle Alternative ist das Paket [CorelDRAW Graphics Suite](https://www.coreldraw.com/de/product/grafikprogramm/){target=_blank}, das weiterhin zum Kauf und auch als deutlich vergünstigte und abgespeckte [*Essentials*-Version](https://www.coreldraw.com/de/product/home-student/){target=blank} angeboten wird. 
+
+Freie Alternativen sind:
 
 #### Gimp (Windows, Mac, Linux) \newline 
 Ein freies Grafikprogramm für Rastergrafik mit umfassender Funktionalität, die weit über den üblichen Bedarf hinausreicht.
