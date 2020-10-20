@@ -306,7 +306,7 @@ Dieses Programm bietet die automatische Texterkennung von gescannten Dokumenten 
 
 ### Archivierung
 
-Die Archivierung digitaler Objekte ist ein komplexes Thema. Ganz grundlegend besteht es einerseits aus der Erhaltung der digitalen Information (bitstream preservation) und andererseits dem "Verstehen" der digitalen Information. Nicht alle Dateiformate sind gleichermaßen für die Archivierung geeignet. Als grobe Faustregel kann gelten: 1. je schlichter das Format ist, z.B. textbasiertes Markdown, oder 2. je weiter verbreitet das Format ist (JPG) umso länger gibt es Software, die das Format noch liest. Aktuelle Office-Formate (LO und MS) setzen auf eine XML-Struktur ([Extensible Markup Language](https://de.wikipedia.org/wiki/Extensible_Markup_Language){target=blank}).  
+Die Archivierung digitaler Objekte ist ein komplexes Thema. Ganz grundlegend besteht es einerseits aus der Erhaltung der digitalen Information (bitstream preservation) und andererseits dem "Verstehen" der digitalen Information. Nicht alle Dateiformate sind gleichermaßen für die Archivierung geeignet. Als grobe Faustregel kann gelten: 1. je schlichter das Format ist, z.B. textbasiertes Markdown, oder 2. je weiter verbreitet das Format ist (JPG), umso länger gibt es Software, die das Format noch liest. Aktuelle Office-Formate (LO und MS) setzen auf eine XML-Struktur ([Extensible Markup Language](https://de.wikipedia.org/wiki/Extensible_Markup_Language){target=blank}).  
 
 Einen nach Aufgabenbereichen bzw. Formatgruppen gut gegliederten Einstieg in das Thema Archivierung bieten die [IT-Empfehlungen von IANUS FDZ](https://www.ianus-fdz.de/it-empfehlungen/inhalt){target=blank}. 
 
@@ -314,7 +314,7 @@ Einen nach Aufgabenbereichen bzw. Formatgruppen gut gegliederten Einstieg in das
 
 Folgende Programmpakete ermöglichen eine grundlegende Büroarbeit, neben dem Schreiben von Texte gehört hierzu das Gestalten von Tabellen oder Datenlisten, Präsentationen und auch Datenbanken. Die bekannten Pakete sind: LibreOffice, OpenOffice und Microsoft Office. **Achten Sie auf Ihren Namen und das Kürzel bei der Installation, es wird in den Metadaten (Autor) für jede erstellte Datei eingetragen.**
 
-#### LibreOffice (LO) (Windows, Mac, Linux) \newline
+### LibreOffice (LO) (Windows, Mac, Linux) \newline
 Ein freies umfangreiches Softwarepaket mit einzelnen Programmen für Text (Writer), Tabellenkalkulation (Calc), Präsentationen (Impress), Datenbanken (Base), Grafikerstellung (Draw) und einem Formeleditor (Math). \newline
 Die Datenbank Base nutzt mit „HSQL“ genuin eine eher untypische SQL-Version. Die Stärke und der Schwerpunkt der Entwicklung in Libre Office liegen eindeutig nicht im Bereich Datenbank.
 
@@ -340,10 +340,10 @@ Auf der Homepage von [Martina Hoffmann-Seidel](https://hoffmann-seidel.de){targe
 - eine grundlegende [Einführung](https://hoffmann-seidel.de/fileadmin/schulungsunterlagen_neu/Word_16_Einfuehrung.pdf){target=_blank} und
 - eine umfangreichere [Weiterführung](https://hoffmann-seidel.de/fileadmin/schulungsunterlagen_neu/Word_16_Weiterfuehrung.pdf)
 
-### LO/O- Writer oder MS Word:
+### LO/OO-Writer oder MS Word:
 Mit diesen Programmen schreiben und gestalten Sie Text. Nehmen Sie sich vor Ihrer ersten Hausarbeit etwas Zeit, sich mit der Gliederung, den Formatvorlagen, dem Einbinden von Grafik und der Beschriftung von Abbildungen vertraut zu machen.
 
-### LO/O- Calc oder MS Excel:
+### LO/OO-Calc oder MS Excel:
 Dies sind Tabellenkalkulationsprogramme, mit denen Daten in begrenztem Umfang verwaltet (sortiert, gefiltert) und berechnet oder verknüpft werden können. Zellverweise („=A1“, „=A1:A15“), Statistik („=Mittelwert(A1:A15)“), Zusammenfassung (Pivotieren), diverse Grafiken (z. B. Balkendiagramm) und eine einfache Handhabung für ein ansprechendes Design der Tabellen sind ihre Stärke.
 
 ### LO/O- Impress oder MS Powerpoint:
@@ -363,15 +363,15 @@ Nach dem Einscannen eines Bildes wollen Sie die Grafik noch ausschneiden, drehen
 
 | Info |
 |-----|
-| Es gibt zwei grundlegend unterschiedliche Arten von Grafik. Eine [Rastergrafik](https://de.wikipedia.org/wiki/Rastergrafik){target=_blank} besteht aus Rasterpunkten die unterschiedliche Farbwerte darstellen. Gängige Formate sind JPG, PNG und TIF. Eine [Vektorgrafik](https://de.wikipedia.org/wiki/Vektorgrafik){target=_blank} besteht dagegen aus Vektoren (Linien, Kurven etc.) die ggf. auch Farbflächen definieren. Im Unterschied zur Rastergrafik sind bekannte Dateiformate hier oft proprietär (AI von Adobe, CDR von Corel), eine Ausnahme ist SVG (scalable vector graphics, genutzt u. a. von Inkscape). Rastergrafik führt bei großen Bildern zu sehr großen Dateien und unschönen Effekten beim Skalieren. Dateien im Vektorformat werden mit zunehmender Komplexität größer, nicht aber durch die Dimension des Bildes und eine Linie bleibt stets eine Linie, während sie bei einer Rastergrafik beim Vergrößern in einzelne Pixel zerfällt. Beide Formate haben also Vor- und Nachteile.
+| Es gibt zwei grundlegend unterschiedliche Arten von Grafik. Eine [Rastergrafik](https://de.wikipedia.org/wiki/Rastergrafik){target=_blank} besteht aus Rasterpunkten die unterschiedliche Farbwerte darstellen. Gängige Formate sind JPG, PNG und TIF. JPG arbeiten mit diversen, aber vollständig definierten Farbräumen und einer Kompression, durch die Qualität mit jedem Speichern reduziert wird. PNG arbeitet mit indexierten Farben und kann so Speicher sparen. TIF ist in der regel unkomprimiert (selten LZW) und bietet die höchste Qualität. Eine [Vektorgrafik](https://de.wikipedia.org/wiki/Vektorgrafik){target=_blank} besteht dagegen aus Vektoren (Linien, Kurven etc.) die ggf. auch Farbflächen definieren. Im Unterschied zur Rastergrafik sind bekannte Dateiformate hier oft proprietär (AI von Adobe, CDR von Corel), eine Ausnahme ist SVG (scalable vector graphics, genutzt u. a. von Inkscape). Übliche Farbräume sind RGB und CMYK. Rastergrafik führt bei großen Bildern zu sehr großen Dateien und unschönen Effekten beim Skalieren. Dateien im Vektorformat werden mit zunehmender Komplexität größer, nicht aber durch die Dimension des Bildes und eine Linie bleibt stets eine Linie, während sie bei einer Rastergrafik beim Vergrößern in einzelne Pixel zerfällt. Beide Formate haben also Vor- und Nachteile.
 
 #### Irfan View (Windows) \newline
-Diese Software ist viel mehr als ein Bildbetrachter und in vielen Bereichen nützlicher als Paint oder 3D Paint von Windows. Neben den oben genannten Optionen bietet das Programm eine Stapelverarbeitung für alle Konvertierungen und das Umbenennungen der Dateien. Sie können mit dem Programm zeichnen (<F12>) und es kann durch zahlreiche Plugins erweitert werden bis hin zu einer einfachen persektivischen Entzerrung.
+Diese Software ist viel mehr als ein Bildbetrachter und in vielen Bereichen nützlicher als Paint oder 3D Paint von Windows. Neben den oben genannten Optionen bietet das Programm eine Stapelverarbeitung für alle Konvertierungen und das Umbenennungen der Dateien. Sie können mit dem Programm zeichnen (\<F12>) und es kann durch zahlreiche Plugins erweitert werden bis hin zu einer einfachen persektivischen Entzerrung.
 
 - Offizielle Website: [https://www.irfanview.com/](https://www.irfanview.com/){target=_blank}
 
 ### XnView und XmpView (Windows)
-Programm zum Verwalten und Betrachten von Bildern. Dazu bietet es zahlreiche weitere Optionen, von denen die Bearbeitung der IPTC-Daten einschließlich Im- und Export für ganze Bildsammlungen hervorzuheben ist. IPTC-Daten sind Metadaten zum Copyright, der Herkunft und dem Bildinhalt. Diese Daten sind von exorbitanter Bedeutung für die Recherche innerhalb einer umfangreichen Bildersammlung.
+Programme zum Verwalten und Betrachten von Bildern. Dazu bieten sie zahlreiche weitere Optionen, von denen die Bearbeitung der IPTC-Daten einschließlich Im- und Export für ganze Bildsammlungen hervorzuheben ist. IPTC-Daten sind Metadaten zum Copyright, der Herkunft und dem Bildinhalt. Diese Daten sind von exorbitanter Bedeutung für die Recherche innerhalb einer umfangreichen Bildersammlung.
 
 - Offizielle Website: [https://www.xnview.con/de](https://www.xnview.con/de){target=_blank}
 
@@ -385,10 +385,10 @@ Dieser Abschnitt behandelt Software, die im weiteren Verlauf des Studiums intere
 
 Das „Ob“ ist nicht die Frage, sondern das „Wie“. Nachfolgend werden mögliche Strategien und Hilfsmittel für Rechner mit MS Windows kurz vorgestellt. Windows selbst bietet für diese Aufgabe auch Bordmittel, diese haben aber zwischen den letzten Versionen gewechselt und sind weniger flexibel. Sie sollten zudem unterscheiden zwischen den Versionen Ihrer aktuellen Arbeit (z. B. meinText_20150131) und der Kopie (Backup) Ihrer Dateien.
 
-Das Backup sollte physikalisch getrennt von der Quelle liegen, also mindestens auf der externen Festplatte neben dem Rechner wie vom Windows-Backup gefordert oder auf der Festplatte am Router (z. B. FritzBox mit USB-Anschluss) im Nachbarzimmer oder in einer anderen Wohnung. Die in der letzten Zeit aktiven Verschlüsselungstrojaner verschlüsseln die Daten aller an den befallenen Rechner angeschlossenen Festplatten – eine dauerhaft an ihrem Rechner hängende Festplatte bietet somit keinen Schutz. Ob Sie für Ihr Backup Internetdienste nutzen wollen, bedarf einer Abwägung der Vorteile und Kosten.
+Das Backup sollte physikalisch getrennt von der Quelle liegen, also mindestens auf der externen Festplatte neben dem Rechner wie vom Windows-Backup gefordert oder auf der Festplatte am Router (z. B. FritzBox mit USB-Anschluss) im Nachbarzimmer oder in einer anderen Wohnung. Die in der letzten Zeit zunehmend aktiven Verschlüsselungstrojaner verschlüsseln die Daten aller an den befallenen Rechner angeschlossenen Festplatten – eine dauerhaft an ihrem Rechner hängende, auch externen Festplatte bietet somit keinen Schutz. Ob Sie für Ihr Backup Internetdienste nutzen wollen (Windows setzt hier natürlich auf One Drive), bedarf einer Abwägung der Vorteile und Kosten.
 
 #### Aufgabenplanung (Task Scheduler) von Windows \newline
-Regelmäßige Aufgaben können in Windows mit der „Aufgabenplanung“ (Task Scheduler) durchgeführt werden (vgl. cronjob bei Linux). Erstellen Sie unter Aufgabenplanungsbibliothek eine neue Aufgabe. Unter Aktionen können Sie Programme (z. B. Traybackup) oder kleine Skripte (Batch-Dateien mit dem Befehl mirror) aufrufen. Mit einem Doppelklick auf die Aufgabe in der Liste oben können Sie alte Aufgaben erneut bearbeiten.
+Regelmäßige Aufgaben können in Windows mit der „Aufgabenplanung“ (Task Scheduler) durchgeführt werden (vgl. cronjob bei Linux). Erstellen Sie unter Aufgabenplanungsbibliothek eine neue Aufgabe. Unter Aktionen können Sie Programme (z. B. Traybackup) oder kleine Skripte (Batch-Dateien mit dem Befehl [robocopy](https://de.wikipedia.org/wiki/Robocopy){target=blank} aufrufen. Mit einem Doppelklick auf die Aufgabe in der Liste oben können Sie alte Aufgaben erneut bearbeiten.
 
 #### Traybackup (Windows) \newline 
 Die Software bietet eine übersichtliche Konfiguration mit zahlreichen Optionen, aber leider keine Kompression beim Backup (FAQ). Das Programm lässt sich in der Aufgabenplanung (s. o.) z. B. mit folgender Befehlszeile einbinden und starten “C:\\Program Files (x86)\\traybackup\\traybackup.exe" /X meine.bpr
@@ -399,14 +399,12 @@ Die Software bietet eine übersichtliche Konfiguration mit zahlreichen Optionen,
 
 Oft müssen einfache Textdateien editiert werden, sie wollen z. B. in einer Datei alle „,“ durch „.“ ersetzen. Der Editor von Windows ist hier sehr schlicht, d. h. mühsam.
 
-#### Notepad++ (Windows) 
-ewline 
+#### Notepad++ (Windows) \newline 
 Ein potenter Texteditor, bei dem kein Wunsch offen bleibt: Zeilenumbrüche oder Tabulatoren suchen und ersetzen, Zeilen sortieren, Spalten und Blöcke ausschneiden, Konvertierung des Zeichensatzes (ASCII, ANSI, UTF-8), Markdown-Editor mit Exportfunktionen oder auch komplexe Programmierung mit Syntax-Highlighting für viele Sprachen (u. a. HTML, SQL, R).
 
 - Offizielle Website: [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/){target=_blank}
 
-#### PSPad 
-ewline 
+#### PSPad \newline 
 Dieser Editor spricht Programmierer als Zielgruppe an, er bietet gegenüber Notepad++ zusätzlich u. a. ein Browserfenster einschließlich ftp-Verbindungen und einer Logdatei.
 
 - Offizielle Website: [https://www.pspad.com](https://www.pspad.com){target=_blank}
@@ -416,18 +414,19 @@ Dieser Editor spricht Programmierer als Zielgruppe an, er bietet gegenüber Note
 Eine Literaturdatenbank ist ein Must-have für effizientes wissenschaftliches Arbeiten. Mit aktueller Software verwalten Sie nicht nur Ihre Literatur einschließlich digitaler Kopien (d. h. Ihren gesammelten PDFs), sondern auch Websites, Podcasts und vieles mehr. Sie fügen hiermit Zitate in Ihren Text ein, lassen die zugehörige Literaturliste automatisch erstellen, übernehmen Zitate direkt aus Bibliothekskatalogen und Online-Repositorien (z. B. www.jstor.org) und synchronisieren Ihre Daten über einen Webaccount mit anderen Endgeräten.
 
 #### Zotero (Windows, Mac, Linux) \newline 
-Diese Software ist in der aktuellen Version inzwischen Standalone und kein Addon mehr für den Browser Firefox von Mozilla. Es bietet alle oben genannten Funktionen. Eine Einführung in die Benutzung von Zotero und die Umsetzung der Zitierstile nach den RGK-Regeln mit Hilfe von Zotero finden Sie auf der [Website der DGUF](https://www.dguf.de/index.php?id=203){target=_blank}.
+Diese Software ist in der aktuellen Version inzwischen Standalone und kein Addon mehr für den Browser Firefox von Mozilla. Es bietet alle oben genannten Funktionen. Eine Einführung in die Benutzung von Zotero finden Sie auf der [Website der DGUF](https://www.dguf.de/index.php?id=203){target=_blank} und kompakt als *nutshell* in der [UFG Kiel](https://www.ufg.uni-kiel.de/de/professuren-bereiche/ai/archinf-material/tpc-7-1-zotero-in-a-nutshell){target=blank}.
 
 - Offizielle Website: [https://www.zotero.org/](https://www.zotero.org/){target=_blank}
-Einführung, Zitierstil und weitere Infos: [https://www.dguf.de/index.php?id=203](https://www.dguf.de/index.php?id=203){target=_blank}
+- Einführung, Zitierstil und weitere Infos: [https://www.dguf.de/index.php?id=203](https://www.dguf.de/index.php?id=203){target=_blank}
+- kompakte [*nutshell*](https://www.ufg.uni-kiel.de/de/professuren-bereiche/ai/archinf-material/tpc-7-1-zotero-in-a-nutshell){target=blank}
 
 #### Citavi (Windows, Mac) \newline 
-Eine Literaturdatenbank, die an einigen Universitäten für Studierende vergünstigt oder auch kostenfrei angeboten wird. Citavi Free ist kostenlos, es bietet alle Profi-Funktionen der anderen Citavi-Editionen, nur die Titelzahl ist aber auf 100 begrenzt.
+Eine Literaturdatenbank, die an einigen Universitäten für Studierende vergünstigt oder auch kostenfrei angeboten wird. Citavi Free ist kostenlos, es bietet alle Profi-Funktionen der anderen Citavi-Editionen, die Titelzahl ist aber auf nur 100 begrenzt.
 
-- Offizielle Website: [https://www.citavi.de](https://www.citavi.de){target=_blank}
+- Offizielle Website: [https://www.citavi.com](https://www.citavi.com){target=_blank}
 
 #### Endnote (Windows, Mac) \newline 
-Eine Literaturdatenbank, die an einigen Universitäten für Studierende vergünstigt oder auch kostenfrei angeboten wird. Endnote stellt eine freie Testversion bereit, deren Nutzung ist auf 30 Tage begrenzt.
+Eine Literaturdatenbank, die an einigen Universitäten für Studierende vergünstigt oder auch kostenfrei angeboten wird. Endnote stellt eine freie Testversion (Trial) bereit, deren Nutzung ist auf 30 Tage begrenzt.
 
 - Offizielle Website: [https://endnote.com](https://endnote.com){target=_blank}
 
