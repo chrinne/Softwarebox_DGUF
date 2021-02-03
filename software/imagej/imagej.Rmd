@@ -1,0 +1,69 @@
+---
+title: "ImageJ"
+author: 
+ - Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]
+output: pdf_document
+date: "`r format(Sys.time(), '%d. %B %Y')`"
+license: "CC-BY 4.0"
+header-includes:
+  \renewcommand{\contentsname}{Inhalt}
+  \renewcommand{\figurename}{Abb.}
+  \renewcommand{\tablename}{Tab.}
+output:
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+fig_caption: true
+urlcolor: blue
+link-citations: true # make citations hyperlinks
+linkcolor: blue
+lang: de-DE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Grundlegende Information
+
+Quelle: [https://imagej.net](https://imagej.net)
+
+Die Software ist open source und wurde für die wissenschaftliche Bildanalyse entwickelt. 
+
+Das Programm ist in Java programmiert, deshalb muss eine Java-Laufzeitumgebung (JRE) installiert sein. Ohne in Details zur Lizenzierung von Sun Microsystems und Oracle einzusteigen empfiehlt sich die Verwendung von [OpenJDK](https://openjdk.java.net/). In Java geschriebene Programme sind weit verbreitet und plattformunabhängig, können also unter Windows, MacOS und Linux betrieben werden.
+
+Installieren Sie erst ImageJ, vermutlich ist auf Ihrem PC eine Java Laufzeitumgebung bereits installiert. Aktuell liegen zwei Distributionen des Programms vor, auf der Homepage wird die Installation von [Jiji](https://imagej.net/Fiji/Downloads) wegen Updates und Kompatibilität mit Java 8 empfohlen. 
+
+## Anwendung und Nutzungszenarien
+
+Die Software dient der Bildanalyse, ein typischer Fall wäre das Auszählen und die Volumenbestimmung von spezifisch gefärbten Zellen. Das spätere archäologische Beispiel nutzt diese Möglichkeit um die Fläche von Pfostengruben in Plänen zu ermitteln.
+
+- Für gute Ergebnisse sollten Sie mit nicht komprimierten Bildern arbeiten, also keine JPG-Dateien verwenden.
+
+## Installation
+
+Laden Sie die Installationsdatei der Distribution [Jiji](https://imagej.net/Fiji/Downloads) herunter. Die Installationsanleitung für Windows-Systeme empfiehlt die Installation in einem Verzeichnis innerhalb Ihres Nutzerverzeichnises (C:\\Users\\<name>) anstatt des üblichen Programmordners (c:\\Programe Files). Dadurch werden möglich Probleme mit Zugriffsrechten bei der Nutzung der Software vermieden. Weitere Informationen finden sich auf der [Website](https://imagej.net/Getting_started) 
+
+## Tutorials
+
+Das Programm richtet sich an Wissenschaftler, es ist sehr funktional allerdings weniger intuitiv in der Handhabung. Auf der Website finden sich [Einführungen und Tutorials](https://imagej.net/Category:Tutorials.html#Tutorials_provided_by_microscopy_facilities) vom Einstieg bis zum Skripten und für diverse Nutzungsszenarien. Diese sind umfassend, sie gehend z.B. auch auf die Wahrnehmung und Definition von Farbe ein, woraus sich ein erhöhter Leseaufwand ergibt. 
+
+# Anwendungsbeispiele
+
+Nachfolgen werden einzelne Anwendungsbeispiele vorgestellt.
+
+## Pfsotengruben in Graustufenbildern
+
+Ziel ist die Ermittlung der Fläche von Pfostengruben in Plänen von  neolithischen Häusern. Das folgende Beispiel verwendet eine eingescannte Abbildung aus Luley.
+
+
+
+
+
