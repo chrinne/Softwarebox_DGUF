@@ -913,6 +913,16 @@ Ein vektororientiertes Zeichenprogramm. Von besonderem Interesse sind die option
 
 - Offizielle Website: [https://dia-installer.de](https://dia-installer.de){target=_blank}
 
+#### ImageJ
+
+Ein in Java programmiertes und damit plattformunabhängiges Programm zur wissenschaftlichen Bildanalyse (Pixelgrafiken). Ein typischer Fall wäre das Auszählen und die Volumenbestimmung von spezifisch gefärbten Zellen. Ein archäologisches Beispiel ist die Bestimmung der Fläche von Pfostengruben in Plänen. Für gute Ergebnisse sollten Sie mit nicht komprimierten Bildern arbeiten, also keine JPG-Dateien, sondern TIF oder BMP verwenden. Beachten Sie hierzu die Hinweise der Software.
+
+Die Installationsanleitung für Windows-Systeme empfiehlt die Installation in einem Ordner innerhalb Ihres Nutzerverzeichnis (C:\\Users\\<name>) anstatt des üblichen Programmordners (c:\\Program Files). Dadurch werden mögliche Probleme mit Zugriffsrechten bei der Nutzung der Software vermieden.
+
+- Quelle: [https://imagej.net](https://imagej.net)
+- Informationen: [ttps://imagej.net/Getting_started](https://imagej.net/Getting_started) 
+- Handreichung für Archäologie von C. Rinne [PDF](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/imagej/imagej.pdf)
+
 #### ImageMagic (Windows, Mac, Linux) \newline 
 Grafikprogramm mit umfangreichen Optionen auf der Befehlszeile, erlaubt u. a. das Auswerten von Farbanteilen oder der Koordinaten mit bestimmten Farbwerten. Somit sind viele automatisierte Prozesse zur Metrik von eingescannten Objektzeichnungen und statistische Analysen möglich.
 
