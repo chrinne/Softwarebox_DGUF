@@ -2,7 +2,6 @@
 title: "ImageJ"
 author: 
  - Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]
-output: pdf_document
 date: "`r format(Sys.time(), '%d. %B %Y')`"
 license: "CC-BY 4.0"
 header-includes:
@@ -55,15 +54,28 @@ Laden Sie die Installationsdatei der Distribution [Jiji](https://imagej.net/Fiji
 
 Das Programm richtet sich an Wissenschaftler, es ist sehr funktional allerdings weniger intuitiv in der Handhabung. Auf der Website finden sich [Einführungen und Tutorials](https://imagej.net/Category:Tutorials.html#Tutorials_provided_by_microscopy_facilities) vom Einstieg bis zum Skripten und für diverse Nutzungsszenarien. Diese sind umfassend, sie gehend z.B. auch auf die Wahrnehmung und Definition von Farbe ein, woraus sich ein erhöhter Leseaufwand ergibt. 
 
+## Programmfenster
+
+Es gibt nicht ein einziges Programmfenster sondern eine zentral Menü- und Iconleiste sowie getrennten Fenstern für Dateien und Werkzeuge. Dise Fenster sind frei positionierbar und der Wechsel ist wie üblich mit der Tastenkombination \<Alt> + \<Tab> leicht möglich. 
+
 # Anwendungsbeispiele
 
 Nachfolgen werden einzelne Anwendungsbeispiele vorgestellt.
 
 ## Pfsotengruben in Graustufenbildern
 
-Ziel ist die Ermittlung der Fläche von Pfostengruben in Plänen von  neolithischen Häusern. Das folgende Beispiel verwendet eine eingescannte Abbildung aus Luley.
+Ziel ist die Ermittlung der Fläche von Pfostengruben in Plänen von  neolithischen Häusern. Das folgende Beispiel verwendet eine eingescannte Abbildung aus Luley. Für die Auswertung wurde ein TIF genutzt, die hier dargestellte Datei in ein JPG.
 
+![Grundriss von der Bandkeramischen Siedlung von Niederzier, Bau 1. Nach Luley 1988, 193, Abb. 12](./Luley_Niederzier_01.jpg)
 
+In dieses Bild ist ursprünglich schwarz-Weiß mit einem Druckraster, die Filterung über der relevanten Farbflächen (Pixel) über einen Graustufen oder Farbwert also nur bedingt hilfreich. Es wird deshalb zusätzlich mit Schwellwerten für die gemessene Fläche gearbeitet.
 
+Mit File > Open (\<Srtg> + <o>) öffnen Sie das Bild. Markieren Sie das Linien-Icon und zeichnen Sie mit gedrückter Maustaste eine Linie über eine definierte Länge des abgebildeten Maßstabes (die ist eigentlich eine Auswahl, keine gezeichnete Linie). Mit Analyse > Set Scale wird Ihnen als erstes die markierte Länge angezeigt, ergänzen Sie bei "Known distance" die reale Distanz, z.B. 26.5, und unter "Unit of length" die Maßeinheit, hier "m". Wenn Sie die Option "Global" aktivieren gilt dieser Maßstab für alle offenen Bilder. Die Kopfzeile der Grafik weist nun die Dimensionen in der gewählten Einheit aus. 
 
+Mit Image > Adjust > Theshold (\<Strg> + \<Umsch> + \<T>) rufen Sie die Toolbox zum definieren von Schwellwerten auf. Mit den beiden Schiebereglern grenzen Sie die Graustufenwerte ein bis die Pfosten weitestgehend vollständig rot eingefärbt sind und vom Rest möglichst wenig oder nur kleinere Flächen. Bestätigen sie zuletzt mit [Set] die angegebene Werte.
 
+Mit Analyse > Set Measurements werden die nachfolgend zu bestimmenden Parameter der ermittelten Flächen ausgewählt (hier:  Area, Centroid) und ergänzende Optionen (Limit to theshold, Display label, Add to overlay, Decimal places: 3) und mit [OK] bestätigt. Diese Einstellungen werden bis zur nächsten Änderung beibehalten, auch bei einem Neustart des Programmes. 
+
+Mit Analyse > Analyse Particles rufen Sie die nächste Werkzeugbox auf. Setzen Sie die Flächengrenzen für die ermittelten Objekte ("Size (\<gewählte Einheit>^2)"), z.B. 0.05 - 3. Bei "Show" setzen Sie "Overlay", damit werden die Nummern und ermittelten Grenzen angezeigt. Wählen Sie zudem "Display results", "Clear results", "Include holes", "In situ show" und bestätigen Sie mit [OK]. Im Ergebnis wird 1. ein weiteres Fenster mit der Liste der ermittelten Flächen und deren angeforderten Werte geöffnet und 2. die Flächen in der Grafik markiert und mit Ziffern beschriftet. Da der weiße Text auf dem weißen Hintergrund nicht stets sichtbar ist, können Sie das Bild mit Edit > Invert invertieren. In der Liste können Sie die fehlerhaft bestimmten Objekte markieren und mit \<Del> löschen. Die Zählung wird unmittelbar angepast, auch die markierung der Objekte in der Grafik. Exportieren Sie mit File > Save as abschließend im Fenster der Tabelle die ermittelten Werte in eine CSV-Datei (Punkt-Komma-Problematik).
+
+Anstatt im Nachgang falsche Objekte zu löschen können vor der Definition der Grenzwerte einzelne Bereiche mit dem Viereck-Icon markiert und mit \<Del> gelöscht werden. Das ist unter Umständen effektiver.
