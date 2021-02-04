@@ -915,7 +915,7 @@ Ein vektororientiertes Zeichenprogramm. Von besonderem Interesse sind die option
 
 #### ImageJ
 
-Ein in Java programmiertes und damit plattformunabhängiges Programm zur wissenschaftlichen Bildanalyse (Pixelgrafiken). Ein typischer Fall wäre das Auszählen und die Volumenbestimmung von spezifisch gefärbten Zellen. Ein archäologisches Beispiel ist die Bestimmung der Fläche von Pfostengruben in Plänen. Für gute Ergebnisse sollten Sie mit nicht komprimierten Bildern arbeiten, also keine JPG-Dateien, sondern TIF oder BMP verwenden. Beachten Sie hierzu die Hinweise der Software.
+Ein in Java programmiertes und damit plattformunabhängiges Programm zur wissenschaftlichen Bildanalyse (Pixelgrafiken). Ein typischer Fall wäre das Auszählen und die Flächenbestimmung von spezifisch gefärbten Zellen. Ein archäologisches Beispiel ist die Bestimmung der Fläche von Pfostengruben in Plänen. Für gute Ergebnisse sollten Sie mit nicht komprimierten Bildern arbeiten, also keine JPG-Dateien, sondern TIF oder BMP verwenden. Beachten Sie hierzu die Hinweise der Software.
 
 Die Installationsanleitung für Windows-Systeme empfiehlt die Installation in einem Ordner innerhalb Ihres Nutzerverzeichnis (C:\\Users\\<name>) anstatt des üblichen Programmordners (c:\\Program Files). Dadurch werden mögliche Probleme mit Zugriffsrechten bei der Nutzung der Software vermieden.
 
