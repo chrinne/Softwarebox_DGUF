@@ -1,0 +1,59 @@
+---
+title: "zotero"
+author: 
+ - Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]
+date: "`r format(Sys.time(), '%d. %B %Y')`"
+license: "CC-BY 4.0"
+header-includes:
+  \renewcommand{\contentsname}{Inhalt}
+  \renewcommand{\figurename}{Abb.}
+  \renewcommand{\tablename}{Tab.}
+output:
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+# classoption:
+  # - landscape
+  #- twocolumn
+fig_caption: true
+urlcolor: blue
+link-citations: true # make citations hyperlinks
+linkcolor: blue
+lang: de-DE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Grundlegende Information
+
+Quelle: [https://zotero.org](https://zotero.org)
+
+Zotero ist mehr als eine Literaturdatenbank, für Ihr Studium
+liegen hier aber die Stärken. Sie ist frei, unabhängig vom Betriebssystem und weit verbreitet. Diese Handreichung ist für den Einstieg, weitere Informationen finden Sie im Internet. Einige Vorteile sind:
+
+- Zitate & Literaturliste in MS Word und Libre Office 
+- Verwaltung angehängter Dateien, z.B. PDF 
+- Übernahme bibliografischen Daten, z.B. aus [GVK](https://kxp.k10plus.de/DB=2.1/LNG=DU/) 
+- Viele Zitierstile für korrekte Literaturlisten 
+- Synchronisation über freien webspace 
+
+Die **Registrierung** ist für den *download* und die Nutzung nicht notwendig. Ein Konto bietet aber freien webspace für die Synchronisation und eine öffentlich sichtbare Liste eigener Publikationen. Hinzu kommen  Gruppenbibliotheken: geschlossen, sichtbar oder offen und einiges mehr.  
+
+- persönliche Publikationsliste C. Rinne 
+- offene Gruppenbibliothek Archaeology DGUF
+
+Zotero gehört inzwischen zur [Corporation for Digital Scholarship](https://digitalscholar.org/), diese versteht sich ausdrücklich als nonprofit organization. Bedeutende Partner sind das [Roy Rosenzweig Center for History and New Media](https://rrchnm.org/) und die [Michigan State University](https://msu.edu/).  
+
+ 
+
+## Anwendung und Nutzungszenarien
+
