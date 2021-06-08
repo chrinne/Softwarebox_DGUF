@@ -33,7 +33,18 @@ linkcolor: blue
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Grundlegende Information
+ 
+| Hinweise zur Darstellung |
+|----|
+| Menüeinträge: "Datei > Speichern" |
+| Tasten (*short cuts*): \<str> + \<s> |
+| Formularschalter: [OK] |
+| Variablennamen: \<Nachname>, \<Vorname> |
+| Icons werden nicht abgebildet sondern in Einzelfällen durch vergleichbare typografische Zeichen in Fett ersetzt (**+**). |
+
+# Grundlagen
+
+## Grundlegende Information
 
 Zotero ist mehr als eine Literaturdatenbank, für Ihr Studium
 liegen hier aber die Stärken. Sie ist frei, unabhängig vom Betriebssystem und weit verbreitet. Diese Handreichung ist für den Einstieg, weitere Informationen finden Sie im Internet. Einige Vorteile sind:
@@ -47,14 +58,11 @@ liegen hier aber die Stärken. Sie ist frei, unabhängig vom Betriebssystem und 
 
 Die **Registrierung** ist für den *download* und die Nutzung nicht notwendig. Ein Konto bietet aber freien webspace für die Synchronisation und eine öffentlich sichtbare Liste eigener Publikationen. Hinzu kommen  Gruppenbibliotheken: geschlossen, sichtbar oder offen und einiges mehr.  
 
-- persönliche Publikationsliste C. Rinne 
-- offene Gruppenbibliothek Archaeology DGUF
-
 Zotero gehört zur [Corporation for Digital Scholarship](https://digitalscholar.org/), diese versteht sich ausdrücklich als *nonprofit organization*. Partner sind u.a. das [Roy Rosenzweig Center for History and New Media](https://rrchnm.org/) und die [Michigan State University](https://msu.edu/).  
 
 ![Zotero Hauptfenster](./zotero-main-window.jpg)
- 
-# Schnelleinstieg
+
+## Schnelleinstieg
 
 1. Oberste Ebene mit der eigenen Bibliothek, untergeordnet sind einzelne Sammlungen (Auswahlsätze oder Sichten) aus dem Datenbestand. Sammlungen können mit drag & drop verschoben werden. 
 2. Inhalt des unter (1.) ausgewählten Datenbestandes. Einträge können mit drag & drop in eine andere Sammlung unter (1.) verschoben werden. Die Spalten lassen sich sortieren, verschieben und auswählen (Liste-Icon am rechten Menürand). Doppelklick auf den Titel öffnet die angehängte Datei oder den bei „URL“ eingetragenen Weblink. 
@@ -65,18 +73,18 @@ Zotero gehört zur [Corporation for Digital Scholarship](https://digitalscholar.
 7. Kann den unter (2.) ausgewählten Eintrag im Katalog einer Bibliothek suchen (s. in den OpenURL Einstellung). Fest implementiert ist die Suche bei Google-Scholar (Lookup- Engines). 
 8. Synchronisieren der eigenen Bibliothek mit einem Server
 
-# Einstellungen
-
 ![Zotero Einstellungen](./zotero-configuration-window.jpg)
 
-Unter \<Bearbeiten> – \<Einstellungen> können Sie Zotero an persönliche Bedürfnisse anpassen.
+## Einstellungen
 
-- Den **Speicherort** (\<Erweitert> – \<Dateien ...>) sollten Sie bewusst wählen, schließlich sind es Ihre mühevoll gesammelten Daten. Zotero trennt zwischen dem Speicherort für Dateianhänge, z.B. digitale Kopien, und der Datenbank (SQLite). Die Dateianhänge werden mit einem relativen Pfad zum angegeben Basisspeicher versehen, dadurch können die Dateien auf jedem Endgerät z. B. auf unterschiedlichen Laufwerken liegen.
-- Zum **Zitieren** müssen die Add-Ins für MS Word und/oder Libre Office installiert werden (\<Zitieren> –  \<Textverarbeitung...>). Stile für Zitate (\<Zitieren> – \<Stile>) können verwaltet, ausgewählt und der Standard vorgegeben werden. Nicht verwendete Stile können Sie entfernen (**-**), und aus dem Repositorium können alle Stile einfach neu installiert werden. 
-- Der **Export** (\<Export>) erlaubt einfaches drag & drop von Zitaten aus (2) (s. Abb. 1)‚ in andere Anwendungen im hier ausgewählten Stil.
-- Mit einem Zotero-Konto können eigene und Gruppenbibliotheken **synchronisiert** werden (\<Sync> – \<Einstellungen>). Dies erfolgt automatisch oder im Menü mit dem grünen Pfeil (8) (s. Abb. 1). Sie sollten nur die Datenbank und nicht die Dateianhänge synchronisieren, der freie Speicher ist sonst schnell verbraucht.
+Unter "Bearbeiten > Einstellungen" können Sie Zotero an persönliche Bedürfnisse anpassen.
 
-# Zitate importieren
+- Den **Speicherort** unter "Erweitert > Dateien ..." sollten Sie bewusst wählen, schließlich sind es Ihre mühevoll gesammelten Daten. Zotero trennt zwischen dem Speicherort für Dateianhänge, z.B. digitale Kopien, und der Datenbank (SQLite). Die Dateianhänge werden mit einem relativen Pfad zum angegeben Basisspeicher versehen, dadurch können die Dateien auf jedem Endgerät z. B. auf unterschiedlichen Laufwerken liegen.
+- Zum **Zitieren** müssen die Add-Ins für MS Word und/oder Libre Office installiert werden ("Zitieren > Textverarbeitung..."). Stile für Zitate "Zitieren > Stile") können verwaltet, ausgewählt und der Standard vorgegeben werden. Nicht verwendete Stile können Sie entfernen (**-**), und aus dem Repositorium können alle Stile einfach neu installiert werden. 
+- Der **Export** ("Export") erlaubt einfaches drag & drop von Zitaten aus (2) (s. Abb. 1)‚ in andere Anwendungen im hier ausgewählten Stil.
+- Mit einem Zotero-Konto können eigene und Gruppenbibliotheken **synchronisiert** werden. Unter "Sync > Einstellungen" können Sie Ihre Anmeldedaten hinterlegen und die zu synchronisierenden Biblotheken, z.B. Gruppenbiblotheken aus- oder abwählen. Die Synchronisation erfolgt automatisch oder im Menü mit dem grünen Pfeil (8) (s. Abb. 1). Sie sollten nur die Datenbank und nicht die Dateianhänge synchronisieren, der freie Speicher bei Zotero ist sonst schnell verbraucht.
+
+## Zitate importieren
 
 Der Import einer Vielzahl von Dateiformaten ist möglich. Hierbei handelt es sich überwiegend um strukturierte Textformate (*.bib, *.json, *.xml, *.html), die aus allen gängigen Literaturdatenbanken exportiert werden können. Das Formate [BibTeX](http://www.bibtex.org/) ist besonders weit verbreitet, gut Strukturiert und damit eine gute Option. Das Format [BibLaTeX](https://www.ctan.org/pkg/biblatex) bietet eine nochmals erweiterten Optionsumfang. Der Import aus einer Tabelle ist nicht vorgesehen. 
 
@@ -86,3 +94,44 @@ Aus **Bibliothekskatalogen** und Online-Repositorien kann das Zitat direkt impor
 
 Ein PDF kann per drag & drop in eine Bibliothek (1) (s. Abb. 1) kopiert werden, Zotero importiert es und sucht über Metadaten automatisch ein passendes Zitat.
 
+## Zitate einfügen
+
+Mit (**+**) in der Icon-Leiste können Zitate auch von Hand erfasst werden. Das Kontextmenü (rechte Mausklick) für vorhandene Zitate in (2) (s. Abb. 1)‚ ermöglicht u.a. das Duplizieren des Zitates. Weitere Beiträge eines Sammelbandes können so schnell ergänzt werden. Zahlreiche Autoren können aus der Zwischenablage als Liste eingefügt werden: eine Zeile je Autor und entsprechend der gewählten Vorgabe \<Vornanme> \<Nachname> oder \<Nachname>, \<Vorname>.
+
+## Zitieren in Word und Libre Office
+
+Nach der Installation des jeweiligen Add-Ins (s. Einstellungen) finden Sie einen eigene Reiter für Zotero. Die Handhabung ist unmittelbar ersichtlich. Neben der einzeiligen Einfügemaske kann mit dem **Z** auch ein erweitertes Formular geöffnetn werden (z. B. Name unterdrücken, nur Jahreszahl). [Add/edit Bibliography] fügt die Literaturliste für alle Zitate ein, die Formatierung kann jederzeit umgestellt werden. Das Ergebnis ist nicht zwingend absolut korrekt (Fehler in der Datenbank oder Differenzen zum gewünschten Stil) und sollte stets kontrolliert werden. Mit [unlink citation] werden die Funktionen unumkehrbar in reinen Text konvertiert.
+
+## Weitere lokale Einstellungen
+
+Unter "Bearbeiten > Einstellungen > Allgemein" wird vor allem die Verarbeitung von Dateianhängen verwaltet. Hier können Sie das automatische Anhängen von Schnappschüssen oder zugehöriger Artikel (PDF) steuern. Für die Suche wird auch der Inhalt angehängter Dateien indexiert.
+
+Unter "Bearbeiten > Einstellungen > Erweitert > Allgemein" finden Sie die „Übersetzer“, diese extrahieren die Daten aus Online-Repositorien. Zudem können Sie hier eine [OpenURL](https://www.crossref.org/documentation/retrieve-metadata/openurl/) eintragen, diese ermöglicht die Recherche des ausgewählten Zitates in der entsprechenden Bibliothek (7) (s. Abb. 1). Diese Dienste ändern sich bisweilen, eine internationale Liste finden Sie u.a. auf [www.Zotero.org](https://www.zotero.org/support/locate/openurl_resolvers). 
+
+**Suchen & Ersetzen** ist ein Dauerthema und leider noch nicht unkompliziert möglich: [Link zum Zotero-Forum](https://forums.zotero.org/discussion/66262/an-integrated-find-and-replace-option-in-zotero).
+
+##Einstellungen im Onlinekonto
+
+Neben den üblichen Einstellungen kann unter "Settings > Profile > C.V. (curriculum vitae)" die **eigene Publikationsliste im Web** an das öffentlich sichtbare Profil angehängt werden. Zuerst wird ein Stil gewählt, bevorzugt einer mit absteigender Sortierung des Erscheinungsjahrs. Nachfolgend werden für auswählbare Kategorien (Buch, Buchteil, Zeitschrit etc) die zuvor jeweils angelegte  Sammlung der eigenen Bibliothek im Web gewählt. Ausschließlich die Zitate dieser Sammlungen werden angezeigt. Fügen Sie lokal ein Zitat in die Sammlung "meine Artikel" ein und synchronisieren Sie anschließend die Bibliothek, ist Ihre Publikationsliste im Netz direkt aktualisiert. 
+
+Sie können auf Ihre Literaturdatenbank weltweit zugreifen. 
+
+Unter "Settings > Privacy" können Sie Ihre Literaturdatenbank veröffentlichen. Davon getrennt kann dies auch für angehängte Notizen eingestellt werden (Vorsicht bei unverblümten Meinungsäußerungen in der Zusammenfassung oder den Notizen). Sie können das Indexieren Ihres Profils durch Suchmaschinen verhindern.
+
+## Interessante Plugins 
+
+Zotero kann mit Plugins von Dritten an persönliche Bedürfnisse angepasst werden. Einige Beispiele: 
+
+### Zotfile: [http://zotfile.com/](http://zotfile.com/) 
+
+Dies ist ein Plugin zur Verwaltung Ihrer Anhänge: automatisches Umbenennen, Verschieben und Anhängen von PDFs (oder anderen Dateien) an Zotero-Objekte, Synchronisieren von PDFs aus Ihrer Zotero-Bibliothek mit Ihrem (mobilen) PDFReader (z.B. einem iPad, Android-Tablett usw.) und Extrahieren von Anmerkungen aus PDF-Dateien. Zotfile steuert auch die lokale Ablage der Dateianhänge, statt eines kryptischen Dateinamens (z.B. SR8UZTK2.zip) sehen Sie nun ein Kurzzitat. 
+
+Konfiguriert wird das Plugin über "Werkzeuge > Zotfile Einstellungen..."
+
+### Better Bib Tex: [http://retorque.re/zotero-better-bibtex/](http://retorque.re/zotero-better-bibtex/) 
+
+Dieses Plugin ist für Sie von Interesse wenn Sie mit Markdown, LaTeX oder Dokumentenstellung in RStudio arbeiten. Better BibTeX (BBT) ist eine Erweiterung für die Verwaltung bibliographischer Daten mit Auszeichnungen für die Verwendung in LaTeX (Markdown). Damit ist es möglich, z.B. innerhalb von R-Studio in Markdown-Dateien und Projekten Literaturlisten aus der Datenbank und hierauf bezogene Zitate einzubinden. Es gibt/gab Diskussionen über eine Verlangsamung von Zotero, es handelte sich dabei u.a. um eine Indexierung des Zitierschlüssels (BibTeX key) beim Laden der Bibliothek.  
+
+### Zutilo: [https://github.com/willsALMANJ/Zutilo](https://github.com/willsALMANJ/Zutilo) 
+
+Zutilo fügt einige nützliche Funktionen über zusätzliche Menüelemente und Tastaturkürzel hinzu. Hervorzuheben sind das Kopieren, Einfügen und Entfernen von Tags und TagGruppen, das Kopieren von Elementen in verschiedenen Formaten in die Zwischenablage und zahlreiche Tastaturkürzel zum Bearbeiten von Elementen.
