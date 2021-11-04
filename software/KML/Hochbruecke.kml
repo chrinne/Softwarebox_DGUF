@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Hochbruecke</name>
+	<Style id="route-hl">
+		<LineStyle>
+			<color>ff0000aa</color>
+			<width>8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color></color>
+		</PolyStyle>
+	</Style>
+	<Style id="route-n">
+		<LineStyle>
+			<color>ff0000aa</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff7df5ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="route">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#route-n</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#route-hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Holtenau</name>
+		<styleUrl>#route</styleUrl>
+		<LineString>
+			<extrude>0</extrude>
+			<tessellate>0</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>
+				10.12093796366777,54.36590694049225,39.99999999999999 10.12109123715073,54.36643494457174,39.99999999999999 10.12127580261095,54.36689379308591,39.99999999999999 10.12146501336677,54.36735153011876,39.99999999999999 10.12172279167329,54.36776565000539,39.99999999999999 10.12187831244731,54.36838201838961,39.99999999999999 10.12217427037541,54.36892432558026,39.99999999999999 10.12231905470356,54.36943118392424,39.99999999999999 10.12260799672135,54.36996726586428,39.99999999999999 10.12286854180568,54.37067130582465,39.99999999999999 10.12304780654306,54.37097445808439,39.99999999999999 10.12335429706786,54.37135390598432,39.99999999999999 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

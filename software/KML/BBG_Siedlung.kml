@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>BBG Siedlungen, Höhen- und Talrandlage</name>
+	<open>1</open>
+	<Style id="sn_bbg_sdl">
+		<IconStyle>
+			<color>ff0000aa</color>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sh_bbg_sdl">
+		<IconStyle>
+			<color>ff0000aa</color>
+			<scale>1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="ms_bbg_sdl">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_bbg_sdl</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_bbg_sdl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Burgörner Weinberg</name>
+		<LookAt>
+			<longitude>11.50428795600097</longitude>
+			<latitude>51.64067006920091</latitude>
+			<altitude>0</altitude>
+			<heading>0.0002321020520841536</heading>
+			<tilt>0</tilt>
+			<range>171.1583632529837</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990</value>
+			</Data>
+			<Data name="Fundart">
+				<value>Siedlung</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.50428795600097,51.64067006920091,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Ammern</name>
+		<LookAt>
+			<longitude>10.45759597213229</longitude>
+			<latitude>51.2361159401649</latitude>
+			<altitude>0</altitude>
+			<heading>0.001143584164426224</heading>
+			<tilt>0</tilt>
+			<range>601.6527500776108</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990, 227; Walter/Bücke/Schulue 1987</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.45759597213229,51.23611594016491,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Berga Ratzelburg</name>
+		<LookAt>
+			<longitude>11.00010709221832</longitude>
+			<latitude>51.47555368795553</latitude>
+			<altitude>0</altitude>
+			<heading>-0.003244713470668253</heading>
+			<tilt>0</tilt>
+			<range>175.8802602867024</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.00010709221832,51.47555368795553,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Derenburg Anisberg</name>
+		<LookAt>
+			<longitude>10.93393970232236</longitude>
+			<latitude>51.88794691755825</latitude>
+			<altitude>0</altitude>
+			<heading>0.01467262318166946</heading>
+			<tilt>0</tilt>
+			<range>827.3966994880218</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.93393970232236,51.88794691755825,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Derenburg Bocksberg</name>
+		<LookAt>
+			<longitude>10.91968994789327</longitude>
+			<latitude>51.86114987993781</latitude>
+			<altitude>0</altitude>
+			<heading>0.009906641201326666</heading>
+			<tilt>0</tilt>
+			<range>1752.230790276664</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.91968994789327,51.86114987993781,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Erfurth Gispersleben</name>
+		<description>Müller 1990, 227; Walter/Bücke/Schulue 1987</description>
+		<LookAt>
+			<longitude>10.99203281940652</longitude>
+			<latitude>51.0227029499453</latitude>
+			<altitude>0</altitude>
+			<heading>0.0007661974338811082</heading>
+			<tilt>0</tilt>
+			<range>263.5468939032937</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<Point>
+			<coordinates>10.99203281940652,51.0227029499453,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Köllme, Sick dich vor</name>
+		<LookAt>
+			<longitude>11.81313687998546</longitude>
+			<latitude>51.49354098607819</latitude>
+			<altitude>0</altitude>
+			<heading>-0.002533704263183321</heading>
+			<tilt>0</tilt>
+			<range>241.8708821936566</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.81313687998546,51.49354098607819,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Nägelstedt Bornhög</name>
+		<LookAt>
+			<longitude>10.73800114074778</longitude>
+			<latitude>51.11324159594455</latitude>
+			<altitude>0</altitude>
+			<heading>0.02183791381194732</heading>
+			<tilt>0</tilt>
+			<range>642.8821614603413</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.73800114074778,51.11324159594455,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Quedlinburg Altenburg</name>
+		<LookAt>
+			<longitude>11.12402817407009</longitude>
+			<latitude>51.78086998038956</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0136248459682804</heading>
+			<tilt>0</tilt>
+			<range>643.2964390289893</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.12402817407009,51.78086998038956,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Quedlinburg Radelberg</name>
+		<LookAt>
+			<longitude>11.17471823308301</longitude>
+			<latitude>51.77324741762798</latitude>
+			<altitude>0</altitude>
+			<heading>0.03889243247322209</heading>
+			<tilt>0</tilt>
+			<range>372.1489677763519</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.17471823308301,51.77324741762799,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Sangerhausen Traubenberg</name>
+		<LookAt>
+			<longitude>11.31179644174871</longitude>
+			<latitude>51.49039153317862</latitude>
+			<altitude>0</altitude>
+			<heading>-7.853381091704173e-009</heading>
+			<tilt>0</tilt>
+			<range>81.24318450283856</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.31179644174871,51.49039153317862,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Siebleben Kleine Seeberg</name>
+		<LookAt>
+			<longitude>10.76117580738884</longitude>
+			<latitude>50.9264253412485</latitude>
+			<altitude>0</altitude>
+			<heading>0.01545015195737786</heading>
+			<tilt>0</tilt>
+			<range>388.2779438245444</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<Point>
+			<coordinates>10.76117580738884,50.9264253412485,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Steinthaleben Ochsenburg</name>
+		<LookAt>
+			<longitude>11.03833209418212</longitude>
+			<latitude>51.37835179300759</latitude>
+			<altitude>0</altitude>
+			<heading>0.02034707429341318</heading>
+			<tilt>0</tilt>
+			<range>320.3565591922957</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.03833209418212,51.37835179300759,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Unseburg Weinberg</name>
+		<LookAt>
+			<longitude>11.50368430344281</longitude>
+			<latitude>51.93006518872357</latitude>
+			<altitude>0</altitude>
+			<heading>-0.01608274672941265</heading>
+			<tilt>0</tilt>
+			<range>726.6128876124313</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.50368430344281,51.93006518872357,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Derenburg Im freien Feld</name>
+		<description>Müller 1990, Abb. 2</description>
+		<LookAt>
+			<longitude>10.91376044342484</longitude>
+			<latitude>51.8788893735989</latitude>
+			<altitude>0</altitude>
+			<heading>0.01155374953947108</heading>
+			<tilt>0</tilt>
+			<range>41.54598724968814</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.91376044342484,51.8788893735989,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Derenburg Menhir</name>
+		<description>Müller 1990, Abb. 2</description>
+		<LookAt>
+			<longitude>10.91112930971004</longitude>
+			<latitude>51.86234094633213</latitude>
+			<altitude>0</altitude>
+			<heading>0.0198410919977846</heading>
+			<tilt>0</tilt>
+			<range>357.666635898615</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<Point>
+			<coordinates>10.91112930971004,51.86234094633214,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Derenburg Siedlung</name>
+		<description>Müller 1990, Abb. 2</description>
+		<LookAt>
+			<longitude>10.90789501116783</longitude>
+			<latitude>51.88075235449438</latitude>
+			<altitude>0</altitude>
+			<heading>0.02258100921491762</heading>
+			<tilt>0</tilt>
+			<range>114.4978663074642</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.90789501116783,51.88075235449438,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Westerhausen, Jätchenberg</name>
+		<LookAt>
+			<longitude>11.0506066050062</longitude>
+			<latitude>51.81220268938073</latitude>
+			<altitude>0</altitude>
+			<heading>0.1011567795872036</heading>
+			<tilt>0</tilt>
+			<range>75.11653341172539</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.0506066050062,51.81220268938073,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Watenstedt</name>
+		<LookAt>
+			<longitude>10.84671621967668</longitude>
+			<latitude>52.08782387849588</latitude>
+			<altitude>0</altitude>
+			<heading>-1.14468162985872e-011</heading>
+			<tilt>0</tilt>
+			<range>359.8841935583686</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.84671621967668,52.08782387849588,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Berga, Ratzelburg</name>
+		<LookAt>
+			<longitude>11.00010709221832</longitude>
+			<latitude>51.47555368795553</latitude>
+			<altitude>0</altitude>
+			<heading>-0.003244713470668253</heading>
+			<tilt>0</tilt>
+			<range>175.8802602867024</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+				<value>k. A.</value>
+			</Data>
+			<Data name="Befestigung">
+				<value>Doppelsohlgraben (späte Bronze-/frühe Eisenzeit); Wall und Graben undatiert</value>
+			</Data>
+			<Data name="Siedlungsbefunde">
+				<value>Siedlungsgruben (Bernburg und Eisenzeit)</value>
+			</Data>
+			<Data name="Funde">
+				<value>k. A.</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.00010709221832,51.47555368795553,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Derenburg, Anisberg</name>
+		<LookAt>
+			<longitude>10.93393970232236</longitude>
+			<latitude>51.88794691755825</latitude>
+			<altitude>0</altitude>
+			<heading>0.01467262318166946</heading>
+			<tilt>0</tilt>
+			<range>827.3966994880218</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990; Sieblist 1977, 63</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+				<value>k. A.</value>
+			</Data>
+			<Data name="Befestigung">
+				<value>Graben, wohl mittelalterlich</value>
+			</Data>
+			<Data name="Siedlungsbefunde">
+				<value>Gruben überwiegend Bernburg, dazu späte Bronze-/frühe Eisenzeit</value>
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.93393970232236,51.88794691755825,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Derenburg, Bocksberg</name>
+		<LookAt>
+			<longitude>10.91968994789327</longitude>
+			<latitude>51.86114987993781</latitude>
+			<altitude>0</altitude>
+			<heading>0.009906641201326666</heading>
+			<tilt>0</tilt>
+			<range>1752.230790276664</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Sieblist 1977, 33, 60 ff.; Müller 1990</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+				<value>k. A.</value>
+			</Data>
+			<Data name="Befestigung">
+				<value>k. A.</value>
+			</Data>
+			<Data name="Siedlungsbefunde">
+				<value>k. A.</value>
+			</Data>
+			<Data name="Funde">
+				<value>Lesefunde aus vielen Zeiten, darunter zahlreich Bernburg</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.91968994789327,51.86114987993781,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Köllme, Sick dich vor</name>
+		<LookAt>
+			<longitude>11.81313687998546</longitude>
+			<latitude>51.49354098607819</latitude>
+			<altitude>0</altitude>
+			<heading>-0.002533704263183321</heading>
+			<tilt>0</tilt>
+			<range>241.8708821936566</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990; Herklotz 1984, 20, 41 f.</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+				<value>k. A.</value>
+			</Data>
+			<Data name="Befestigung">
+				<value>k. A.</value>
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+				<value>Oberflächenfunde Salzmünde und Bernburg</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.81313687998546,51.49354098607819,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Nägelstedt, Bornhög</name>
+		<LookAt>
+			<longitude>10.73800114074778</longitude>
+			<latitude>51.11324159594455</latitude>
+			<altitude>0</altitude>
+			<heading>0.02183791381194732</heading>
+			<tilt>0</tilt>
+			<range>642.8821614603413</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990; Bücke 1986, 27-32</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+				<value>Dokumentation der Ausgrabung verloren</value>
+			</Data>
+			<Data name="Funde">
+				<value>Masse der Funde Bernburg, wenig Kugelamphore</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.73800114074778,51.11324159594455,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Burgörner Weinberg</name>
+		<LookAt>
+			<longitude>11.50428795600097</longitude>
+			<latitude>51.64067006920091</latitude>
+			<altitude>0</altitude>
+			<heading>0.0002321020520841536</heading>
+			<tilt>0</tilt>
+			<range>171.1583632529837</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+				<value>k. A.</value>
+			</Data>
+			<Data name="Befestigung">
+				<value>k. A. (Rettungsgrabung)</value>
+			</Data>
+			<Data name="Siedlungsbefunde">
+				<value>zahlreiche Gruben (Salzmünde, Bernburg), Bronzezeit; Gräber mit Salzmünde, Bernburg, Schnurkeramik</value>
+			</Data>
+			<Data name="Funde">
+				<value>k. A.</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.50428795600097,51.64067006920091,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Quedlinburg, Altenburg</name>
+		<LookAt>
+			<longitude>11.12402817407009</longitude>
+			<latitude>51.78086998038956</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0136248459682804</heading>
+			<tilt>0</tilt>
+			<range>643.2964390289893</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990; Niklasson 1925, 20-23; Rienäcker 1978, 122</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+				<value>k. A.</value>
+			</Data>
+			<Data name="Befestigung">
+				<value>schwacher Wall (undatiert)</value>
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+				<value>Oberflächenfunde Bernburg</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.12402817407009,51.78086998038956,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Helmstedt, Glockberg</name>
+		<LookAt>
+			<longitude>10.99345492559829</longitude>
+			<latitude>52.22440020345906</latitude>
+			<altitude>0</altitude>
+			<heading>0.006233109334990488</heading>
+			<tilt>0</tilt>
+			<range>433.219809079127</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Dirks 2000</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.99345492559829,52.22440020345907,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Quedlinburg, Radelberg</name>
+		<LookAt>
+			<longitude>11.17537674342275</longitude>
+			<latitude>51.77326766691232</latitude>
+			<altitude>0</altitude>
+			<heading>0.03940955891530151</heading>
+			<tilt>0</tilt>
+			<range>541.3245408877972</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990; Niklasson 1925, 20-23; Rienäcker 1978, 122</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+				<value>Oberflächenfunde Bernburg, Kugelamphoren.</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.17457382785931,51.77294190984338,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Sangerhausen, Traubenberg</name>
+		<LookAt>
+			<longitude>11.31179644174871</longitude>
+			<latitude>51.49039153317862</latitude>
+			<altitude>0</altitude>
+			<heading>-7.853381091704173e-009</heading>
+			<tilt>0</tilt>
+			<range>81.24318450283856</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990; Kröber 1971, 37</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+				<value>Oberflächenfunde Bernburg</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.31179644174871,51.49039153317862,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Siebleben, Kleine Seeberg</name>
+		<LookAt>
+			<longitude>10.76117580738884</longitude>
+			<latitude>50.9264253412485</latitude>
+			<altitude>0</altitude>
+			<heading>0.01545015195737786</heading>
+			<tilt>0</tilt>
+			<range>388.2779438245444</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990; Müller 1975, 95 ff.</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+				<value>Gräber der Schnurkeramik, Glockebecher, Bronze- u. Eisenzeit</value>
+			</Data>
+			<Data name="Funde">
+				<value>Oberflächenfunde Bernburg und Kugelamphoren.</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.76117580738884,50.9264253412485,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Steinthaleben, Ochsenburg</name>
+		<LookAt>
+			<longitude>11.03833209418212</longitude>
+			<latitude>51.37835179300759</latitude>
+			<altitude>0</altitude>
+			<heading>0.02034707429341318</heading>
+			<tilt>0</tilt>
+			<range>320.3565591922957</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990; Rabenow 1965</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+				<value>Oberflächenfunde Linienbandkeramik, Bernburg und Bronzezeit</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.03833209418212,51.37835179300759,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Unseburg, Weinberg</name>
+		<LookAt>
+			<longitude>11.50368430344281</longitude>
+			<latitude>51.93006518872357</latitude>
+			<altitude>0</altitude>
+			<heading>-0.01608274672941265</heading>
+			<tilt>0</tilt>
+			<range>726.6128876124313</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Müller 1990; Stolle 1988</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Siedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+				<value>Graben (eisenzeitlich)</value>
+			</Data>
+			<Data name="Siedlungsbefunde">
+				<value>mehrperiodiger Siedlungsplatz mit zahlreichen Befunden</value>
+			</Data>
+			<Data name="Funde">
+				<value>Neben anderem u.a. zahlreich Bernburg</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>11.50368430344281,51.93006518872357,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Groß Vahlberg, Krähenholz</name>
+		<LookAt>
+			<longitude>10.6863310750207</longitude>
+			<latitude>52.12615944258636</latitude>
+			<altitude>0</altitude>
+			<heading>-0.008398535142500285</heading>
+			<tilt>0</tilt>
+			<range>806.908830627573</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Dirks 2000</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.6863310750207,52.12615944258636,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Klein Vahlberg, Buchen/Über dem Hartenbeeke</name>
+		<LookAt>
+			<longitude>10.69721922284283</longitude>
+			<latitude>52.12266009515756</latitude>
+			<altitude>0</altitude>
+			<heading>-0.003418236665521447</heading>
+			<tilt>0</tilt>
+			<range>453.235308263732</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Dirks 2000</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.69721922284283,52.12266009515756,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Helmstedt, Pfingstberg</name>
+		<LookAt>
+			<longitude>10.97832149406435</longitude>
+			<latitude>52.23182327500008</latitude>
+			<altitude>0</altitude>
+			<heading>-0.007325711281255994</heading>
+			<tilt>0</tilt>
+			<range>364.1485828741273</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<Point>
+			<coordinates>10.97832149406435,52.23182327500008,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Werlaburgdorf, Kreuzberg</name>
+		<LookAt>
+			<longitude>10.55475474719292</longitude>
+			<latitude>52.03775469387308</latitude>
+			<altitude>0</altitude>
+			<heading>-21.1584202734202</heading>
+			<tilt>0</tilt>
+			<range>180.4721701879227</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Dirks 2000</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.55475474719292,52.03775469387308,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Werlaburgdorf, Lietfeld</name>
+		<LookAt>
+			<longitude>10.55117119781298</longitude>
+			<latitude>52.04547120003033</latitude>
+			<altitude>0</altitude>
+			<heading>-21.15611152995883</heading>
+			<tilt>0</tilt>
+			<range>218.7166874699401</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Dirks 2000</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+			</Data>
+			<Data name="Siedlungsbefunde">
+			</Data>
+			<Data name="Funde">
+			</Data>
+		</ExtendedData>
+		<Point>
+			<coordinates>10.55117119781298,52.04547120003033,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Esperstedt</name>
+		<LookAt>
+			<longitude>11.66992875941359</longitude>
+			<latitude>51.41453420292211</latitude>
+			<altitude>0</altitude>
+			<heading>0.3169301088008221</heading>
+			<tilt>0</tilt>
+			<range>288.3492870671236</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#ms_bbg_sdl</styleUrl>
+		<ExtendedData>
+			<Data name="Literatur">
+				<value>Faron-Bartels 2006, 37 ff.</value>
+			</Data>
+			<Data name="Fundart">
+				<value>befestigte(?) Höhensiedlung</value>
+			</Data>
+			<Data name="Fläche">
+			</Data>
+			<Data name="Befestigung">
+				<value>mehrere Gräben, und Palisadengräbchen. Datierung der Funde Neolithikum. Stratigrafie: 1 x älter als BZ, 1x älter als Salzmünde, 1 x älter als Spätneolithikum</value>
+			</Data>
+			<Data name="Siedlungsbefunde">
+				<value>Zahlreiche Siedlungsgruben mit Salzmünder und Bernburger Funden</value>
+			</Data>
+			<Data name="Funde">
+				<value>Funde Salzmünder und Bernburger</value>
+			</Data>
+		</ExtendedData>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>11.66991943981907,51.41452770796825,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

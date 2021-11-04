@@ -503,6 +503,8 @@ Die ganze Welt am Schreibtisch. In den Satelliten- und Luftbildern lassen sich n
 |KML ist eine objektorientierte Programmiersprache basierend auf XML und kann im Editor, z.B. Notepad++ visualisiert werden. Es kann sich lohnen, die zugrunde liegende Syntax in den Grundzügen zu verstehen.|
 |KMZ-Dateien sind gezippte (komprimierte) KML-Dateien einschließlich ergänzender, zugehöriger Objekte.|
 
+Einen knappen Einstieg bietet [C. Rinne: KML & Auszeichnungssprachen (CAU gitLab)](https://cau-git.rz.uni-kiel.de/UFG_Kiel/teaching-group/Softwarebox_DGUF/-/blob/master/software/KML/kml.pdf){target=blank}
+
 #### Diercke Globus Online (Windows, Mac) \newline 
 Sie suchen eine physische Karte einer Region für die Einführung in Ihr Thema und wollen nicht einen *screenshot* von Google Earth oder Google Maps verwenden? Die Demoversion von Diercke Globus Online ist eine perfekte Alternative.
 
