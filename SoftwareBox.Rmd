@@ -423,11 +423,20 @@ Oft müssen einfache Textdateien editiert werden, sie wollen z. B. in einer Date
 Ein potenter Texteditor, bei dem kein Wunsch offen bleibt: Zeilenumbrüche oder Tabulatoren suchen und ersetzen (auch reguläre Ausdrücke), Zeilen sortieren, Spalten und Blöcke ausschneiden, Konvertierung des Zeichensatzes (ASCII, ANSI, UTF-8), Markdown-Editor mit Exportfunktionen oder auch komplexe Programmierung mit Syntax-Highlighting für viele Sprachen (u. a. HTML, SQL, R).
 
 - Offizielle Website: [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/){target=_blank}
+- Einleitung: [C. Rinne: Notepad++ (CAU gitLab)](https://cau-git.rz.uni-kiel.de/UFG_Kiel/teaching-group/Softwarebox_DGUF/-/blob/master/software/imagej/notepadplusplus.pdf)
+
 
 #### PSPad \newline 
 Dieser Editor spricht eher Programmierer als Zielgruppe an, er bietet gegenüber Notepad++ zusätzlich u. a. ein Browserfenster einschließlich ftp-Verbindungen und einer Logdatei.
 
 - Offizielle Website: [https://www.pspad.com](https://www.pspad.com){target=_blank}
+
+#### Reguläre Ausdrücke (Programmieren) \newline
+Ein auf den ersten Blick etwas komplexes und damit scheinbar hier übertriebenes Thema sind Reguläre Ausdrücke (*regular expressions*, kurz *RegEx*). In der Informatik dienen diese der Beschreibung und Manipulation von Zeichen und sind in vielen Programmiersprachen und Programmen u.a. für das "Suchen & Ersetzen" anwendbar: z.B. Notepad ++, R-Code, mp3tag - Editor usw.  Vor allem wenn Sie mit vielen diversen Programmen arbeiten sind diese Gemeinsamkeiten eine enorme Erleichterung bei der täglichen Arbeit. 
+
+Eine knappe Einführung finden Sie in der oben verknüpften Einführung zu Notepad ++.
+
+- Erläuterungen auf unterschiedlichem Niveau finden Sie auf folgenden Websites:  [Regulare Expressions](https://www.regular-expressions.info), [w3schools](https://www.w3schools.com/jsref/jsref_obj_regexp.asp) und  [regexr](https://regexr.com). 
 
 ### Literaturverwaltung
 
