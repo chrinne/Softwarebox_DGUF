@@ -446,7 +446,7 @@ Eine Literaturdatenbank ist ein Must-have für effizientes wissenschaftliches Ar
 Diese Software ist in der aktuellen Version inzwischen Standalone und kein Addon mehr für den Browser Firefox von Mozilla. Es bietet alle oben genannten Funktionen. Eine Einführung in die Benutzung von Zotero finden Sie auf der [Website der DGUF](https://www.dguf.de/index.php?id=203){target=_blank} und kompakt als *nutshell* in der [UFG Kiel](https://www.ufg.uni-kiel.de/de/professuren-bereiche/ai/archinf-material/tpc-7-1-zotero-in-a-nutshell){target=_blank}.
 
 - Offizielle Website: [https://www.zotero.org/](https://www.zotero.org/){target=_blank}
-- Einführung, Zitierstil und weitere Infos: [https://www.dguf.de/index.php?id=203](https://www.dguf.de/index.php?id=203){target=_blank}
+- Einführung, Zitierstil und weitere Infos: [C. Rinne: Zotero (CAU gitLab)](https://cau-git.rz.uni-kiel.de/UFG_Kiel/teaching-group/Softwarebox_DGUF/-/blob/master/software/zotero/zotero.pdf){target=_blank}
 
 #### Citavi (Windows, Mac) \newline 
 Eine Literaturdatenbank, die an einigen Universitäten für Studierende vergünstigt oder auch kostenfrei angeboten wird. Citavi Free ist kostenlos, es bietet alle Profi-Funktionen der anderen Citavi-Editionen, die Titelzahl ist aber auf nur 100 begrenzt.
