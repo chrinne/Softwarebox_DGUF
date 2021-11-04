@@ -9,6 +9,8 @@ header-includes:
   \renewcommand{\contentsname}{Inhalt}
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
+bibliography: zotero-references.bib
+csl: journal-of-neolithic-archaeology.csl
 output:
   pdf_document:
     number_sections: true
@@ -132,6 +134,10 @@ Konfiguriert wird das Plugin über "Werkzeuge > Zotfile Einstellungen..."
 
 Dieses Plugin ist für Sie von Interesse wenn Sie mit Markdown, LaTeX oder Dokumentenstellung in RStudio arbeiten. Better BibTeX (BBT) ist eine Erweiterung für die Verwaltung bibliographischer Daten mit Auszeichnungen für die Verwendung in LaTeX (Markdown). Damit ist es möglich, z.B. innerhalb von R-Studio in Markdown-Dateien und Projekten Literaturlisten aus der Datenbank und hierauf bezogene Zitate einzubinden. Es gibt/gab Diskussionen über eine Verlangsamung von Zotero, es handelte sich dabei u.a. um eine Indexierung des Zitierschlüssels (BibTeX key) beim Laden der Bibliothek.  
 
+[@rinneHandreichungZoteroYour2020, 1]
+
 ### Zutilo: [https://github.com/willsALMANJ/Zutilo](https://github.com/willsALMANJ/Zutilo) 
 
 Zutilo fügt einige nützliche Funktionen über zusätzliche Menüelemente und Tastaturkürzel hinzu. Hervorzuheben sind das Kopieren, Einfügen und Entfernen von Tags und TagGruppen, das Kopieren von Elementen in verschiedenen Formaten in die Zwischenablage und zahlreiche Tastaturkürzel zum Bearbeiten von Elementen.
+
+# Literatur
