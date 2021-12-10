@@ -112,7 +112,7 @@ Unter "Bearbeiten > Einstellungen > Erweitert > Allgemein" finden Sie die „Üb
 
 **Suchen & Ersetzen** ist ein Dauerthema und leider noch nicht unkompliziert möglich: [Link zum Zotero-Forum](https://forums.zotero.org/discussion/66262/an-integrated-find-and-replace-option-in-zotero).
 
-##Einstellungen im Onlinekonto
+## Einstellungen im Onlinekonto
 
 Neben den üblichen Einstellungen kann unter "Settings > Profile > C.V. (curriculum vitae)" die **eigene Publikationsliste im Web** an das öffentlich sichtbare Profil angehängt werden. Zuerst wird ein Stil gewählt, bevorzugt einer mit absteigender Sortierung des Erscheinungsjahrs. Nachfolgend werden für auswählbare Kategorien (Buch, Buchteil, Zeitschrit etc) die zuvor jeweils angelegte  Sammlung der eigenen Bibliothek im Web gewählt. Ausschließlich die Zitate dieser Sammlungen werden angezeigt. Fügen Sie lokal ein Zitat in die Sammlung "meine Artikel" ein und synchronisieren Sie anschließend die Bibliothek, ist Ihre Publikationsliste im Netz direkt aktualisiert. 
 
