@@ -1,5 +1,5 @@
 ---
-title: "KML, XML & Auszeichnungssprachen"
+title: "KML (GPS), XML & Auszeichnungssprachen"
 author: 
  - Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]
 date: "`r format(Sys.time(), '%d. %B %Y')`"
@@ -220,3 +220,127 @@ Nutzen Sie nachfolgend bitte die Datei: Hochbruecke.kml. Für die einfache Visua
 </Document>
 </kml>
 ```
+
+# GPS
+
+## Allgemeine Information
+
+GPS ist aus unserer heutigen Gesellschaft nicht mehr wegzudenken. Grund ist sicher das grundsätzliche Bedürfnis, den eigenen geographischen Standort zu bestimmen. Während für einige Jahre GPS-Handgeräte (u.a. von Garmin) weit verbreitet waren, ist für viele Nutzer das Smartphone der Alleskönner und stets dabei. Daneben gibt es professionellere Geräte mit speziellen Antennen und ergänzende Dienste zur Fehlerkorrektur mit einer hohen Genauigkeit bei wenigen Zentimetern im Ergebnis (differentielles GPS).
+
+Im folgenden soll nicht auf die hochpräzise Vermessung und die notwendigen Voraussetzungen eingegangen werden. Vielmehr soll es um Alltagsanwendungen gehen und einige der möglichen Formate für den Austausch (NMEA) und die Archivierung (gpx, kml) von Rauminformationen als Punkt (**W**ay**P**oint) oder Polygon (track). 
+
+## Formate für GPS-Daten
+
+### NMEA
+Dieses Format ist ein altes und sehr grundlegendes Format für die Kommunikation zwischen elektronischen Geräten. Die Definition betrifft auch die Schnittstellenparameter, so z.B. die Baudrate, die die Anzahl der übermittelten Symbole pro Sekunde angibt. Viel wesentlicher oder umfangreicher sind die Definitionen diverser Informationseinheiten, deren Syntax und die Kombination in definierten Datensätzen. Natürlich gibt es über die Entwicklung mehrere Versionen, weit verbreitet ist NMEA 0183. NMEA ist textbasiert, hervorragend dokumentiert, maschinenlesbar, auch menschenlesbar und kompakt. NMEA wird von allen GPS-Geräte geliefert und ist der Standard für GPS Daten. Eine Einschränkung betrifft den Umfang der Informationen. Nicht jede Information muss in dem Datensatz vorhanden sein und nicht alle Datensätze sind zu liefern. Das System ist also Modular und so besteht keine Pflicht, Daten zur Anzahl der verwendeten Satelliten oder Präzision zu liefern. Die Firma hinter [NMEA](https://www.nmea.org) bietet keine direkte kostenlose Dokumentation und verweist lediglich auf veraltete Datensätze (depricated). Insgesamt sind aber brauchbare Voraussetzungen für eine nachhaltige Archivierung und Nutzung gegeben. Sie finden weitere Informationen natürlich bei [Wikipedia](https://de.wikipedia.org/wiki/NMEA_0183) und zu den NMEA 0183 Datensätzen im Web, u.a. [hier](http://www.nmea.de/nmea0183datensaetze.html).
+
+```
+$GPGGA,074914.000,5420.5647,N,1007.0718,E,1,00,0.0,27.6,M,0.0,M,,*6B
+$GPRMC,074914.000,A,5420.5647,N,1007.0718,E,2.4,000.0,220411,,,A*58
+```
+
+Vorangehend ein kurzer Ausschnitt aus dem Datenstrom (NMEA 0183) einer kleinen GPS-Maus, die via USB-Kabel an diverse Endgeräte gebunden werden kann, aktuelle Geräte setzen auf Bluetooth. Das Gerät liefert genau zwei Datensätze: 
+- GGA: *Global Positioning System Fix Data, Time, Position and fix related data for a GPS receiver*
+- RMC: *Recommended Minimum Navigation Information*
+
+Die Informationen innerhalb des Datensatzes sind durch "," getrennt. 
+
+```                                                      11
+        1         2       3 4        5 6 7  8   9  10 |  12 13  14   15
+        |         |       | |        | | |  |   |   | |   | |   |    |
+ $--GGA,hhmmss.ss,llll.ll,a,yyyyy.yy,a,x,xx,x.x,x.x,M,x.x,M,x.x,xxxx*hh<CR><LF>
+```
+Die einzelnen Abschnitte liefern folgende Information : Beispiel aus dem Datenstrom 
+  1) Universal Time Coordinated (UTC) : 07(hh)49(mm)14(ss).000
+  2) Latitude : 5420.5647
+  3) N or S (North or South) : N
+  4) Longitude : 1007.0718
+  5) E or W (East or West) : E
+  6) GPS Quality Indicator, : 1
+     0 - fix not available,
+     1 - GPS fix,
+     2 - Differential GPS fix
+  7) Number of satellites in view, 00 - 12 : 00
+  8) Horizontal Dilution of precision : 0.0
+  9) Antenna Altitude above/below mean-sea-level (geoid) : 27.6 
+ 10) Units of antenna altitude, meters : M
+ 11) Geoidal separation, the difference between the WGS-84 earth
+     ellipsoid and mean-sea-level (geoid), "-" means mean-sea-level
+     below ellipsoid : 0.0
+ 12) Units of geoidal separation, meters : M
+ 13) Age of differential GPS data, time in seconds since last SC104
+     type 1 or 9 update, null field when DGPS is not used : <leer>
+ 14) Differential reference station ID, 0000-1023 <leer>
+ 15) Checksum *6B
+
+```
+        1         2 3       4 5        6 7   8   9    10  11|
+        |         | |       | |        | |   |   |    |   | |
+ $--RMC,hhmmss.ss,A,llll.ll,a,yyyyy.yy,a,x.x,x.x,xxxx,x.x,a*hh<CR><LF>
+```
+
+Die einzelnen Abschnitte liefern folgende, teils zu GGA redundante Information. Neu sind hier Geschwindigkeit und Datum. 
+  1) UTC Time
+  2) Status, V = Navigation receiver warning, P = Precise : A(utonom)
+  3) Latitude
+  4) N or S
+  5) Longitude
+  6) E or W
+  7) Speed over ground, knots : 2.4 kn (=4,5 km/h)
+  8) Track made good, degrees true
+  9) Date, ddmmyy : 22(dd)04(mm)11(yy)
+ 10) Magnetic Variation, degrees
+ 11) E or W
+ 12) Checksum
+  
+### GPX (GPS)
+Dieses Format ist das **GP**S-e**X**change format. Es basiert auf XML, es ist standardisiert und umfassend dokumentiert [Website](https://www.topografix.com/gpx.asp). Auch ist mehr möglich, als üblicherweise in vielen GPX-Dateien drinsteht, so z.B. die Anzahl der Satelliten, die Präzision (hdop, vdop, pdop) oder ein fix (Korrektursignal). Die Syntax und Struktur in dieser einfache Form ist in den wesentlichen Elementen selbsterklärend.
+
+```
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.0" creator="GPSBabel - http://www.gpsbabel.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2011-04-22T14:45:24Z</time>
+<bounds minlat="54.342745" minlon="10.044113" maxlat="54.484567" maxlon="10.167649" />
+<trk>
+<name>Track 11-04-22 09:46~11-04-22 13:12</name>
+<trkseg>
+<trkpt lat="54.342745" lon="10.117863">
+<ele>27.6</ele>
+<time>2011-04-22T07:49:14Z</time>
+<speed>1.3</speed>
+</trkpt>
+[... optionale weitere Punkte ...]
+</trkseg>
+</trk>
+```  
+
+## Software und Anwendung
+
+### GPS Babel
+
+Quelle: https://www.gpsbabel.org
+Ergänzende Infos: https://de.wikipedia.org/wiki/GPSBabel
+Plattformunabhängige freie Software (GPL) für das Konvertieren von GPS-Dateien. Die Software bietet unter Windows und MacOS neben der Kommandozeile auch eine GUI. Interessant sind auch die zahlreichen Konvertierungen innerhalb von GPX zwischen *waypoint*, *track *und *rout*.
+
+### QGIS GPS-Werkzeug (Erweiterug) & GPS-Information (Bedienfeld)
+
+Qunatum GIS ([QGIS](https://qgis.org/)) ist ein sehr weit verbreitetes freies Geographisches Informations System. GPS-Werkzeuge sind ein integraler und nur zu aktivierender Bestandteile, der Zugriff erfolgt über das zu ergänzende Bedienfeld GPS-Informationen. Damit wird eine Verbindung zu einem externen GPS-Gerät aufgebaut. Unter Windows erfolgt diese Verbindung über einen COM-Port via USB-Kabel oder Bluetooth. Die mit der gewählten Frequenz, z.B. 1 Hz, einlaufenden Daten können direkt zur Digitalisierung genutzt werden.
+
+### GeoSetter
+
+Quelle: https://geosetter.de
+Download: https://geosetter.de/download-de/
+OS: ab Win 7
+Diese Software verbindet Bilder mit Koordinaten aus GPS-Tracks (Mobiltelefon, Navi, GPS-Maus etc.) über Datum und Uhrzeit miteinander oder weist Koordinaten anhand einer Markierung in der benachbarten Karte zu. Das Verorten der Bilder von Exkursionen, Bodendenkmälern oder auch Ausgrabungen ist so einfach möglich (*geotaggen*). Zudem können automatisch Höhenangaben und Verwaltungsinformationen (Ort, Kreis, Land) von [GeoNames](http://www.geonames.org/) abgefragt und in den Metadaten der Bilder ergänzt werden.
+
+Das Programm nutzt die Google Maps API für ihre notwendige Funktionalität, damit ist zugleich die Verwendung eines aktuellen Internetexplorers für die Karte unabdingbar ([s. Erläuterung der Website](https://geosetter.de/2018/05/10/geosetter-and-internet-explorer-de/)). Es kann aber auch eine OSM-Karte hinterlegt werden. Ein weitere essentieller, externer Bestandteile ist das Programms [ExifTool von Phil Harvey](https://www.sno.phy.queensu.ca/~phil/exiftool/) zum Lesen/Schreiben der Metadaten der Bilder. 
+
+Ein Beispielhafter Arbeitsablauf:
+
+- öffnen Sie links den Ordner der Bilder
+- Um Tracks zu laden muss ggf. das entsprechende Fenster unter "Ansicht -> Tracks" geöffnet werden (\<strg>+\<t>). Laden Sie dann den zugehörigen *track*, er wird in der Karte dargestellt. 
+- Markieren Sie die zu lokalisierenden Bilder und wählen dann "Bearbeiten -> Synchronisierund mit GPS-Daten" (\<strg>+\<g>)
+- Im folgenden Fenster können zahlreiche Parameter angepasst werden, dies betrifft vor allem die Zeitangaben für die Synchronisation.
+- In dem Kontextmenü der markierten Bilder "Daten bearbeiten" wählen (\<strg>+\<e>). Im folgenden Fenster können normierte Metadaten (IPTC, EXIF) bearbeitet werden. Im Register "Ort" können 1. die jeweilige Höhe nach SRTM oder TOPO und 2. die Verwaltungsangaben bei [GeoNames](http://www.geonames.org/) nachgeschlagen werden. 
+- Die Änderungen müssen dezidiert gespeichert werden (Geduld!).
+
