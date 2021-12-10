@@ -13,16 +13,16 @@ header-includes:
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
 output:
-  pdf_document:
-    number_sections: true
-    toc: true
-    toc_depth: 2
-    df_print: kable
   html_document:
     toc: true
     toc_depth: 2
     toc_float: true
     number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -897,6 +897,7 @@ Die Software bietet eine Menü- und Iconleiste, wodurch das Einfügen von Auszei
 
 ####  Typora   
 Ein im Design etwas schlichterer aber sehr potenter Editor für Markdown. Die schlichte Menüleiste bietet Zugang zu vielen Optionen. Hervorzuheben sind die diversen Themen (themes) bzw. Layout für den resultierenden Text, die aus einem umfangreichen Repositorium noch erweitert werden können. Der Export zu PDF ist unmittelbar möglich. 
+Typora ist nach der Version 1.0.3 kostenpflichtig, die Version 1.0.3 finden Sie noch auf der Website.
 
 - Offizielle Website: [https://typora.io/](https://typora.io/){target=_blank}
 

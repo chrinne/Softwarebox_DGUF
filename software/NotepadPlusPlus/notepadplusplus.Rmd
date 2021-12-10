@@ -9,16 +9,16 @@ header-includes:
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
 output:
-  html_document:
-    toc: true
-    toc_depth: 2
-    toc_float: true
-    number_sections: true
   pdf_document:
     number_sections: true
     toc: true
     toc_depth: 2
     df_print: kable
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -186,7 +186,9 @@ Zwei Aspekte müssen hier vorgestellt werden:
 
 ### Markdown
 
-[Markdown](https://markdown.de) ist eine Auszeichnungssprache mit einiger Ähnlichkeit zu HTML. Benötigt wird ein Texteditor oder auch ein spezieller Markdown-Editor (z.B. [Typora](https://typora.io/)) oder Sie nutzen RStudio mit R-Markdown. Ziel ist es, sich auf das Schreiben zu konzentrieren ohne die überbordenden Funktionsleisten der Textverarbeitung. Wesentliche Layout-Elemente lassen sich durch einfache Auszeichnung bewerkstelligen. Kurze Texte, z.B. Protokolle oder auch diese Handreichung lassen sich schnell erstellen und als MD oder PDF (Portable Dokument File) verteilen. Da reiner Text vorliegt, ist kollaboratives Arbeiten in [GitHub](https://github.com/) möglich. Das Ziel ist **keine LaTeX-Alternative**, sondern schnelles plattformunabhängiges  Erstellen klar strukturierter Texte.
+[Markdown](https://markdown.de) ist eine Auszeichnungssprache mit einiger Ähnlichkeit zu HTML. Benötigt wird ein Texteditor oder auch ein spezieller Markdown-Editor (z.B. [Typora](https://typora.io/))[^2] oder Sie nutzen RStudio mit R-Markdown. Ziel ist es, sich auf das Schreiben zu konzentrieren ohne die überbordenden Funktionsleisten der Textverarbeitung. Wesentliche Layout-Elemente lassen sich durch einfache Auszeichnung bewerkstelligen. Kurze Texte, z.B. Protokolle oder auch diese Handreichung lassen sich schnell erstellen und als MD oder PDF (Portable Dokument File) verteilen. Da reiner Text vorliegt, ist kollaboratives Arbeiten in [GitHub](https://github.com/) möglich. Das Ziel ist **keine LaTeX-Alternative**, sondern schnelles plattformunabhängiges  Erstellen klar strukturierter Texte.
+
+[^2]: Bis zur Version 1.0.3 war Typora kostenfrei. Die älteren Versionen finden Sie unter [https://typora.io/releases/all](https://typora.io/releases/all) 
 
 Markdown schreiben ist einfach. Dabei ist auf Leerzeilen zwischen Absätzen oder vier Leerzeichen am Zeilenende als klare Trennung zu achten. Wichtige Layout-Elemente sind:
 ```
