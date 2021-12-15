@@ -42,7 +42,7 @@ Bei der asymetrische Verschlüsselung ist ssh ein weit verbreiteter Standard und
 
 ## Szenarien zur Nutzung
 
-Das Naheliegndste ist es, GIT für das Entwickeln von Programmen zu nutzen. In einem archäologischen Kontext sind aber auch andere Szenarien und kombinationen daraus denkbar.
+Das Naheliegndste ist es, GIT für das Entwickeln von Programmen zu nutzen. In einem archäologischen Kontext sind aber auch andere Szenarien und Kombinationen daraus denkbar.
 
 ### Daten sammeln
 
@@ -50,9 +50,14 @@ Das Sammeln von Daten erfolgt lokal, auf dem einem PC, gerne in [MS Excel](https
 
 Eine zentrale Datenhaltung kann innerhalb eines lokalen Netzwerkes mit Freigaben und in MS Access mit verknüpften Datenbanken (backend) oder in SQL mit angehängten Datenbeständen (attached) arbeiten. Das ist nicht wirklich kompliziert, setzt aber für eine performante Nutzung eine gute Datenstruktur voraus. Sobald Sie das lokale Netzwerk verlassen sind Sie auf eine Serverdatenbank (z.B. PostrgeSQL) angewiesen und haben einen sehr hohen administrativen Aufwand auch bei Sicherheitsaspekten. Für Projekte einer überschaubaren Größe also keine Alternative. 
 
-**Alternativ**: sammeln Sie Daten als CSV-Tabellen und synchronisieren (pushen) Sie regelmäßig zum Repositorium. Wie Sie diese CSV-Tabelle lokal editieren ist fast egal, möglich sind MS Excel, LO Calc oder ein Texteditor. **Allerdings** ist der Wechsel zwischen MS Excel und LO Calc sehr umständlich, da MS excel die Spalten mit ";" und LO Calc diese mit einem "," trennt. Optional können Sie auch ein anderes Trennzeichen verwenden, z.B. <TAB>,  
+**Alternativ**: sammeln Sie Daten als CSV-Tabellen und synchronisieren (pushen) Sie regelmäßig zum Repositorium. Wie Sie diese CSV-Tabelle lokal editieren ist fast egal, möglich sind MS Excel, LO Calc oder ein Texteditor. **Allerdings** ist der Wechsel zwischen MS Excel und LO Calc sehr umständlich, da MS Excel die Spalten mit ";" und LO Calc diese mit einem "," trennt. Optional können Sie auch ein anderes Trennzeichen verwenden, z.B. <TAB>. Allerdings werden diese Dateien mit der Endung .txt  oder .csv nicht mehr automatisch richtig erkannt und beim Speichern muss in MS Excel jedes mal das Trennzeichen definiert werden während im LO Calc  automatisch ein ',' gesetzt wird.
+Der **Vorteil** ist die Versionierung durch GIT, also das Protokoll der vollzogenen Änderungen, und die zentrale Ablage auf einem Server um dessen Sicherheit und Zugangsberechtigungen Sie sich nicht unmittelbar kümmern müssen.
 
+### Texte Verfassen
 
+Sofern Sie sich an die Arbeit mit Rtudio und das Schreiben von Markdown gewöhnt haben, können Sie über GIT natürlich auch geimeinsam Texte, Artikel und ganze Bücher mit *Bookdown* schreiben. Sie sollten innerhalb von RStudio nicht mit einzelnen Dateien sondern mit Projekten und Versionskontrolle arbeiten. In diesem Projekt können Sie dann die benötigten Daten (CSV) als auch die Literatur als BibTeX-Datei pflegen und in Ihrem Text einbinden.  Tabellen, Analysen und resultierende Grafiken werden mittels R-Code auf Grundlage der vorliegenden Daten im Text generiert und sind stets aktuell.  Natürlich ist dies eine grundlegend andere Arbeitsweise als eine gemeinsame Ablage in der Cloud und die Versionierung von Hand, selbst bei der verwendung von Online Office. Es ist eine Umstellung mit Reibungsverlusten und benötigt Einarbeitungszeit. 
+
+Anmerkung: Wenn Sie dieses Thema *Online Texteditieren* interessiert, recherchieren Sie auch nach **Fidus Writer**. 
 
 ## GIT-Plattform und GIT-Account
 
