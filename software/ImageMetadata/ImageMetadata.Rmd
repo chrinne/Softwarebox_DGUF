@@ -9,16 +9,16 @@ header-includes:
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
 output:
-  pdf_document:
-    number_sections: true
-    toc: true
-    toc_depth: 2
-    df_print: kable
   html_document:
     toc: true
     toc_depth: 2
     toc_float: true
     number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -106,9 +106,79 @@ Es sollen drei Programme zum Lesen und Schreiben von Metadaten in Rasterbildern 
 
 - [XnView](https://www.xnview.com/de/) /[XnView XMP](https://www.xnview.com/de/xnviewmp/): Beide Programme stehen als freeware für Win, Mac und Linux zur Verfügung. Sie bieten eine umfassende Bildverwaltung mit umfangreichen Optionen zum Lesen und Schreiben von Metadaten.
 - [exiv2](https://www.exiv2.org/): Ist eine freie, plattformunabhängige und konstant weiterentwickelte Software zum Lesen und Schreiben von Metadaten auf der Kommandozeile. Sie kommt u.a. in der Grafiksoftware Gimp und darktable zum Einsatz. Die Softare ist in der aktuellen Version unter Windows auf die vorherige Installation von MinGW oder Cygwin angewiesen, um eine Linuxumgebung zu simulieren und die benötigten Bibliotheken bereitzustellen (*.dll). 
-- [ExifTool](http://exiftool.sourceforge.net/): Eine Alternative zu exiv2 die ebenfalls auf der Befehlszeile genutzt wird. Da es mir um die Darstellung eines automatisierten Prozesses auf der Kommandozeile geht wird nachfolgend nur exiv2 vorgestellt.
+- [ExifTool](http://exiftool.sourceforge.net/): Eine Alternative zu exiv2 die ebenfalls auf der Befehlszeile genutzt wird. Da es mir um die Darstellung eines automatisierten Prozesses auf der Kommandozeile geht, dazu ausführlich exiv2, wird nachfolgend nur sehr minimalistisch vorgestellt.
 
-## XNView
+## XnView/XnViewMP
 
-## exiv2
+Für dieses Programm (XnView) existiert ein umfangreiches englisches [Wiki](https://www.xnview.com/wiki). Dort finden Sie auch eine Anleitung und ein Handbuch [XnView (Windows) User Guide](https://www.xnview.com/wiki/index.php/XnView_(Windows)_User_Guide).  Es ist weniger ein Programm zur Arbeit mit Metadaten von Bildern als vielmehr ein umfassendes Programm zur Verwaltung von Bildern. Das impliziert aber auch das Schreiben und das Lesen von Metadaten (Werkzeuge > Metadaten). Auch hier können *Reguläre Ausdrücke* verwendet werden.  
+
+## exiv2 Anwendungsbeispiele
+
+Das ausführen der Befehle auf der Kommandozeile bietet die Möglichkeit, viele Fotos mit spezifisch konfektionierten Befehlen auf einmal abzuarbeiten. Diese Befehle können aus einer Datenbank oder mit einem Tabellen-Programm (z.B. MS Excel) generiert werden. Das nachfolgende Beispiel soll nur einen Einstieg erleichtern, auf der Homepage steht ein umfangreiches [Handbuch](https://www.exiv2.org/manpage.html) zur Verfügung, aus dem die Nachfolgenden Beispiele entnommen wurden. Die Befehlsstruktur sieht wie folgt aus:
+
+```
+exiv2 [ opt [arg] ]+ [ act ] file ...
+```
+
+Nach dem Befehl folgt die Option, worunter hier u.a. -e (--extract), -i (--insert) und -M (--modify) verstanden werden. Hierauf folgt das auszuführende Argument aus Feld und Feldwert. Abschließend wird die zu ändernde Datei benannt. Eine Verkettung in einem Befehlsaufruf ist möglich:
+
+```
+exiv2 -M"add Iptc.Application2.Credit String Mr. Smith" -M"add Xmp.myprefix.Whom 
+Mr. Smith" -M"set Exif.Image.Artist Mr. Smith" image.jpg
+```
+
+Auf der Homepage von exiv2 finden Sie: 
+
+- weitere [Beispiele](https://exiv2.org/sample.html#modify), 
+- eine [Liste der Metadaten](https://exiv2.org/metadata.html) und 
+- die Liste der in [exiv2 verwendeten IPTC Datensätze](https://exiv2.org/iptc.html).
+
+Für das nachfolgende Beispiel laden Sie sich bitte den hier bereitgestellten Ordner /foto/ mit den beiden Bildern und das Programm exiv2 (s.o.) herunter. Speichern Sie für diesen Einstieg alles in einem Ordner "foto" auf Ihrem Desktop um lange Pfadangaben zu vermeiden. Achten Sie auch später bitte auf kurze Ordnernamen ohne Leerzeichen. 
+
+Danach rufen Sie die Kommandozeile (Terminal) auf und wechseln in den Bildordner. Unter Windows 10: \<Win>+\<s>, nach "cmd" suchen und "Eingabeaufforderung" ausführen. Sie sollten mit der Kommandozeile in Ihrem Nutzerverzeichnis gelandet sein: ```C:\Users\<name>```.
+Hier wechseln Sie auf den Desktop und in den Bildordner: ```cd Desktop\foto```.
+
+Als Hilfe einige grundlegende Befehle der Kommandozeile von Windows:
+
+- dir: directory / list, Inhalt des Ordners
+- cd: change directory, Ordner wechseln
+- .\ von der aktuellen Position aus
+- ..\ aus dem übergeordneten Ordner
+- \*.jpg alle Dateien mit der Endung .jpg
+- help: eine Liste wichtiger Befehle
+- dir /? Hilfe zu dem Befehl dir
+
+Führen Sie nachfolgend in der Kommandozeile bitte folgende Befehle aus:
+
+```
+exiv2.exe pr *.jpg
+exiv2.exe -M "add Iptc.Application2.Writer String Name des 
+Verfassers von 'Byline'" *.jpg
+exiv2.exe -M "add Iptc.Application2.Credit String Name des 
+Fotografen" *.jpg
+exiv2.exe -M "add Iptc.Application2.Byline String Fotos aus dem 
+Kieler Umland." *.jpg
+```
+
+Sie müssen diese Befehle ggf. natürlich modifizieren, 1. durch ergänzende Pfadangaben zu exiv2 und den Bildern als auch 2. bei dem jeweiligen Inhalt, als 'Name...' und 'Fotos aus...'.
+
+Ein Beispiel für die Stapelverarbeitung mit Excel finden Sie in der Datei: iptc-write.xlsx. Diese Datei hat vier Spalten:
+
+1. vollständige Dateiname (0001-0001-001.jpg)
+2. Bildautor
+3. Bildinhalt
+4. Spalte mit der Anweisung die Daten der Spalten A-C zu einem Befehl zu verketten(=verketten()):
+
+=VERKETTEN("exiv2.exe -M""add Iptc.Application2.Credit ";B2;""" -M""add Iptc.Application2.Writer "; B2; """ -M""add Iptc.Application2.Caption "; C2; """ ";A2)
+
+> Anmerkung: Da das " eine besondere Bedeutung in Excel für das Auszeichnen von Zeichenketten hat muss es hier mit einem " auskommentiert werden. """ " fügt also den Text "\<Leerzeichen> ein. 
+
+Daraus wird dann:    
+exiv2.exe -M"add Iptc.Application2.Credit Christoph Rinne" -M"add Iptc.Application2.Writer Christoph Rinne" -M"add Iptc.Application2.Caption Neolithisches Megalithgrab bei Birkenmoor" 0001-0001-001.jpg
+
+Die 4. Spalte enthält abschließend alle Befehle für die Änderungen abhängig von den Zellen in den Spalten A-C. Diese Spalte kann als ganzes in die Zwischenablage kopiert und auf der Befehlszeile eingefügt werden. Dies ist eine Möglichkeit, lange Listen mit Bildinformationen in die Fotos zu schreiben. Machen Sie vorher Backups von den Fotos und prüfen Sie nachträglich die Lesbarkeit (s.o.).
+
+## ExiTool Anwendungsbeispiele
+
+Im Unterschied zu exiv2 handelt es sich bei [ExifTool](https://exiftool.org) für Windows um eine einzige ausführbare Datei. Die heruntergeladene Datei sollte von 'exiftool(-k).exe' in 'exiftool.exe' umbenannt werden. Das Programm kann auf der Befehlszeile genutzt werden: ```exiftool -a -u -g1 -w <bildname>``` oder  ```exiftool -a -u -g1 -w <bildname> > info.txt``` (Geduld!). Daneben können Bilddateien oder ganze Ordner im  Explorer von Windows auch durch "ablegen" auf dem Programm bearbeitet werden. Die notwendigen Parameter müssen dann aber durch eine Umbenennung des Programmes vorab übergeben werden, z.B. "exiftool(-a -u -g1 -w).exe". Weiter Informationen durch aufrufen von exiftool.exe in der Kommandozeile ohne Parameter oder auf der [Homepage](https://exiftool.org/#running).
 

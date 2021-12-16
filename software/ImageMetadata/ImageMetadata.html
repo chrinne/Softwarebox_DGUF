@@ -249,10 +249,11 @@ div.tocify {
 
 <div id="allgemeine-information" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Allgemeine Information</h1>
-<p>Im Kern geht es um Metadaten und deren Bedeutung für die Nachutzung von digitaler Objekte. Fotos, oder allgemeiner Rasterbilder, sind hier nur das gewählte Medium.</p>
+<p>Im Kern geht es um Metadaten und deren Bedeutung für die Nachnutzung von digitaler Objekte. Fotos, oder allgemeiner Rasterbilder, sind hier nur das gewählte Medium, um mit allgemein bekannten Objekten auf dieses wichtige Thema nachdrücklich hinzuweisen.</p>
 <div id="vorbemerkung" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Vorbemerkung</h2>
 <p>Bilder - und es geht hier um Rasterbilder bzw. Fotos - haben durch die digitale Fotografie einen enormen Umfang erreicht, diese stellen in der Anzahl und vor allem im Datenvolumen bei fast allen (Forschungs-) Projekten den größten Bestand dar. Zwar gibt es eine immer bessere Bildanalyse und mit trainierten Neuronalen Netzen werden heute erstaunliche Ergebnisse erzielt (z.B. <a href="http://yolodetec.com/">YOLO</a>). Dennoch macht es Sinn, die bekannten Informationen zu den Bildern nicht (nur) in getrennten Listen zu führen, sondern in die Bilder hineinzuschreiben. Mit Blick auf die Nachnutzung zu dem vorgenannten noch das Problem der unzähligen Bildformate: von den RAW-Dateien der jeweiligen Kamera über JPG, TIFF und PNG als den bekanntesten zu weiteren Software spezifischen Formaten und Varianten innerhalb der Formate.</p>
+<p>Metadaten finden Sie in vielen anderen Objekten, auch in Word und PDF. Bei MS Word finden Sie einige Standardfelder mit Datei &gt; Vorbereiten &gt; Eigenschaften und zudem unter Dokumenteneigenschaften &gt; Erweitert die Möglichkeit, weitere Felder einzubinden. Nach dem Speichern als PDF finden Sie diese in der Regel unter Datei &gt; Eigenschaften. Beim Drucken in ein PDF werden diese Metadaten nach meiner Kenntnis nicht übernommen.</p>
 <blockquote>
 <p>Automatisch eingebundene Metadaten in allen digitalen Dokumenten können viele Informationen zum Urheber der Datei transportieren. Sie sollten diese Daten also bewusst einsetzen und kontrollieren.<br />
 Leider kann über Metadaten auch Schadcode transferiert werden (<a href="https://stackoverflow.com/questions/9675941/how-can-a-virus-exist-in-an-image">stackoverflow</a>).</p>
@@ -265,7 +266,8 @@ Leider kann über Metadaten auch Schadcode transferiert werden (<a href="https:/
 </div>
 <div id="metadaten" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Metadaten</h1>
-<p>Bei Fotos gibt es zwei wichtige und schon lange existierende Gruppen von Metadaten mit jeweils definierten Feldern: IPTC und EXIF. IPTC zielt eher auf Urheberrechte und Bildinhalt, während EXIF mehr technische Informationen umfasst. Einige Felder, u.a. Datumsangaben, sind dabei redundant vorhanden. Bei XMP handelt es sich um eine allgemeine auf XML Standard basierte Definition von Metadaten, die dann mit Werten gefüllt werden können. XMP wird allgemein verwendet, u.a. für PDF und Bilderformate.</p>
+<p>Bei Fotos gibt es zwei wichtige und schon lange existierende Gruppen von Metadaten mit jeweils definierten Feldern: IPTC und EXIF. IPTC zielt eher auf Urheberrechte und Bildinhalt, während EXIF mehr technische Informationen umfasst. Einige Felder, u.a. Datumsangaben, sind dabei redundant vorhanden. Bei XMP handelt es sich um eine allgemeine auf XML Standard basiertes Schema zur Definition von Metadaten. XMP wird allgemein verwendet, für PDF und Bilderformate.</p>
+<p>Weitere Informationen zu dem Thema Metadaten finden Sie im Bereich Projektphasen &gt; Dokumentation der IT-Empfehlungen von <a href="https://ianus-fdz.de/it-empfehlungen/dokumentation">IANUS</a></p>
 <div id="iptc" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> IPTC</h2>
 <p>IPTC steht für <em>International Press Telecommunications Council</em> und den Datenstandard, der zusammen mit der <em>Newspaper Association of America (NAA)</em> als <em>Information Interchange Model (IIM)</em> entwickelt wurde. Einen guten Überblick und Einstieg bietet die <a href="http://exiftool.sourceforge.net/TagNames/IPTC.html">Erläuterung zu dem Programm exivtool</a>. Trotz der Definition kommen unsauber geschrieben Daten vor (u.a. Länge der Felder, Speicherort des IPTC-Blocks). IPTC Daten werden in Blöcken (<em>enveloperecords</em>) organisiert und sind innerhalb dieser erneut nummeriert (<em>tag id</em>). Beachten Sie bitte, es gibt ein IPTC Core Schema und ein IPTC Extension Schema. Eine kleine Auswahl der oft genutzten Felder aus den <em>IPTC ApplicationRecord Tags</em> sehen sie hier:</p>
@@ -345,7 +347,7 @@ Leider kann über Metadaten auch Schadcode transferiert werden (<a href="https:/
 </tr>
 </tbody>
 </table>
-<p>Nicht alle Tags werden von jeder Software verwendet oder deren Bezeichnung sogar angemessen oder identisch übersetzt. Eine kleine Auswahl sehen Sie hier:</p>
+<p>Nicht alle Tags werden von jeder Software verwendet oder deren Bezeichnung sogar angemessen oder identisch übersetzt. Eine kleine Auswahl aus älteren Programmversionen sehen Sie hier:</p>
 <table>
 <thead>
 <tr class="header">
@@ -469,18 +471,73 @@ Leider kann über Metadaten auch Schadcode transferiert werden (<a href="https:/
 </div>
 <div id="exif" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> EXIF</h2>
-</div>
-<div id="dai-xml-datenstruktur" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> DAI XML-Datenstruktur?</h2>
+<p>Die Bezeichnung steh für <em>Exchangeable Image File Format</em>, es handelt sich überwiegend um technische Metadaten zur Aufnahme, unter anderem Kameramodell, Zeitpunkt der Aufnahme und Kameraeinstellungen. Hervorzuheben sind hier die <strong>Geokoordinaten</strong> und weitere Angaben zu den Verwaltungseinheiten (von Land bis Ort/Stadt). EXIF-Daten werden u.a. in TIF und JPG (JFIF) geschrieben. Bei letzteren kann es durch konkurrierende Angaben zur Position innerhalb der Datei zu Konflikten beider Standards kommen. Die von Mobiltelefonen gerne abgelegten Positionsdaten können in Kombination mit den Hardwareinformationen zum Gerät sehr viel zum Urheber bekannt geben. Sie sollten sich dessen stets bewusst sein.</p>
 </div>
 </div>
 <div id="software" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> Software</h1>
-<div id="xnview" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> XNView</h2>
+<p>Es sollen drei Programme zum Lesen und Schreiben von Metadaten in Rasterbildern hier genannt werden:</p>
+<ul>
+<li><a href="https://www.xnview.com/de/">XnView</a> /<a href="https://www.xnview.com/de/xnviewmp/">XnView XMP</a>: Beide Programme stehen als freeware für Win, Mac und Linux zur Verfügung. Sie bieten eine umfassende Bildverwaltung mit umfangreichen Optionen zum Lesen und Schreiben von Metadaten.</li>
+<li><a href="https://www.exiv2.org/">exiv2</a>: Ist eine freie, plattformunabhängige und konstant weiterentwickelte Software zum Lesen und Schreiben von Metadaten auf der Kommandozeile. Sie kommt u.a. in der Grafiksoftware Gimp und darktable zum Einsatz. Die Softare ist in der aktuellen Version unter Windows auf die vorherige Installation von MinGW oder Cygwin angewiesen, um eine Linuxumgebung zu simulieren und die benötigten Bibliotheken bereitzustellen (*.dll).</li>
+<li><a href="http://exiftool.sourceforge.net/">ExifTool</a>: Eine Alternative zu exiv2 die ebenfalls auf der Befehlszeile genutzt wird. Da es mir um die Darstellung eines automatisierten Prozesses auf der Kommandozeile geht, dazu ausführlich exiv2, wird nachfolgend nur sehr minimalistisch vorgestellt.</li>
+</ul>
+<div id="xnviewxnviewmp" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> XnView/XnViewMP</h2>
+<p>Für dieses Programm (XnView) existiert ein umfangreiches englisches <a href="https://www.xnview.com/wiki">Wiki</a>. Dort finden Sie auch eine Anleitung und ein Handbuch <a href="https://www.xnview.com/wiki/index.php/XnView_(Windows)_User_Guide">XnView (Windows) User Guide</a>. Es ist weniger ein Programm zur Arbeit mit Metadaten von Bildern als vielmehr ein umfassendes Programm zur Verwaltung von Bildern. Das impliziert aber auch das Schreiben und das Lesen von Metadaten (Werkzeuge &gt; Metadaten). Auch hier können <em>Reguläre Ausdrücke</em> verwendet werden.</p>
 </div>
-<div id="exiv2" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> exiv2</h2>
+<div id="exiv2-anwendungsbeispiele" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> exiv2 Anwendungsbeispiele</h2>
+<p>Das ausführen der Befehle auf der Kommandozeile bietet die Möglichkeit, viele Fotos mit spezifisch konfektionierten Befehlen auf einmal abzuarbeiten. Diese Befehle können aus einer Datenbank oder mit einem Tabellen-Programm (z.B. MS Excel) generiert werden. Das nachfolgende Beispiel soll nur einen Einstieg erleichtern, auf der Homepage steht ein umfangreiches <a href="https://www.exiv2.org/manpage.html">Handbuch</a> zur Verfügung, aus dem die Nachfolgenden Beispiele entnommen wurden. Die Befehlsstruktur sieht wie folgt aus:</p>
+<pre><code>exiv2 [ opt [arg] ]+ [ act ] file ...</code></pre>
+<p>Nach dem Befehl folgt die Option, worunter hier u.a. -e (–extract), -i (–insert) und -M (–modify) verstanden werden. Hierauf folgt das auszuführende Argument aus Feld und Feldwert. Abschließend wird die zu ändernde Datei benannt. Eine Verkettung in einem Befehlsaufruf ist möglich:</p>
+<pre><code>exiv2 -M&quot;add Iptc.Application2.Credit String Mr. Smith&quot; -M&quot;add Xmp.myprefix.Whom 
+Mr. Smith&quot; -M&quot;set Exif.Image.Artist Mr. Smith&quot; image.jpg</code></pre>
+<p>Auf der Homepage von exiv2 finden Sie:</p>
+<ul>
+<li>weitere <a href="https://exiv2.org/sample.html#modify">Beispiele</a>,</li>
+<li>eine <a href="https://exiv2.org/metadata.html">Liste der Metadaten</a> und</li>
+<li>die Liste der in <a href="https://exiv2.org/iptc.html">exiv2 verwendeten IPTC Datensätze</a>.</li>
+</ul>
+<p>Für das nachfolgende Beispiel laden Sie sich bitte den hier bereitgestellten Ordner /foto/ mit den beiden Bildern und das Programm exiv2 (s.o.) herunter. Speichern Sie für diesen Einstieg alles in einem Ordner “foto” auf Ihrem Desktop um lange Pfadangaben zu vermeiden. Achten Sie auch später bitte auf kurze Ordnernamen ohne Leerzeichen.</p>
+<p>Danach rufen Sie die Kommandozeile (Terminal) auf und wechseln in den Bildordner. Unter Windows 10: &lt;Win&gt;+&lt;s&gt;, nach “cmd” suchen und “Eingabeaufforderung” ausführen. Sie sollten mit der Kommandozeile in Ihrem Nutzerverzeichnis gelandet sein: <code>C:\Users\&lt;name&gt;</code>. Hier wechseln Sie auf den Desktop und in den Bildordner: <code>cd Desktop\foto</code>.</p>
+<p>Als Hilfe einige grundlegende Befehle der Kommandozeile von Windows:</p>
+<ul>
+<li>dir: directory / list, Inhalt des Ordners</li>
+<li>cd: change directory, Ordner wechseln</li>
+<li>. von der aktuellen Position aus</li>
+<li>.. aus dem übergeordneten Ordner</li>
+<li>*.jpg alle Dateien mit der Endung .jpg</li>
+<li>help: eine Liste wichtiger Befehle</li>
+<li>dir /? Hilfe zu dem Befehl dir</li>
+</ul>
+<p>Führen Sie nachfolgend in der Kommandozeile bitte folgende Befehle aus:</p>
+<pre><code>exiv2.exe pr *.jpg
+exiv2.exe -M &quot;add Iptc.Application2.Writer String Name des 
+Verfassers von &#39;Byline&#39;&quot; *.jpg
+exiv2.exe -M &quot;add Iptc.Application2.Credit String Name des 
+Fotografen&quot; *.jpg
+exiv2.exe -M &quot;add Iptc.Application2.Byline String Fotos aus dem 
+Kieler Umland.&quot; *.jpg</code></pre>
+<p>Sie müssen diese Befehle ggf. natürlich modifizieren, 1. durch ergänzende Pfadangaben zu exiv2 und den Bildern als auch 2. bei dem jeweiligen Inhalt, als ‘Name…’ und ‘Fotos aus…’.</p>
+<p>Ein Beispiel für die Stapelverarbeitung mit Excel finden Sie in der Datei: iptc-write.xlsx. Diese Datei hat vier Spalten:</p>
+<ol style="list-style-type: decimal">
+<li>vollständige Dateiname (0001-0001-001.jpg)</li>
+<li>Bildautor</li>
+<li>Bildinhalt</li>
+<li>Spalte mit der Anweisung die Daten der Spalten A-C zu einem Befehl zu verketten(=verketten()):</li>
+</ol>
+<p>=VERKETTEN(“exiv2.exe -M”“add Iptc.Application2.Credit”;B2;““” -M”“add Iptc.Application2.Writer”; B2; ““” -M”“add Iptc.Application2.Caption”; C2; ““” “;A2)</p>
+<blockquote>
+<p>Anmerkung: Da das ” eine besondere Bedeutung in Excel für das Auszeichnen von Zeichenketten hat muss es hier mit einem ” auskommentiert werden. ““” ” fügt also den Text “&lt;Leerzeichen&gt; ein.</p>
+</blockquote>
+<p>Daraus wird dann:<br />
+exiv2.exe -M”add Iptc.Application2.Credit Christoph Rinne” -M”add Iptc.Application2.Writer Christoph Rinne” -M”add Iptc.Application2.Caption Neolithisches Megalithgrab bei Birkenmoor” 0001-0001-001.jpg</p>
+<p>Die 4. Spalte enthält abschließend alle Befehle für die Änderungen abhängig von den Zellen in den Spalten A-C. Diese Spalte kann als ganzes in die Zwischenablage kopiert und auf der Befehlszeile eingefügt werden. Dies ist eine Möglichkeit, lange Listen mit Bildinformationen in die Fotos zu schreiben. Machen Sie vorher Backups von den Fotos und prüfen Sie nachträglich die Lesbarkeit (s.o.).</p>
+</div>
+<div id="exitool-anwendungsbeispiele" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> ExiTool Anwendungsbeispiele</h2>
+<p>Im Unterschied zu exiv2 handelt es sich bei <a href="https://exiftool.org">ExifTool</a> für Windows um eine einzige ausführbare Datei. Die heruntergeladene Datei sollte von ‘exiftool(-k).exe’ in ‘exiftool.exe’ umbenannt werden. Das Programm kann auf der Befehlszeile genutzt werden: <code>exiftool -a -u -g1 -w &lt;bildname&gt;</code> oder <code>exiftool -a -u -g1 -w &lt;bildname&gt; &gt; info.txt</code> (Geduld!). Daneben können Bilddateien oder ganze Ordner im Explorer von Windows auch durch “ablegen” auf dem Programm bearbeitet werden. Die notwendigen Parameter müssen dann aber durch eine Umbenennung des Programmes vorab übergeben werden, z.B. “exiftool(-a -u -g1 -w).exe”. Weiter Informationen durch aufrufen von exiftool.exe in der Kommandozeile ohne Parameter oder auf der <a href="https://exiftool.org/#running">Homepage</a>.</p>
 </div>
 </div>
 <div class="footnotes">
