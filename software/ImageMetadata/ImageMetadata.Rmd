@@ -1,5 +1,5 @@
 ---
-title: "KML, XML & Auszeichnungssprachen"
+title: "Metadaten und Bilder"
 author: 
  - Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]
 date: "`r format(Sys.time(), '%d. %B %Y')`"
@@ -9,16 +9,16 @@ header-includes:
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
 output:
-  html_document:
-    toc: true
-    toc_depth: 2
-    toc_float: true
-    number_sections: true
   pdf_document:
     number_sections: true
     toc: true
     toc_depth: 2
     df_print: kable
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -32,15 +32,81 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Allgemeine Information
 
+Im Kern geht es um Metadaten und deren Bedeutung für die Nachnutzung von digitaler Objekte. Fotos, oder allgemeiner Rasterbilder, sind hier nur das gewählte Medium, um mit allgemein bekannten Objekten auf dieses wichtige Thema nachdrücklich hinzuweisen.
+
+## Vorbemerkung
+
+Bilder - und es geht hier um Rasterbilder bzw. Fotos - haben durch die digitale Fotografie einen enormen Umfang erreicht, diese stellen in der Anzahl und vor allem im Datenvolumen bei fast allen (Forschungs-) Projekten den größten Bestand dar. Zwar gibt es eine immer bessere Bildanalyse und mit trainierten Neuronalen Netzen werden heute erstaunliche Ergebnisse erzielt (z.B. [YOLO](http://yolodetec.com/)). Dennoch macht es Sinn, die bekannten Informationen zu den Bildern nicht (nur) in getrennten Listen zu führen, sondern in die Bilder hineinzuschreiben. Mit Blick auf die Nachnutzung zu dem vorgenannten noch das Problem der unzähligen Bildformate: von den RAW-Dateien der jeweiligen Kamera über JPG, TIFF und PNG als den bekanntesten zu weiteren Software spezifischen Formaten und Varianten innerhalb der Formate.  
+
+Metadaten finden Sie in vielen anderen Objekten, auch in Word und PDF. Bei MS Word finden Sie einige Standardfelder mit Datei > Vorbereiten > Eigenschaften und zudem unter Dokumenteneigenschaften > Erweitert die Möglichkeit, weitere Felder einzubinden. Nach dem Speichern als PDF finden Sie diese in der Regel unter Datei > Eigenschaften. Beim Drucken in ein PDF werden diese Metadaten nach meiner Kenntnis nicht übernommen. 
+
+> Automatisch eingebundene Metadaten in allen digitalen Dokumenten können viele Informationen zum Urheber der Datei transportieren. Sie sollten diese Daten also bewusst einsetzen und kontrollieren.    
+Leider kann über Metadaten auch Schadcode transferiert werden ([stackoverflow](https://stackoverflow.com/questions/9675941/how-can-a-virus-exist-in-an-image)).
+
+## Bildformate
+
+Rasterbilder sind in ihrer Grundstruktur einfach, sie entsprechen einer Matrix in der jeder Zelle ein Wert zugewiesen wird, z.B. von 0 bis 255 (Schwarz bis Weiß). Ein Bild kann mehrere Ebenen besitzen (RGB) oder auch eine Farbtiefe von mehr als 256 (2<sup>8</sup>) Farbwerten besitzen (2<sup>24</sup>, true color). Derart gestaltete Bilder werden schnell sehr groß, weshalb diverse Kompressionsalgorithmen entwickelt wurden (JPG oder TIFF mit LZW). Im Fall von JPG werden dabei die Bilder unwiederbringlich verändert und qualitativ schlechter. Eine andere Strategie besteht in der Indexierung der wirklich verwendeten Farben (Farbpaletten-Modus, PNG). Eine gute Einführung und Überblick in das Thema Formate und Archivierung sowie weiterführende Links bietet [IANUS-FDZ](https://www.ianus-fdz.de/it-empfehlungen/rastergrafiken). Als geeignet für die Archivierung gelten unkompimierte TIF, GeoTIF, DNG. Wegen der sehr eingeschränkten Metadaten ([W3Org](https://www.w3.org/TR/PNG/#11textinfo)) gilt PNG nur bedingt als geeignet und JPG gilt wegen der Kompression als ungeeignet. Wegen der hohen Verbreitung und der deutlich geringeren Größe ist JPG aber *de facto* ein Standard geworden. Um die Qualität von JPG nicht unnötig zu verschlechtern sollten sie wiederholtes Speichern vermeiden und bevorzugt mit verlustfreien Funktionen, z.B. der Rotation um 90° arbeiten. Auch das Schreiben von Metadaten in JPG erfolgt verlustfrei.
+
 # Metadaten
+
+Bei Fotos gibt es zwei wichtige und schon lange existierende Gruppen von Metadaten mit jeweils definierten Feldern: IPTC und EXIF. IPTC zielt eher auf Urheberrechte und Bildinhalt, während EXIF mehr technische Informationen umfasst. Einige Felder, u.a. Datumsangaben, sind dabei redundant vorhanden. Bei XMP handelt es sich um eine allgemeine auf XML Standard basiertes Schema zur Definition von Metadaten. XMP wird allgemein verwendet, für PDF und Bilderformate. 
+
+Weitere Informationen zu dem Thema Metadaten finden Sie im Bereich Projektphasen > Dokumentation der IT-Empfehlungen von [IANUS](https://ianus-fdz.de/it-empfehlungen/dokumentation)
 
 ## IPTC
 
+IPTC steht für *International Press Telecommunications Council* und den Datenstandard, der zusammen mit der *Newspaper Association of America (NAA)* als *Information Interchange Model (IIM)* entwickelt wurde. Einen guten Überblick und Einstieg bietet die [Erläuterung zu dem Programm exivtool](http://exiftool.sourceforge.net/TagNames/IPTC.html). Trotz der Definition kommen unsauber geschrieben Daten vor (u.a. Länge der Felder, Speicherort des IPTC-Blocks). IPTC Daten werden in Blöcken (*enveloperecords*) organisiert und sind innerhalb dieser erneut nummeriert (*tag id*). Beachten Sie bitte, es gibt ein IPTC Core Schema und ein IPTC Extension Schema. Eine kleine Auswahl der oft genutzten Felder aus den *IPTC ApplicationRecord Tags* sehen sie hier:
+
+tag id|tag name|writable|
+--:|:-----|:---|
+80 |By-line |string[0,32]+ | 
+85 |By-lineTitle |string[0,32]+ | 
+90 |City |string[0,32] | 
+92 |Sub-location |string[0,32] | 
+95 |Province-State |string[0,32] | 
+100 |Country-PrimaryLocationCode |string[3] | 
+101 |Country-PrimaryLocationName |string[0,64] | 
+103 |OriginalTransmissionReference |string[0,32] | 
+105 |Headline |string[0,256] | 
+110 |Credit |string[0,32] | 
+115 |Source |string[0,32] | 
+116 |CopyrightNotice |string[0,128] | 
+118 |Contact |string[0,128]+ | 
+
+Nicht alle Tags werden von jeder Software verwendet oder deren Bezeichnung sogar angemessen oder identisch übersetzt. Eine kleine Auswahl aus älteren Programmversionen sehen Sie hier: 
+
+IrfanView 3.97 |exiv2 0.18.2 |photoshop elements 3.0 |XnView 1.96.2 
+----|----|----|----
+Copyright |Copyright |Copyright­Informationen |Copyright­Vermerk 
+Caption |Caption |Beschreibung |Objektbeschreibung 
+Caption writer |Writer |Verfasser der Beschreibung |Verfasser 
+Headline |Headline |­|Überschrift 
+Special instructions |SpecialInstructions |­|Sonstige Hinweise 
+Keywords |Keywords |Stichwörter |Sichwörter 
+Category |Category |­|Kategorie 
+Supplemental categories |SuppCategory |­|Zusätzliche Kategorien 
+Urgency |Urgency |­|Dringlichkeit 
+Byline |Byline |Autor |Fotograf/Ersteller 
+Byline title |BylineTitle |­|Titel des Fotografen/Ersteller 
+Credits |Credit |­|Bildrechte 
+Source |Source |­|Quelle 
+Object name |ObjectName |Dokumenttitel |Objektname 
+Date created |DateCreated |­|Erstellt am (JJJJMMTT) 
+City |City |­|Stadt 
+Province­State |ProvinceState |­|Bundesland 
+Country |CountryName |­|Land/Staat 
+
 ## EXIF
 
-## DAI XML-Datenstruktur?
+Die Bezeichnung steh für *Exchangeable Image File Format*, es handelt sich überwiegend um technische Metadaten zur Aufnahme, unter anderem Kameramodell, Zeitpunkt der Aufnahme und Kameraeinstellungen. Hervorzuheben sind hier die **Geokoordinaten** und weitere Angaben zu den Verwaltungseinheiten (von Land bis Ort/Stadt). EXIF-Daten werden u.a. in TIF und JPG (JFIF) geschrieben. Bei letzteren kann es durch konkurrierende Angaben zur Position innerhalb der Datei zu Konflikten beider Standards kommen. Die von Mobiltelefonen gerne abgelegten Positionsdaten können in Kombination mit den Hardwareinformationen zum Gerät sehr viel zum Urheber bekannt geben. Sie sollten sich dessen stets bewusst sein.
 
 # Software
+
+Es sollen drei Programme zum Lesen und Schreiben von Metadaten in Rasterbildern hier genannt werden:
+
+- [XnView](https://www.xnview.com/de/) /[XnView XMP](https://www.xnview.com/de/xnviewmp/): Beide Programme stehen als freeware für Win, Mac und Linux zur Verfügung. Sie bieten eine umfassende Bildverwaltung mit umfangreichen Optionen zum Lesen und Schreiben von Metadaten.
+- [exiv2](https://www.exiv2.org/): Ist eine freie, plattformunabhängige und konstant weiterentwickelte Software zum Lesen und Schreiben von Metadaten auf der Kommandozeile. Sie kommt u.a. in der Grafiksoftware Gimp und darktable zum Einsatz. Die Softare ist in der aktuellen Version unter Windows auf die vorherige Installation von MinGW oder Cygwin angewiesen, um eine Linuxumgebung zu simulieren und die benötigten Bibliotheken bereitzustellen (*.dll). 
+- [ExifTool](http://exiftool.sourceforge.net/): Eine Alternative zu exiv2 die ebenfalls auf der Befehlszeile genutzt wird. Da es mir um die Darstellung eines automatisierten Prozesses auf der Kommandozeile geht wird nachfolgend nur exiv2 vorgestellt.
 
 ## XNView
 
