@@ -42,7 +42,7 @@ Bei der asymetrische Verschlüsselung ist ssh ein weit verbreiteter Standard und
 
 ## Szenarien zur Nutzung
 
-Das Naheliegndste ist es, GIT für das Entwickeln von Programmen zu nutzen. In einem archäologischen Kontext sind aber auch andere Szenarien und Kombinationen daraus denkbar.
+Das Naheliegndste ist es, GIT für das Entwickeln von Programmen zu nutzen. In einem archäologischen Kontext sind aber auch andere Szenarien und Kombinationen daneben denkbar.
 
 ### Daten sammeln
 
@@ -50,22 +50,49 @@ Das Sammeln von Daten erfolgt lokal, auf dem einem PC, gerne in [MS Excel](https
 
 Eine zentrale Datenhaltung kann innerhalb eines lokalen Netzwerkes mit Freigaben und in MS Access mit verknüpften Datenbanken (backend) oder in SQL mit angehängten Datenbeständen (attached) arbeiten. Das ist nicht wirklich kompliziert, setzt aber für eine performante Nutzung eine gute Datenstruktur voraus. Sobald Sie das lokale Netzwerk verlassen sind Sie auf eine Serverdatenbank (z.B. PostrgeSQL) angewiesen und haben einen sehr hohen administrativen Aufwand auch bei Sicherheitsaspekten. Für Projekte einer überschaubaren Größe also keine Alternative. 
 
-**Alternativ**: sammeln Sie Daten als CSV-Tabellen und synchronisieren (pushen) Sie regelmäßig zum Repositorium. Wie Sie diese CSV-Tabelle lokal editieren ist fast egal, möglich sind MS Excel, LO Calc oder ein Texteditor. **Allerdings** ist der Wechsel zwischen MS Excel und LO Calc sehr umständlich, da MS Excel die Spalten mit ";" und LO Calc diese mit einem "," trennt. Optional können Sie auch ein anderes Trennzeichen verwenden, z.B. <TAB>. Allerdings werden diese Dateien mit der Endung .txt  oder .csv nicht mehr automatisch richtig erkannt und beim Speichern muss in MS Excel jedes mal das Trennzeichen definiert werden während im LO Calc  automatisch ein ',' gesetzt wird.
+**Alternativ**: sammeln Sie Daten als CSV-Tabellen und synchronisieren (pushen) Sie regelmäßig zum Repositorium. Wie Sie diese CSV-Tabelle lokal editieren ist fast egal, möglich sind MS Excel, LO Calc oder ein Texteditor. **Allerdings** ist der Wechsel zwischen MS Excel und LO Calc sehr umständlich und fehleranfällig, da MS Excel die Spalten mit einem ";" und LO Calc diese mit einem "," trennt. Optional können Sie auch ein anderes Trennzeichen verwenden, z.B. <TAB>. Allerdings werden diese Dateien mit der Endung .txt  oder .csv nicht mehr automatisch richtig erkannt und beim Speichern muss in MS Excel jedes mal das Trennzeichen definiert werden während im LO Calc  automatisch ein ',' gesetzt wird.
 Der **Vorteil** ist die Versionierung durch GIT, also das Protokoll der vollzogenen Änderungen, und die zentrale Ablage auf einem Server um dessen Sicherheit und Zugangsberechtigungen Sie sich nicht unmittelbar kümmern müssen.
 
 ### Texte Verfassen
 
-Sofern Sie sich an die Arbeit mit Rtudio und das Schreiben von Markdown gewöhnt haben, können Sie über GIT natürlich auch geimeinsam Texte, Artikel und ganze Bücher mit *Bookdown* schreiben. Sie sollten innerhalb von RStudio nicht mit einzelnen Dateien sondern mit Projekten und Versionskontrolle arbeiten. In diesem Projekt können Sie dann die benötigten Daten (CSV) als auch die Literatur als BibTeX-Datei pflegen und in Ihrem Text einbinden.  Tabellen, Analysen und resultierende Grafiken werden mittels R-Code auf Grundlage der vorliegenden Daten im Text generiert und sind stets aktuell.  Natürlich ist dies eine grundlegend andere Arbeitsweise als eine gemeinsame Ablage in der Cloud und die Versionierung von Hand, selbst bei der verwendung von Online Office. Es ist eine Umstellung mit Reibungsverlusten und benötigt Einarbeitungszeit. 
+Sofern Sie sich an die Arbeit mit Rtudio und das Schreiben von Markdown gewöhnt haben, können Sie über GIT natürlich auch gemeinsam Texte, Artikel und ganze Bücher mit *Bookdown* schreiben. Sie sollten innerhalb von RStudio nicht mit einzelnen Dateien sondern mit Projekten und Versionskontrolle arbeiten. In diesem Projekt können Sie dann die benötigten Daten (CSV) als auch die Literatur als BibTeX-Datei pflegen und in Ihrem Text einbinden.  Tabellen, Analysen und resultierende Grafiken werden mittels R-Code auf Grundlage der vorliegenden Daten im Text generiert und sind stets aktuell.  Natürlich ist dies eine grundlegend andere Arbeitsweise als eine gemeinsame Ablage in der Cloud und die Versionierung von Hand, selbst bei der Verwendung von Online Office. Es ist eine Umstellung mit anfänglichen Reibungsverlusten und benötigt Einarbeitungszeit. 
 
-Anmerkung: Wenn Sie dieses Thema *Online Texteditieren* interessiert, recherchieren Sie auch nach **Fidus Writer**. 
+Anmerkung: Wenn Sie dieses Thema *Online Texteditieren* interessiert, sehen Sie sich auch mal folgendes an [Fidus Writer](https://www.fiduswriter.org/). 
 
 ## GIT-Plattform und GIT-Account
 
 ## Git lokal einrichten
 
+Der Vorgang ist hier für Windows 10 beschrieben.
+
 ### SSH
 
-### GIT-Extensions
+Sie können OpenSSH verwenden, es gehört zu den optionalen Programmen (optional features) oder PuTTy nutzen. Beide Wege gibt es ergänzende Anleitungen im Netz (u.a. [hier](https://phoenixnap.com/kb/generate-ssh-key-windows-10))
+
+### GIT Extensions
+
+Laden Sie sich die aktuelle Version (*.msi) von [Git Extensions](https://gitextensions.github.io/) herunter.
+
+Es werden weitere Programme benötigt die getrennt heruntergeladen und installiert werden müssen:
+
+- [kdiff3](https://sourceforge.net/projects/kdiff3) dient der wird nachfolgend für die Synchronisation (merge) verwendet. Installieren Sie mit den Vorgaben.
+
+Installieren Sie nun Git Extensions und folgen Sie den Schritten der Installation mit den Vorgaben. Folgendes bedarf der Aufmerksamkeit:
+
+ - Select SSH Client: belassen Sie es auf der Vorgabe, aktuell OpenSSH
+ - Telemetry privacy policy: Im Prinzip handelt es sich um Geben und Nehmen. Sie nutzen die Software und geben Teile Ihres Nutzerverhaltens für die Optimierung derselben preis. Ihre Entscheidung.
+
+Starten Sie Git Extensions. Vermutlich werden Sie zuerst einem Fenster zu den Einstellungen "Settings - Checkliste" konfrontiert, wenn nicht gehen Sie dorthin: Werkzeuge > Einstellungen. 
+
+ - Benutzername und E-Mail-Adresse: Bitte entsprechendes eintragen
+ - Direkt darunter im selben Fenster fehlen weitere Angaben
+ - Merge-Werkzeuge: kdiff3
+ - Pfad zu Merge-Werkzeug: \[Durchsuchen] und dort kdiff3 auswählen, die nächtste Zeile zu den Befehlen sollte automatisch ergänzt werden.
+ - Wiederholen Sie den Vorgang für die Vergleichswerkzeuge.
+ 
+Zeilenenden werden in Windows anders kodiert als in Linux/Mac. Aktivieren Sie deshalb die Option "Zeilenumbrüche im Windows-Format auschecken...". Ansonsten würde jedes Zeilenende zu einer protokollierten Änderung.
+ 
+
 
 ### RStudio & GIT
 
