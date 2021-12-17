@@ -67,7 +67,13 @@ Der Vorgang ist hier für Windows 10 beschrieben.
 
 ### SSH
 
-Sie können OpenSSH verwenden, es gehört zu den optionalen Programmen (optional features) oder PuTTy nutzen. Beide Wege gibt es ergänzende Anleitungen im Netz (u.a. [hier](https://phoenixnap.com/kb/generate-ssh-key-windows-10))
+Sie können OpenSSH auf der Kommandozeile verwenden, es gehört zu den optionalen Programmen (optional features) oder PuTTy mit einer grafischen Oberfläche nutzen. Für beide Wege gibt es ergänzende Anleitungen im Netz (u.a. [hier](https://www.ssh.com/academy/ssh/putty/windows/puttygen)). 
+
+Laden Sie das Programmpaket (\*.msi) von PuTTy herunter [https://www.chiark.greenend.org.uk](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) und installiernen Sie es. Starten Sie dann das Programm **puttygen**. Die Vorgabe ist ein RSA-Schlüssel, belassen Sie dies und wählen Sie [Generate]. Danach müssen Sie die Maus uber dem leeren Fensterausschnitt bewegen um einen zufälligen Schlüssel zu erzeugen. Im folgenden Fenster ergänzen Sie bitte das Passwort (Key passphrase) und prägen Sie es sich gut ein. Anschließend müssen Sie nacheinander mit [Save public key] und [Save private key] beide Schlüssel speichern. Der Standardorder dafür in Windows ist c:\\Benutzer\\\<nutzername>\\.ssh . Nennen Sie beide identisch, aber der öffentliche Teil hat die Endung .ppk der private Schlüssel hat keine. 
+
+### Git für Windows
+
+https://git-scm.com/download/win
 
 ### GIT Extensions
 
