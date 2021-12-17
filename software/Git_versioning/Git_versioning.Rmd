@@ -75,6 +75,8 @@ Laden Sie das Programmpaket (\*.msi) von PuTTy herunter [https://www.chiark.gree
 
 https://git-scm.com/download/win
 
+Choosing the default editor "Use Vim" ändern zu Notepad++
+
 ### GIT Extensions
 
 Laden Sie sich die aktuelle Version (*.msi) von [Git Extensions](https://gitextensions.github.io/) herunter.
