@@ -1,0 +1,39 @@
+---
+title: "Daten & SQLite"
+author: 
+ - Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]
+date: "`r format(Sys.time(), '%d. %B %Y')`"
+license: "CC-BY 4.0"
+header-includes:
+  \renewcommand{\contentsname}{Inhalt}
+  \renewcommand{\figurename}{Abb.}
+  \renewcommand{\tablename}{Tab.}
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
+fig_caption: true
+urlcolor: blue
+link-citations: true # make citations hyperlinks
+linkcolor: blue
+lang: de-DE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Grundlegende Information
+
+SQL steht für *structured query language* und dient dem Erstellen, Nutzen und Modifizieren von relationalen Datenbanken.  Ob Sie eine SQL-Datenbank verwenden sollten hängt von der Komplexität Ihrer Daten und der geplanten Nutzung ab. Sie finden SQL-Syntax in zahlreichen Programmen, die mit Daten arbeiten, so z.B. in QGIS für das Filtern eines Datebestandes.
+
+SQL ist weit verbreitet, grundlegende Befehle und die zugehörige Syntax weitgehend einheitlich, es gibt aber zahlreiche Erweiterungen für einzelne Datenbanksysteme (MySQL, PostgreSQL, ORACLE etc). SQL Datenbanksysteme sind fast ausnahmslos Server-Systeme, eine Ausnahme ist [SQLite](https://sqlite.org). 
+
+In diesem Skript wird SQLite verwendet. Zudem wird 
