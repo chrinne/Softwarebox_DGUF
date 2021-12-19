@@ -121,6 +121,8 @@ Im unteren Bereich des Programmfensters haben Sie neben "Comitten" vier weitere 
 
 Anleitungen hierzu finden Sie mehrfach im Internet, u.a. unter der wichtigen Überschrift **Reproducible Research** bei der [Uni Zürich](https://geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/). Auch hier wird ein ein SSH-Schlüssel und ein installiertes GIT vorausgesetzt (s.o.), ebenso natürlich die Installation von [R](https://www.r-project.org/) und [RStudio](https://www.rstudio.com/products/rstudio/#Desktop).
 
-In RStudio müssen Sie folgende Einstellungen vornehmen:
+Ergänzend zu den Informationen der eingangs genannten Anleitung folgende Hinweise:
 
-- git
+ - der Menüeintrag GIT ist nur sichtbar, wenn ein entsprechendes Projekt geöffnet ist.
+ - Haben Sie GIT bereits konfiguriert, auch über GIT Extensions (s.o.) brauchen Sie das *Git Setup* nicht erneut ausführen. Um zu testen, ob Ihr Name und E-Mail korrekt hinterlegt sind öffnen Sie die Git Kommandozeile (Git Bash) und schreiben Sie folgende Befehle: ```git config --get user.name``` und dann ```git config --get user.email```. Rückabe sollten Ihr Name und die E-Mail-Adresse sein.
+ 
