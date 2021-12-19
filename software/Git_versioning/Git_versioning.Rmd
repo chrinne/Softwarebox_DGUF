@@ -9,16 +9,16 @@ header-includes:
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
 output:
-  pdf_document:
-    number_sections: true
-    toc: true
-    toc_depth: 2
-    df_print: kable
   html_document:
     toc: true
     toc_depth: 2
     toc_float: true
     number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -61,13 +61,13 @@ Anmerkung: Wenn Sie dieses Thema *Online Texteditieren* interessiert, sehen Sie 
 
 ### Reproducible Research
 
-Von Ihrem Studium wissen Sie, unsere Darlegungen müssen nachvollziehbar sein. Auch deshalb zitieren wir die Aussagen von Dritten, führen eine Liste der zitierten Literatur und ergänzen Kataloge mit den verwendeten Daten. In einer digitalen  Arbeitsumgebung sollten wir diese Grundlage wissenschaftlichen Arbeitens angemessen umsetzen. Die Arbeit mit Scriptsprachen wie R für die Analysen und das Bereitstellen dieses Codes und der zugehörigen Daten in einem öffentlichen Repositorium erfüllt diesen Anspruch vollumpfänglich und ist *up to date*.  
+Wissenschaftliche Arbeit wird belegt und ist nachvollziehbar. In einer digitalen  Arbeitsumgebung sollten wir diese Grundlage wissenschaftlichen Arbeitens angemessen umsetzen. Die Arbeit mit allgemein zugänglichen Scriptsprachen wie R für die Analysen und das Bereitstellen des Codes und der zugehörigen Daten in einem öffentlichen Repositorium erfüllt diesen Anspruch vollumpfänglich und ist *up to date*.  
 
 ## GIT-Plattform und GIT-Account
 
-Neben den bekannten Onlineanbietern (s. Grundlegende Informationen) bieten etliche Universitäten selber GIT an. Informieren Sie sich zuerst bei Ihrem Rechenzentrum. Richten Sie sich in dem von Ihnen gewählten System ein Konto ein. In diesem Konto wird der öffentliche Teile Ihres SSH-Schlüssel abgelegt, nur so können Sie aus Anwendungen wie GIT Extensions und RStudio Daten synchronisieren. 
+Neben den bekannten Onlineanbietern (s. Grundlegende Informationen) bieten Universitäten selber GIT an. Informieren Sie sich hierzu bei Ihrem Rechenzentrum. Richten Sie sich in dem von Ihnen gewählten System ein Konto ein. In diesem Konto wird der öffentliche Teile Ihres SSH-Schlüssels abgelegt, nur so können Sie aus Anwendungen wie GIT Extensions und RStudio Daten synchronisieren. 
 
-Beachten Sie bitte: kostenlose Konten sind oft öffentlich.
+Beachten Sie bitte: kostenlose GIT-Konten sind oft öffentlich.
 
 ## GIT lokal einrichten
 
@@ -115,7 +115,7 @@ Alles weitere nach Vorgabe. Mit [SSH-Schlüssel laden] können Sie jetzt ihren p
 
 Nehmen Sie Änderungen immer in überschaubaren und möglichst abgeschlossenen Schritten vor. Nach einer Änderung wird Ihnen an dem Symbol "Committen" in der Menüleiste die Anzahl der geänderten Dateien angezeigt. Starten Sie über die Iconleiste "Committen" oder über Befehle > Committen den Upload. Markieren Sie oben links die zu kopierende Datei, die Änderungen werden rechts oben angezeigt. Fügen Sie alle zu *pushenden* Dateien mit "Stagen" in den Uploadbereich ein. Schreiben Sie rechts unten einen Kommentar zu den Änderungen. Mit [Committen] werden die Kommentare angehängt und ein Update-Paket erstellt das unmittelbar auch *gepushed* werden kann.
 
-Im unteren Bereich des Programmfensters haben Sie neben "Comitten" vier weitere Reiter: Diff, Dateibaum, GPG, Konsole. Der Reiter Diff zeigt Ihnen die änderungen gegenüber der letzten Version, entsprechend der Ansicht vom letzten Commit. Der Reiter Dateibaum erlaubt das Editieren einzelner Dateien: links der dateibaum, recht ein Fenster mit dem Editor aus der Konfiguration von GIT Extensions. Mir fehlt hier die gewohnte Menüleiste meines Editors, deshalb nutze ich diesen Bereich nicht.
+Im unteren Bereich des Programmfensters haben Sie neben "Committen" vier weitere Reiter: Diff, Dateibaum, GPG, Konsole. Der Reiter Diff zeigt Ihnen die änderungen gegenüber der letzten Version, entsprechend der Ansicht vom letzten Commit. Der Reiter Dateibaum erlaubt das Editieren einzelner Dateien: links der dateibaum, recht ein Fenster mit dem Editor aus der Konfiguration von GIT Extensions. Mir fehlt hier die gewohnte Menüleiste meines Editors, deshalb nutze ich diesen Bereich nicht.
 
 ### RStudio & GIT
 
@@ -123,6 +123,6 @@ Anleitungen hierzu finden Sie mehrfach im Internet, u.a. unter der wichtigen Üb
 
 Ergänzend zu den Informationen der eingangs genannten Anleitung folgende Hinweise:
 
- - der Menüeintrag GIT ist nur sichtbar, wenn ein entsprechendes Projekt geöffnet ist.
- - Haben Sie GIT bereits konfiguriert, auch über GIT Extensions (s.o.) brauchen Sie das *Git Setup* nicht erneut ausführen. Um zu testen, ob Ihr Name und E-Mail korrekt hinterlegt sind öffnen Sie die Git Kommandozeile (Git Bash) und schreiben Sie folgende Befehle: ```git config --get user.name``` und dann ```git config --get user.email```. Rückabe sollten Ihr Name und die E-Mail-Adresse sein.
+ - Der Menüeintrag GIT ist nur sichtbar, wenn ein entsprechendes Projekt geöffnet ist.
+ - Haben Sie GIT bereits konfiguriert, auch über GIT Extensions (s.o.), brauchen Sie den Abschnitt *Git Setup* nicht erneut ausführen. Um zu testen, ob Ihr Name und E-Mail korrekt hinterlegt sind öffnen Sie die Git Kommandozeile (Git Bash) und schreiben Sie folgende Befehle: ```git config --get user.name``` und dann ```git config --get user.email```. Die jeweilige Rückabe sollten Ihr Name und die E-Mail-Adresse sein.
  
