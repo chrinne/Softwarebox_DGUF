@@ -123,4 +123,4 @@ Anleitungen hierzu finden Sie mehrfach im Internet, u.a. unter der wichtigen Üb
 
 In RStudio müssen Sie folgende Einstellungen vornehmen:
 
-
+- git
