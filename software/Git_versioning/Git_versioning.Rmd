@@ -67,27 +67,19 @@ Der Vorgang ist hier für Windows 10 beschrieben.
 
 ### SSH
 
-Sie können OpenSSH auf der Kommandozeile verwenden, es gehört zu den optionalen Programmen (optional features) oder PuTTy mit einer grafischen Oberfläche nutzen. Für beide Wege gibt es ergänzende Anleitungen im Netz (u.a. [hier](https://www.ssh.com/academy/ssh/putty/windows/puttygen)). 
+Sie können OpenSSH auf der Kommandozeile verwenden, es gehört zu den optionalen Programmen (*optional features*) bei Windows 10 oder Sie nutzen PuTTy mit einer grafischen Oberfläche. Für beide Wege gibt es ergänzende Anleitungen im Netz (u.a. [hier](https://www.ssh.com/academy/ssh/putty/windows/puttygen)). 
 
-Laden Sie das Programmpaket (\*.msi) von PuTTy herunter [https://www.chiark.greenend.org.uk](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) und installiernen Sie es. Starten Sie dann das Programm **puttygen**. Die Vorgabe ist ein RSA-Schlüssel, belassen Sie dies und wählen Sie [Generate]. Danach müssen Sie die Maus uber dem leeren Fensterausschnitt bewegen um einen zufälligen Schlüssel zu erzeugen. Im folgenden Fenster ergänzen Sie bitte das Passwort (Key passphrase) und prägen Sie es sich gut ein. Anschließend müssen Sie nacheinander mit [Save public key] und [Save private key] beide Schlüssel speichern. Der Standardorder dafür in Windows ist c:\\Benutzer\\\<nutzername>\\.ssh . Nennen Sie beide identisch, aber der öffentliche Teil hat die Endung .ppk der private Schlüssel hat keine. 
+Laden Sie das Programmpaket (\*.msi) von PuTTy herunter [https://www.chiark.greenend.org.uk](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) und installiernen Sie es. Starten Sie dann das Programm **puttygen**. Die Vorgabe ist ein RSA-Schlüssel, belassen Sie dies und wählen Sie [Generate]. Danach müssen Sie die Maus über dem leeren Fensterausschnitt bewegen um einen zufälligen Schlüssel zu erzeugen. Im folgenden Fenster ergänzen Sie einen für Sie sinnvollen *Key comment*, z.B. ich\@pc-home und tragen ein Passwort (*Key passphrase*) ein. Anschließend müssen Sie nacheinander mit [Save public key] und [Save private key] beide Schlüssel speichern. Der Standardorder dafür in Windows ist c:\\Benutzer\\\<nutzername>\\.ssh . Nennen Sie beide identisch, mit entsprechender Ergänzung, z.B. Datum, und verwenden die vorgegebene Endung ppk nur für den privaten Teil, den öffentlichen belassen Sie ohne Endung. Kopieren Sie bereits in diesem Fenster der offentlichen Key in die Zwischenablage (*Public key for pasting ...*). Melden Sie sich bei auf dem Server in Ihrem Git Konto an, wechseln Sie zu dem Abschnitt der SSH Keys, ergänzen Sie hier einen neuen Key und fügen den öffentlichen Teil aus der Zwischenablage in dem entsprechenden Fenster ein.  
 
 ### Git für Windows
 
-https://git-scm.com/download/win
-
-Choosing the default editor "Use Vim" ändern zu Notepad++
+Dann benötigen Sie [Git](https://git-scm.com/download/win). Git nutzt keinen eigenen Editor sondern fragt nach einem Verweis auf ein existierendes Programm. Ich nutze hier den Editor  [Notepad++](https://notepad-plus-plus.org/) den Sie ggf. vorab installieren sollten. 
 
 ### GIT Extensions
 
-Laden Sie sich die aktuelle Version (*.msi) von [Git Extensions](https://gitextensions.github.io/) herunter.
+Laden Sie sich die aktuelle Version (*.msi) von [Git Extensions](https://gitextensions.github.io/) herunter. Zudem wird [kdiff3](https://sourceforge.net/projects/kdiff3) für die Synchronisation (merge) verwendet. Laden Sie auch dieses Programm herunter und installieren Sie es vorab mit den Vorgaben. Installieren Sie nun Git Extensions und folgen Sie den Schritten der Installation mit den Vorgaben. Folgendes bedarf der Aufmerksamkeit:
 
-Es werden weitere Programme benötigt die getrennt heruntergeladen und installiert werden müssen:
-
-- [kdiff3](https://sourceforge.net/projects/kdiff3) dient der wird nachfolgend für die Synchronisation (merge) verwendet. Installieren Sie mit den Vorgaben.
-
-Installieren Sie nun Git Extensions und folgen Sie den Schritten der Installation mit den Vorgaben. Folgendes bedarf der Aufmerksamkeit:
-
- - Select SSH Client: belassen Sie es auf der Vorgabe, aktuell OpenSSH
+ - Select SSH Client: verwenden Sie hier PuTTy.
  - Telemetry privacy policy: Im Prinzip handelt es sich um Geben und Nehmen. Sie nutzen die Software und geben Teile Ihres Nutzerverhaltens für die Optimierung derselben preis. Ihre Entscheidung.
 
 Starten Sie Git Extensions. Vermutlich werden Sie zuerst einem Fenster zu den Einstellungen "Settings - Checkliste" konfrontiert, wenn nicht gehen Sie dorthin: Werkzeuge > Einstellungen. 
@@ -100,7 +92,20 @@ Starten Sie Git Extensions. Vermutlich werden Sie zuerst einem Fenster zu den Ei
  
 Zeilenenden werden in Windows anders kodiert als in Linux/Mac. Aktivieren Sie deshalb die Option "Zeilenumbrüche im Windows-Format auschecken...". Ansonsten würde jedes Zeilenende zu einer protokollierten Änderung.
  
+### GIT Extensions Projekt nutzen
 
+Im folgenden wird nur ein Projekt auf den lokalen Rechner übertragen (clone), eine Änderung kommentiert (*commit*) und hochgeladen (*push*).
+
+Sofern nach dem Start kein Fenster zum Öffnen oder Klonen von Repositorien angezeigt wird: Start > Tepository klonen ... .  In dem neuen Fenster "Klonen" ergänzen Sie folgendes:
+
+- Zu klonendes Repository: Die SSH-URL aus dem Online-Repositorium, z.B. git\@cau-git.rz.uni-kiel.de:<Pfad/Name>.
+- Ziel: den Ordner in dem ein neuer Ordner für das Repositorium angelegt wird.
+- Zu erstellendes Unterverzeichnis: Wird automatisch sinnvoll ergänzt.
+- Branch: Standard ist Remote-HEAD
+
+Alles weitere nach Vorgabe. Mit [SSH-Schlüssel laden] können Sie jetzt ihren privaten Schlüssel laden und klonen. Direktes [Klonen] fragt nachträglich nach dem privaten Schlüssel. Der private Schlüssel muss mit dem hinterlegten Passwort authentifiziert werden. Danach sollte der Kopiervorgang erfolgreich laufen. 
+
+Nehmen Sie Änderungen immer in überschaubaren und möglichst abgeschlossenen Schritten vor. Nach einer Änderung wird Ihnen an dem Symbol "Committen" in der Menüleiste die Anzahl der geänderten Dateien angezeigt. Starten Sie über die Iconleiste "Committen" oder über Befehle > Committen den Upload. Markieren Sie oben links die zu kopierende Datei, die Änderungen werden rechts oben angezeigt. Fügen Sie alle zu *pushende* Dateien mit "Stagen" in den Uploadbereich ein. Schreiben Sie rechts unten einen Kommentar zu den Änderungen. Mit [Committen] werden die Kommentare angehängt und ein Update-Paket erstellt das unmittelbar auch *gepushed* werden kann.
 
 ### RStudio & GIT
 
