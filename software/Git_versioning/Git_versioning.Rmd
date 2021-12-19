@@ -1,5 +1,5 @@
 ---
-title: "Git & Versionierung"
+title: "GIT & Versionierung"
 author: 
  - Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]
 date: "`r format(Sys.time(), '%d. %B %Y')`"
@@ -32,25 +32,25 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Grundlegende Information
 
-Git ist eine freie Software für das verteilte Arbeiten an Dateien. Sie gewährleistet die Synchronisation und Kontrolle aller Änderungen oder kurz gesagt die Versionierung aller Dateien. Bei textbasierten Dateien, z.B. Markdown und csv-Tabellen, erfolgt dies auf Zeilenniveau. Die Kooperation an Projekten mit Texten, Daten, Abbildungen und Programmcode, z.B. R, ist damit ohne den sonst üblichen Aufwand und oft auftretende Verwirrung möglich.
+GIT ist eine freie Software für das verteilte Arbeiten an Dateien. Sie gewährleistet die Synchronisation und Kontrolle aller Änderungen oder kurz gesagt die Versionierung aller Dateien. Bei textbasierten Dateien, z.B. Markdown und csv-Tabellen, erfolgt dies auf Zeilenniveau. Die Kooperation an Projekten mit Texten, Daten, Abbildungen und Programmcode, z.B. R, ist damit ohne den sonst üblichen Aufwand und oft auftretende Verwirrung möglich.
 
-Die Synchronisation erfolgt zu einem Server und einem dort betriebenen Dienst, hier sind zwei Webanwendungen sehr bekannt: [GitLab](https://gitlab.com/) und [GitHub](https://github.com/). Die lokale Kontrolle wird ebenfalls durch Git gesteuert, dafür gibt es diverse grafische Oberflächen (GUI), z.B. [gitextensions](https://gitextensions.github.io/). Auch [R-Studio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) bietet einen vollständige *workflow* für die alltägliche Arbeit mit Git. Für das Schreiben auf dem Server ist eine Authentifizierung notwendig die meist über einen ssh-key erfolgt.
+Die Synchronisation erfolgt zu einem Server und einem dort betriebenen Dienst, hier sind zwei Webanwendungen sehr bekannt: [GITLab](https://gitlab.com/) und [GITHub](https://github.com/). Die lokale Kontrolle wird ebenfalls durch GIT gesteuert, dafür gibt es diverse grafische Oberflächen (GUI), z.B. [GIT Extensions](https://gitextensions.github.io/). Auch [R-Studio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-GIT-and-SVN) bietet einen vollständige *workflow* für die alltägliche Arbeit mit GIT. Für das Schreiben auf dem Server ist eine Authentifizierung notwendig die meist über einen ssh-key erfolgt.
 
-Bei der asymetrische Verschlüsselung ist ssh ein weit verbreiteter Standard und in allen gängigen Betriebssystemen integriert. Grundlegende Informationen zu dieser Verschlüsselung gibt es u.a beim [BSI](https://www.bsi.bund.de): [Arten der Verschlüsselung](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Onlinekommunikation/Verschluesselt-kommunizieren/Arten-der-Verschluesselung/arten-der-verschluesselung_node.html). Eine Einführung zu ssh und den Befehlen finden Sie u.a. bei GitLab: [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/).
+Bei der asymetrische Verschlüsselung ist ssh ein weit verbreiteter Standard und in allen gängigen Betriebssystemen integriert. Grundlegende Informationen zu dieser Verschlüsselung gibt es u.a beim [BSI](https://www.bsi.bund.de): [Arten der Verschlüsselung](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Onlinekommunikation/Verschluesselt-kommunizieren/Arten-der-Verschluesselung/arten-der-verschluesselung_node.html). Eine Einführung zu ssh und den Befehlen finden Sie u.a. bei GITLab: [GITLab and SSH keys](https://docs.gitlab.com/ee/ssh/).
 
-# Git nutzen
+# GIT nutzen
 
 ## Szenarien zur Nutzung
 
-Das Naheliegndste ist es, GIT für das Entwickeln von Programmen zu nutzen. In einem archäologischen Kontext sind aber auch andere Szenarien und Kombinationen daneben denkbar.
+Das Naheliegendste ist es, GIT für das Entwickeln von Programmen zu nutzen. In einem archäologischen Kontext sind aber auch andere Szenarien und Kombinationen daneben denkbar.
 
 ### Daten sammeln
 
-Das Sammeln von Daten erfolgt lokal, auf dem einem PC, gerne in [MS Excel](https://de.wikipedia.org/wiki/Microsoft_Excel) alternativ in [LO Calc](https://de.wikipedia.org/wiki/LibreOffice) oder in echten Datenbankmanagementsystemen wie MS Access oder SQLite.  Wollen Sie diese Daten aber gemeinschaftlich erheben oder nutzen kommen Sie um einen Datenaustausch nicht umhin. 
+Das Sammeln von Daten erfolgt lokal, auf dem eigenen PC, gerne in [MS Excel](https://de.wikipedia.org/wiki/Microsoft_Excel) alternativ in [LO Calc](https://de.wikipedia.org/wiki/LibreOffice) oder in echten Datenbankmanagementsystemen wie [MS Access](https://de.wikipedia.org/wiki/Microsoft_Access) oder [SQLite](https://de.wikipedia.org/wiki/SQLite).  Wollen Sie diese Daten aber gemeinschaftlich erheben oder nutzen kommen Sie um einen Datenaustausch nicht umhin. 
 
 Eine zentrale Datenhaltung kann innerhalb eines lokalen Netzwerkes mit Freigaben und in MS Access mit verknüpften Datenbanken (backend) oder in SQL mit angehängten Datenbeständen (attached) arbeiten. Das ist nicht wirklich kompliziert, setzt aber für eine performante Nutzung eine gute Datenstruktur voraus. Sobald Sie das lokale Netzwerk verlassen sind Sie auf eine Serverdatenbank (z.B. PostrgeSQL) angewiesen und haben einen sehr hohen administrativen Aufwand auch bei Sicherheitsaspekten. Für Projekte einer überschaubaren Größe also keine Alternative. 
 
-**Alternativ**: sammeln Sie Daten als CSV-Tabellen und synchronisieren (pushen) Sie regelmäßig zum Repositorium. Wie Sie diese CSV-Tabelle lokal editieren ist fast egal, möglich sind MS Excel, LO Calc oder ein Texteditor. **Allerdings** ist der Wechsel zwischen MS Excel und LO Calc sehr umständlich und fehleranfällig, da MS Excel die Spalten mit einem ";" und LO Calc diese mit einem "," trennt. Optional können Sie auch ein anderes Trennzeichen verwenden, z.B. <TAB>. Allerdings werden diese Dateien mit der Endung .txt  oder .csv nicht mehr automatisch richtig erkannt und beim Speichern muss in MS Excel jedes mal das Trennzeichen definiert werden während im LO Calc  automatisch ein ',' gesetzt wird.
+**Alternativ**: sammeln Sie Daten als CSV-Tabellen und synchronisieren (pushen) diese regelmäßig zum Repositorium. Wie Sie diese CSV-Tabelle lokal editieren ist fast egal, möglich sind MS Excel, LO Calc oder ein Texteditor. **Allerdings** ist der Wechsel zwischen MS Excel und LO Calc sehr umständlich und fehleranfällig, da MS Excel die Spalten mit einem ";" und LO Calc diese mit einem "," trennt. Optional können Sie auch ein anderes Trennzeichen verwenden, z.B. <TAB>. Allerdings werden diese Dateien mit der Endung .txt  oder .csv nicht mehr automatisch richtig erkannt und beim Speichern muss in MS Excel jedes mal das Trennzeichen definiert werden während im LO Calc  automatisch ein ',' gesetzt wird.
 Der **Vorteil** ist die Versionierung durch GIT, also das Protokoll der vollzogenen Änderungen, und die zentrale Ablage auf einem Server um dessen Sicherheit und Zugangsberechtigungen Sie sich nicht unmittelbar kümmern müssen.
 
 ### Texte Verfassen
@@ -59,9 +59,17 @@ Sofern Sie sich an die Arbeit mit Rtudio und das Schreiben von Markdown gewöhnt
 
 Anmerkung: Wenn Sie dieses Thema *Online Texteditieren* interessiert, sehen Sie sich auch mal folgendes an [Fidus Writer](https://www.fiduswriter.org/). 
 
+### Reproducible Research
+
+Von Ihrem Studium wissen Sie, unsere Darlegungen müssen nachvollziehbar sein. Auch deshalb zitieren wir die Aussagen von Dritten, führen eine Liste der zitierten Literatur und ergänzen Kataloge mit den verwendeten Daten. In einer digitalen  Arbeitsumgebung sollten wir diese Grundlage wissenschaftlichen Arbeitens angemessen umsetzen. Die Arbeit mit Scriptsprachen wie R für die Analysen und das Bereitstellen dieses Codes und der zugehörigen Daten in einem öffentlichen Repositorium erfüllt diesen Anspruch vollumpfänglich und ist *up to date*.  
+
 ## GIT-Plattform und GIT-Account
 
-## Git lokal einrichten
+Neben den bekannten Onlineanbietern (s. Grundlegende Informationen) bieten etliche Universitäten selber GIT an. Informieren Sie sich zuerst bei Ihrem Rechenzentrum. Richten Sie sich in dem von Ihnen gewählten System ein Konto ein. In diesem Konto wird der öffentliche Teile Ihres SSH-Schlüssel abgelegt, nur so können Sie aus Anwendungen wie GIT Extensions und RStudio Daten synchronisieren. 
+
+Beachten Sie bitte: kostenlose Konten sind oft öffentlich.
+
+## GIT lokal einrichten
 
 Der Vorgang ist hier für Windows 10 beschrieben.
 
@@ -69,20 +77,20 @@ Der Vorgang ist hier für Windows 10 beschrieben.
 
 Sie können OpenSSH auf der Kommandozeile verwenden, es gehört zu den optionalen Programmen (*optional features*) bei Windows 10 oder Sie nutzen PuTTy mit einer grafischen Oberfläche. Für beide Wege gibt es ergänzende Anleitungen im Netz (u.a. [hier](https://www.ssh.com/academy/ssh/putty/windows/puttygen)). 
 
-Laden Sie das Programmpaket (\*.msi) von PuTTy herunter [https://www.chiark.greenend.org.uk](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) und installiernen Sie es. Starten Sie dann das Programm **puttygen**. Die Vorgabe ist ein RSA-Schlüssel, belassen Sie dies und wählen Sie [Generate]. Danach müssen Sie die Maus über dem leeren Fensterausschnitt bewegen um einen zufälligen Schlüssel zu erzeugen. Im folgenden Fenster ergänzen Sie einen für Sie sinnvollen *Key comment*, z.B. ich\@pc-home und tragen ein Passwort (*Key passphrase*) ein. Anschließend müssen Sie nacheinander mit [Save public key] und [Save private key] beide Schlüssel speichern. Der Standardorder dafür in Windows ist c:\\Benutzer\\\<nutzername>\\.ssh . Nennen Sie beide identisch, mit entsprechender Ergänzung, z.B. Datum, und verwenden die vorgegebene Endung ppk nur für den privaten Teil, den öffentlichen belassen Sie ohne Endung. Kopieren Sie bereits in diesem Fenster der offentlichen Key in die Zwischenablage (*Public key for pasting ...*). Melden Sie sich bei auf dem Server in Ihrem Git Konto an, wechseln Sie zu dem Abschnitt der SSH Keys, ergänzen Sie hier einen neuen Key und fügen den öffentlichen Teil aus der Zwischenablage in dem entsprechenden Fenster ein.  
+Laden Sie das Programmpaket (\*.msi) von PuTTy herunter [https://www.chiark.greenend.org.uk](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) und installiernen Sie es. Starten Sie dann das Programm **puttygen**. Die Vorgabe ist ein RSA-Schlüssel, belassen Sie dies und wählen Sie [Generate]. Danach müssen Sie die Maus über dem leeren Fensterausschnitt bewegen, um einen zufälligen Schlüssel zu erzeugen. Im folgenden Fenster ergänzen Sie einen für Sie sinnvollen *Key comment*, z.B. ich\@pc-home und tragen ein Passwort (*Key passphrase*) ein. Anschließend müssen Sie nacheinander mit [Save public key] und [Save private key] beide Schlüssel speichern. Der Standardorder dafür in Windows ist c:\\Benutzer\\\<nutzername>\\.ssh . Nennen Sie beide identisch, ergänzen Sie ggf. das Datum im Namen und verwenden Sie die vorgegebene Endung ppk nur für den privaten Teil, den öffentlichen belassen Sie ohne Endung. Kopieren Sie bereits in diesem Fenster den öffentlichen Schlüssel in die Zwischenablage (*Public key for pasting ...*). Melden Sie sich auf dem Server in Ihrem GIT Konto an, wechseln Sie zu dem Abschnitt der SSH Keys, ergänzen Sie hier einen neuen Key und fügen den öffentlichen Teil aus der Zwischenablage in dem entsprechenden Fenster ein.  
 
-### Git für Windows
+### GIT für Windows
 
-Dann benötigen Sie [Git](https://git-scm.com/download/win). Git nutzt keinen eigenen Editor sondern fragt nach einem Verweis auf ein existierendes Programm. Ich nutze hier den Editor  [Notepad++](https://notepad-plus-plus.org/) den Sie ggf. vorab installieren sollten. 
+Dann benötigen Sie [GIT](https://git-scm.com/download/win). GIT nutzt keinen eigenen Editor sondern fragt nach einem Verweis auf ein existierendes Programm. Ich nutze hier den Editor  [Notepad++](https://notepad-plus-plus.org/) den Sie ggf. vorab installieren sollten. 
 
 ### GIT Extensions
 
-Laden Sie sich die aktuelle Version (*.msi) von [Git Extensions](https://gitextensions.github.io/) herunter. Zudem wird [kdiff3](https://sourceforge.net/projects/kdiff3) für die Synchronisation (merge) verwendet. Laden Sie auch dieses Programm herunter und installieren Sie es vorab mit den Vorgaben. Installieren Sie nun Git Extensions und folgen Sie den Schritten der Installation mit den Vorgaben. Folgendes bedarf der Aufmerksamkeit:
+Laden Sie sich die aktuelle Version (*.msi) von [GIT Extensions](https://gitextensions.github.io/) herunter. Zudem wird [kdiff3](https://sourceforge.net/projects/kdiff3) für die Synchronisation (merge) verwendet. Laden Sie auch dieses Programm herunter und installieren Sie es vorab mit den Vorgaben. Installieren Sie nun GIT Extensions und folgen Sie den Schritten der Installation mit den Vorgaben. Folgendes bedarf der Aufmerksamkeit:
 
  - Select SSH Client: verwenden Sie hier PuTTy.
  - Telemetry privacy policy: Im Prinzip handelt es sich um Geben und Nehmen. Sie nutzen die Software und geben Teile Ihres Nutzerverhaltens für die Optimierung derselben preis. Ihre Entscheidung.
 
-Starten Sie Git Extensions. Vermutlich werden Sie zuerst einem Fenster zu den Einstellungen "Settings - Checkliste" konfrontiert, wenn nicht gehen Sie dorthin: Werkzeuge > Einstellungen. 
+Starten Sie GIT Extensions. Vermutlich werden Sie zuerst mit einem Fenster zu den Einstellungen "Settings - Checkliste" konfrontiert, wenn nicht gehen Sie dorthin: Werkzeuge > Einstellungen. 
 
  - Benutzername und E-Mail-Adresse: Bitte entsprechendes eintragen
  - Direkt darunter im selben Fenster fehlen weitere Angaben
@@ -94,9 +102,9 @@ Zeilenenden werden in Windows anders kodiert als in Linux/Mac. Aktivieren Sie de
  
 ### GIT Extensions Projekt nutzen
 
-Im folgenden wird nur ein Projekt auf den lokalen Rechner übertragen (clone), eine Änderung kommentiert (*commit*) und hochgeladen (*push*).
+Im folgenden wird nur ein Projekt auf den lokalen Rechner übertragen (clone), eine Änderung kommentiert (*commit*) und hochgeladen (*push*). Für die vielen Möglichkeiten von GIT Extensions konsultieren Sie bitte das Benutzerhandbuch: Hilfe > Benutzerhandbuch.
 
-Sofern nach dem Start kein Fenster zum Öffnen oder Klonen von Repositorien angezeigt wird: Start > Tepository klonen ... .  In dem neuen Fenster "Klonen" ergänzen Sie folgendes:
+Sofern nach dem Start kein Fenster zum Öffnen oder Klonen von Repositorien angezeigt wird: Start > Repository klonen ... .  In dem neuen Fenster "Klonen" ergänzen Sie folgendes:
 
 - Zu klonendes Repository: Die SSH-URL aus dem Online-Repositorium, z.B. git\@cau-git.rz.uni-kiel.de:<Pfad/Name>.
 - Ziel: den Ordner in dem ein neuer Ordner für das Repositorium angelegt wird.
@@ -105,10 +113,14 @@ Sofern nach dem Start kein Fenster zum Öffnen oder Klonen von Repositorien ange
 
 Alles weitere nach Vorgabe. Mit [SSH-Schlüssel laden] können Sie jetzt ihren privaten Schlüssel laden und klonen. Direktes [Klonen] fragt nachträglich nach dem privaten Schlüssel. Der private Schlüssel muss mit dem hinterlegten Passwort authentifiziert werden. Danach sollte der Kopiervorgang erfolgreich laufen. 
 
-Nehmen Sie Änderungen immer in überschaubaren und möglichst abgeschlossenen Schritten vor. Nach einer Änderung wird Ihnen an dem Symbol "Committen" in der Menüleiste die Anzahl der geänderten Dateien angezeigt. Starten Sie über die Iconleiste "Committen" oder über Befehle > Committen den Upload. Markieren Sie oben links die zu kopierende Datei, die Änderungen werden rechts oben angezeigt. Fügen Sie alle zu *pushende* Dateien mit "Stagen" in den Uploadbereich ein. Schreiben Sie rechts unten einen Kommentar zu den Änderungen. Mit [Committen] werden die Kommentare angehängt und ein Update-Paket erstellt das unmittelbar auch *gepushed* werden kann.
+Nehmen Sie Änderungen immer in überschaubaren und möglichst abgeschlossenen Schritten vor. Nach einer Änderung wird Ihnen an dem Symbol "Committen" in der Menüleiste die Anzahl der geänderten Dateien angezeigt. Starten Sie über die Iconleiste "Committen" oder über Befehle > Committen den Upload. Markieren Sie oben links die zu kopierende Datei, die Änderungen werden rechts oben angezeigt. Fügen Sie alle zu *pushenden* Dateien mit "Stagen" in den Uploadbereich ein. Schreiben Sie rechts unten einen Kommentar zu den Änderungen. Mit [Committen] werden die Kommentare angehängt und ein Update-Paket erstellt das unmittelbar auch *gepushed* werden kann.
+
+Im unteren Bereich des Programmfensters haben Sie neben "Comitten" vier weitere Reiter: Diff, Dateibaum, GPG, Konsole. Der Reiter Diff zeigt Ihnen die änderungen gegenüber der letzten Version, entsprechend der Ansicht vom letzten Commit. Der Reiter Dateibaum erlaubt das Editieren einzelner Dateien: links der dateibaum, recht ein Fenster mit dem Editor aus der Konfiguration von GIT Extensions. Mir fehlt hier die gewohnte Menüleiste meines Editors, deshalb nutze ich diesen Bereich nicht.
 
 ### RStudio & GIT
 
+Anleitungen hierzu finden Sie mehrfach im Internet, u.a. unter der wichtigen Überschrift **Reproducible Research** bei der [Uni Zürich](https://geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/). Auch hier wird ein ein SSH-Schlüssel und ein installiertes GIT vorausgesetzt (s.o.), ebenso natürlich die Installation von [R](https://www.r-project.org/) und [RStudio](https://www.rstudio.com/products/rstudio/#Desktop).
 
+In RStudio müssen Sie folgende Einstellungen vornehmen:
 
 
