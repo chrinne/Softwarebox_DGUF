@@ -88,7 +88,7 @@ Folgende **Datentypen** können gesetzt werden: integer (Ganzzahl), real (reelle
 
 Datenbanken sollten schon bei der Erhebung der Daten durch entsprechende Strukturen, z.B. durch übersichtliche und aufgabenorientierte Formulare, die Qualität der Daten gewährleisten. Die nachfolgende Syntax ist a priori nicht für die Handarbeit gedacht.
 
-```{sql basic-table-insert, connection=t1db}
+```{sql Befunddaten schreiben, connection=t1db}
 INSERT INTO tbl_features (feature_nr, f_name, f_type, f_dating, discoverdate)
 VALUES
 (1001, 1001, 'posthole', 'not dated', '2019-05-22'),
@@ -99,10 +99,40 @@ VALUES
 
 Die vorangehende Syntax nenn erst die Tabelle und die zu belegenden Felder, danach folgen eingeleitet durch *values* die Daten. Alle Werte werden duch "," getrennt, Text muss mit Anführungszeichen (" oder ') versehen werden und die Werte einer Datenzeile (*record*) stehen jeweils in Klammern. Beachten Sie bitte, die Anzahl und Reihenfolge der Felder und nachfolgend aufgeführten Werte müssen sich entsprechen.    
 
-## Daten abfrage
+## Daten abfragen
 
-Die soeben eigetragenen Daten können wir nun abfragen, es ist eine der  einfachsten SQL-Anweisungen, nur ```SELECT 1;``` ist noch schlichter.
+*SELECT* ist eine der wichtigsten Anweisungen und es kann alles abgefragt werden was existiert. Wie zuvor erwähnt steht Text in Anführungszeichen, beachten Sie also das Ergebnis der folgenden Abfrage.
 
-```{sql SQL-querry, connection=t1db}
+```{sql select statement, connection=t1db}
+SELECT 'col 1', 2, '3', 1+3, pi() AS magic;
+```
+
+Die zuvor in der tabelle tbl_features eigetragenen Daten können wir nun durch anfügen des Tabellennames als  Quelle abfragen wobei wir statt einzelner Felder mit * schlicht alle abfragen.
+
+```{sql Einfache Abfrage aller Befunddaten, connection=t1db}
 SELECT * FROM tbl_features;
 ```
+
+Natürlich gibt es zahlreiche Möglichkeiten die Abfrage anzupassen, um die  gewünschte Information zu erhalten. Das ist vor allem die Bedingung mit *where*. Für Zahlen können folgende Operatoren verwendet werden: <, >, = , >=, <=, <>. 
+
+```{sql Abfrage für Zahlenfelder, connection=t1db}
+SELECT feature_nr, f_type, f_dating FROM tbl_features
+WHERE feature_nr <> 1002;
+```
+
+Text muss weiterhin in Anführungszeichen stehen und als Operatoren werden erneut  = und <> verwendet, dazu *like* für unscharfe Suchen in Ergänzung mit % innerhalb der Anführungszeichen und *is not* für die Negation eines Operators. Mit Klammern, *and* und *or* können komplexere Bedingungen erstellt werden. Beachten Sie bitte später auch Unterschiede zwischen *NULL* und "" als Hinweis auf eine leere Zeichenkette. 
+
+```{sql Unscharfe Abfrage für Textfelder, connection=t1db}
+SELECT feature_nr, f_type, f_dating FROM tbl_features
+WHERE (f_type is not null) and (f_dating not like "n%");
+```
+
+Die Rückgabe einer Abfrage, gefiltert oder nicht, kann sortiert. Mehrere Sortierfelder werden durch "," getrennt und durch *desc* oder *asc* zwischen absteigend und aufsteigend getrennt.  
+
+```{sql Sortierte Abfrage, connection=t1db}
+SELECT feature_nr, f_type, f_dating FROM tbl_features
+ORDER BY feature_nr DESC, f_dating ASC;
+```
+
+Es gibt deutlich mehr Bedingungen und Optionen in [SELECT-Abfrage](https://sqlite.org/lang_select.html) aber es reicht für den Anfang.
+
