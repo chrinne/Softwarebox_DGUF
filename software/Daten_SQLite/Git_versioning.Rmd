@@ -32,8 +32,77 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Grundlegende Information
 
-SQL steht für *structured query language* und dient dem Erstellen, Nutzen und Modifizieren von relationalen Datenbanken.  Ob Sie eine SQL-Datenbank verwenden sollten hängt von der Komplexität Ihrer Daten und der geplanten Nutzung ab. Sie finden SQL-Syntax in zahlreichen Programmen, die mit Daten arbeiten, so z.B. in QGIS für das Filtern eines Datebestandes.
+SQL steht für *structured query language* und dient dem Erstellen, Nutzen und Modifizieren von relationalen Datenbanken.  Ob Sie eine SQL-Datenbank verwenden sollten hängt von der Komplexität Ihrer Daten und der geplanten Nutzung ab. Nachfolgend spielen Datenstrukturen und -modelle vorderhand keine Rolle. Sie sollten sich damit aber vor dem Erstellen einer Datenbank befassen.
 
-SQL ist weit verbreitet, grundlegende Befehle und die zugehörige Syntax weitgehend einheitlich, es gibt aber zahlreiche Erweiterungen für einzelne Datenbanksysteme (MySQL, PostgreSQL, ORACLE etc). SQL Datenbanksysteme sind fast ausnahmslos Server-Systeme, eine Ausnahme ist [SQLite](https://sqlite.org). 
+SQL ist weit verbreitet, Sie finden SQL-Syntax z.B. in QGIS für das Filtern eines Datebestandes. Die grundlegenden Befehle und die zugehörige Syntax sind weitgehend einheitlich, es gibt aber auch zahlreiche Erweiterungen für einzelne Datenbanksysteme (MySQL, PostgreSQL, ORACLE etc). SQL Datenbanksysteme sind fast ausnahmslos Server-Systeme, eine Ausnahme ist [SQLite](https://sqlite.org). 
 
-In diesem Skript wird SQLite verwendet. Zudem wird 
+SQL ist eine Sprache und keine Programm für eine Nutzeroberfläche wie es MS Access oder Libre Office Base bieten.
+
+SQL ist die *lingua franca* für relationale Datenbanken.
+
+## SQLite in R / RStudio
+
+In diesem Skript wird [SQLite](https://sqlite.org) verwendet. Da ich diesen Text in R-Markdown mit RStudio schreibe verwende ich zudem das Paket [RSQLite](https://www.rdocumentation.org/packages/RSQLite), um die Befehle in sogenannten *code-chunks* darstellen und ausführen zu können. Sie können die Befehle aber in jeder anderen Nutzeroberfläche für SQLite ebenfalls ausführen, z.B. dem [DB Browser for SQLite](https://sqlitebrowser.org/) (s.u.).
+
+Sofern noch nicht vorhanden wird mit diesem Code das Paket RSQLite in R installiert und dann geladen.
+```{r Install RSQLite if not present, echo=FALSE}
+require (RSQLite) || install.packages("RSQLite")
+library(RSQLite)
+```
+
+Dann wird eine neue SQLite Datenbank im Arbeitsspeicher angelegt und zugleich eine Verbindung "t1db" hergestellt. In einem anderen Programm müssen Sie ebenfalls eine neue Datenbank erstellen die dann auch automatisch geöffnet würde. Um in R auf eine vorhandene Datenbank zuzugreifen müssten Sie 'dbname = "<Dateiname>"' schreiben.
+
+```{r Datenbank im Arbeitsspeicher anlegen und Verbindung erstellen, echo=FALSE}
+t1db<-dbConnect(RSQLite::SQLite(), dbname = ":memory:")
+```
+
+Egal mit welcher Software, Sie sollten nun eine leere Datenbank geöffnet haben.
+
+# SQL Grundlagen
+
+Im folgenden Abschnitt wird eine Tabelle erstellt und Daten in diese eingetragen, abgefragt als auch modifiziert.
+
+## Tabelle erstellen
+
+Mit den folgenden Befehlen wird die Tabelle tbl_features ggf. gelöscht, also rigoros aufgeräumt, und dann erstellt.  
+
+```{sql Tabelle tbl_features ggf. löschen, connection=t1db, include=FALSE}
+DROP TABLE IF EXISTS tbl_features;
+```
+```{sql Tabelle tbl_features erstellen, connection=t1db, include=FALSE}
+CREATE TABLE "tbl_features" (
+	"feature_id"	INTEGER PRIMARY KEY,
+	"feature_nr"	INTEGER NOT NULL,
+	"f_name"	TEXT,
+	"f_type"	TEXT,
+	"f_dating"	TEXT,
+	"discoverdate"	TEXT
+);
+```
+
+Die englisches Befehle und Parameter müssen wohl nicht erläutert werden. Jede Anweisung kann zur besseren Lesbarkeit über mehrere Zeilen laufen und wird mit einem ";" beendet. Die Großbuchstaben sind die traditionelle Hervorheben der Syntax und nicht notwendig. Klammern gliedern, nach allgemein gültigen Regeln die Bestandteile. Gesondert erwähnt sei: **primary key** definiert feature_id als Primärschlüssel wodurch Eindeutigkeit impliziert wird und **not null** sorgt dafür, dass eine Befundnummer vergeben werden muss.  
+
+Folgende **Datentypen** können gesetzt werden: integer (Ganzzahl), real (reelle Zahl), text (Text) und blob (binary long objct, Binärobjekt). Gängige Datentypen in SQL sind dann noch date (Datum mit Uhrzeit) und boolean (Ja/Nein). Zudem wird oft zwischen "klein" und "groß" oder expliziter Dimension unterschieden: integer, long integer, char, varchar.  SQLite ist hier etwas anders als Sie es ggf. aus anderen Systemen schon kennen (Stichwort [type affinity](https://sqlite.org/datatype3.html#type_affinity)). Das Thema ist hier jetzt nicht weiter relevant.
+
+## Daten eintragen
+
+Datenbanken sollten schon bei der Erhebung der Daten durch entsprechende Strukturen, z.B. durch übersichtliche und aufgabenorientierte Formulare, die Qualität der Daten gewährleisten. Die nachfolgende Syntax ist a priori nicht für die Handarbeit gedacht.
+
+```{sql basic-table-insert, connection=t1db}
+INSERT INTO tbl_features (feature_nr, f_name, f_type, f_dating, discoverdate)
+VALUES
+(1001, 1001, 'posthole', 'not dated', '2019-05-22'),
+(1002, 1002, 'pit', 'neolithic', '2019-05-22'),
+(1001, 1001, 'grave', 'Corded Ware', '2019-05-22')
+;
+```
+
+Die vorangehende Syntax nenn erst die Tabelle und die zu belegenden Felder, danach folgen eingeleitet durch *values* die Daten. Alle Werte werden duch "," getrennt, Text muss mit Anführungszeichen (" oder ') versehen werden und die Werte einer Datenzeile (*record*) stehen jeweils in Klammern. Beachten Sie bitte, die Anzahl und Reihenfolge der Felder und nachfolgend aufgeführten Werte müssen sich entsprechen.    
+
+## Daten abfrage
+
+Die soeben eigetragenen Daten können wir nun abfragen, es ist eine der  einfachsten SQL-Anweisungen, nur ```SELECT 1;``` ist noch schlichter.
+
+```{sql SQL-querry, connection=t1db}
+SELECT * FROM tbl_features;
+```
