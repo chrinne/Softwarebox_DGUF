@@ -38,21 +38,21 @@ SQL ist weit verbreitet, Sie finden SQL-Syntax z.B. in QGIS für das Filtern ein
 
 SQL ist eine Sprache und keine Programm für eine Nutzeroberfläche wie es MS Access oder Libre Office Base bieten.
 
-SQL ist die *lingua franca* für relationale Datenbanken.
+SQL ist die *lingua franca* für relationale Datenbanken. Auch deshalb finden Sie viele andere Einführungen im Internet.
 
 ## SQLite in R / RStudio
 
 In diesem Skript wird [SQLite](https://sqlite.org) verwendet. Da ich diesen Text in R-Markdown mit RStudio schreibe verwende ich zudem das Paket [RSQLite](https://www.rdocumentation.org/packages/RSQLite), um die Befehle in sogenannten *code-chunks* darstellen und ausführen zu können. Sie können die Befehle aber in jeder anderen Nutzeroberfläche für SQLite ebenfalls ausführen, z.B. dem [DB Browser for SQLite](https://sqlitebrowser.org/) (s.u.).
 
 Sofern noch nicht vorhanden wird mit diesem Code das Paket RSQLite in R installiert und dann geladen.
-```{r Install RSQLite if not present, echo=FALSE}
+```{r Install RSQLite if not present, echo=TRUE}
 require (RSQLite) || install.packages("RSQLite")
 library(RSQLite)
 ```
 
 Dann wird eine neue SQLite Datenbank im Arbeitsspeicher angelegt und zugleich eine Verbindung "t1db" hergestellt. In einem anderen Programm müssen Sie ebenfalls eine neue Datenbank erstellen die dann auch automatisch geöffnet würde. Um in R auf eine vorhandene Datenbank zuzugreifen müssten Sie 'dbname = "<Dateiname>"' schreiben.
 
-```{r Datenbank im Arbeitsspeicher anlegen und Verbindung erstellen, echo=FALSE}
+```{r Datenbank im Arbeitsspeicher anlegen und Verbindung erstellen, echo=TRUE}
 t1db<-dbConnect(RSQLite::SQLite(), dbname = ":memory:")
 ```
 
@@ -66,10 +66,10 @@ Im folgenden Abschnitt wird eine Tabelle erstellt und Daten in diese eingetragen
 
 Mit den folgenden Befehlen wird die Tabelle tbl_features ggf. gelöscht, also rigoros aufgeräumt, und dann erstellt.  
 
-```{sql Tabelle tbl_features ggf. löschen, connection=t1db, include=FALSE}
+```{sql Tabelle tbl_features ggf. löschen, connection=t1db, include=TRUE}
 DROP TABLE IF EXISTS tbl_features;
 ```
-```{sql Tabelle tbl_features erstellen, connection=t1db, include=FALSE}
+```{sql Tabelle tbl_features erstellen, connection=t1db, include=TRUE}
 CREATE TABLE "tbl_features" (
 	"feature_id"	INTEGER PRIMARY KEY,
 	"feature_nr"	INTEGER NOT NULL,
@@ -80,15 +80,17 @@ CREATE TABLE "tbl_features" (
 );
 ```
 
-Die englisches Befehle und Parameter müssen wohl nicht erläutert werden. Jede Anweisung kann zur besseren Lesbarkeit über mehrere Zeilen laufen und wird mit einem ";" beendet. Die Großbuchstaben sind die traditionelle Hervorheben der Syntax und nicht notwendig. Klammern gliedern, nach allgemein gültigen Regeln die Bestandteile. Gesondert erwähnt sei: **primary key** definiert feature_id als Primärschlüssel wodurch Eindeutigkeit impliziert wird und **not null** sorgt dafür, dass eine Befundnummer vergeben werden muss.  
+Die englisches Befehle und Parameter müssen wohl nicht erläutert werden. Jede Anweisung kann zur besseren Lesbarkeit über mehrere Zeilen laufen und wird mit einem ";" beendet. Die Großbuchstaben sind die traditionelle Hervorheben der Syntax und nicht notwendig. Klammern gliedern, nach allgemein gültigen Regeln die Bestandteile. Gesondert erwähnt sei: **primary key** definiert feature_id als Primärschlüssel wodurch Eindeutigkeit und auch eine automatische Zählung impliziert wird und **not null** sorgt dafür, dass eine Befundnummer vergeben werden muss.  
 
 Folgende **Datentypen** können gesetzt werden: integer (Ganzzahl), real (reelle Zahl), text (Text) und blob (binary long objct, Binärobjekt). Gängige Datentypen in SQL sind dann noch date (Datum mit Uhrzeit) und boolean (Ja/Nein). Zudem wird oft zwischen "klein" und "groß" oder expliziter Dimension unterschieden: integer, long integer, char, varchar.  SQLite ist hier etwas anders als Sie es ggf. aus anderen Systemen schon kennen (Stichwort [type affinity](https://sqlite.org/datatype3.html#type_affinity)). Das Thema ist hier jetzt nicht weiter relevant.
 
-## Daten eintragen
+Weiteres zur Tabellendefinition später.
+
+## Daten eintragen : INSERT
 
 Datenbanken sollten schon bei der Erhebung der Daten durch entsprechende Strukturen, z.B. durch übersichtliche und aufgabenorientierte Formulare, die Qualität der Daten gewährleisten. Die nachfolgende Syntax ist a priori nicht für die Handarbeit gedacht.
 
-```{sql Befunddaten schreiben, connection=t1db}
+```{sql Erste Befunddaten schreiben, connection=t1db}
 INSERT INTO tbl_features (feature_nr, f_name, f_type, f_dating, discoverdate)
 VALUES
 (1001, 1001, 'posthole', 'not dated', '2019-05-22'),
@@ -97,9 +99,36 @@ VALUES
 ;
 ```
 
-Die vorangehende Syntax nenn erst die Tabelle und die zu belegenden Felder, danach folgen eingeleitet durch *values* die Daten. Alle Werte werden duch "," getrennt, Text muss mit Anführungszeichen (" oder ') versehen werden und die Werte einer Datenzeile (*record*) stehen jeweils in Klammern. Beachten Sie bitte, die Anzahl und Reihenfolge der Felder und nachfolgend aufgeführten Werte müssen sich entsprechen.    
+Die vorangehende Syntax nenn erst die Tabelle und die zu belegenden Felder, danach folgen eingeleitet durch *values* die Daten. Alle Werte werden duch "," getrennt, Text muss mit Anführungszeichen (" oder ') versehen werden und die Werte einer Datenzeile (*record*) stehen jeweils in Klammern. Beachten Sie bitte, die Anzahl und Reihenfolge der Felder und nachfolgend aufgeführten Werte müssen sich entsprechen.
 
-## Daten abfragen
+Die zentrale Syntax von *INSERT*ist also einfach:
+
+```{}
+INSERT INTO table-name (attribute1, attr..) VALUES (value1, val...);
+```
+
+Im Vergleich zur vorgefertigte Anfügeabfrage erkennen Sie: 1. Wir brauchen Kenntnis über die Feldparameter (Zahl, Text, Schlüsselfeld, nicht Null, etc) und müssen entsprechend handeln  sonst erfolgt eine Fehlermeldung. Allerdings können wir Zahlen auch ohne Anführungszeichen in ein Textfeld schreiben. 2. Sie können nicht nur eine Datenzeile sondern auch mehrere Zeilen anfügen. Wenn Sie stets nur eine Datenzeile anfügen wissen Sie sofort wann ein Fehler auftritt dafür dauert es aber länger. In der folgenden Anweisung fehlt z.B. die notwendige Angabe zur Befundnummer in dem Feld feature_nr.
+
+```{sql Insert-Anweisung ohne die obligatorische Fundnummer, eval=FALSE, connection=t1db, include=TRUE}
+INSERT INTO tbl_features (f_name) VALUES (1005);  
+```
+
+Die folgende Anweisung nennt keine Felder, deshalb müssen alle vorhandenen Felder in der korrekten Reihenfolge bedient werden. Für das zu ergänzende Datum wird die Funktion *date()* genutz, *date('now')* liefert das Systemdatum im Standardformat 'YYYY-MM-DD'   ([weitere Infos](https://sqlite.org/lang_datefunc.html)).
+
+```{sql Anfügeabfrage ohne Feldnamen, error=FALSE, connection=t1db}
+INSERT INTO tbl_features VALUES (4, 1004, '1004', 'grave', 'Corded Ware', date('now'));
+```
+Und noch einige Daten zum Üben.
+
+```{sql Anfügeabfrage mit weiteren Daten, connection=t1db}
+INSERT INTO tbl_features (feature_nr, f_type, f_dating, discoverdate)
+VALUES
+(1005, 'pit', 'Late Neolithic', DATE('now')),
+(1006, 'posthole', 'Neolithic', DATE('now')),
+(1007, 'posthole', 'not dated', DATE('now'));
+```
+
+## Daten abfragen : SELECT
 
 *SELECT* ist eine der wichtigsten Anweisungen und es kann alles abgefragt werden was existiert. Wie zuvor erwähnt steht Text in Anführungszeichen, beachten Sie also das Ergebnis der folgenden Abfrage.
 
@@ -107,17 +136,19 @@ Die vorangehende Syntax nenn erst die Tabelle und die zu belegenden Felder, dana
 SELECT 'col 1', 2, '3', 1+3, pi() AS magic;
 ```
 
-Die zuvor in der tabelle tbl_features eigetragenen Daten können wir nun durch anfügen des Tabellennames als  Quelle abfragen wobei wir statt einzelner Felder mit * schlicht alle abfragen.
+Die zuvor in der Tabelle tbl_features eigetragenen Daten können wir nun durch anfügen des Tabellennames als  Quelle abfragen wobei wir statt einzelner Felder mit * schlicht alle abfragen.
 
 ```{sql Einfache Abfrage aller Befunddaten, connection=t1db}
 SELECT * FROM tbl_features;
 ```
 
+### Filtern
+
 Natürlich gibt es zahlreiche Möglichkeiten die Abfrage anzupassen, um die  gewünschte Information zu erhalten. Das ist vor allem die Bedingung mit *where*. Für Zahlen können folgende Operatoren verwendet werden: <, >, = , >=, <=, <>. 
 
 ```{sql Abfrage für Zahlenfelder, connection=t1db}
 SELECT feature_nr, f_type, f_dating FROM tbl_features
-WHERE feature_nr <> 1002;
+WHERE feature_nr > 1003;
 ```
 
 Text muss weiterhin in Anführungszeichen stehen und als Operatoren werden erneut  = und <> verwendet, dazu *like* für unscharfe Suchen in Ergänzung mit % innerhalb der Anführungszeichen und *is not* für die Negation eines Operators. Mit Klammern, *and* und *or* können komplexere Bedingungen erstellt werden. Beachten Sie bitte später auch Unterschiede zwischen *NULL* und "" als Hinweis auf eine leere Zeichenkette. 
@@ -127,12 +158,90 @@ SELECT feature_nr, f_type, f_dating FROM tbl_features
 WHERE (f_type is not null) and (f_dating not like "n%");
 ```
 
-Die Rückgabe einer Abfrage, gefiltert oder nicht, kann sortiert. Mehrere Sortierfelder werden durch "," getrennt und durch *desc* oder *asc* zwischen absteigend und aufsteigend getrennt.  
+### Sortieren
+
+Die Rückgabe einer Abfrage kann nach einem oder mehreren Sortierfeldern, dann durch "," getrennt, absteigend (*desc*) oder aufsteigend (*asc*) sortiert werden.  
 
 ```{sql Sortierte Abfrage, connection=t1db}
-SELECT feature_nr, f_type, f_dating FROM tbl_features
-ORDER BY feature_nr DESC, f_dating ASC;
+SELECT feature_nr, f_name, f_type, f_dating FROM tbl_features
+ORDER BY f_type DESC, feature_nr ASC;
+```
+
+### Gruppieren bzw. Aggregieren
+
+Typischerweise wollen sie sich eine Überblick über die Daten verschaffen, z.B. Wieviele Befunde habe ich je Epoche und welche Befundtypen sind vertreten? Die folgende Anweisung erledigt dies umgehend. Beachten Sie:
+
+- GROUP BY : Aggregiert den ausgewählten Datensatz (FROM) nach den genannten Feldern
+- count() : Die Funktion liefert die Anzahl der aggregierten Datenzeilen.
+- group_concat() : Die Funktion ist SQLite spezifisch und liefert die verketten Feldwerte mit dem genannten Trennzeichen.
+- AS : Jeder Rückgabewert kann mit einem *label* versehen werden, statt der Anweisung nach *SELECT* wird dann dieses als Spaltenüberschrift verwendet. 
+
+```{sql Abfrage Gruppieren nach der Datierung, connection=t1db}
+SELECT f_dating, count(feature_nr) AS n, group_concat(feature_nr, ", ") AS 'Bef.-Nr.' 
+FROM tbl_features
+GROUP BY f_dating 
+```
+Wollen Sie die aggregierten Daten filtern wird statt WHERE die Anweisung HAVING nach GROUP BY gesetzt. Als Beispiel hier die Suche nach doppelten Fundnummern.
+
+```{sql Abfrage Gruppieren nach identischen feature_nr, connection=t1db}
+SELECT feature_nr as Dubletten FROM tbl_features
+GROUP BY feature_nr
+HAVING count(feature_nr) > 1;
 ```
 
 Es gibt deutlich mehr Bedingungen und Optionen in [SELECT-Abfrage](https://sqlite.org/lang_select.html) aber es reicht für den Anfang.
 
+## Daten modifizieren : UPDATE
+
+Die letzten Abfragen offenbahren einen gravierenden und auch weitere Fehler: Die Befundnummer 1001 ist doppelt vergeben, f_name fehlt in einigen Fällen und Neolithic ist einmalig klein geschrieben. Letzteres zuerst:
+
+```{sql Fehler neolithic beheben, connection=t1db}
+UPDATE tbl_features SET f_dating = 'Neolithic' 
+WHERE f_dating='neolithic';
+```
+
+Beachten Sie bitte die missliche Zweideutigkeit von "=", einmal als "ist gleich" und einmal als Zuweisung. Auch wird das lehre Feld f_name mit f_name="" nicht gefunden, hier müssen wir korrekt auf *IS NULL* filtern.
+
+```{sql Filter mit *IS NULL*, connection=t1db}
+UPDATE tbl_features SET f_name = feature_nr 
+WHERE f_name IS NULL;
+```
+
+## Unterabfragen
+
+Für die Dublette nutzen wir die oben erstellte Abfrage nach den Dubletten als Filter bzw. Unterabfrage. Diese Unterabfrage wird mit "*IN*" übergeben und die Unterabfrage als ganzes in Klammern gesetzt. Im Ergebnis erhalten wir eine Liste der Dubletten um eine Entscheidung treffen zu können. Ich würde den Datensatz mit feature_id=3 auf die bisher fehlende Fundnummer 1003 ändern.
+
+```{sql Abfrage der doppelten Befundnummern, connection=t1db}
+SELECT * FROM tbl_features
+WHERE feature_nr IN (SELECT feature_nr FROM tbl_features
+GROUP BY feature_nr
+HAVING count(feature_nr) > 1);
+```
+
+## Löschabfragen
+
+Löschabfragen sind recht einfach und leider irreversibel, also vorher prüfen. Oder Sie multiplizieren bei den zu löschenden Datensätzen die ID mit -1 und filtern immer auf positive (= gültige) IDs.
+
+```{sql Löschabfrage für einen nicht vorhandenen Datensatz, connection=t1db}
+DELETE FROM tbl_features WHERE ((feature_nr <> f_name) AND (feature_id < 0));
+```
+
+# Einfache Datendefinition
+
+Wie oben erwähnt: die Strukturierung der Daten in diversen Tabellen und deren Felder sollte nicht unüberlegt erfolgen. Investieren Sie etwas Zeit, lesen Sie etwas, skizzieren Sie Ihre Struktur in einem sogenannten Entity-Relationship-Model (ERM) und Fragen Sie um Rat.
+
+## Tabelle erstellen
+
+Die folgende Tabelle soll Informationen zu Fundkontexten (Fundzettel) beinhalten. Dabei ist hier wichtig dass, dass ein Fund nicht ohne Befund existieren soll und deshalb auf diesen als Fremdschlüssel verweist. 
+
+```{sql Tabelle für Fundkontexte erstellen, connection=t1db}
+CREATE TABLE "tbl_findcontexts" (
+	"findcontext_id"	INTEGER PRIMARY KEY,
+	"feature_nr"	INTEGER NOT NULL,
+	"finddate"	TEXT,
+	"description"	TEXT,
+	FOREIGN KEY (feature_nr) REFERENCES tbl_features(feature_nr) 
+);
+```
+
+Wie oben erwähnt, die grundlegende Syntax ist einfach: ```CREATE TABLE <table name> (<attribute> data type[, <attribute> data type]);``` Der Tabellenname und mindestens ein Feld mit nachfolgendem Datentyp sind Pflicht.
