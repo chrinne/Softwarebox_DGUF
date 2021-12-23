@@ -670,6 +670,13 @@ WHERE feature_id = 3;</code></pre>
 <div id="tabellen-daten-und-relationen" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> Tabellen, Daten und Relationen</h1>
 <p>Wie oben erwähnt: die Strukturierung der Daten in diversen Tabellen und deren Felder sollte nicht unüberlegt erfolgen. Investieren Sie etwas Zeit, lesen Sie etwas, skizzieren Sie Ihre Struktur in einem sogenannten Entity-Relationship-Model (ERM) und fragen Sie um Rat.</p>
+<p>Einige Hinweise:</p>
+<ul>
+<li>Tabellennamen mit einem Präfix (“tbl_”) sind in Datenbanken mit vielen anderen Tabellen, z.B. in SpatiaLite, schneller zu finden.</li>
+<li>Bei allen Name (Tabellen, Felder etc) sollten Sie keine Leerzeichen oder Sonderzeichen wie Umlaute verwenden oder Zahlen am Anfang setzen.</li>
+<li>Namen sollten möglichst kurz aber aussagekräftig und dem Inhalt angemessen sein. Seien Sie stringent und konsequent in der Namensgebung, z.B. stets im Plural (tbl_features).</li>
+<li>Testen Sie Ihre Datenstruktur mit wenigen Datensätzen bevor Sie das große Werk starten.</li>
+</ul>
 <div id="tabelle-erstellen-1" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Tabelle erstellen</h2>
 <p>Die folgende Tabelle soll Informationen zu Fundkontexten (Fundzettel) beinhalten. Dabei ist hier wichtig, dass ein Fund nicht ohne Befund existieren soll und deshalb auf diesen als Fremdschlüssel verweist.</p>
@@ -711,8 +718,8 @@ WHERE feature_id = 3;</code></pre>
 <tr class="odd">
 <td align="left">2021-12-23</td>
 <td align="left">2021-12-24</td>
-<td align="left">2021-12-23 14:19:33</td>
-<td align="left">1640269173</td>
+<td align="left">2021-12-23 15:44:23</td>
+<td align="left">1640274263</td>
 <td align="right">2459572</td>
 </tr>
 </tbody>
@@ -737,7 +744,7 @@ WHERE feature_id = 3;</code></pre>
 <tr class="odd">
 <td align="right">123</td>
 <td align="left">123</td>
-<td align="left">2021-12-23 14:19:33</td>
+<td align="left">2021-12-23 15:44:23</td>
 </tr>
 </tbody>
 </table>
@@ -819,8 +826,32 @@ VALUES
 </div>
 </div>
 </div>
-<div id="daten-kombinieren-join" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Daten kombinieren : JOIN</h1>
+<div id="daten-kombinieren" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Daten kombinieren</h1>
+<div id="join" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> JOIN</h2>
+</div>
+<div id="union" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> UNION</h2>
+</div>
+</div>
+<div id="datentransfer" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Datentransfer</h1>
+<div id="attach" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Attach</h2>
+</div>
+<div id="export-dump" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Export, Dump</h2>
+</div>
+</div>
+<div id="software" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Software</h1>
+<div id="db-browser-sqlite" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> DB Browser SQLite</h2>
+</div>
+<div id="spatialite-gui" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> SpatiaLite GUI</h2>
+</div>
 </div>
 <div class="footnotes">
 <hr />

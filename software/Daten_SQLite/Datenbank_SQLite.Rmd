@@ -9,16 +9,16 @@ header-includes:
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
 output:
-  html_document:
-    toc: true
-    toc_depth: 2
-    toc_float: true
-    number_sections: true
   pdf_document:
     number_sections: true
     toc: true
     toc_depth: 2
     df_print: kable
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -238,6 +238,13 @@ DELETE FROM tbl_features WHERE ((feature_nr <> f_name) AND (feature_id < 0));
 
 Wie oben erwähnt: die Strukturierung der Daten in diversen Tabellen und deren Felder sollte nicht unüberlegt erfolgen. Investieren Sie etwas Zeit, lesen Sie etwas, skizzieren Sie Ihre Struktur in einem sogenannten Entity-Relationship-Model (ERM) und fragen Sie um Rat.
 
+Einige Hinweise:
+
+- Tabellennamen mit einem Präfix ("tbl_") sind in Datenbanken mit vielen anderen Tabellen, z.B. in SpatiaLite, schneller zu finden.
+- Bei allen Name (Tabellen, Felder etc) sollten Sie keine Leerzeichen oder Sonderzeichen wie Umlaute verwenden oder Zahlen am Anfang setzen.
+- Namen sollten möglichst kurz aber aussagekräftig und dem Inhalt angemessen sein. Seien Sie stringent und konsequent in der Namensgebung, z.B. stets im Plural (tbl_features).
+- Testen Sie Ihre Datenstruktur mit wenigen Datensätzen bevor Sie das große Werk starten. 
+
 ## Tabelle erstellen
 
 Die folgende Tabelle soll Informationen zu Fundkontexten (Fundzettel) beinhalten. Dabei ist hier wichtig, dass ein Fund nicht ohne Befund existieren soll und deshalb auf diesen als Fremdschlüssel verweist. 
@@ -334,4 +341,21 @@ VALUES
 Select * FROM tbl_findcontexts;
 ```
 
-# Daten kombinieren : JOIN
+# Daten kombinieren
+
+## JOIN
+
+## UNION 
+
+# Datentransfer
+
+## Attach
+
+## Export, Dump 
+
+# Software
+
+## DB Browser SQLite
+
+## SpatiaLite GUI
+
