@@ -9,16 +9,16 @@ header-includes:
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
 output:
-  pdf_document:
-    number_sections: true
-    toc: true
-    toc_depth: 2
-    df_print: kable
   html_document:
     toc: true
     toc_depth: 2
     toc_float: true
     number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -339,7 +339,7 @@ Select * FROM tbl_findcontexts;
 
 # Daten kombinieren
 
-Da Daten befinden sich in diverse Tabellen mit definierten Relationen zu anderen. Zwangsläufig müssen wir also Daten aus den diversen Tabellen kombinieren können. Die Anweisung *JOIN* verbindet Daten horizontal zu einer Datenzeile, die Anweisung *UNION* hängt Daten vertikal aneinander in mehrere Datenzeilen. Die derart gestalteten Abfragen werden in der Syntax oft etwas komplexer und liefern zudem oft regelmäßig benötigte Zusammenstellungen von Daten. Deshalb vorab knapp etwas zum Speichern von Abfrage als *VIEW*.
+Die Daten befinden sich in diverse Tabellen mit definierten Relationen zueinanderen. Zwangsläufig müssen wir also Daten aus den diversen Tabellen kombinieren können. Die Anweisung *JOIN* verbindet Daten horizontal zu einer Datenzeile, die Anweisung *UNION* hängt Daten vertikal aneinander in mehrere Datenzeilen. Die derart gestalteten Abfragen werden in der Syntax oft etwas komplexer und liefern zudem oft regelmäßig benötigte Zusammenstellungen von Daten. Deshalb vorab knapp etwas zum Speichern von Abfrage als *VIEW*.
 
 ## VIEW
 
@@ -352,7 +352,7 @@ Select * FROM tbl_findcontexts;
 
 Die Daten können nun wie bei einer Tabelle abgefragt und auch verwendet werden:
 
-```{sql CREATE VIEW Abfrage für die Tabelle der Fundkontexte, connection=db01}
+```{sql Daten der erstellten VIEW abfragen, connection=db01}
 Select * FROM qry_findcontexts;
 ```
 
@@ -373,7 +373,7 @@ Die Liste wird derart auf die Befunde und deren abgefragten Attribute eingeschr�
 
 Bedenken Sie auch die Multiplikation der kreuzweisen Verknüpfung bei mehrfach vorhandenen Werten. Dazu eine JOIN Abfrage zwischen der originalen Tabelle der Fundkontexte und der dazu erstellten Abfrage. Jeweils drei Fundkontexte werden zu insgesamt neun Datenzeilen.
 
-```{sql INNER JOIN Abfrage für Fundkontexte aus der Tabeklle und derAbfrage, connection=db01}
+```{sql INNER JOIN Abfrage für Fundkontexte aus der Tabellen und der Abfrage, connection=db01}
 SELECT a.feature_nr, a.find_nr, b.feature_nr, b.find_nr
 FROM tbl_findcontexts AS a INNER JOIN qry_findcontexts AS b ON a.feature_nr=b.feature_nr; 
 ```
@@ -382,7 +382,7 @@ FROM tbl_findcontexts AS a INNER JOIN qry_findcontexts AS b ON a.feature_nr=b.fe
 
 Die Einschränkung der bedingten Verknüpfung durch *INNER JOIN* ist nicht immer erwünscht. So wäre z.B. eine Liste aller Befunde wünschenswert, die zugleich die Anzahl der Fundkontexte liefert. Sie müssen also erst eine Abfrage mit allen Befunden und wenn vorhanden den zugehörigen Fundnummern erstellen. In einem zweiten Schritt wird die Liste dann nach den Befundnummer gruppiert. Das können Sie natürlich ganz real in zwei Schritten über eine erste *VIEW* und nachfolgende Abfrage angehen. Nachfolgend aber alles in einem Rutsch. 
 
-```{sql INNER JOIN Abfrage für Befunde und Funde, connection=db01}
+```{sql LEFT JOIN Abfrage für Befunde und Funde, connection=db01}
 SELECT a.feature_nr, a.f_type, a. f_dating, count(b.find_nr) as 'Anzahl Fundkontexte'
 FROM tbl_features AS a LEFT JOIN tbl_findcontexts AS b ON a.feature_nr=b.feature_nr
 GROUP BY a.feature_nr, a.f_type, a. f_dating; 
@@ -390,7 +390,7 @@ GROUP BY a.feature_nr, a.f_type, a. f_dating;
 
 Bei einem *LEFT JOIN* werden die Attribute ohne einen passenden Datensatz in der verknüpften Tabelle mit NULL gefüllt. Wenn Sie also andersrum wissen wollen, welche Befunde keine zugeordneten Fundkontexte  im Datenbestand haben - das ist ggf. etwas anderes als ohne Funde waren - so können Sie ohne zu gruppieren auf den Attributwert NULL filtern.
 
-```{sql INNER JOIN Abfrage für Befunde ohne Fundkontexte, connection=db01}
+```{sql LEFT JOIN Abfrage für Befunde ohne Fundkontexte, connection=db01}
 SELECT a.feature_nr, a.f_type, a. f_dating
 FROM tbl_features AS a LEFT JOIN tbl_findcontexts AS b ON a.feature_nr=b.feature_nr
 WHERE b.find_nr IS NULL; 
@@ -398,13 +398,66 @@ WHERE b.find_nr IS NULL;
 
 ## UNION 
 
+Zwei oder mehr *SELECT* Anweisungen können kombiniert werden, neben UNION stehen auch *INTERSECT* und *EXCEPT* als Operatoren zur Verfügung. Im Folgen wollen wir eine Liste aller Informationen zu den Befunden zusammenstellen um so schnell an alle Informationen zu einem spezifischen befund zu gelangen. Hätten wir auch datierte Funde erfasst könnten wir in er Spalte Information auch alles filtern wo z.B. '%Neolith% vorkommt, egal ob Befund- oder Funddatierung. Beachten Sie bitte die Verkettung der Attribute und Textelemente mit "||".
 
+```{sql UNION ALL Abfrage für Befundinformationen, connection=db01}
+SELECT feature_nr AS Befundnr, f_type ||", "|| f_dating AS Information, 'tbl_features' AS Tabelle
+FROM tbl_features
+UNION ALL
+SELECT feature_nr, description, 'tbl_findcontexts'
+FROM tbl_findcontexts 
+ORDER BY Befundnr;
+```
+
+Um die Funktionsweise von *UNION* im Gegensatz zu *UNION ALL* zu verstehen sei folgendes, etwas sinnentleertes Beispiel verwendet:
+
+```{sql UNION ALL Abfrage für Befunde, connection=db01}
+SELECT feature_nr AS Befundnr, f_type AS Information
+FROM tbl_features 
+WHERE feature_nr < 1004
+UNION
+SELECT feature_nr AS Befundnr, f_type AS Information
+FROM tbl_features
+WHERE feature_nr < 1004;
+```
+
+Die einfache UNION-Operator führt offensichtlich eine Gruppierung durch und verhindert im vorliegenden Fall die Dopplung der Befundnummern bis 1003.  
 
 # Datentransfer
 
+Unter Datentransfer werden nachfolgend zwei wichtige Aspekte behandelt: 1. Wie kann ich  Daten aus anderen Datenbanken nutzen? 2. Wie kann ich meine Datenbank sichern und Dritten zur Verfügung stellen? Natürlich können Sie Daten als CSV-Tabelle importieren oder Ihre SQLite-Datenbank als Ganzes weitergeben. Aber die Nachfolgenden Beispiele haben den Charme 1. die Frenddaten nicht kopieren und damit pflegen zu müssen und 2. als textbasierte SQL-Anweisungen mit Struktur und Daten auch auf andere SQL-Systeme übertragbar zu sein.  
+
 ## Attach
 
+Das folgende Beispiel ist erneut etwas sinnentleert, verdeutlicht aber die Gundlagen. Kopieren Sie als erstes die vorliegende Datenbank unter einem neuen Namen, 
+z.B. db02. In R ist das denkbar einfach:
+
+```{r Datenbank kopieren, echo=TRUE}
+db01 -> db02
+```
+
+```{sql ATTACH exterexterne Datenbank db02, connection=db01}
+ATTACH db02 AS db2;
+```
+
+Danach können Sie auf die fremden Daten zugreifen:
+
+```{sql Abfrage zu der Tabelle einer angehängten Datenbank, eval=FALSE, connection=db01}
+select * from db2.tbl_findcontexts;
+```
+Anmerkung: Das funktioniert in RSQLite leider nicht, deshalb keine Ergebnis für diese Abfrage. 
+
 ## Export, Dump 
+
+Der Befehl '.dump <datenbank-name>' schreibt eine gesamte Datenbank in zahlreiche SQL-Anweisungen, jeweils die *CREATE TABLE*-Anweisung für das erstellen der Tabelle und dann die Werte als *INSERT*-Anweisung. Auch dies ist etwas, was in RSQLite innerhalb der definierten Datenbankverknüpfung natürlich nicht funktioniert. Sie sehen nachfolgend also nur die Syntax und einen Teil des Ergebnisses aus der Umsetzung im DB Browser SQLite (s.u.). 
+
+Nur soviel an dieser Stelle: Eine Datenbank verwaltet sich selbst ebenfalls in Tabellen. Diese können wir natürlich abfragen: 
+
+```{sql Abfrage der CREATE TABLE Anweisung aus der sqlite_master Tabelle, connection=db01}
+SELECT sql FROM sqlite_master
+WHERE name='tbl_features';
+```
+
 
 # Software
 
