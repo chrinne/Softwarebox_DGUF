@@ -369,7 +369,7 @@ SELECT a.feature_nr, a.f_type, a. f_dating, b.find_nr, b.description
 FROM tbl_features AS a INNER JOIN tbl_findcontexts AS b ON a.feature_nr=b.feature_nr; 
 ```
 
-Die Liste wird derart auf die Befunde und deren abgefragten Attribute eingeschränkt, die zugleich auch Funde erbracht haben. Im vorliegenden Fall ausschließlich die Grube Befund 1005. Weiteren JOIN-Anweisungen für andere Tabellen (c) sind möglich, sowohl mit einem erneuten Bezug auf die erste Tabelle (a) als auch auf bereits verknüpfte Tabelle (b).
+Die Liste wird derart auf die Befunde und deren abgefragten Attribute eingeschränkt die zugleich auch Funde erbracht haben. Im vorliegenden Fall ausschließlich die Grube Befund 1005. Weitere JOIN-Anweisungen für andere Tabellen (c) sind möglich, sowohl mit einem erneuten Bezug auf die erste Tabelle (a) als auch auf bereits verknüpfte Tabelle (b).
 
 Bedenken Sie auch die Multiplikation der kreuzweisen Verknüpfung bei mehrfach vorhandenen Werten. Dazu eine JOIN Abfrage zwischen der originalen Tabelle der Fundkontexte und der dazu erstellten Abfrage. Jeweils drei Fundkontexte werden zu insgesamt neun Datenzeilen.
 
@@ -380,14 +380,25 @@ FROM tbl_findcontexts AS a INNER JOIN qry_findcontexts AS b ON a.feature_nr=b.fe
 
 ### LEFT [OUTER] JOIN 
 
+Die Einschränkung der bedingten Verknüpfung durch *INNER JOIN* ist nicht immer erwünscht. So wäre z.B. eine Liste aller Befunde wünschenswert, die zugleich die Anzahl der Fundkontexte liefert. Sie müssen also erst eine Abfrage mit allen Befunden und wenn vorhanden den zugehörigen Fundnummern erstellen. In einem zweiten Schritt wird die Liste dann nach den Befundnummer gruppiert. Das können Sie natürlich ganz real in zwei Schritten über eine erste *VIEW* und nachfolgende Abfrage angehen. Nachfolgend aber alles in einem Rutsch. 
+
 ```{sql INNER JOIN Abfrage für Befunde und Funde, connection=db01}
-SELECT a.feature_nr, a.f_type, a. f_dating, b.find_nr, b.description
-FROM tbl_features AS a LEFT JOIN tbl_findcontexts AS b ON a.feature_nr=b.feature_nr; 
+SELECT a.feature_nr, a.f_type, a. f_dating, count(b.find_nr) as 'Anzahl Fundkontexte'
+FROM tbl_features AS a LEFT JOIN tbl_findcontexts AS b ON a.feature_nr=b.feature_nr
+GROUP BY a.feature_nr, a.f_type, a. f_dating; 
+```
+
+Bei einem *LEFT JOIN* werden die Attribute ohne einen passenden Datensatz in der verknüpften Tabelle mit NULL gefüllt. Wenn Sie also andersrum wissen wollen, welche Befunde keine zugeordneten Fundkontexte  im Datenbestand haben - das ist ggf. etwas anderes als ohne Funde waren - so können Sie ohne zu gruppieren auf den Attributwert NULL filtern.
+
+```{sql INNER JOIN Abfrage für Befunde ohne Fundkontexte, connection=db01}
+SELECT a.feature_nr, a.f_type, a. f_dating
+FROM tbl_features AS a LEFT JOIN tbl_findcontexts AS b ON a.feature_nr=b.feature_nr
+WHERE b.find_nr IS NULL; 
 ```
 
 ## UNION 
 
-## VIEW
+
 
 # Datentransfer
 
