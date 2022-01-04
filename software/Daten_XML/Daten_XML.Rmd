@@ -1,0 +1,79 @@
+---
+title: "Daten & XML"
+author: 
+ - Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]
+date: "`r format(Sys.time(), '%d. %B %Y')`"
+license: "CC-BY 4.0"
+header-includes:
+  \renewcommand{\contentsname}{Inhalt}
+  \renewcommand{\figurename}{Abb.}
+  \renewcommand{\tablename}{Tab.}
+csl: journal-of-archaeological-science.csl
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
+fig_caption: true
+urlcolor: blue
+link-citations: true # make citations hyperlinks
+linkcolor: blue
+lang: de-DE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Grundlegende Information
+
+## Entwicklung und Forschungsgeschichte
+
+Daten sammeln und nachnutzen, zur Recherche oder der Analyse, ist in den archäologsichen Fächern ein alltäglicher Vorgang. Meist sind es einzelne Tabellen, gelegentlich auch Tabellen mit Referenzen untereinander oder auch etwas komplexere relationale Datenbanken. Daneben stehen aber auch andere Techniken zur  Strukturierung von Informationen zur Verfügung, eine sehr grundlegende ist die Auszeichnungssprache [XML](https://de.wikipedia.org/wiki/Extensible_Markup_Language).
+
+Von dem eher technischen Aspekt der Sprache, z.B.XML oder SQL, ist das Konzept zur Strukturierung der Informationen zu trennen. Allerdings stehen die vorgenannten Sprachen XML und SQL vor allem bedingt durch die jeweilige Enticklungsgeschichte in sehr unterschiedlichen Konzepten von Datenmodellen.  Dabei ist XML die jüngere mit mit der Entwicklung des Internets eng verbundene Entwicklung.
+
+Zu Beginn der 2000er wurde von Schloen ArchaeoML, ein auf XML basierendes und auf Objekte (*item*) zentriertes Datenmodell präsentiert [@schloenArchaeologicalDataModels2001]. Zeitgleich wird CIDOC-CRM entwickelt, welches ebenfalls auf XML und hieraus mit [RDF](https://de.wikipedia.org/wiki/Resource_Description_Framework) als auch [OWL](https://de.wikipedia.org/wiki/Web_Ontology_Language) entwickelten Relationen basierend, eine komplexe Ontologie für Informationen der Kutlurwissenschaften dartellt [@doerrCoreOntologyInformation2003]. Beide sind in ihrer Entstehung eng mit der Entwicklung des Internet verbunden und basieren im Kern auf XML sind darüber hinaus aber sehr unterschiedlich [@kansaCommunityApproachData2005]. ArchaeoML ist in der in [OCHRE](https://voices.uchicago.edu/ochre) aufgegangen und bildet auch eine Grundlage von [Open Context Hertiage Bytes](http://ux.opencontext.org/), z.B. bei [DINAA](http://ux.opencontext.org/archaeology-site-data/). Die weitere Entwicklung  von Open Context erfolgt auf [GitHub](https://github.com/ekansa) wobei GeoJSON-LD und damit der Raumbezug und die Referenzen unterienander zunehmend an Bedeutung gewinnen [Kansa 2014](http://ux.opencontext.org/2014/09/02/upgrading-open-context/). Auch CIDOC-CRM wird weiter entwickelt [@oldmanCIDOCConceptualReference2014] und vielfach als Grundlage für die Erfassung von Datenbeständen genutzt. Während CIDOC-CRM anfänglich stark an den Relationen orientiert war tritt auch hier das Objekt oder *item*, als Ding (*thing*), Objekt (*objekt*) oder (*feature*) in das Zentrum.
+
+Ausgehend von XML steht also das Element zunehmend im Zentrum der Strukturierung weniger die Relation von definierten Klassen wie es bei SQL eher der Fall ist. Weder XML noch SQL sind entgegen dieser sehr unterschiedlichen genuinen Konzeption aber auf die jeweiligen Modelle eingeschränkt.
+
+## XML Nutzen
+
+Zur Nutzung von XML-Datenbanken wurde [XQuery](https://de.wikipedia.org/wiki/XQuery) entwickelt. Grundlegendes Datenmodell ist eine Liste, mit keinem oder einem Element oder auch mehreren Elementen, wobei ein Element auch wiederum eine Liste sein kann. Diese als Sequenz bezeichnete Liste von Elementen entspricht damit der Struktur eines XML-Dokumentes. Bei XQuery spielen FLOWER-Ausdrücke eine zentrale Rolle. FLOWER steht für *for, let, where, order by, return* ist damit erkennbar an SQL orientiert (*SELECT, FROM, WHERE, ORDER BY*).
+
+Eine Programm zur Nutzung von XML-Datenbanken und XQuery ist [BaseX](https://basex.org/) (s.u.). 
+
+## XML in R / RStudio
+
+Da ich diesen Text in R-Markdown mit RStudio schreibe verwende ich sogenannte *code chunks*, um die Befehle darzustellen. Mit den Paketen [xml](https://cran.r-project.org/web/packages/XML/index.html) oder [xml2](https://xml2.r-lib.org/) können XML-strukturierte Daten in R genutzt werden, es dabei allerdings um *wrapper* mit einer typischen R-Syntax, nicht um eine Implementierung einer XML-Sprache wie z.B. [XQuery](https://de.wikipedia.org/wiki/XQuery).  Beide Pakete haben jeweils eigene Dokumentationen ([xml](https://www.rdocumentation.org/packages/XML), [xml2](https://www.rdocumentation.org/packages/xml2)). Die Pakete bieten einige unterschiedliche Funktionen, z.B. xmlToDataFrame() bei xml und unterscheiden sich weitgehend in den Fundktionsnamen: "xml_<Beschreibung>" bei xml2.  
+
+XQuery wird in R nicht umgesetzt, die nachfolgenden *code chunks* mit XQuery sind demnach funktionsloses Layout ohne hervorgehobene Syntax (*syntax highlighting*). Für die Nutzung der Pakete xml und xml2 sind einführende Beispiele in der oben genannten Dokumentation vorhanden.
+
+# XML Grundlagen
+
+## XML Datenstruktur
+
+## XQuery Beispiele
+
+
+
+```
+let $results :=//arbeit[matches(supervisors, "Müller", "i")]/supervisors
+return <results>{$results}</results>
+```
+
+# Software
+
+## BaseX
+
+Laden Sie das für Ihr System (Windows, Mac, Linux) benötigte Installationspaket von [sqlitebrowser](https://sqlitebrowser.org/) herunter.  Das Programm wird als [Projekt auf github](https://github.com/sqlitebrowser) entwickelt, dort finden Sie auch ein [Wiki](https://github.com/sqlitebrowser/sqlitebrowser/wiki). Es ist also nicht nötig, hier im Detail alles vorzustellen.
+
+
+## R-Pakete xml & xml2
+

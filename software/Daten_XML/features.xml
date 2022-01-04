@@ -1,0 +1,69 @@
+<excavation>
+<features>
+<feature feature_id="1" feature_nr="1001" discover_date="2019-05-22">
+	<f_name author="excavator" date="2019-05-22">1001</f_name>
+	<f_type author="excavator" date="2019-05-22">posthole</f_type>
+</feature>
+<feature feature_id="2" feature_nr="1002" discover_date="2019-05-22">
+	<f_name author="excavator" date="2019-05-22">1002</f_name>
+	<f_type author="excavator" date="2019-05-22">pit</f_type>
+	<dating author="excavator" date="2019-05-22">Neolithic</dating>
+	<dating author="know-it-all" date="2020-06-23">Final Neolithic</dating>
+</feature>
+<feature feature_id="3" feature_nr="1003" discover_date="2019-05-22">
+	<f_name author="excavator" date="2019-05-22">1001</f_name>
+	<f_type author="excavator" date="2019-05-22">grave</f_type>
+	<f_type author="know-it-all" date="2020-06-23">princely tomb</f_type>
+	<dating author="excavator" date="2019-05-22">Corded Ware</dating>
+</feature>
+<feature feature_id="4" feature_nr="1004" discover_date="2019-05-22">
+	<f_name author="excavator" date="2019-05-22">1004</f_name>
+	<f_type author="excavator" date="2019-05-22">grave</f_type>
+	<dating author="excavator" date="2019-05-22">Corded Ware</dating>
+</feature>
+<feature feature_id="5" feature_nr="1005" discover_date="2019-05-22">
+	<f_name author="excavator" date="2019-05-22">1005</f_name>
+	<f_type author="excavator" date="2019-05-22">pit</f_type>
+	<dating author="excavator" date="2019-05-22">Neolithic</dating>
+	<dating author="know-it-all" date="2020-06-23">Final Neolithic</dating>
+	<dating author="moneybags" date="2021-07-24" method="AMS">4040+/-25</dating>
+	<findcontext findcontext_id="1" findcontext_nr="1" context="surface finds" find_date="2019-05-23" record_date="2019-07-25">
+		<find find_id="1">
+			<material>earthenware</material>
+			<form>rim sherd</form>
+			<dating author="excavator" date="2019-05-22">Neolithic</dating>
+			<decoration>incised horizontal line</decoration>
+			<decoration>cord impression</decoration>
+		</find>
+	</findcontext>
+	<findcontext findcontext_id="2" findcontext_nr="2" context="bottom layer" find_date="2019-06-23" record_date="2019-06-24">
+		<find find_id="2">
+			<material>flint</material>
+			<material>bone</material>
+			<material>tar</material>
+			<form>dagger</form>
+			<dating author="excavator" date="2019-06-24">Corded Ware</dating>
+		</find>
+		<find find_id="3">
+			<material>bone</material>
+			<form>fragment</form>
+		</find>
+	</findcontext>
+</feature>
+<feature feature_id="6" feature_nr="1006" discover_date="2019-05-22">
+	<f_name author="excavator" date="2019-05-22">1006</f_name>
+	<f_type author="excavator" date="2019-05-22">posthole</f_type>
+	<dating author="excavator" date="2019-05-22">Neolithic</dating>
+</feature>
+<feature feature_id="7" feature_nr="1007" discover_date="2019-05-22">
+	<f_name author="excavator" date="2019-05-22">1007</f_name>
+	<f_type author="excavator" date="2019-05-22">posthole</f_type>
+</feature>
+</features>
+<samples>
+	<sample sample_id="1" purpos="radiocarbon_date" date="2019-06-23">
+		<sources find_id="2"/>
+		<sources find_id="3"/>		
+	</sample>
+</samples>
+</excavation>
