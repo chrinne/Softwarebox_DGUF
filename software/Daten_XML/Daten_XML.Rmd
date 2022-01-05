@@ -84,14 +84,14 @@ XML besteht aus Elementen (s.o. Sequenz) die auch als Knoten eines Baumes bezeic
 </text>
 ```
 
-Das Wurzel-Element des Beispieles ist ```\<text>...\</text>``` mit den weiteren Elementen "satz" und "wort" die neben den *start tags* ebenfalls zugehörige *end tags* besitzen. Das Element "text" besitzt das Attribut "autor" und das Element "wort" das  Attribut "typ". Dabei ist das Attribut "typ" für "wort" gut gewählt, da es eine eindeutig Zusatzinformation ist während wir für einen Text auch mehrere Autoren erwarten können und deshalb mit den Elementen "autoren" und "autor" statt einem Attribut arbeiten sollten.  
+Das Wurzel-Element des Beispieles ist ```\<text>...\</text>``` mit den weiteren Elementen "satz" und "wort" die neben den *start tags* ebenfalls zugehörige *end tags* besitzen. Die Element "wort" beinhaltet konkrete Werte, ebenso "satz" mit dem Punkt. Das Element "text" besitzt das Attribut "autor" und das Element "wort" das  Attribut "typ". Dabei ist das Attribut "typ" für "wort" gut gewählt, da es eine eindeutig Zusatzinformation ist während wir für einen Text auch mehrere Autoren erwarten können und deshalb mit den Elementen "autoren" und "autor" statt einem Attribut arbeiten sollten.  
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
 ```
 
-Wenn Sie wohlgeformte komplexere XML-Dateien in einem Editor öffnen, z.B. KML-Dateien, sehen Sie als erstes eine Deklaration und auch Verweise auf anzuwendende Regelwerke. Der folgende Beispieldatensatz ignoriert dies. 
+Wenn Sie wohlgeformte komplexere XML-Dateien in einem Editor öffnen, z.B. KML-Dateien, sehen Sie als erstes eine Deklaration und auch Verweise auf anzuwendende Regelwerke. 
 
 ![Die GUI von BaseX mit der geöffneten XML-Datenbank features](./basex_gui.png){width=75%}
 
@@ -101,9 +101,51 @@ Starten Sie für die Arbeit mit den Beispieldaten das Programm **BaseX**. Mit "D
 
 Unterhalb der üblichen Menü- und Icon-Leiste sehen Sie folgende Fenster: Projekt-Ordner, Editor für Syntax, *Map* der Datenbank, *Result* mit aktuell dem gesamten Datenbestand und *Info*. Diese Fenster können über das Menü unter *View* und *Visualization* auch an und ausgeblendet werden.
 
+Sehen Sie sich die Strutur der Daten sowohl im Fenster *Result* als auch *Map*-Fenster an. Innerhalb von "excavation" gibt es "features" und "samples". Ein feature kann zudem mit "findcontext" und "find" Fundzettelangaben und Funde beinhalten. Daneben stehen "samples" wobei eine Probe aus mehreren funden zusammengesetzt sein kann und auf diese anhand einer "id" verweist. Zahlreiche Elemente haben Attribute zu dem Autor und dem Zeitpunkt der Wertezuweisung. 
+
+Diese Beispieldaten haben keine zureichende Strukturierung für die Daten einer realen Ausgrabung.
+
 ## XPath 
 
+Mit XPath können die Knoten des Baumes adressiert werden, Rückgabe sind die Elemente und Werte ab der entsprechenden Ordnung (*preorder*). Tragen Sie bitte nacheinander und einzeln folgende XPath-Anweisungen in den Editor ein und führen diese aus:
 
+```
+//feature
+//feature/dating
+//dating
+data(//dating)
+```
+Die Anweisungen liefern nacheinander:
+
+- Die untergeordneten Knoten und Werte aller Befunde. Die "//" stehen für eine beliebige Position (Ordnung) im Baum. 
+- Liefert die Datierungen der Befunde.
+- Liefert alle Datierungen im Datenbestand, hier der Befunde und Funde.
+- Liefert ausschließlich die Werte aller Datierungen.
+
+Daten können auch gefiltert werden.
+
+```
+//dating[@mehtod]
+//feature[@feature_nr > 1003]
+//feature[@feature_nr > 1003]/f_type
+//feature[f_type="grave"]
+//feature[f_type = "grave" and f_name > 1002]
+//feature[findcontext]
+```
+Die Anweisungen liefern nacheinander:
+
+- Die Datierungen mit einem Attribut "methode".
+- Alle Knoten und Werte der Befunde mit dem Attribut-Wert > 1003. Beachten Sie bitte, dass die Zahl im Datenbestand in "" steht und doch als Zahl evaluiert wird.
+- Die Liste der Knoten "f_typ" zum vorangehenden Filter.
+- Alle Befunde vom Typ "grave".
+- Filter können mit "and",  "or" und "()" kombiniert werden.
+- Alle Befunde die Fundkontexte und demnach wohl Funde (//feature[findcontext/find]) erbracht haben.
+
+Auch unscharfe Suchen sind möglich.
+```
+//feature[dating[matches(text(), "^Final", "i")]]
+```
+matches, contains
 
 ## XQuery
 
