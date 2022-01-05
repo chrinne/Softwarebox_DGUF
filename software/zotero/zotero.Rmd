@@ -12,16 +12,16 @@ header-includes:
 bibliography: zotero-references.bib
 csl: journal-of-neolithic-archaeology.csl
 output:
-  pdf_document:
-    number_sections: true
-    toc: true
-    toc_depth: 2
-    df_print: kable
   html_document:
     toc: true
     toc_depth: 2
     toc_float: true
     number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
 # classoption:
   # - landscape
   #- twocolumn
