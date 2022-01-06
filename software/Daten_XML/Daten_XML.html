@@ -404,40 +404,47 @@ return &lt;tr&gt;
   &lt;/tr&gt;
 }
 &lt;/table&gt;</code></pre>
-<p>Das Ergebnis kann im Browser umgesetzt und korrekt angezeigt werden:</p>
+<p>Das Ergebnis sieht so aus:</p>
+<pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Befund-Nr.&lt;/th&gt;
+    &lt;th&gt;Anzahl Funde&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1005&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1002&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1006&lt;/td&gt;
+    &lt;td&gt;0&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<p>Es kann im Browser umgesetzt und korrekt angezeigt werden, etwa so:</p>
 <table>
-<tr>
-<th>
-Befund-Nr.
-</th>
-<th>
-Anzahl Funde
-</th>
+<thead>
+<tr class="header">
+<th align="right">Befund-Nr.</th>
+<th align="right">Anzahl Funde</th>
 </tr>
-<tr>
-<td>
-1005
-</td>
-<td>
-3
-</td>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1005</td>
+<td align="right">3</td>
 </tr>
-<tr>
-<td>
-1002
-</td>
-<td>
-0
-</td>
+<tr class="even">
+<td align="right">1002</td>
+<td align="right">0</td>
 </tr>
-<tr>
-<td>
-1006
-</td>
-<td>
-0
-</td>
+<tr class="odd">
+<td align="right">1006</td>
+<td align="right">0</td>
 </tr>
+</tbody>
 </table>
 </div>
 </div>

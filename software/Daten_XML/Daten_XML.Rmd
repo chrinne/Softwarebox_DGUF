@@ -11,16 +11,16 @@ header-includes:
 bibliography: daten_xml.bib
 csl: journal-of-archaeological-science.csl
 output:
-  html_document:
-    toc: true
-    toc_depth: '2'
-    toc_float: true
-    number_sections: true
   pdf_document:
     number_sections: true
     toc: true
     toc_depth: 2
     df_print: kable
+  html_document:
+    toc: true
+    toc_depth: '2'
+    toc_float: true
+    number_sections: true
 fig_caption: true
 urlcolor: blue
 link-citations: true
@@ -205,8 +205,9 @@ return <tr>
 }
 </table>
 ```
-Das Ergebnis kann im Browser umgesetzt und korrekt angezeigt werden:
+Das Ergebnis sieht so aus:
 
+```
 <table>
   <tr>
     <th>Befund-Nr.</th>
@@ -225,5 +226,13 @@ Das Ergebnis kann im Browser umgesetzt und korrekt angezeigt werden:
     <td>0</td>
   </tr>
 </table>
+```
+
+Es kann im Browser umgesetzt und korrekt angezeigt werden, etwa so:
+
+```{r echo=FALSE}
+tab<-as.data.frame(cbind("Befund-Nr."=c(1005,1002,1006), "Anzahl Funde"=c(3,0,0)))
+knitr::kable(tab)
+```
 
 # Zitierte Literatur
