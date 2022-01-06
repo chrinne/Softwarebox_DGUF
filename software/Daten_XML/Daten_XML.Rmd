@@ -64,7 +64,7 @@ XML-Daten und deren Nutzung sind eng mit dem Internet verbunden (s.o.). Die zuge
 
 ## BaseX
 
-[BaseX](https://basex.org) ist plattformunabhängig, wird unter Open-Source-Lizenz (BSD) angeboten und für Windows gibt es ein eigenes Installationsprogramm.  BaseX wird auf [GitHub](https://github.com/BaseXdb) weiter entwickelt. Die Website des Projektes bietet eine umfassende [Dokumentation](https://docs.basex.org/wiki/Main_Page), darunter auch eine knappe Einführung zu der nachfolgend genutzte [GUI](https://docs.basex.org/wiki/Graphical_User_Interface) die für mich der hervorzuhebende Aspekt dieser Software ist. Für den ersten Kontakt mit XML, XPath und XQuery empfehle ich auch den Text [Basex for dummies von Paul Swennenhuis](http://www.swennenhuis.nl/basexfordummies/BaseX_for_dummies.pdf).
+[BaseX](https://basex.org) ist plattformunabhängig, wird unter Open-Source-Lizenz (BSD) angeboten und für Windows gibt es ein eigenes Installationsprogramm.  BaseX wird auf [GitHub](https://github.com/BaseXdb) weiter entwickelt. Die Website des Projektes bietet eine umfassende [Dokumentation](https://docs.basex.org/wiki/Main_Page), darunter auch eine knappe Einführung zu der nachfolgend genutzten [GUI](https://docs.basex.org/wiki/Graphical_User_Interface), die für mich der hervorzuhebende Aspekt dieser Software ist. Für den ersten Kontakt mit XML, XPath und XQuery empfehle ich auch den Text [Basex for dummies von Paul Swennenhuis](http://www.swennenhuis.nl/basexfordummies/BaseX_for_dummies.pdf).
 
 > Die GUI von BaseX erlaubt die Recherche in den Daten mit XPath und XQuery, das Editieren von Daten ist hier nicht möglich. 
 
@@ -84,30 +84,30 @@ XML besteht aus Elementen (s.o. Sequenz) die auch als Knoten eines Baumes bezeic
 </text>
 ```
 
-Das Wurzel-Element des Beispieles ist ```\<text>...\</text>``` mit den weiteren Elementen "satz" und "wort" die neben den *start tags* ebenfalls zugehörige *end tags* besitzen. Die Element "wort" beinhaltet konkrete Werte, ebenso "satz" mit dem Punkt. Das Element "text" besitzt das Attribut "autor" und das Element "wort" das  Attribut "typ". Dabei ist das Attribut "typ" für "wort" gut gewählt, da es eine eindeutig Zusatzinformation ist während wir für einen Text auch mehrere Autoren erwarten können und deshalb mit den Elementen "autoren" und "autor" statt einem Attribut arbeiten sollten.  
+Das Wurzel-Element des Beispieles ist \<text>...\</text> mit den weiteren Elementen \<satz> und \<wort> die neben den *start tags* auch die zugehörigen *end tags* besitzen. Die Elemente \<wort> beinhaltet konkrete Werte, ebenso \<satz> mit dem Punkt. Das Element \<text> besitzt das Attribut "autor" und das Element \<wort> das  Attribut "typ". Dabei ist das Attribut "typ" für \<wort> gut gewählt, da es eine eindeutig Zusatzinformation ist, während wir für einen Text auch mehrere Autoren erwarten können und deshalb besser mit den Elementen \<autoren> und \<autor> arbeiten sollten.  
 
+
+Wenn Sie wohlgeformte komplexere XML-Dateien in einem Editor öffnen, z.B. KML-Dateien, sehen Sie als erstes eine Deklaration und auch Verweise auf anzuwendende Regelwerke. Dies dient der maschinellen Prüfung der Struktur und Daten.
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
 ```
 
-Wenn Sie wohlgeformte komplexere XML-Dateien in einem Editor öffnen, z.B. KML-Dateien, sehen Sie als erstes eine Deklaration und auch Verweise auf anzuwendende Regelwerke. 
-
 ![Die GUI von BaseX mit der geöffneten XML-Datenbank features](./basex_gui.png){width=75%}
 
 ## XML Beispieldaten
 
-Starten Sie für die Arbeit mit den Beispieldaten das Programm **BaseX**. Mit "Database > New ..." öffnen Sie einen Ordner mit XML-Dateien oder eine einzelne XML-Datei und weisen dieser Datenbank einen Namen zu. Mit "Databases > Open & Manage ..." können einmal angelegte Datenbanken erneut geladen werden. Is die Datenbank "features" in BaseX geladen sollten Sie annähernd vorangehende Bild sehen.  
+Starten Sie für die Arbeit mit den Beispieldaten das Programm **BaseX**. Mit "Database > New ..." öffnen Sie einen Ordner mit XML-Dateien oder eine einzelne XML-Datei und weisen dieser Datenbank einen Namen zu, z.B. "features" für die Beispieldaten features.xml. Mit "Databases > Open & Manage ..." können einmal angelegte Datenbanken erneut geladen werden. Ist die Datenbank "features" in BaseX geladen sollten Sie annähernd das vorangehende Bild sehen.  
 
-Unterhalb der üblichen Menü- und Icon-Leiste sehen Sie folgende Fenster: Projekt-Ordner, Editor für Syntax, *Map* der Datenbank, *Result* mit aktuell dem gesamten Datenbestand und *Info*. Diese Fenster können über das Menü unter *View* und *Visualization* auch an und ausgeblendet werden.
+Unterhalb der üblichen Menü- und Icon-Leiste sehen Sie folgende Fenster: Projekt-Ordner, Editor für Syntax, *Map* der Datenbank, *Result* mit aktuell dem gesamten Datenbestand und *Info*. Diese Fenster können über das Menü unter *View* und *Visualization* auch an- und ausgeblendet werden.
 
-Sehen Sie sich die Strutur der Daten sowohl im Fenster *Result* als auch *Map*-Fenster an. Innerhalb von "excavation" gibt es "features" und "samples". Ein feature kann zudem mit "findcontext" und "find" Fundzettelangaben und Funde beinhalten. Daneben stehen "samples" wobei eine Probe aus mehreren funden zusammengesetzt sein kann und auf diese anhand einer "id" verweist. Zahlreiche Elemente haben Attribute zu dem Autor und dem Zeitpunkt der Wertezuweisung. 
+Sehen Sie sich die Strutur der Daten sowohl im Fenster *Result* als auch *Map*-Fenster an. Innerhalb von "excavation" gibt es "features" und "samples". Ein feature kann zudem mit "findcontext" und "find" Fundzettelangaben und Funde beinhalten. Daneben stehen "samples" wobei eine Probe aus mehreren Funden zusammengesetzt sein kann und auf diese anhand einer "id" verweist. Zahlreiche Elemente haben Attribute zu dem Autor und dem Zeitpunkt der Wertezuweisung. 
 
-Diese Beispieldaten haben keine zureichende Strukturierung für die Daten einer realen Ausgrabung.
+Diese Beispieldaten haben keine zureichende Strukturierung für die Daten einer realen Ausgrabung mithin auch keine Deklaration.
 
 ## XPath 
 
-Mit XPath können die Knoten des Baumes adressiert werden, Rückgabe sind die Elemente und Werte ab der entsprechenden Ordnung (*preorder*). Tragen Sie bitte nacheinander und einzeln folgende XPath-Anweisungen in den Editor ein und führen diese aus:
+Mit XPath können die Knoten des Baumes adressiert werden, Rückgabe sind die Elemente und Werte ab der entsprechenden Ordnung. Tragen Sie bitte nacheinander und einzeln folgende XPath-Anweisungen in den Editor ein und führen diese aus:
 
 ```
 //feature
@@ -125,7 +125,7 @@ Die Anweisungen liefern nacheinander:
 Daten können auch gefiltert werden.
 
 ```
-//dating[@mehtod]
+//dating[@method]
 //feature[@feature_nr > 1003]
 //feature[@feature_nr > 1003]/f_type
 //feature[f_type="grave"]
@@ -134,20 +134,96 @@ Daten können auch gefiltert werden.
 ```
 Die Anweisungen liefern nacheinander:
 
-- Die Datierungen mit einem Attribut "methode".
+- Die Datierungen mit einem Attribut *method*.
 - Alle Knoten und Werte der Befunde mit dem Attribut-Wert > 1003. Beachten Sie bitte, dass die Zahl im Datenbestand in "" steht und doch als Zahl evaluiert wird.
-- Die Liste der Knoten "f_typ" zum vorangehenden Filter.
-- Alle Befunde vom Typ "grave".
-- Filter können mit "and",  "or" und "()" kombiniert werden.
-- Alle Befunde die Fundkontexte und demnach wohl Funde (//feature[findcontext/find]) erbracht haben.
+- Die Liste der Knoten *f_type* zum vorangehenden Filter.
+- Alle Befunde vom Typ *grave*.
+- Filter können mit *and*,  *or* und () kombiniert werden.
+- Alle Befunde die Fundkontexte und demnach wohl Funde (*//feature[findcontext/find]*) erbracht haben.
 
-Auch unscharfe Suchen sind möglich.
+Auch unscharfe Suchen sind möglich, nachfolgend Beispiele für die Funktionen *matches()*, *contains()*.
+
 ```
-//feature[dating[matches(text(), "^Final", "i")]]
+//feature[contains(f_type,"i")]
+//feature[matches(f_type,"^P","i")]
 ```
-matches, contains
+Die Anweisungen liefern nacheinander:
+
+- Alle Befunde mit einem "i" im Typ. Die Funktion *contains()* hat zwei Parameter, das zu vergleichende Element und den gesuchten Ausdruck. 
+- Alle Befunde deren Typ mit einem "P" oder einem "p" beginnt. Die Funktion *matches()* hat drei Parameter: Das zu vergleichende Element, den gesuchten Ausdruck und optional die Anweisungen "i" oder "s" für *case insensitive / sensitive*. Das Zirkumflex entstammt in seiner Bedeutung als Zeilenanfang den Regulären Ausdrücken.
+
+Sequenzen von Elementen müssen zerlegt werden.  
+
+```
+//feature[dating[contains(text(), "Neol")]]
+//feature[dating[matches(text(), "^Final", "s")]]
+```
+Die Beispieldaten haben mit *dating* auch mehrere Aussagen zur Datierung. Bei dem Befund 1005 ist es nach der Erstdatierung von der Ausgrabung einerseits eine feinere typologische Ansprache nach der Fundanalyse durch einen Spezialisten und eine ergänzende Radiokarbondatierung. Der einfache Filter für die Befunde auf das Kind-Element *dating* liefert bei diesen Befunden eine Sequenz (Liste) von Werten (*Neolithic, Final Neolithic,...*) an der die Funktionen scheitern.
+
+Die Funktion *text()* liefert nur die Werte des zu vergleichenden Elementes. Damit ist es auch möglich, die einzelnen Werte der Elemente  *dating* zu vergleichen.
 
 ## XQuery
 
+Schließen Sie die Datenbank mit "Database > Close". Wir müssen ab jetzt die Quelle angeben, das geht unter anderem mit der Funktion *collection()*.
+
+```
+let $results :=
+collection("features")//feature[dating[matches(text(), "^Final", "s")]]
+return <results>{$results}</results>
+```
+In der vorangehende Anweisung wird die Rückgabe des vorab geschriebene Filters der Variablen *$results* zugewiesen und am Ende mit *return* zusammen mit dem neuen Tag \<results> ... \</results> zurückgegeben.  
+
+Wir Verändern die Anweisung im Stiel von FLOWER mit den Abschnitten *for*, *in*, der auswertenden Zuweisung *let*, *where* als Filter und *order by* für die Sortierung.
+
+```
+for $feature 
+in collection("features")//feature
+where $feature[dating[contains(text(), "Neol")]]
+let $finds := count($feature/findcontext/find)
+order by $finds descending, $feature/@feature_nr
+return <Befund>
+  <Befundnr>{$feature/data(f_name)}</Befundnr>
+  <Fundeanzahl>{$finds}</Fundeanzahl>
+  </Befund>
+```
+Sie erkennen wohin die Reise geht: Die Rückgabe wird ein durch Tags strukturierter Text, der zur Darstellung in einem Browser genutzt werden kann. Im Detail muss diese Anweisung nach den vorangehenden Erläuterungen nicht wirklich erklärt werden. Die Funktion *count()* ist selbsterklärend und die Anweisung *order by* kann mit *descending* entgegen dem impliziten *ascending* auch umgekehrt werden.
+
+Machen wir aus dem Ganzen mal eine Tabelle, wobei ich grundlegende Kenntnisse in HTML voraussetze:
+
+```
+<table>
+<tr><th>Befund-Nr.</th><th>Anzahl Funde</th></tr>
+{for $feature 
+in collection("features")//feature
+where $feature[dating[contains(text(), "Neol")]]
+let $finds := count($feature/findcontext/find)
+order by $finds descending, $feature/@feature_nr
+return <tr>
+  <td>{$feature/data(f_name)}</td>
+  <td>{$finds}</td>
+  </tr>
+}
+</table>
+```
+Das Ergebnis kann im Browser umgesetzt und korrekt angezeigt werden:
+
+<table>
+  <tr>
+    <th>Befund-Nr.</th>
+    <th>Anzahl Funde</th>
+  </tr>
+  <tr>
+    <td>1005</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>1002</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1006</td>
+    <td>0</td>
+  </tr>
+</table>
 
 # Zitierte Literatur
