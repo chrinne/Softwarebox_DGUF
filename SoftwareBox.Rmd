@@ -13,16 +13,16 @@ header-includes:
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
 output:
-  pdf_document:
-    number_sections: true
-    toc: true
-    toc_depth: 2
-    df_print: kable
   html_document:
     toc: true
     toc_depth: 2
     toc_float: true
     number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -740,6 +740,14 @@ Eine extrem schlankes und weit verbreitetes Datenbanksystem auf SQL-Basis (struc
 - Handreichung zu SQL mit SQLite auf GitHub [C. Rinne, Datenbank & SQLite (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/Daten_SQLite/Datenbank_SQLite.pdf){target=blank}. 
 - Kurze Tutorials auf je einem A4-Blatt zum SQLiteManager und der Anbindung an MS Access finden Sie bei der Archäoinformatik in Kiel unter [Tutorials](https://www.ufg.uni-kiel.de/de/professuren-bereiche/archaeoinformatik){target=_blank}.
 
+#### BaseX
+
+BaseX ist ein plattformunabhängiges und *open-source* Programm zur Arbeit mit XML-Datenbanken. Damit bietet es den Zugang zu einer gegenüber SQL deutlich unterschiedlichen Datenhaltung in einem strukturierten Text. XML-Datenbanken sind in ihrer Entstehung,  Entwicklung und Nutzung eng mit dem Internet verbunden. 
+Mit XPath und XQuery (*FLWOR*) können hier mit SQL vergleichbare Abfragen ausgeführt werden. 
+
+- Offizielle Website: [https://basex.org/](https://basex.org/){target=blank}
+- Knappe Darstellung zu XML-Datenbanken in der Archäologie und BaseX [C. Rinne, Daten & XML (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/Daten_XML/Daten_XML.pdf){target=blank}
+
 #### Microsoft Access (Windows) \newline 
 Ein umfassendes Datenbanksystem im Desktopbereich, proprietär. Zahlreiche Vorlagen und Assistenten für Formulare und Berichte helfen bei der Bewältigung diverser Aufgaben. Die einfache Handhabung verleitet dazu, die Anforderungen bei der Konzeption von Datenbanken zu unterschätzen. MS Access ist Teil vom MS Office Professional.
 
@@ -778,6 +786,7 @@ R ist ein umfassendes und sehr potentes Statistikprogramm, das durch zahlreiche 
 Hilfen zu R insgesamt:
 
 - Einen grundlegenden Einstieg (engl.) bietet: [http://www.cookbook-r.com/](http://www.cookbook-r.com/){target=_blank}
+- Eine gute Einführung in die Statistik in der Archäologie und den in Bio- und Geowissenschaften mit R auf GitHub von [Sophie C. Schmidt](https://scschmidt.github.io/lehre/){target=blank}  
 - Eine gute Einführung in R/R-Studio im Web auf Deutsch bietet das R-Tutorial von D. Seidensticker und C. Schmid: [https://github.com/ISAAKiel/R-Tutorial_CAA2016](https://github.com/ISAAKiel/R-Tutorial_CAA2016){target=_blank}
 - Als Buch bietet "Statistik mit R. Grundlagen der Datenanalyse" vom RRZN Hannover einen guten Einstieg.  [LUIS](https://www.luis.uni-hannover.de/de/services/schulung-beratung-und-support/handbuecher/it-handbuecher-und-ebooks/){target=_blank}
 - In R bieten diverse Pakete besondere Möglichkeiten. Ein zunehmend eingesetztes Paket für Grafiken ist [ggplot2](https://ggplot2.org){target=_blank} von [Hadley Wickham](https://github.com/hadley/ggplot2){target=_blank}. 
