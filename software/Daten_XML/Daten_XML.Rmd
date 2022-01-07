@@ -48,7 +48,7 @@ Ausgehend von XML steht also das Element zunehmend im Zentrum der Strukturierung
 
 ## XML Nutzen
 
-Zur Nutzung von XML-Datenbanken wurde [XQuery](https://de.wikipedia.org/wiki/XQuery) entwickelt. Grundlegendes Datenmodell ist eine Liste, mit keinem oder einem Element oder auch mehreren Elementen. Hierbei kann ein Element auch wiederum eine Liste sein. Diese als Sequenz bezeichnete Liste von Elementen entspricht damit der Struktur eines XML-Dokumentes. Bei XQuery spielen FLOWER-Ausdrücke ([flou-er], Blume) eine zentrale Rolle. FLOWER steht für *for, let, where, order by, return* und ist damit erkennbar an SQL orientiert (*SELECT, FROM, WHERE, ORDER BY*).
+Zur Nutzung von XML-Datenbanken wurde [XQuery](https://de.wikipedia.org/wiki/XQuery) entwickelt. Grundlegendes Datenmodell ist eine Liste, mit keinem oder einem Element oder auch mehreren Elementen. Hierbei kann ein Element auch wiederum eine Liste sein. Diese als Sequenz bezeichnete Liste von Elementen entspricht damit der Struktur eines XML-Dokumentes. Bei XQuery spielen FLWOR-Ausdrücke ([flou-er], Blume) eine zentrale Rolle. FLWOR steht für *for, let, where, order by, return* und ist damit erkennbar an SQL orientiert (*SELECT, FROM, WHERE, ORDER BY*).
 
 Eine Programm zur Nutzung von XML-Datenbanken und XQuery ist [BaseX](https://basex.org/) (s.u.). 
 
