@@ -10,6 +10,7 @@ header-includes:
   \renewcommand{\tablename}{Tab.}
 bibliography: daten_xml.bib
 csl: journal-of-archaeological-science.csl
+papersize: a4
 output:
   pdf_document:
     number_sections: true
