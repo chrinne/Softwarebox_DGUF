@@ -12,17 +12,18 @@ header-includes:
   \renewcommand{\contentsname}{Inhalt}
   \renewcommand{\figurename}{Abb.}
   \renewcommand{\tablename}{Tab.}
+papersize: a4
 output:
-  html_document:
-    toc: true
-    toc_depth: 2
-    toc_float: true
-    number_sections: true
   pdf_document:
     number_sections: true
     toc: true
     toc_depth: 2
     df_print: kable
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -786,7 +787,7 @@ R ist ein umfassendes und sehr potentes Statistikprogramm, das durch zahlreiche 
 Hilfen zu R insgesamt:
 
 - Einen grundlegenden Einstieg (engl.) bietet: [http://www.cookbook-r.com/](http://www.cookbook-r.com/){target=_blank}
-- Eine gute Einführung in die Statistik in der Archäologie und den in Bio- und Geowissenschaften mit R auf GitHub von [Sophie C. Schmidt](https://scschmidt.github.io/lehre/){target=blank}  
+- Eine gute Einführung in die Statistik in der Archäologie und den in Bio- und Geowissenschaften mit R auf GitHub von [Sophie C. Schmidt](https://scschmidt.github.io/lehre/){target=blank}
 - Eine gute Einführung in R/R-Studio im Web auf Deutsch bietet das R-Tutorial von D. Seidensticker und C. Schmid: [https://github.com/ISAAKiel/R-Tutorial_CAA2016](https://github.com/ISAAKiel/R-Tutorial_CAA2016){target=_blank}
 - Als Buch bietet "Statistik mit R. Grundlagen der Datenanalyse" vom RRZN Hannover einen guten Einstieg.  [LUIS](https://www.luis.uni-hannover.de/de/services/schulung-beratung-und-support/handbuecher/it-handbuecher-und-ebooks/){target=_blank}
 - In R bieten diverse Pakete besondere Möglichkeiten. Ein zunehmend eingesetztes Paket für Grafiken ist [ggplot2](https://ggplot2.org){target=_blank} von [Hadley Wickham](https://github.com/hadley/ggplot2){target=_blank}. 
@@ -944,7 +945,7 @@ Die Installationsanleitung für Windows-Systeme empfiehlt die Installation in ei
 
 - Quelle: [https://imagej.net](https://imagej.net)
 - Informationen: [ttps://imagej.net/Getting_started](https://imagej.net/Getting_started) 
-- Handreichung mit einem Beispiel aus der Archäologie: [C. Rinne, Metadaten & Bilder (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/imagej/imagej.pdf){target=blank}
+- Handreichung mit einem Beispiel aus der Archäologie: [C. Rinne, ImageJ (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/imagej/imagej.pdf){target=blank}
 
 #### ImageMagic (Windows, Mac, Linux) \newline 
 Grafikprogramm mit umfangreichen Optionen auf der Befehlszeile, erlaubt u. a. das Auswerten von Farbanteilen oder der Koordinaten mit bestimmten Farbwerten. Somit sind viele automatisierte Prozesse zur Metrik von eingescannten Objektzeichnungen und statistische Analysen möglich.
