@@ -242,7 +242,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Datenbank &amp; SQLite</h1>
 <h4 class="author">Christoph Rinne<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></h4>
-<h4 class="date">27. Dezember 2021</h4>
+<h4 class="date">12. Januar 2022</h4>
 
 </div>
 
@@ -251,7 +251,7 @@ div.tocify {
 <h1><span class="header-section-number">1</span> Grundlegende Information</h1>
 <p>SQL steht für <em>structured query language</em> und dient dem Erstellen, Nutzen und Modifizieren von relationalen Datenbanken. Ob Sie eine SQL-Datenbank verwenden sollten hängt von der Komplexität Ihrer Daten und der geplanten Nutzung ab (s. auch “<a href="https://sqlite.org/whentouse.html">Appropriate uses for SQLite</a>”. Nachfolgend spielen Datenstrukturen und -modelle vorderhand keine zentrale Rolle. Sie sollten sich damit aber vor dem Erstellen einer Datenbank befassen.</p>
 <p>SQL ist weit verbreitet, Sie finden SQL-Syntax z.B. in QGIS für das Filtern eines Datebestandes. Die grundlegenden Befehle und die zugehörige Syntax sind weitgehend einheitlich, es gibt aber auch zahlreiche Erweiterungen über die Jahre (SQL89, SQL92) und für einzelne Datenbanksysteme (SQLite, MySQL, PostgreSQL, ORACLE etc). SQL Datenbanksysteme sind fast ausnahmslos Server-Systeme, eine Ausnahme ist <a href="https://sqlite.org">SQLite</a>.</p>
-<p>SQL ist die <em>lingua franca</em> für relationale Datenbanken. Auch deshalb finden Sie viele andere Einführungen im Internet (u.a. bei <a href="https://www.tutorialspoint.com/sqlite/index.htm">tutorialspoint</a>). SQL ist eine Sprache und kein Programm für eine Nutzeroberfläche wie es MS Access oder Libre Office Base bieten. <a href="https://sqlite.org">SQLite</a> wird <em>a priori</em> auf der Befehlszeile ausgeführt, es gibt aber diverse grafische Nutzeroberflächen (z.B. <a href="https://sqlitebrowser.org/">DB Browser for SQLite</a> (s.u.).</p>
+<p>SQL ist die <em>lingua franca</em> für relationale Datenbanken. Auch deshalb finden Sie viele andere Einführungen im Internet (u.a. bei <a href="https://www.tutorialspoint.com/sqlite/index.htm">tutorialspoint</a>). SQL ist eine Sprache und kein Programm für eine Nutzeroberfläche wie es MS Access oder Libre Office Base bieten. <a href="https://sqlite.org">SQLite</a> wird <em>a priori</em> auf der Befehlszeile ausgeführt, es gibt aber diverse grafische Nutzeroberflächen, z.B. <a href="https://sqlitebrowser.org/">DB Browser for SQLite</a> (s.u.).</p>
 <div id="sqlite-in-r-rstudio" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> SQLite in R / RStudio</h2>
 <p>Da ich diesen Text in R-Markdown mit RStudio schreibe verwende ich neben SQLite zudem das Paket <a href="https://rsqlite.r-dbi.org/">RSQLite</a>, um die Befehle in sogenannten <em>code-chunks</em> darstellen und ausführen zu können. Das Paket zielt aber prinzipiell auf eine schnelle Integration von Daten aus einer Datenbank in die Analyse in R.</p>
@@ -279,7 +279,7 @@ div.tocify {
     &quot;f_dating&quot;  TEXT,
     &quot;discoverdate&quot;  TEXT
 );</code></pre>
-<p>Die englisches Befehle und Parameter müssen wohl nicht erläutert werden. Jede Anweisung kann zur besseren Lesbarkeit über mehrere Zeilen laufen und wird mit einem “;” beendet. Die Großbuchstaben sind die traditionelle Hervorheben der Syntax und nicht notwendig. Klammern gliedern nach allgemein gültigen Regeln die Bestandteile. Gesondert erwähnt sei: <em>PRIMARY KEY</em> definiert feature_id als Primärschlüssel wodurch Eindeutigkeit und auch eine automatische Zählung impliziert wird. Im Kern ist es ein dezidiert zugewiesener Name für die stets im Hintergrund geführte Zeilennummer (rowid). Mit <em>UNIQUE</em> <em>NOT NULL</em> wird die Angabe einer Befundnummer zur Pflicht und eindeutig.</p>
+<p>Die englisches Befehle und Parameter müssen wohl nicht erläutert werden. Jede Anweisung kann zur besseren Lesbarkeit über mehrere Zeilen laufen und wird mit einem “;” beendet. Die Großbuchstaben sind die traditionelle Hervorhebung der Syntax und nicht notwendig. Klammern gliedern nach allgemein gültigen Regeln die Bestandteile. Gesondert erwähnt sei: <em>PRIMARY KEY</em> definiert feature_id als Primärschlüssel wodurch Eindeutigkeit und auch eine automatische Zählung impliziert wird. Im Kern ist es ein dezidiert zugewiesener Name für die stets im Hintergrund geführte Zeilennummer (rowid). Mit <em>UNIQUE</em> <em>NOT NULL</em> wird die Angabe einer Befundnummer zur Pflicht und eindeutig.</p>
 <p>Folgende <strong>Datentypen</strong> können gesetzt werden: integer (Ganzzahl), real (reelle Zahl), text (Text) und blob (binary long objct, Binärobjekt). Gängige Datentypen in SQL sind dann noch date (Datum mit Uhrzeit) und boolean (Ja/Nein). Zudem wird oft zwischen “klein” und “groß” oder expliziter Dimension unterschieden: integer, long integer, char, varchar etc. SQLite ist hier etwas anders als Sie es ggf. aus anderen Systemen schon kennen (Stichwort <a href="https://sqlite.org/datatype3.html#type_affinity">type affinity</a>). Das Thema ist hier jetzt nicht weiter relevant.</p>
 <p>Weiteres zur Tabellendefinition später.</p>
 </div>
@@ -378,7 +378,7 @@ VALUES
 <td align="left">1004</td>
 <td align="left">grave</td>
 <td align="left">Corded Ware</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 </tr>
 <tr class="odd">
 <td align="left">5</td>
@@ -386,7 +386,7 @@ VALUES
 <td align="left">NA</td>
 <td align="left">pit</td>
 <td align="left">Late Neolithic</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 </tr>
 <tr class="even">
 <td align="left">6</td>
@@ -394,7 +394,7 @@ VALUES
 <td align="left">NA</td>
 <td align="left">posthole</td>
 <td align="left">Neolithic</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 </tr>
 <tr class="odd">
 <td align="left">7</td>
@@ -402,14 +402,14 @@ VALUES
 <td align="left">NA</td>
 <td align="left">posthole</td>
 <td align="left">not dated</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="filtern" class="section level3" number="2.3.1">
 <h3><span class="header-section-number">2.3.1</span> Filtern</h3>
-<p>Natürlich gibt es zahlreiche Möglichkeiten, die Abfrage anzupassen um die gewünschte Information zu erhalten. Das ist vor allem die Bedingung mit <em>WHERE</em>. Für Zahlen können folgende Operatoren verwendet werden: &lt;, &gt;, = , &gt;=, &lt;=, &lt;&gt;.</p>
+<p>Natürlich gibt es zahlreiche Möglichkeiten, die Abfrage anzupassen, um die gewünschte Information zu erhalten. Das ist vor allem die Bedingung mit <em>WHERE</em>. Für Zahlen können folgende Operatoren verwendet werden: &lt;, &gt;, = , &gt;=, &lt;=, &lt;&gt;.</p>
 <pre class="sql"><code>SELECT feature_nr, f_type, f_dating FROM tbl_features
 WHERE feature_nr &gt; 1005;</code></pre>
 <div class="knitsql-table">
@@ -471,7 +471,7 @@ WHERE ((f_type is not null) and (f_dating not like &quot;n%&quot;));</code></pre
 </div>
 <div id="sortieren" class="section level3" number="2.3.2">
 <h3><span class="header-section-number">2.3.2</span> Sortieren</h3>
-<p>Die Rückgabe einer Abfrage kann nach einem oder mehreren Sortierfeldern, dann durch “,” getrennt, absteigend (<em>desc</em>) oder aufsteigend (<em>asc</em>) sortiert werden.</p>
+<p>Die Rückgabe einer Abfrage kann nach einem Sortierfeld oder mehreren mit einem Komma getrennten Sortierfeldern jeweils absteigend (<em>desc</em>) oder aufsteigend (<em>asc</em>) sortiert werden.</p>
 <pre class="sql"><code>SELECT feature_nr, f_name, f_type, f_dating FROM tbl_features
 ORDER BY f_type DESC, feature_nr ASC;</code></pre>
 <div class="knitsql-table">
@@ -534,12 +534,12 @@ ORDER BY f_type DESC, feature_nr ASC;</code></pre>
 </div>
 <div id="gruppieren-bzw.-aggregieren" class="section level3" number="2.3.3">
 <h3><span class="header-section-number">2.3.3</span> Gruppieren bzw. Aggregieren</h3>
-<p>Typischerweise wollen sie sich eine Überblick über die Daten verschaffen, z.B. wieviele Befunde habe ich je Epoche und welche Befundtypen sind vertreten? Die folgende Anweisung erledigt dies umgehend. Beachten Sie:</p>
+<p>Sie wollen sich einen Überblick verschaffen: Wieviele Befunde habe ich je Epoche und welche Befundtypen sind vertreten? Die folgende Anweisung erledigt dies umgehend. Beachten Sie:</p>
 <ul>
-<li>GROUP BY : Aggregiert den ausgewählten Datensatz (FROM) nach den genannten Attributen.</li>
+<li>GROUP BY : Aggregiert den ausgewählten (FROM) Datenbestand (<em>recordset</em>) nach den genannten Attributen.</li>
 <li>count() : Die Funktion liefert die Anzahl der aggregierten Datenzeilen.</li>
-<li>group_concat() : Die Funktion ist SQLite spezifisch und liefert die verketten Werte mit dem genannten Trennzeichen.</li>
-<li>AS : Jeder Rückgabewert kann mit einem Etikett (<em>label</em>) versehen werden (s.o.), statt der Anweisung nach <em>SELECT</em> wird dann dieses als Spaltenüberschrift oder für Verweise verwendet. Achten Sie auf die Anführungszeichen wegen “.” und “-” in “Bef.-Nr.”.</li>
+<li>group_concat() : Die Funktion ist SQLite spezifisch und liefert die verketten Werte mit dem angegebenen Trennzeichen.</li>
+<li>AS : Jeder Rückgabewert kann mit einem Etikett (<em>label</em>) versehen werden (s.o.), statt der Anweisung nach <em>SELECT</em> wird dann dieses als Spaltenüberschrift oder auch für Verweise verwendet. Achten Sie auf die Anführungszeichen wegen “.” und “-” in “Bef.-Nr.”.</li>
 </ul>
 <pre class="sql"><code>SELECT f_dating, count(feature_nr) AS n, group_concat(f_name, &quot;, &quot;) AS &#39;Bef.-Nr.&#39; 
 FROM tbl_features
@@ -611,7 +611,7 @@ HAVING count(feature_nr) &gt; 1;</code></pre>
 <p>Die letzten Abfragen offenbaren einen gravierenden und auch weitere Fehler: Die Befundnummer 1001 ist doppelt vergeben, f_name fehlt in einigen Fällen und <em>Neolithic</em> ist einmalig klein geschrieben. Letzteres zuerst:</p>
 <pre class="sql"><code>UPDATE tbl_features SET f_dating = &#39;Neolithic&#39; 
 WHERE f_dating=&#39;neolithic&#39;;</code></pre>
-<p>Beachten Sie bitte die missliche Zweideutigkeit in SQL von “=”, einmal als “ist gleich” und einmal als Zuweisung. Auch wird das lehre Attribut f_name mit f_name=“” nicht gefunden, hier müssen wir korrekt auf <em>IS NULL</em> filtern. Da NULL nichts ist, nichteinmal ““, ist”=” auch kein zulässiger Operator. Und NULL gleicht auch keinem anderen NULL.</p>
+<p>Beachten Sie bitte die missliche Zweideutigkeit in SQL von “=”, einmal als “ist gleich” und einmal als Zuweisung. Auch wird das leere Attribut f_name mit f_name=“” nicht gefunden, hier müssen wir korrekt auf <em>IS NULL</em> filtern. Da NULL nichts ist, nicht einmal ““, ist”=” auch kein zulässiger Operator. Und NULL gleicht auch keinem anderen NULL.</p>
 <pre class="sql"><code>UPDATE tbl_features SET f_name = feature_nr 
 WHERE f_name IS NULL;</code></pre>
 </div>
@@ -679,7 +679,7 @@ WHERE feature_id = 3;</code></pre>
 </ul>
 <div id="tabelle-erstellen-1" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Tabelle erstellen</h2>
-<p>Die folgende Tabelle soll Informationen zu Fundkontexten (Fundzettel) beinhalten. Dabei ist hier wichtig, dass ein Fund nicht ohne Befund existieren soll und deshalb auf diesen als Fremdschlüssel verweist.</p>
+<p>Die folgende Tabelle soll Informationen zu Fundkontexten (Fundzettel) beinhalten. Dabei ist hier wichtig, dass ein Fund nicht ohne Befund existieren soll und deshalb auf diesen als Fremdschlüssel verweist. Mit <em>constraint</em> wird noch ein ein eindeutiger Index für die Kombination von Befundnummer und Fundnummer erstellt.</p>
 <pre class="sql"><code>DROP TABLE IF EXISTS &quot;tbl_findcontexts&quot;;</code></pre>
 <pre class="sql"><code>CREATE TABLE &quot;tbl_findcontexts&quot; (
     &quot;findcontext_id&quot;    INTEGER PRIMARY KEY,
@@ -695,7 +695,7 @@ WHERE feature_id = 3;</code></pre>
 </div>
 <div id="datentypen" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Datentypen</h2>
-<p>In Ergänzung zu den oben genannten Datentypen <em>integer</em>, <em>real</em>, <em>text</em> und <em>blob</em> hier ergänzend Informatione zu:</p>
+<p>In Ergänzung zu den oben genannten Datentypen <em>integer</em>, <em>real</em>, <em>text</em> und <em>blob</em> hier ergänzende Informationen zu:</p>
 <ul>
 <li><em>boolean</em> : Sind nicht vorgesehen, sondern werden als 1 (WAHR) oder 0 (FALSCH) gespeichert. Das ist übrigens Standard, schreiben Sie in MS Excel mal in eine Zelle <code>=GANZZAHL(WAHR)</code> oder <code>=GANZZAHL(FALSCH)</code>.</li>
 <li><em>date</em> oder <em>time</em> : Auch diese Datenformat sind so nicht vorhanden, sondern werden als Text oder Zahl gespeichert. Dazu die folgende Abfrage.</li>
@@ -716,17 +716,17 @@ WHERE feature_id = 3;</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">2021-12-27</td>
-<td align="left">2021-12-28</td>
-<td align="left">2021-12-27 13:02:17</td>
-<td align="left">1640610137</td>
-<td align="right">2459576</td>
+<td align="left">2022-01-12</td>
+<td align="left">2022-01-13</td>
+<td align="left">2022-01-12 17:15:34</td>
+<td align="left">1642007734</td>
+<td align="right">2459592</td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>Datum und Zeit werden als Text mit definierten Elementen gespeichert (YYYY-MM-DD HH:MM). Das ist im Grunde aber nur eine Repräsentation, denn Sie können mit dem Datum auch rechnen und die Rückgabe von <em>date()</em> auch multiplizieren. Die UNIX Zeit sind die Sekunden ab dem 1.1.1970 und das Julianische Datum ist eine Tageszählung seit -4713 (4713 v. Chr.) mit der Uhrzeit in Nachkommastellen.</p>
-<p>Datentypen sind in SQLite insgesamt ein sehr eigenes Thema, im Unterschied zu anderen SQL-Systemen werden diese sehr dynamisch in Klassen umgesetzt (<a href="https://www.sqlite.org/datatype3.html">Datatypes</a>). Dazu in Anlehnung an das Beispiel aus dem vorangehenden Link.</p>
+<p>Datentypen sind in SQLite insgesamt ein sehr eigenes Thema, im Unterschied zu anderen SQL-Systemen werden diese sehr dynamisch in Klassen umgesetzt (<a href="https://www.sqlite.org/datatype3.html"><em>datatypes</em></a>). Dazu in Anlehnung an das Beispiel aus dem vorangehenden Link.</p>
 <pre class="sql"><code>create table test (i integer, t text, d integer); </code></pre>
 <pre class="sql"><code>insert into test values (&#39;123&#39;, 123, datetime(&#39;now&#39;));</code></pre>
 <pre class="sql"><code>select * from test;</code></pre>
@@ -744,37 +744,38 @@ WHERE feature_id = 3;</code></pre>
 <tr class="odd">
 <td align="right">123</td>
 <td align="left">123</td>
-<td align="left">2021-12-27 13:02:17</td>
+<td align="left">2022-01-12 17:15:34</td>
 </tr>
 </tbody>
 </table>
 </div>
 <pre class="sql"><code>DROP TABLE IF EXISTS test; </code></pre>
 <p>Durch die Datenklassen werden unterschiedliche Datentypen zusammengefasst und durch eine intern definierte Hierarchie auch ineinander konvertiert. Dieser Vorgang wird als Datenaffinität (<em><a href="https://www.sqlite.org/datatype3.html#determination_of_column_affinity">type affinity</a></em>) bezeichnet und gibt mehr Freiheit beim Entwurf der Datenbank.</p>
-<p>## Attribute: Standardwerte, Referenzen und Schlüsselfelder</p>
+</div>
+<div id="attribute-standardwerte-referenzen-und-schlüsselfelder" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Attribute: Standardwerte, Referenzen und Schlüsselfelder</h2>
 <p>Den einzelnen Attributen können nach dem Datentyp bzw. der Datenklasse weitere Parameter zugewiesen werden. All dies soll die Datenintegrität sicherstellen:</p>
 <ul>
-<li><em>PRIMARY KEY</em> : Setzt den Primärschlüssel und damit die für jede Tabelle mitgeführte <em>rowid</em> auf dieses Attribut. Das impliziert eine automatische Zählung und Eindeutigkeit allerdings mit der Ausnahme, dass NULL erlaubt ist und mehrfach vorkommen kann. Sie können also nachträglich die automatisch vergebenen ID’s löschen es sei denn, Sie ergänzen noch NOT NULL. Es kann nur einen Primärschlüssel je Tabelle geben.<br />
-</li>
+<li><em>PRIMARY KEY</em> : Setzt den Primärschlüssel und damit die für jede Tabelle mitgeführte <em>rowid</em> auf dieses Attribut. Das impliziert eine automatische Zählung und Eindeutigkeit allerdings mit der Ausnahme, dass NULL erlaubt ist und mehrfach vorkommen kann. Sie können also nachträglich die automatisch vergebenen ID’s löschen es sei denn, Sie ergänzen noch NOT NULL. Es kann nur einen Primärschlüssel je Tabelle geben.</li>
 <li><em>UNIQUE</em> : Die Werte müssen eindeutig sein wobei auch hier NULL erlaubt ist, es sei denn, Sie ergänzen <em>NOT NULL</em>.</li>
 <li><em>NOT NULL</em> : Ein Wert muss angegeben werden.</li>
-<li><em>DEFAULT</em> ‘<Wert>’ : Weist dem Attribut einen Standardwert zu. Im Beispiel das Systemdatum.</li>
+<li><em>DEFAULT</em> ‘&lt;Wert&gt;’ : Weist dem Attribut einen Standardwert zu. Im Beispiel das Systemdatum.</li>
 <li><em>AUTOINCREMENT</em> : Ist möglich, die SQLite-Dokumentation mahnt aber zur Vorsicht: Es wird stets erhöht, einmal gelöschte Werte werden nicht erneut vergeben (<a href="https://www.sqlite.org/autoinc.html">SQLite Autoincrement</a>).</li>
 </ul>
 </div>
-<div id="schlüsselfelder-und-indices" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Schlüsselfelder und Indices</h2>
+<div id="schlüsselfelder-und-indices" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Schlüsselfelder und Indices</h2>
 <p>Tabellen und deren Attribute können weiteren Einschränkungen (<em>constraints</em>) unterliegen. Jede Einschränkung benötigt einen Namen und danach eine Anweisung, z.B. einen Werte zu prüfen. Für die Tabelle der Fundkontexte soll die Kombination aus Befundnummer und Fundnummer eindeutig sein. Die entsprechende Einschränkung lautet <code>CONSTRAINT &quot;feature_find&quot; UNIQUE (feature_nr, find_nr)</code>. Wäre das Attribut findkontext_id nicht schon Primärschlüsselfeld wäre mit <code>CONSTRAINT &quot;feature_find&quot; PRIMARY KEY (feature_nr, find_nr)</code> oder kurz <code>PRIMARY KEY (feature_nr, find_nr)</code> etwas sehr Ähnliches erzielt worden.</p>
 <p>Indices, auch mit dezidierter Eindeutigkeit, können nach der Tabellendefinition erstellt werden. Im vorgenannten Fall wäre die Anweisung dann:</p>
 <p><code>CREATE UNIQUE INDEX &quot;feature_find&quot; ON tbl_findcontexts (feature_nr, find_nr);</code>.</p>
 </div>
-<div id="externe-refferenz-und-fremdschlüssel" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Externe Refferenz und Fremdschlüssel</h2>
+<div id="externe-refferenz-und-fremdschlüssel" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Externe Refferenz und Fremdschlüssel</h2>
 <p>Die Funkontexte in der Tabelle sollen sich auf einen Befund der Befundtabelle beziehen, dies wird mit einer Referenz <em>FOREIGN KEY</em> erzielt (1:n). Eine Eins-zu-Viele-Referenz ist der Standard in SQL und die Zuweisung von keinem bis vielen Fundkontexten (Fundzettel) zu einem Befund ist ein typischer Fall. Der übergeordnete (Eltern-) Datensatz (<em>record</em>) muss eindeutig sein. Meist ist es das Primärschlüsselfeld es kann aber auch ein Attribut mit dem Parameter <em>UNIQUE</em> sein. Ein Fremdschlüssel kann sich auch auf einen eindeutigen Schlüssel aus mehreren Attributen beziehen, z.B. die einzelnen Funde auf die Kombination von Befund-Nr. und Fundzettel-Nr. (feature_nr, find_nr). Für das vorliegende Beispiel der Befundnummer auf dem Fundzettel lautet die Syntax:</p>
 <p><code>FOREIGN KEY (feature_nr) REFERENCES tbl_features(feature_nr)</code></p>
 </div>
-<div id="trigger" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Trigger</h2>
+<div id="trigger" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Trigger</h2>
 <p>Trigger führen automatisch Anweisungen aus wenn bestimmte Ereignisse auftreten. Mit Blick auf unsere bisherige Datenbank darf es z.B. keine Funde aus einem Befund geben der gelöscht wird. Die hier notwendige Syntax wird zunehmend komplexer und wird hier nicht ausgeführt. Bitte lesen Sie hierzu die originale Dokumentation (<em><a href="https://www.sqlite.org/lang_createtrigger.html">CREATE TRIGGER</a></em>).</p>
 <p>Fügen wir zum Abschluss doch noch einige Daten in die Tabelle der Fundkontexte ein.</p>
 <pre class="sql"><code>INSERT INTO tbl_findcontexts (find_nr, feature_nr, finddate, description)
@@ -801,25 +802,25 @@ VALUES
 <td align="left">1</td>
 <td align="right">1</td>
 <td align="right">1005</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 <td align="left">surface finds</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 </tr>
 <tr class="even">
 <td align="left">2</td>
 <td align="right">2</td>
 <td align="right">1005</td>
-<td align="left">2021-12-29</td>
+<td align="left">2022-01-14</td>
 <td align="left">1. layer</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 </tr>
 <tr class="odd">
 <td align="left">3</td>
 <td align="right">3</td>
 <td align="right">1005</td>
-<td align="left">2022-01-27</td>
+<td align="left">2022-02-12</td>
 <td align="left">bottom layer</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 </tr>
 </tbody>
 </table>
@@ -831,7 +832,7 @@ VALUES
 <p>Die Daten befinden sich in diverse Tabellen mit definierten Relationen zueinanderen. Zwangsläufig müssen wir also Daten aus den diversen Tabellen kombinieren können. Die Anweisung <em>JOIN</em> verbindet Daten horizontal zu einer Datenzeile, die Anweisung <em>UNION</em> hängt Daten vertikal aneinander in mehrere Datenzeilen. Die derart gestalteten Abfragen werden in der Syntax oft etwas komplexer und liefern zudem oft regelmäßig benötigte Zusammenstellungen von Daten. Deshalb vorab knapp etwas zum Speichern von Abfrage als <em>VIEW</em>.</p>
 <div id="view" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> VIEW</h2>
-<p><em>VIEWs</em> sind, wie der Name es sagt, vorgefertigte Sichten auf die Daten und keine neuen Daten. Eine VIEW sind schlicht eine gespeichert <em>SELECT</em>-Anweisung, die Daten sind also jedes mal auf dem aktuellen Stand und nicht redundant vorhanden. Die Anweisung muss mit Kenntnis des vorangehenden selbsterklärend:</p>
+<p><em>VIEWs</em> sind, wie der Name es sagt, vorgefertigte Sichten auf die Daten und keine neuen Daten. Eine VIEW ist schlicht eine gespeichert <em>SELECT</em>-Anweisung, die Daten sind also jedes mal auf dem aktuellen Stand und nicht redundant vorhanden. Die folgende Anweisung ist mit Kenntnis des vorangehenden selbsterklärend:</p>
 <pre class="sql"><code>CREATE VIEW IF NOT EXISTS qry_findcontexts AS
 Select * FROM tbl_findcontexts;</code></pre>
 <p>Die Daten können nun wie bei einer Tabelle abgefragt und auch verwendet werden:</p>
@@ -854,25 +855,25 @@ Select * FROM tbl_findcontexts;</code></pre>
 <td align="left">1</td>
 <td align="right">1</td>
 <td align="right">1005</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 <td align="left">surface finds</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 </tr>
 <tr class="even">
 <td align="left">2</td>
 <td align="right">2</td>
 <td align="right">1005</td>
-<td align="left">2021-12-29</td>
+<td align="left">2022-01-14</td>
 <td align="left">1. layer</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 </tr>
 <tr class="odd">
 <td align="left">3</td>
 <td align="right">3</td>
 <td align="right">1005</td>
-<td align="left">2022-01-27</td>
+<td align="left">2022-02-12</td>
 <td align="left">bottom layer</td>
-<td align="left">2021-12-27</td>
+<td align="left">2022-01-12</td>
 </tr>
 </tbody>
 </table>
@@ -883,7 +884,7 @@ Select * FROM tbl_findcontexts;</code></pre>
 <p>Für JOIN gibt es mehrere Möglichkeiten (<a href="https://sqlite.org/syntax/join-operator.html">Operatoren</a>), von denen nachfolgend nur <em>INNER JOIN</em> und <em>LEFT JOIN</em> vorgestellt werden.</p>
 <div id="inner-join" class="section level3" number="4.2.1">
 <h3><span class="header-section-number">4.2.1</span> [INNER] JOIN</h3>
-<p>Dieser Befehl liefert ausschließlich die Datensätze, bei denen identische Werte für die ausgewählten Attribute beider Tabellen identisch sind. Die folgende Abfrage verwendet zudem die Eticketten a und b für die beteiligten Tabellen, um die Attribute eindeutig und zugleich kurz zuweisen zu können.</p>
+<p>Dieser Befehl liefert ausschließlich die Datensätze, bei denen identische Werte für die ausgewählten Attribute beider Tabellen vorhanden sind. Die folgende Abfrage verwendet zudem die Etiketten a und b für die beteiligten Tabellen, um die Attribute eindeutig und kurz ansprechen zu können.</p>
 <pre class="sql"><code>SELECT a.feature_nr, a.f_type, a. f_dating, b.find_nr, b.description
 FROM tbl_features AS a INNER JOIN tbl_findcontexts AS b ON a.feature_nr=b.feature_nr; </code></pre>
 <div class="knitsql-table">
@@ -923,7 +924,7 @@ FROM tbl_features AS a INNER JOIN tbl_findcontexts AS b ON a.feature_nr=b.featur
 </tbody>
 </table>
 </div>
-<p>Die Liste wird derart auf die Befunde und deren abgefragten Attribute eingeschränkt die zugleich auch Funde erbracht haben. Im vorliegenden Fall ausschließlich die Grube Befund 1005. Weitere JOIN-Anweisungen für andere Tabellen (c) sind möglich, sowohl mit einem erneuten Bezug auf die erste Tabelle (a) als auch auf bereits verknüpfte Tabelle (b).</p>
+<p>Die Liste wird derart auf die Befunde und deren abgefragten Attribute eingeschränkt die zugleich auch Funde erbracht haben. Im vorliegenden Fall ausschließlich die Grube Befund 1005. Weitere JOIN-Anweisungen für andere Tabellen (c) sind möglich, sowohl mit einem erneuten Bezug auf die erste Tabelle (a) als auch auf die bereits verknüpfte Tabelle (b).</p>
 <p>Bedenken Sie auch die Multiplikation der kreuzweisen Verknüpfung bei mehrfach vorhandenen Werten. Dazu eine JOIN Abfrage zwischen der originalen Tabelle der Fundkontexte und der dazu erstellten Abfrage. Jeweils drei Fundkontexte werden zu insgesamt neun Datenzeilen.</p>
 <pre class="sql"><code>SELECT a.feature_nr, a.find_nr, b.feature_nr, b.find_nr
 FROM tbl_findcontexts AS a INNER JOIN qry_findcontexts AS b ON a.feature_nr=b.feature_nr; </code></pre>
@@ -999,10 +1000,10 @@ FROM tbl_findcontexts AS a INNER JOIN qry_findcontexts AS b ON a.feature_nr=b.fe
 </div>
 <div id="left-outer-join" class="section level3" number="4.2.2">
 <h3><span class="header-section-number">4.2.2</span> LEFT [OUTER] JOIN</h3>
-<p>Die Einschränkung der bedingten Verknüpfung durch <em>INNER JOIN</em> ist nicht immer erwünscht. So wäre z.B. eine Liste aller Befunde wünschenswert, die zugleich die Anzahl der Fundkontexte liefert. Sie müssen also erst eine Abfrage mit allen Befunden und wenn vorhanden den zugehörigen Fundnummern erstellen. In einem zweiten Schritt wird die Liste dann nach den Befundnummer gruppiert. Das können Sie natürlich ganz real in zwei Schritten über eine erste <em>VIEW</em> und nachfolgende Abfrage angehen. Nachfolgend aber alles in einem Rutsch.</p>
-<pre class="sql"><code>SELECT a.feature_nr, a.f_type, a. f_dating, count(b.find_nr) as &#39;Anzahl Fundkontexte&#39;
+<p>Die Einschränkung der bedingten Verknüpfung durch <em>INNER JOIN</em> ist nicht immer erwünscht. So wäre z.B. eine Liste aller Befunde wünschenswert die zugleich die Anzahl der Fundkontexte liefert. Sie müssen also erst eine Abfrage mit allen Befunden und wenn vorhanden den zugehörigen Fundnummern erstellen. In einem zweiten Schritt wird die Liste dann nach den Befundnummer gruppiert. Das können Sie natürlich ganz real in zwei Schritten über eine erste <em>VIEW</em> und nachfolgende Abfrage angehen. Nachfolgend aber alles in einem Rutsch.</p>
+<pre class="sql"><code>SELECT a.feature_nr, a.f_type, a.f_dating, count(b.find_nr) as &#39;Anzahl Fundkontexte&#39;
 FROM tbl_features AS a LEFT JOIN tbl_findcontexts AS b ON a.feature_nr=b.feature_nr
-GROUP BY a.feature_nr, a.f_type, a. f_dating; </code></pre>
+GROUP BY a.feature_nr, a.f_type, a.f_dating; </code></pre>
 <div class="knitsql-table">
 <table>
 <caption>7 records</caption>
@@ -1112,7 +1113,7 @@ WHERE b.find_nr IS NULL; </code></pre>
 </div>
 <div id="union" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> UNION</h2>
-<p>Zwei oder mehr <em>SELECT</em> Anweisungen können kombiniert werden, neben UNION stehen auch <em>INTERSECT</em> und <em>EXCEPT</em> als Operatoren zur Verfügung. Im Folgen wollen wir eine Liste aller Informationen zu den Befunden zusammenstellen um so schnell an alle Informationen zu einem spezifischen befund zu gelangen. Hätten wir auch datierte Funde erfasst könnten wir in er Spalte Information auch alles filtern wo z.B. ’%Neolith% vorkommt, egal ob Befund- oder Funddatierung. Beachten Sie bitte die Verkettung der Attribute und Textelemente mit “||”.</p>
+<p>Zwei oder mehr <em>SELECT</em> Anweisungen können kombiniert werden, neben UNION stehen auch <em>INTERSECT</em> und <em>EXCEPT</em> als Operatoren zur Verfügung. Im Folgenden wollen wir eine Liste aller Informationen zu den Befunden zusammenstellen, um so schnell an alle Informationen zu einem spezifischen Befund zu gelangen. Hätten wir auch datierte Funde erfasst könnten wir in er Spalte Information auch alles filtern wo z.B. ’%Neolith% vorkommt, egal ob Befund- oder Funddatierung. Beachten Sie bitte die Verkettung der Attribute und Textelemente mit “||”.</p>
 <pre class="sql"><code>SELECT feature_nr AS Befundnr, f_type ||&quot;, &quot;|| f_dating AS Information, &#39;tbl_features&#39; AS Tabelle
 FROM tbl_features
 UNION ALL
@@ -1216,16 +1217,16 @@ WHERE feature_nr &lt; 1004;</code></pre>
 </tbody>
 </table>
 </div>
-<p>Die einfache UNION-Operator führt offensichtlich eine Gruppierung durch und verhindert im vorliegenden Fall die Dopplung der Befundnummern bis 1003.</p>
-<p><strong>Achten</strong> müssen Sie in beiden Fällen auf die gleiche Anzahl an Spalten und die jeweiligen Datentypen.</p>
+<p>Der einfache UNION-Operator führt offensichtlich eine Gruppierung durch und verhindert im vorliegenden Fall die Dopplung der Befundnummern bis 1003.</p>
+<p><strong>Achten Sie auf die Anzahl der Attribute und die jeweilgen Datentypen</strong>.</p>
 </div>
 </div>
 <div id="datentransfer" class="section level1" number="5">
 <h1><span class="header-section-number">5</span> Datentransfer</h1>
-<p>Unter Datentransfer werden nachfolgend zwei wichtige Aspekte behandelt: 1. Wie kann ich Daten aus anderen Datenbanken nutzen? 2. Wie kann ich meine Datenbank sichern und Dritten zur Verfügung stellen? Natürlich können Sie Daten als CSV-Tabelle importieren oder Ihre SQLite-Datenbank als Ganzes weitergeben. Aber die Nachfolgenden Beispiele haben den Charme 1. die Frenddaten nicht kopieren und damit pflegen zu müssen und 2. als textbasierte SQL-Anweisungen mit Struktur und Daten auch auf andere SQL-Systeme übertragbar zu sein.</p>
+<p>Unter Datentransfer werden nachfolgend zwei wichtige Aspekte behandelt: 1. Wie kann ich Daten aus anderen Datenbanken nutzen? 2. Wie kann ich meine Datenbank sichern und Dritten zur Verfügung stellen? Natürlich können Sie Daten als CSV-Tabelle importieren oder Ihre SQLite-Datenbank als Ganzes weitergeben. Aber die Nachfolgenden Beispiele haben den Charme 1. die Fremddaten nicht kopieren und damit pflegen zu müssen und 2. als textbasierte SQL-Anweisungen mit Struktur und Daten auch auf andere SQL-Systeme übertragbar zu sein.</p>
 <div id="attach" class="section level2" number="5.1">
 <h2><span class="header-section-number">5.1</span> Attach</h2>
-<p>Das folgende Beispiel ist erneut etwas sinnentleert, verdeutlicht aber die Gundlagen. Kopieren Sie als erstes die vorliegende Datenbank unter einem neuen Namen, z.B. db02.</p>
+<p>Das folgende Beispiel ist erneut etwas sinnentleert, verdeutlicht aber die Gundlagen. Kopieren Sie als erstes die vorliegende Datenbank unter einem neuen Namen, z.B. db02. Mit dem folgenden Befehl können Sie diese Datenbank dann verknüpfen.</p>
 <pre class="attach"><code>ATTACH db02 AS db2;</code></pre>
 <p>Danach können Sie auf die fremden Daten zugreifen:</p>
 <pre class="sql"><code>select * from db2.tbl_findcontexts;</code></pre>
@@ -1233,8 +1234,8 @@ WHERE feature_nr &lt; 1004;</code></pre>
 </div>
 <div id="export-dump" class="section level2" number="5.2">
 <h2><span class="header-section-number">5.2</span> Export, Dump</h2>
-<p>Der Befehl ‘.dump <datenbank-name>’ schreibt eine gesamte Datenbank in zahlreiche SQL-Anweisungen, jeweils die <em>CREATE TABLE</em>-Anweisung für das Erstellen der Tabelle und dann die Werte als <em>INSERT</em>-Anweisung. Auch dies ist etwas, was in RSQLite innerhalb der definierten Datenbankverknüpfung natürlich nicht funktioniert. Sie sehen nachfolgend also nur die Syntax und einen Teil des Ergebnisses aus der Umsetzung im DB Browser SQLite (s.u.).</p>
-<p>Nur soviel an dieser Stelle: Eine Datenbank verwaltet sich selbst ebenfalls in Tabellen. Diese können wir natürlich abfragen:</p>
+<p>Der Befehl ‘dump <datenbank-name>’ schreibt eine gesamte Datenbank in zahlreiche SQL-Anweisungen, jeweils die <em>CREATE TABLE</em>-Anweisung für das Erstellen der Tabelle und dann die Werte als <em>INSERT</em>-Anweisung. Auch dies ist etwas, was in RSQLite innerhalb der definierten Datenbankverknüpfung natürlich nicht funktioniert. Sie sehen nachfolgend also nur die Syntax und einen Teil des Ergebnisses aus der Umsetzung im DB Browser SQLite (s.u.).</p>
+<p>Nur soviel an dieser Stelle: Eine Datenbank verwaltet sich selbst ebenfalls in Tabellen und diese Information können wir natürlich abfragen:</p>
 <pre class="sql"><code>SELECT sql FROM sqlite_master
 WHERE name=&#39;tbl_features&#39;;</code></pre>
 <pre><code>## CREATE TABLE &quot;tbl_features&quot; (
@@ -1249,7 +1250,7 @@ WHERE name=&#39;tbl_features&#39;;</code></pre>
 </div>
 <div id="software" class="section level1" number="6">
 <h1><span class="header-section-number">6</span> Software</h1>
-<p>Kern des ganzen ist natürlich die SQLite database engine, die Sie auf <a href="https://sqlite.org">SQLite</a> frei herunterladen können. Auch wenn Sie im Vorangehenden eigentlich auf der Befehlszeile gearbeitet haben, eine GUI bietet schon mehr Komfort und ist deshalb vorzuziehen. Optionen sind hier z.B. <a href="https://github.com/pawelsalawa/sqlitestudio/releases">SQLiteStudio</a> eine umfangreiche GUI mit Versionen für Linux, Mac und Windows oder auch die deutlich schlankere GUI <a href="https://github.com/little-brother/sqlite-gui">little-brother</a> für Windows. Nachfolgend als weiteres Beispiel der DB Browser SQLite.</p>
+<p>Kern des ganzen ist natürlich die SQLite database engine die Sie auf <a href="https://sqlite.org">SQLite</a> frei herunterladen können. Auch wenn Sie im Vorangehenden eigentlich auf der Befehlszeile gearbeitet haben, eine GUI bietet schon mehr Komfort und ist deshalb vorzuziehen. Optionen sind hier z.B. <a href="https://github.com/pawelsalawa/sqlitestudio/releases">SQLiteStudio</a> eine umfangreiche GUI mit Versionen für Linux, Mac und Windows oder auch die deutlich schlankere GUI <a href="https://github.com/little-brother/sqlite-gui">little-brother</a> für Windows. Nachfolgend als weiteres Beispiel der DB Browser SQLite.</p>
 <div id="db-browser-sqlite" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> DB Browser SQLite</h2>
 <p>Laden Sie das für Ihr System (Windows, Mac, Linux) benötigte Installationspaket von <a href="https://sqlitebrowser.org/">sqlitebrowser</a> herunter. Das Programm wird als <a href="https://github.com/sqlitebrowser">Projekt auf github</a> entwickelt, dort finden Sie auch ein <a href="https://github.com/sqlitebrowser/sqlitebrowser/wiki">Wiki</a>. Es ist also nicht nötig, hier im Detail alles vorzustellen.</p>
