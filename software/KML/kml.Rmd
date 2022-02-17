@@ -1,7 +1,7 @@
 ---
 title: "KML (GPS), XML & Auszeichnungssprachen"
 author: 
- - Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]
+ - Christoph Rinne^[Christian-Albrechts-Universität zu Kiel, crinne@ufg.uni-kiel.de]
 date: "`r format(Sys.time(), '%d. %B %Y')`"
 license: "CC-BY 4.0"
 header-includes:

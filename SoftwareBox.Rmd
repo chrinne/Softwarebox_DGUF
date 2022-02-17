@@ -2,7 +2,7 @@
 title: "Softwarebox. IT-Ausstattung fürs Studium."
 subtitle: "DGUF-Handreichung für Studierende der Ur- und Frühgeschichte & Archäologie"
 author: 
- - Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]
+ - Christoph Rinne^[Christian-Albrechts-Universität zu Kiel, crinne@ufg.uni-kiel.de]
  - Jochen Reinhard^[DGUF Beirat]
  - Frank Siegmund^[DGUF Vorstand]
 email: 

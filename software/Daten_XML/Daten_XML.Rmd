@@ -1,7 +1,7 @@
 ---
 title: "Daten & XML"
 author: 
-  - "Christoph Rinne^[Christian-Albrechts Universität zu Kiel, crinne@ufg.uni-kiel.de]"
+  - "Christoph Rinne^[Christian-Albrechts-Universität zu Kiel, crinne@ufg.uni-kiel.de]"
 date: "`r format(Sys.time(), '%d. %B %Y')`"
 license: CC-BY 4.0
 header-includes: 
@@ -35,15 +35,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Grundlegende Information
 
-Das gesamte Thema im Kontext dieser Handreichungen auch nur einführend vorzustellen ist nicht möglich. Es werden also diverse Aspekte nur angerissen oder erwähnt oder stehen nur als Schlagworte im Text.  Ziel ist es, Ihnen das Thema "Daten & XML" im Kontext der Archäologie verkürzt vorzustellen und mit wenigen Beispielen Nutzungsszenarien aufzuzeigen. 
+Das gesamte Thema im Rahmen dieser Handreichungen auch nur einführend vorzustellen, ist nicht möglich. Es werden also diverse Aspekte nur angerissen oder erwähnt oder stehen nur als Schlagworte im Text.  Ziel ist es, Ihnen das Thema "Daten & XML" im Kontext der Archäologie verkürzt vorzustellen und mit wenigen Beispielen Nutzungsszenarien aufzuzeigen. 
 
 ## Entwicklung und Forschungsgeschichte
 
-Daten sammeln und nachnutzen, zur Recherche oder der Analyse, ist in den archäologsichen Fächern ein alltäglicher Vorgang. Meist sind es einzelne Tabellen, gelegentlich auch Tabellen mit Referenzen untereinander oder auch etwas komplexere relationale Datenbanken die hier zum Einsatz kommen. Daneben stehen aber auch andere Techniken zur  Strukturierung von Informationen zur Verfügung, eine sehr grundlegende ist die Auszeichnungssprache [XML](https://de.wikipedia.org/wiki/Extensible_Markup_Language).
+Daten sammeln und nachnutzen, zur Recherche oder Analyse, ist in den archäologsichen Fächern ein alltäglicher Vorgang. Meist sind es einzelne Tabellen, gelegentlich auch Tabellen mit Referenzen untereinander oder auch etwas komplexere relationale Datenbanken, die hier zum Einsatz kommen. Daneben stehen aber auch andere Techniken zur  Strukturierung von Informationen zur Verfügung, eine sehr grundlegende ist die Auszeichnungssprache [XML](https://de.wikipedia.org/wiki/Extensible_Markup_Language).
 
-Von dem eher technischen Aspekt der Sprache, z.B. XML oder SQL, ist das Konzept zur Strukturierung der Informationen zu trennen. Bedingt durch die jeweilige Enticklungsgeschichte stehen die vorgenannten Sprachen XML und SQL für sehr unterschiedliche Konzepte von Datenmodellen. SQL steht an den Anfängen der Datenbankentwicklung und für realtionale Datenbankmodelle. XML ist die jüngere und mit dem Internet eng verbundene Entwicklung, die zu semistrukturierten Daten in einer hierarchischen Baumstruktur führt.
+Vom eher technischen Aspekt der Sprache, z.B. XML oder SQL, ist das Konzept zur Strukturierung der Informationen zu trennen. Bedingt durch die jeweilige Entwicklungsgeschichte stehen die vorgenannten Sprachen XML und SQL für sehr unterschiedliche Konzepte von Datenmodellen. SQL steht an den Anfängen der Datenbankentwicklung und für realtionale Datenbankmodelle. XML ist die jüngere und mit dem Internet eng verbundene Entwicklung, die zu semistrukturierten Daten in einer hierarchischen Baumstruktur führt.
 
-Zu Beginn der 2000er wurde von Schloen ArchaeoML, ein auf XML basierendes und auf Objekte (*item*) zentriertes Datenmodell präsentiert [@schloenArchaeologicalDataModels2001]. Zeitgleich wird CIDOC-CRM entwickelt, welches ebenfalls auf XML und hieraus mit [RDF](https://de.wikipedia.org/wiki/Resource_Description_Framework) als auch [OWL](https://de.wikipedia.org/wiki/Web_Ontology_Language) entwickelten Relationen basierend, eine komplexe Ontologie für Informationen der Kutlurwissenschaften dartellt [@doerrCoreOntologyInformation2003]. Beide sind in ihrer Entstehung eng mit der Entwicklung des Internet verbunden und basieren im Kern auf XML, sind darüber hinaus aber sehr unterschiedlich [@kansaCommunityApproachData2005]. ArchaeoML ist in  [OCHRE](https://voices.uchicago.edu/ochre) aufgegangen und bildet auch eine Grundlage von [Open Context Hertiage Bytes](http://ux.opencontext.org/), z.B. bei [DINAA](http://ux.opencontext.org/archaeology-site-data/). Die weitere Entwicklung  von Open Context erfolgt auf [GitHub](https://github.com/ekansa) wobei GeoJSON-LD und damit der Raumbezug und die Referenzen unterienander zunehmend an Bedeutung gewinnen [Kansa 2014](http://ux.opencontext.org/2014/09/02/upgrading-open-context/). Auch CIDOC-CRM wird weiter entwickelt [@oldmanCIDOCConceptualReference2014] und vielfach als Grundlage für die Erfassung von Datenbeständen genutzt. Während CIDOC-CRM anfänglich stark an den Relationen orientiert war tritt nun auch hier das Objekt oder *item*, als Ding (*thing*), Objekt (*objekt*) oder (*feature*) verstärkt in das Zentrum.
+Zu Beginn der 2000er wurde von Schloen ArchaeoML, ein auf XML basierendes und auf Objekte (*item*) zentriertes Datenmodell präsentiert [@schloenArchaeologicalDataModels2001]. Zeitgleich wird CIDOC-CRM entwickelt, welches ebenfalls auf XML und hieraus mit [RDF](https://de.wikipedia.org/wiki/Resource_Description_Framework) als auch [OWL](https://de.wikipedia.org/wiki/Web_Ontology_Language) entwickelten Relationen basierend, eine komplexe Ontologie für Informationen der Kulturwissenschaften darstellt [@doerrCoreOntologyInformation2003]. Beide sind in ihrer Entstehung eng mit der Entwicklung des Internet verbunden und basieren im Kern auf XML, sind darüber hinaus aber sehr unterschiedlich [@kansaCommunityApproachData2005]. ArchaeoML ist in  [OCHRE](https://voices.uchicago.edu/ochre) aufgegangen und bildet auch eine Grundlage von [Open Context Hertiage Bytes](http://ux.opencontext.org/), z.B. bei [DINAA](http://ux.opencontext.org/archaeology-site-data/). Die weitere Entwicklung  von Open Context erfolgt auf [GitHub](https://github.com/ekansa), wobei GeoJSON-LD und damit der Raumbezug und die Referenzen unterienander zunehmend an Bedeutung gewinnen ([Kansa 2014](http://ux.opencontext.org/2014/09/02/upgrading-open-context/)). Auch CIDOC-CRM wird weiter entwickelt [@oldmanCIDOCConceptualReference2014] und vielfach als Grundlage für die Erfassung von Datenbeständen genutzt. Während CIDOC-CRM anfänglich stark an den Relationen orientiert war, tritt nun auch hier das Objekt oder *item*, als Ding (*thing*), Objekt (*objekt*) oder (*feature*) verstärkt in den Mittelpunkt.
 
 Ausgehend von XML steht also das Element zunehmend im Zentrum der Strukturierung weniger die Relation von definierten Klassen wie es bei SQL eher der Fall ist. Weder XML noch SQL sind entgegen dieser sehr unterschiedlichen genuinen Konzeption aber auf die jeweiligen Modelle eingeschränkt.
 
@@ -55,7 +55,7 @@ Eine Programm zur Nutzung von XML-Datenbanken und XQuery ist [BaseX](https://bas
 
 ## XML in R / RStudio
 
-Da ich diesen Text in R-Markdown mit RStudio schreibe verwende ich sogenannte *code chunks*, um die Befehle darzustellen. Mit den Paketen [xml](https://cran.r-project.org/web/packages/XML/index.html) oder [xml2](https://xml2.r-lib.org/) können XML-strukturierte Daten in R genutzt werden, dabei handelt es sich allerdings um sogenannte *wrapper* mit einer typischen R-Syntax und nicht um die Implementierung einer XML-Sprache wie z.B. [XQuery](https://de.wikipedia.org/wiki/XQuery).  Beide Pakete haben jeweils eigene Dokumentationen ([xml](https://www.rdocumentation.org/packages/XML), [xml2](https://www.rdocumentation.org/packages/xml2)). Die Pakete bieten einige unterschiedliche Funktionen, z.B. xmlToDataFrame() bei xml und unterscheiden sich weitgehend in den Fundktionsnamen: "xml_\<Beschreibung>" bei xml2.  
+Da ich diesen Text in R-Markdown mit RStudio schreibe, verwende ich sogenannte *code chunks*, um die Befehle darzustellen. Mit den Paketen [xml](https://cran.r-project.org/web/packages/XML/index.html) oder [xml2](https://xml2.r-lib.org/) können XML-strukturierte Daten in R genutzt werden, dabei handelt es sich allerdings um sogenannte *wrapper* mit einer typischen R-Syntax und nicht um die Implementierung einer XML-Sprache wie z.B. [XQuery](https://de.wikipedia.org/wiki/XQuery).  Beide Pakete haben jeweils eigene Dokumentationen ([xml](https://www.rdocumentation.org/packages/XML), [xml2](https://www.rdocumentation.org/packages/xml2)). Die Pakete bieten einige unterschiedliche Funktionen, z.B. xmlToDataFrame() bei xml und unterscheiden sich weitgehend in den Fundktionsnamen: "xml_\<Beschreibung>" bei xml2.  
 
 XQuery wird in R nicht umgesetzt, die nachfolgenden *code chunks* mit XQuery sind demnach funktionsloses Layout ohne hervorgehobene Syntax. Für die Nutzung der Pakete xml und xml2 sind einführende Beispiele in der oben genannten Dokumentation vorhanden.
 
@@ -65,7 +65,7 @@ XML-Daten und deren Nutzung sind eng mit dem Internet verbunden (s.o.). Die zuge
 
 ## BaseX
 
-[BaseX](https://basex.org) ist plattformunabhängig, wird unter Open-Source-Lizenz (BSD) angeboten und für Windows gibt es ein eigenes Installationsprogramm.  BaseX wird auf [GitHub](https://github.com/BaseXdb) weiter entwickelt. Die Website des Projektes bietet eine umfassende [Dokumentation](https://docs.basex.org/wiki/Main_Page), darunter auch eine knappe Einführung zu der nachfolgend genutzten [GUI](https://docs.basex.org/wiki/Graphical_User_Interface), die für mich der hervorzuhebende Aspekt dieser Software ist. Für den ersten Kontakt mit XML, XPath und XQuery empfehle ich auch den Text [Basex for dummies von Paul Swennenhuis](http://www.swennenhuis.nl/basexfordummies/BaseX_for_dummies.pdf).
+[BaseX](https://basex.org) ist plattformunabhängig, wird unter Open-Source-Lizenz (BSD) angeboten und für Windows gibt es ein eigenes Installationsprogramm.  BaseX wird auf [GitHub](https://github.com/BaseXdb) weiter entwickelt. Die Website des Projektes bietet eine umfassende [Dokumentation](https://docs.basex.org/wiki/Main_Page), darunter auch eine knappe Einführung zur nachfolgend genutzten [GUI](https://docs.basex.org/wiki/Graphical_User_Interface), die für mich der hervorzuhebende Aspekt dieser Software ist. Für den ersten Kontakt mit XML, XPath und XQuery empfehle ich auch den Text [Basex for dummies von Paul Swennenhuis](http://www.swennenhuis.nl/basexfordummies/BaseX_for_dummies.pdf).
 
 > Die GUI von BaseX erlaubt die Recherche in den Daten mit XPath und XQuery, das Editieren von Daten ist hier nicht möglich. 
 
@@ -85,7 +85,7 @@ XML besteht aus Elementen (s.o. Sequenz) die auch als Knoten eines Baumes bezeic
 </text>
 ```
 
-Das Wurzel-Element des Beispieles ist \<text>...\</text> mit den weiteren Elementen \<satz> und \<wort> die neben den *start tags* auch die zugehörigen *end tags* besitzen. Die Elemente \<wort> beinhaltet konkrete Werte, ebenso \<satz> mit dem Punkt. Das Element \<text> besitzt das Attribut "autor" und das Element \<wort> das  Attribut "typ". Dabei ist das Attribut "typ" für \<wort> gut gewählt, da es eine eindeutig Zusatzinformation ist, während wir für einen Text auch mehrere Autoren erwarten können und deshalb besser mit den Elementen \<autoren> und \<autor> arbeiten sollten.  
+Das Wurzel-Element des Beispieles ist \<text>...\</text> mit den weiteren Elementen \<satz> und \<wort>, die neben den *start tags* auch die zugehörigen *end tags* besitzen. Das Elemente \<wort> beinhaltet konkrete Werte, ebenso \<satz> mit dem Punkt. Das Element \<text> besitzt das Attribut "autor" und das Element \<wort> das  Attribut "typ". Dabei ist das Attribut "typ" für \<wort> gut gewählt, da es eine eindeutig Zusatzinformation ist, während wir für einen Text auch mehrere Autoren erwarten können und deshalb besser mit den Elementen \<autoren> und \<autor> arbeiten sollten.  
 
 
 Wenn Sie wohlgeformte komplexere XML-Dateien in einem Editor öffnen, z.B. KML-Dateien, sehen Sie als erstes eine Deklaration und auch Verweise auf anzuwendende Regelwerke. Dies dient der maschinellen Prüfung der Struktur und Daten.
@@ -98,13 +98,13 @@ Wenn Sie wohlgeformte komplexere XML-Dateien in einem Editor öffnen, z.B. KML-D
 
 ## XML Beispieldaten
 
-Starten Sie für die Arbeit mit den Beispieldaten das Programm **BaseX**. Mit "Database > New ..." öffnen Sie einen Ordner mit XML-Dateien oder eine einzelne XML-Datei und weisen dieser Datenbank einen Namen zu, z.B. "features" für die Beispieldaten features.xml. Mit "Databases > Open & Manage ..." können einmal angelegte Datenbanken erneut geladen werden. Ist die Datenbank "features" in BaseX geladen sollten Sie annähernd das vorangehende Bild sehen.  
+Starten Sie für die Bearbeitung der Beispieldaten das Programm **BaseX**. Mit "Database > New ..." öffnen Sie einen Ordner mit XML-Dateien oder eine einzelne XML-Datei und weisen dieser Datenbank einen Namen zu, z.B. "features" für die Beispieldaten features.xml. Mit "Databases > Open & Manage ..." können einmal angelegte Datenbanken erneut geladen werden. Ist die Datenbank "features" in BaseX geladen, sollten Sie annähernd das vorangehende Bild sehen.  
 
-Unterhalb der üblichen Menü- und Icon-Leiste sehen Sie folgende Fenster: Projekt-Ordner, Editor für Syntax, *Map* der Datenbank, *Result* mit aktuell dem gesamten Datenbestand und *Info*. Diese Fenster können über das Menü unter *View* und *Visualization* auch an- und ausgeblendet werden.
+Unterhalb der üblichen Menü- und Icon-Leiste sehen Sie folgende Fenster: Projekt-Ordner, Editor für Syntax, *Map* der Datenbank, *Result*, aktuell mit dem gesamten Datenbestand, und *Info*. Diese Fenster können über das Menü unter *View* und *Visualization* auch an- und ausgeblendet werden.
 
-Sehen Sie sich die Strutur der Daten sowohl im Fenster *Result* als auch *Map*-Fenster an. Innerhalb von "excavation" gibt es "features" und "samples". Ein feature kann zudem mit "findcontext" und "find" Fundzettelangaben und Funde beinhalten. Daneben stehen "samples" wobei eine Probe aus mehreren Funden zusammengesetzt sein kann und auf diese anhand einer "id" verweist. Zahlreiche Elemente haben Attribute zu dem Autor und dem Zeitpunkt der Wertezuweisung. 
+Sehen Sie sich die Strutur der Daten sowohl im Fenster *Result* als auch *Map*-Fenster an. Innerhalb von "excavation" gibt es "features" und "samples". Ein feature kann zudem mit "findcontext" und "find" Fundzettelangaben und Funde beinhalten. Daneben stehen "samples", wobei eine Probe aus mehreren Funden zusammengesetzt sein kann und auf diese anhand einer "id" verweist. Zahlreiche Elemente haben Attribute zum Autor und dem Zeitpunkt der Wertezuweisung. 
 
-Diese Beispieldaten haben keine zureichende Strukturierung für die Daten einer realen Ausgrabung mithin auch keine Deklaration.
+Diese Beispieldaten haben keine zureichende Strukturierung für die Daten einer realen Ausgrabung, mithin auch keine Deklaration.
 
 ## XPath 
 
@@ -140,7 +140,7 @@ Die Anweisungen liefern nacheinander:
 - Die Liste der Knoten *f_type* zum vorangehenden Filter.
 - Alle Befunde vom Typ *grave*.
 - Filter können mit *and*,  *or* und () kombiniert werden.
-- Alle Befunde die Fundkontexte und demnach wohl Funde (*//feature[findcontext/find]*) erbracht haben.
+- Alle Befunde, die Fundkontexte und demnach wohl auch Funde (*//feature[findcontext/find]*) erbracht haben.
 
 Auch unscharfe Suchen sind möglich, nachfolgend Beispiele für die Funktionen *matches()*, *contains()*.
 
@@ -151,7 +151,7 @@ Auch unscharfe Suchen sind möglich, nachfolgend Beispiele für die Funktionen *
 Die Anweisungen liefern nacheinander:
 
 - Alle Befunde mit einem "i" im Typ. Die Funktion *contains()* hat zwei Parameter, das zu vergleichende Element und den gesuchten Ausdruck. 
-- Alle Befunde deren Typ mit einem "P" oder einem "p" beginnt. Die Funktion *matches()* hat drei Parameter: Das zu vergleichende Element, den gesuchten Ausdruck und optional die Anweisungen "i" oder "s" für *case insensitive / sensitive*. Das Zirkumflex entstammt in seiner Bedeutung als Zeilenanfang den Regulären Ausdrücken.
+- Alle Befunde deren Typ mit einem "P" oder einem "p" beginnt. Die Funktion *matches()* hat drei Parameter: Das zu vergleichende Element, den gesuchten Ausdruck und optional die Anweisungen "i" oder "s" für *case insensitive / sensitive*. Das Zirkumflex entstammt in seiner Bedeutung als Zeilenanfang den regulären Ausdrücken (Regex).
 
 Sequenzen von Elementen müssen zerlegt werden.  
 
@@ -159,7 +159,7 @@ Sequenzen von Elementen müssen zerlegt werden.
 //feature[dating[contains(text(), "Neol")]]
 //feature[dating[matches(text(), "^Final", "s")]]
 ```
-Die Beispieldaten haben mit *dating* auch mehrere Aussagen zur Datierung. Bei dem Befund 1005 ist es nach der Erstdatierung von der Ausgrabung einerseits eine feinere typologische Ansprache nach der Fundanalyse durch einen Spezialisten und eine ergänzende Radiokarbondatierung. Der einfache Filter für die Befunde auf das Kind-Element *dating* liefert bei diesen Befunden eine Sequenz (Liste) von Werten (*Neolithic, Final Neolithic,...*) an der die Funktionen scheitern.
+Die Beispieldaten haben mit *dating* auch mehrere Aussagen zur Datierung. Bei dem Befund 1005 sind es nach der Erstdatierung von der Ausgrabung 1. eine feinere typologische Ansprache nach der Fundanalyse durch einen Spezialisten und 2. eine ergänzende Radiokarbondatierung. Der einfache Filter für die Befunde auf das Kind-Element *dating* liefert bei diesen Befunden eine Sequenz (Liste) von Werten (*Neolithic, Final Neolithic,...*), an der die Funktionen scheitern.
 
 Die Funktion *text()* liefert nur die Werte des zu vergleichenden Elementes. Damit ist es auch möglich, die einzelnen Werte der Elemente  *dating* zu vergleichen.
 
@@ -172,9 +172,9 @@ let $results :=
 collection("features")//feature[dating[matches(text(), "^Final", "s")]]
 return <results>{$results}</results>
 ```
-In der vorangehende Anweisung wird die Rückgabe des vorab geschriebene Filters der Variablen *$results* zugewiesen und am Ende mit *return* zusammen mit dem neuen Tag \<results> ... \</results> zurückgegeben.  
+In der vorangehenden Anweisung wird die Rückgabe des vorab geschriebenen Filters der Variablen *$results* zugewiesen und am Ende mit *return*, zusammen mit dem neuen Tag \<results> ... \</results>, zurückgegeben.  
 
-Wir Verändern die Anweisung im Stiel von FLOWER mit den Abschnitten *for*, *in*, der auswertenden Zuweisung *let*, *where* als Filter und *order by* für die Sortierung.
+Wir verändern die Anweisung im Stil von FLOWER mit den Abschnitten *for*, *in*, der auswertenden Zuweisung *let*, *where* als Filter und *order by* für die Sortierung.
 
 ```
 for $feature 
