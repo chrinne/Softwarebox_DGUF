@@ -900,6 +900,8 @@ Ein freier Password Manager, der mit einem Addon in Mozilla Firefox eingebunden 
 
 [Markdown](https://markdown.de/){target=_blank} (Dateinendung \*.md) ist eine Auszeichnungssprache für das schnelle Erstellen von ansprechenden Texten in einem Editor. Es ähnelt ein wenig HTML sowohl in der Syntax als auch im Arbeitsablauf. Ziel ist ein Entschlacken der Programmoberfläche zugunsten der Fokussierung auf den Schreibvorgang bei gleichzeitiger Plattformunabhängigkeit. Zudem ist der Text sehr gut (atomar) in Github/GitLab oder Cloud-Diensten zu synchronisieren. Die verwendete Software setzt die Handvoll an Markdown-Auszeichnungen, die grundlegend benötigt werden, im Layout um: # (Überschrift), - Gliederung, --- horizontale Linie und |--- für Tabellen. Markdown kann dann in HTML- oder PDF-Dokumente exportiert werden. Für den Einstieg ist ein Editor mit einer kleinen Menüleiste und einer optionalen Voransicht hilfreich.
 
+Cloud-Dienst, z.B. Nextcloud verwenden Markdown für Notizen, Nextcloud bietet zudem einen [eigenen Markdown Editor]/https://apps.nextcloud.com/apps/files_markdown){target=_blank}. 
+
 Markdown-Dokumente werden auch in R-Studio eingesetzt (\*.Rmd) und erlauben dort das Erstellen umfangreicher Dokumente mit grafisch hervorgehobenem Code und dem hieraus generierten HTML-Seiten, Artikeln oder ganzer Büchern (z. B. [H. Wickham/G. Grolemund, R for Data Science](https://r4ds.had.co.nz/){target=_blank}). Es stehen diverse Layout (*themes*) zur Verfügung (z.B. eine Sammlung von [Andrew Zieffler](https://www.datadreaming.org/post/r-markdown-theme-gallery/){target=_blank}). Im Kern bietet dies die bis in die Berechnung und die Daten – sofern online – unmittelbar nachvollziehbare und überprüfbare Publikation und damit das **Ziel guter wissenschaftlicher Praxis**.
 
 #### Markdownpad2 (Windows) \newline 
@@ -909,9 +911,7 @@ Die Software bietet eine Menü- und Iconleiste, wodurch das Einfügen von Auszei
 
 ####  Typora   
 Ein im Design etwas schlichterer aber sehr potenter Editor für Markdown. Die schlichte Menüleiste bietet Zugang zu vielen Optionen. Hervorzuheben sind die diversen Themen (themes) bzw. Layout für den resultierenden Text, die aus einem umfangreichen Repositorium noch erweitert werden können. Der Export zu PDF ist unmittelbar möglich. 
-Typora ist nach der Version 1.0.3 kostenpflichtig, die Version 1.0.3 finden Sie noch auf der Website.
-
-- Offizielle Website: [https://typora.io/](https://typora.io/){target=_blank}
+Typora ist nach der Version 1.0.3 kostenpflichtig. Auch die ältere Version 1.0.3 ist abgelaufen und kann nicht mehr verwendet werden (07.06.2022). 
 
 #### MarkdownViewer++ \newline 
 ist ein Plugin für Notepad++. Das Editorfenster wird geteilt und rechts das Layout unmittelbar angezeigt. Eine Menüleiste für die Auszeichnungen fehlt, der Export in HTML und PDF ist aber unmittelbar möglich. Die Installation erfolgt in Notepad++ über die Erweiterungen.
