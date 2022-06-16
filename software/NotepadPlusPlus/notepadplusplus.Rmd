@@ -10,16 +10,16 @@ header-includes:
   \renewcommand{\tablename}{Tab.}
 papersize: a4
 output:
-  pdf_document:
-    number_sections: true
-    toc: true
-    toc_depth: 2
-    df_print: kable
   html_document:
     toc: true
     toc_depth: 2
     toc_float: true
     number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -89,7 +89,7 @@ Unter **\[Ansicht]** nutze ich  - vor allem im Unterricht - das schnelle Zoomen 
 Der **\[automatischer Zeilenumbruch]**, auch über die Iconleiste schnell erreichbar, ist (ausgeschaltet) oft nützlich und **\[Symbole anzeigen]** bietet bisweilen hilfreiche Information über die Struktur des Textes und unsichtbare Elemente wie Tabulatoren oder Zeilenumbrüche.
 
 ## Bearbeiten bzw. Editieren
-Zwei Optionen müssen hervorgehoben werden: Suchen & Ersetzen und der Spaltenmodus. Weitere, von mir gerne genutzte Funktionalitäten (Zeilen sortieren, UPPER CASE, Propper Case, trim, wrap, quote...) bietet das Plugin TextFX.
+Zwei Optionen müssen hervorgehoben werden: Suchen & Ersetzen und der Spaltenmodus. Weitere, von mir gerne genutzte Funktionalitäten, z.B. **Zeilen sortieren**, **UPPER CASE**, Propper Case etc., finden Sie hier unter **\[Groß-/Kleinschreibung]** und **\[Zeilenoperationen]**. Das früher genannte Plugin TextFX ist nur für 32-bit verfügbar.
 
 Der **\[Spaltenmodus]** erlaubt das Markieren und demzufolge Kopieren, Ausschneiden und Einfügen von Spalten. Es funktioniert mit **\<alt>** + **Mauswahl** oder **\<alt>** + **\<shift>** + **Pfeiltasten**. Der Cursor steht bei der zweiten Variante zu Beginn natürlich am Anfang oder am Ende des zu wählenden Bereichs.
 
@@ -97,7 +97,7 @@ Der **\[Spaltenmodus]** erlaubt das Markieren und demzufolge Kopieren, Ausschnei
 
 ![Suchen Ersetzen in Notepad ++](./SuchenErsetzen.png){width=50%}  
 
-Neben allgemein üblichen Parametern die in diesem Fenster ausgewählt werden können, sind es die Optionen: Normal, Erweitert (\\n, \\r, \\t ...) und Reguläre Ausdrücke die hervorzuheben sind. "Normal" entspricht einer allgemeinen Erwartung.
+Neben allgemein üblichen Parametern die in diesem Fenster ausgewählt werden können, sind es die Optionen: Normal, Erweitert (\\n, \\r, \\t ...) und Reguläre Ausdrücke, die hervorzuheben sind. "Normal" entspricht einer allgemeinen Erwartung.
 
 ### Reguläre Ausdrücke
 
@@ -139,13 +139,14 @@ Sie brauchen nur die Koordinaten und wollen alle folgenden Spalten löschen, als
 
 Der erste Fall oben ist zu simpel, eigentlich soll jede Koordinaten genau 5 Nachkommastellen haben. Wir müssen also drei Suchelemente definieren:
 
-  1. Suche genau 5 Ziffern nach einem Punkt: .[0-9]{5}
+  1. Suche genau 5 Ziffern nach einem Punkt: \\.[0-9]{5}    
+  (Der "." bedeutet regulär irgend ein Zeichen, durch den "\\" wird er zum Zeichen ".")
   2. Suche beliebig viele Ziffern: [0-9]\* 
   3. Suche ein Leerzeichen oder schließende Klammer: [ )] 
   
 Nur der mittlere Block soll ersetzt werden. Das mit den 3 Elementen wird mit Klammern () einfacher lesbar und! maschinenlesbar gegliedert: 
 
-```(.[0-9]{5})([0-9]*)([ )])``` 
+```(\.[0-9]{5})([0-9]*)([ )])``` 
 
 Auf diese Elemente können wir uns nun beziehen und diese getrennt behandeln: ```\1\3```. Übersetzt steht da: das 1. Element behalten, das 2. Element fällt weg, das 3. Element behalten. Fertig.  
 
@@ -172,11 +173,8 @@ Das Plugin kann vielfältig angepasst werden. Zudem hat es einige ergänzende Op
 Dieses Plugin überprüft die Rechtschreibung und nutzt dafür standardmäßig die Hunspell Bibliothek, optional auch Aspell. Deutsch muss zusätzlich heruntergeladen werden, dies ist aber mit dem Plugin auf "Knopfdruck" möglich. Alles Weitere auf der Website in einer umfangreichen [Dokumentation](https://github.com/Predelnik/DSpellCheck/wiki/Manual).
 Es gibt ein weiteres Plugin Spell-Checker, der Funktionsumfang scheint aber deutlich geringer.
 
-## NppTextFX.dll
-Das Plugin trägt sich als eigenständiger Menüpunkt ein, das ist bei dem Umfang an Funktionen auch geboten. Sehr stark vertreten sind diverse Ersetzungsfunktionen, die u.a. Artefakte von Auszeichnungssprachen (z.B. HTML) bereinigt. Ich nutze zwei Funktionsbereiche sehr häufig:
-
-1. Unter *TextFX Characters*: UPPER CASE, lower case, Propper Case und Sentance case.
-2. Unter *TextFX Tools*: Sort... für das Sortieren von Zeilen in einem markierten Bereich.
+## TextFX.dll
+Diese Plugin steht leider nur für die 32-bit-Version von NPP zur Verfügung. Einige der Optionen finden Sie unter **\[Bearbeiten]**.
 
 ## MarkdownViewer++ und MarkdownPanel
 
@@ -263,7 +261,7 @@ Hier muss auf die stets mögliche Alternative HTML zurückgegriffen werden. Dies
 
 Leider entsteht dann eine missliche Abhängigkeit vom Betriebssystem (\\ statt /).
 
-## NPPMarkdownPanel
+## MarkdownPanel
 
 Auch dieses Plugin öffnet ein zweites Fenster, in dem die Umsetzung der Auszeichnung direkt visualisiert wird. Der Export in PDF erfolgt über "*Druckvorschau*" im Kontextmenü (rechte Mausklick) der Voransicht. Hier können die Seitenränder verschoben werden und nachfolgend ist der Druck auf jeden installierten Drucker, z.B. PDF24 oder FoxitReader möglich. Die Umsetzung der Tabellen ist deutlich besser gelöst, ebenso die Darstellung von Code in dezenten Textboxen mit horizontalem Scrollbalken bei langem Code. Die Darstellung von Bilder ist mit der Standardsyntax von Markdown problemlos auch mit relativen Pfaden möglich. In diesen Punkten schneidet das Plugin deutlich besser ab.
 

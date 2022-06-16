@@ -1511,7 +1511,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Notepad ++</h1>
 <h4 class="author">Christoph Rinne<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></h4>
-<h4 class="date">07. Juni 2022</h4>
+<h4 class="date">16. Juni 2022</h4>
 
 </div>
 
@@ -1637,9 +1637,12 @@ Tabulatoren oder Zeilenumbrüche.</p>
 <h2><span class="header-section-number">2.4</span> Bearbeiten bzw.
 Editieren</h2>
 <p>Zwei Optionen müssen hervorgehoben werden: Suchen &amp; Ersetzen und
-der Spaltenmodus. Weitere, von mir gerne genutzte Funktionalitäten
-(Zeilen sortieren, UPPER CASE, Propper Case, trim, wrap, quote…) bietet
-das Plugin TextFX.</p>
+der Spaltenmodus. Weitere, von mir gerne genutzte Funktionalitäten, z.B.
+<strong>Zeilen sortieren</strong>, <strong>UPPER CASE</strong>, Propper
+Case etc., finden Sie hier unter
+<strong>[Groß-/Kleinschreibung]</strong> und
+<strong>[Zeilenoperationen]</strong>. Das früher genannte Plugin TextFX
+ist nur für 32-bit verfügbar.</p>
 <p>Der <strong>[Spaltenmodus]</strong> erlaubt das Markieren und
 demzufolge Kopieren, Ausschneiden und Einfügen von Spalten. Es
 funktioniert mit <strong>&lt;alt&gt;</strong> +
@@ -1656,8 +1659,8 @@ nichts.</p>
 </div>
 <p>Neben allgemein üblichen Parametern die in diesem Fenster ausgewählt
 werden können, sind es die Optionen: Normal, Erweitert (\n, \r, \t …)
-und Reguläre Ausdrücke die hervorzuheben sind. “Normal” entspricht einer
-allgemeinen Erwartung.</p>
+und Reguläre Ausdrücke, die hervorzuheben sind. “Normal” entspricht
+einer allgemeinen Erwartung.</p>
 <div id="reguläre-ausdrücke" class="section level3" number="2.4.1">
 <h3><span class="header-section-number">2.4.1</span> Reguläre
 Ausdrücke</h3>
@@ -1720,14 +1723,16 @@ einfach.</p>
 genau 5 Nachkommastellen haben. Wir müssen also drei Suchelemente
 definieren:</p>
 <ol style="list-style-type: decimal">
-<li>Suche genau 5 Ziffern nach einem Punkt: .[0-9]{5}</li>
+<li>Suche genau 5 Ziffern nach einem Punkt: \.[0-9]{5}<br />
+(Der “.” bedeutet regulär irgend ein Zeichen, durch den “\” wird er zum
+Zeichen “.”)</li>
 <li>Suche beliebig viele Ziffern: [0-9]*</li>
 <li>Suche ein Leerzeichen oder schließende Klammer: [ )]</li>
 </ol>
 <p>Nur der mittlere Block soll ersetzt werden. Das mit den 3 Elementen
 wird mit Klammern () einfacher lesbar und! maschinenlesbar
 gegliedert:</p>
-<p><code>(.[0-9]{5})([0-9]*)([ )])</code></p>
+<p><code>(\.[0-9]{5})([0-9]*)([ )])</code></p>
 <p>Auf diese Elemente können wir uns nun beziehen und diese getrennt
 behandeln: <code>\1\3</code>. Übersetzt steht da: das 1. Element
 behalten, das 2. Element fällt weg, das 3. Element behalten. Fertig.</p>
@@ -1777,18 +1782,11 @@ umfangreichen <a href="https://github.com/Predelnik/DSpellCheck/wiki/Manual">Dok
 Es gibt ein weiteres Plugin Spell-Checker, der Funktionsumfang scheint
 aber deutlich geringer.</p>
 </div>
-<div id="npptextfx.dll" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> NppTextFX.dll</h2>
-<p>Das Plugin trägt sich als eigenständiger Menüpunkt ein, das ist bei
-dem Umfang an Funktionen auch geboten. Sehr stark vertreten sind diverse
-Ersetzungsfunktionen, die u.a. Artefakte von Auszeichnungssprachen (z.B.
-HTML) bereinigt. Ich nutze zwei Funktionsbereiche sehr häufig:</p>
-<ol style="list-style-type: decimal">
-<li>Unter <em>TextFX Characters</em>: UPPER CASE, lower case, Propper
-Case und Sentance case.</li>
-<li>Unter <em>TextFX Tools</em>: Sort… für das Sortieren von Zeilen in
-einem markierten Bereich.</li>
-</ol>
+<div id="textfx.dll" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> TextFX.dll</h2>
+<p>Diese Plugin steht leider nur für die 32-bit-Version von NPP zur
+Verfügung. Einige der Optionen finden Sie unter
+<strong>[Bearbeiten]</strong>.</p>
 </div>
 <div id="markdownviewer-und-markdownpanel" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> MarkdownViewer++ und
@@ -1900,8 +1898,8 @@ werden. Dies bietet zugleich auch mehr Optionen:</p>
 <p>Leider entsteht dann eine missliche Abhängigkeit vom Betriebssystem
 (\ statt /).</p>
 </div>
-<div id="nppmarkdownpanel" class="section level2" number="3.6">
-<h2><span class="header-section-number">3.6</span> NPPMarkdownPanel</h2>
+<div id="markdownpanel" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> MarkdownPanel</h2>
 <p>Auch dieses Plugin öffnet ein zweites Fenster, in dem die Umsetzung
 der Auszeichnung direkt visualisiert wird. Der Export in PDF erfolgt
 über “<em>Druckvorschau</em>” im Kontextmenü (rechte Mausklick) der
