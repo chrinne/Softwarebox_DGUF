@@ -14,16 +14,16 @@ header-includes:
   \renewcommand{\tablename}{Tab.}
 papersize: a4
 output:
-  html_document:
-    toc: true
-    toc_depth: 2
-    toc_float: true
-    number_sections: true
   pdf_document:
     number_sections: true
     toc: true
     toc_depth: 2
     df_print: kable
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -43,7 +43,7 @@ Studierende der Ur- und Frühgeschichte oder anderer archäologischer Fächer so
 - Informieren Sie sich gleich zu Studienbeginn, welche Softwareangebote an Ihrer Hochschule bestehen. Ihre Fachschaft oder die Website des Rechenzentrums Ihrer Hochschule gibt Ihnen hierzu Auskunft. Diese Angebote sind oft kostenlos (z. B. Virenschutz) oder kostengünstig, und vor allem gibt es hierzu in der Regel auch Beratung und Schulung am jeweiligen Rechenzentrum.
 - Beachten Sie die Empfehlungen Ihrer Dozenten, denn die von ihnen genannte Software wird in den Lehrveranstaltungen sicher auch eingesetzt.
 - Die Entwicklung von Hard- und Software ist hochdynamisch. Aus diesem Grund gehen wir hier nicht in Details, sondern möchten Sie auffordern, am Ball zu bleiben und sich mit anderen auszutauschen. 
-- Für viele Programme gibt es neben informativen Webseiten auch günstige und gut geschriebene [Handbücher vom Regionalen Rechenzentrum Hannover (RRZN)](https://www.luis.uni-hannover.de/buecher.html){target="_blank"}. Sie werden an vielen Universitätsbibliotheken auch direkt verkauft. Zudem möchten wir auf das Angebot von [Rheinwerk (Galileo) Openbook](https://www.rheinwerk-verlag.de/openbook/){target="_blank"} verweisen.
+- Für viele Programme gibt es neben informativen Webseiten auch günstige und gut geschriebene [Handbücher vom Regionalen Rechenzentrum Hannover (RRZN)](https://www.luis.uni-hannover.de/buecher.html){target="_blank"}. Diese werden **ausschließlich** über zahlreiche (Universitäten)[https://www.luis.uni-hannover.de/de/services/kurse-beratung-und-support/handbuecher/verkaufsstellen] verkauft. Zudem möchten wir auf das Angebot von [Rheinwerk (Galileo) Openbook](https://www.rheinwerk-verlag.de/openbook/){target="_blank"} verweisen.
 - Software ist ein Produkt geistiger Leistung. Im Zuge einer guten Wissenschaft bezahlen wir kostenpflichtige Produkte und wir verweisen, wenn es angebracht ist, auf die von uns genutzte Software.
 
 Am Anfang stehen allgemeinen Informationen zur Hardware (Kap. 1) und zu grundlegender Software für die Büro- bzw. Studienarbeit (Kap. 2), als- einem „Starter-Set“. Die im Kapitel 3 „Erweitert“ genannte Software ist sicher noch von allgemeinem Interesse im Verlauf des Studiums, während der Bereich „Fortgeschritten“ (Kap. 4) sich bereits auf den deutlich fortgeschrittenen und zunehmend spezialisierten Nutzungsumfang im Verlauf Ihres Studiums bezieht. Unter Spezialauf­gaben (Kap. 5) wird interessante Software für sehr spezielle Aufgaben oder Probleme genannt, und der letzte Abschnitt (Kap. 6) gilt allgemein interessanter Software (Apps) für das Mobiltelefon. Die eigentlichen Programme liegen konsequent auf der 4. Gliederungsebene, das bedingt bisweilen unschöne Kapitelnummern mit bei fehlenden Zwischenüberschriften. 
@@ -63,11 +63,11 @@ Sie haben sich für ein Studium entschieden, bei dem die Erstellung längerer Te
 
 Wenn Sie den Computer ausschließlich für Ihr Studium einsetzen, dann reicht ein normaler Bürocomputer. Die nachfolgend aufgeführte Software für diverse Aufgaben ist auf diesen ohne Probleme zu verwenden. Wenn es unbedingt etwas mehr sein soll, dann investieren Sie in Arbeitsspeicher (RAM), manche Software kann hier fast nicht genug haben. Moderne Festplatten werden Sie mit Ihren Hausarbeiten nicht füllen, wohl aber mit Programmen, Filmen, Bildern und Musik. Ein schneller Prozessor (hohe Taktrate) braucht viel Energie, muss stärker gekühlt werden (Lärm und Energie) und ist für viele Büroanwendungen nicht nötig. Gerade bei Laptops wird deshalb zugunsten der Akkulaufzeit auf „langsamere“ Prozessoren gesetzt. Wenn Sie etwas mehr Geld ausgeben können und Geschwindigkeit kaufen wollen, könnten Sie statt über mehr Prozessorleistung besser über eine SSD-Festplatte nachdenken, auf der Sie das Betriebssystem und die Programme installieren, während Ihre Daten auf einer zweiten, gewöhnlichen Harddisk lagern.
 
-Bedenkenswert ist auch die Größe des Monitors, sogenannte Widescreen-Formate (16:9, 16:10 oder 21:9) sind heute Standard und 24-29 Zoll sind oft nicht teurer als 21 Zoll. Bei 16:9 sollten 1920 x 1080 Pixel (Full-HD) möglich sein. Bei der Arbeit mit diversen Programmfenstern steigt der Platzbedarf auf dem Bildschirm und es ist vorteilhaft, wenn dann ein zweiter Monitor angeschlossen werden kann. Für Notebooks ist ein lokaler Bildschirm am Schreibtisch für ein entspanntes Arbeiten zu empfehlen. Achten Sie deshalb in beiden Fällen auf die unterschiedlichen Anschlüsse (HDMI, DVI (rückläufig), VGA [veralter Standard]).
+Bedenkenswert ist auch die Größe des Monitors, sogenannte Widescreen-Formate (16:9, 16:10 oder 21:9) sind heute Standard und 24-29 Zoll sind oft nicht teurer als 21 Zoll. Bei 16:9 sollten 1920 x 1080 Pixel (Full-HD) möglich sein. Bei der Arbeit mit diversen Programmfenstern steigt der Platzbedarf auf dem Bildschirm und es ist vorteilhaft, wenn dann ein zweiter Monitor angeschlossen werden kann. Für Notebooks ist ein lokaler Bildschirm am Schreibtisch für ein entspanntes Arbeiten zu empfehlen. Achten Sie deshalb in beiden Fällen auf die unterschiedlichen Anschlüsse (USB-C, Display-Port, HDMI, DVI (rückläufig), VGA [veralter Standard]).
 
 ### Kann ich meinen Computer aufrüsten?
 
-In der Regel ja. Für mehr Festplattenspeicher (HD) ist die einfachste Ergänzung eine externe Festplatte. Unproblematisch ist meist auch der Arbeitsspeicher (RAM), und gerade hier ist der Anspruch von aktueller Software besonders gestiegen von 2-4 GB auf heute 8 GB und mehr. Hierfür muss das Gerät geöffnet werden und die Speichereinheiten müssen passen, ansonsten ist dieses Nachrüsten eher unkompliziert. Lassen Sie sich im Zweifel hierbei aber beraten und lieber helfen.
+In der Regel ja. Für mehr Festplattenspeicher (HD) ist die einfachste Ergänzung eine externe Festplatte. Unproblematisch ist meist auch der Arbeitsspeicher (RAM), und gerade hier ist der Anspruch von aktueller Software besonders gestiegen von 8 GB auf heute 16 GB und mehr. Hierfür muss das Gerät geöffnet werden und die Speichereinheiten müssen passen, ansonsten ist dieses Nachrüsten eher unkompliziert. Lassen Sie sich im Zweifel hierbei aber beraten und lieber helfen.
 
 ### Desktop, Laptop oder Tablet?
 
@@ -175,7 +175,7 @@ Nicht alle Browser können oder wollen alles unterstützen, z.B. Skype & Firefox
 
 #### Mozilla Firefox \newline
 
-Firefox wird wegen seiner zahlreichen Add-ons erwähnt, z. B. für KeePass (s. Kap. [Spezialaufgaben - Verschlüsselung](#SpezVerschl)) und Adblock Plus, das unliebsame Werbebanner unterdrückt.
+Firefox wird wegen seiner zahlreichen Add-ons erwähnt, z. B. für KeePass (s. Kap. [Spezialaufgaben - Verschlüsselung](#SpezVerschl)) oder des "privaten Fensters".
 
 - Offizielle Website: [https://www.mozilla.org](https://www.mozilla.org){target=_blank}
 
@@ -183,15 +183,10 @@ Firefox wird wegen seiner zahlreichen Add-ons erwähnt, z. B. für KeePass (s. K
 
 E-Mails können nicht nur im Browser geschrieben und gelesen werden, sondern auch lokal. Dadurch liegt auch das eigene Adressbuch nicht notwendigerweise im Internet und ist somit nicht unmittelbar angreifbar oder abgreifbar.
 
-#### Thunderbird (und Lightning) \newline
+#### Thunderbird \newline
 Eine einfach zu bedienende, aber umfangreiche und mit vielen Addons erweiterbare E-Mail-Anwendung. Die einzelnen E-Mail-Konten können jeweils als IMAP- oder POP3-Konto eingerichtet werden. Bei IMAP werden nur die grundlegenden Informationen des „mail headers“ heruntergeladen und lokal vorgehalten; die E-Mail verbleibt auf dem Server, so dass der Zugriff auf die E-Mails von unterschiedlichen Standorten oder auch im Browser möglich ist. Bei POP3 wird die gesamte E-Mail auf den lokalen Rechner heruntergeladen und je nach Einstellung vom Mailserver gelöscht. Dies spart Speicher auf dem Server und die Mails können dort nicht abgegriffen werden, die E-Mails sind dann aber nur auf einem Endgerät gespeichert.
 
 - Offizielle Website: [https://www.mozilla.org/de/thunderbird/](https://www.mozilla.org/de/thunderbird/){target=_blank}
-
-#### Lightning \newline
-Der Kalender und Aufgabenplaner ist inzwischen standardmäßig integriert, wählen Sie dazu nach der Installation und der Einrichtung des Mailkontos im Startfenster die Option „Kalender erstellen“. Sollte ein Register „Kalender“ nicht angezeigt werden ergänzen Sie diese Einstellung über die Einstellungen für das Menü am rechten Menürand.
-
-- Offizielle Website: [https://addons.mozilla.org/de/thunderbird/addon/lightning/](https://addons.mozilla.org/de/thunderbird/addon/lightning/){target=_blank}
 
 #### CardBook \newline
 Dieses Add-on kann neben dem integrierten Adressbuch installiert werden. Es bietet zahlreiche weitere Funktionen an, z.B. die Suche nach doppelten Einträgen und geführte Zusammenführung. Zudem lassen sich gut auch externe Adressbücher in diversen Formaten einbinden (z.B. *.vcf). Bei entsprechend umfangreichen Addressenlisten und Anforderungen ist es eine echte Alternative.
