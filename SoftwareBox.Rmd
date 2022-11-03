@@ -14,16 +14,16 @@ header-includes:
   \renewcommand{\tablename}{Tab.}
 papersize: a4
 output:
-  pdf_document:
-    number_sections: true
-    toc: true
-    toc_depth: 2
-    df_print: kable
   html_document:
     toc: true
     toc_depth: 2
     toc_float: true
     number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -299,6 +299,12 @@ PDF ist ein Dateiformat für elektronische Dokumente (mehrheitlich Text und Bild
 
 Das Format PDF wurde von Adobe entwickelt, viele Programme schreiben und lesen inzwischen PDF, z.B. LO Writer oder MS Word, und Windows bietet vom System aus einen PDF-Drucker an.
 
+#### PDF Markierungen & Kommentare \newline
+
+In PDF können einzelne Textabschnitte farblich markiert und mit Kommentaren versehen werden. Dies ist in diversen Programmen möglich (u.a. [Adobe Acrobat Reader](https://get.adobe.com/de/reader/), [Foxit Reader](https://www.foxit.com/pdf-reader/)). Die Markierungen sind in der Seitenvorschau leicht zu finden und in der Liste der Kommentare kann leicht navigiert und nach Begriffen gesucht werden. Es ist eine ausgezeichnete Möglichkeit, wichtige Aussagen oder Passagen leicht wiederzufinden. Diese Kommentare können Sie u.a. zusammenfassen und mit den korrespondierenden Seiten als neues PDF speichern oder auch nur exportieren (fdf-Datei).
+
+Ein besonderer Mehrwert entsteht, wenn Sie diese Kommentare in Ihrer Literaturdatenbank, z.B. in Zotero (s.u.), in Anmerkungen und Einträge dieser Datenbank überführen. Dann können Sie in dieser Datenbank direkt in allen Notizen Ihrer hier hinterlegten PDF recherchieren.
+
 #### PDF24 Creator (Windows) \newline
 In PDF-Dateien aus jedem installierten Programm drucken, einzelne PDF-Dateien zusammenführen, einzelne Seiten entnehmen oder verschieben, Metadaten ergänzen und vieles mehr. Die Möglichkeiten gehen weit über den Export in PDF oder die Funktionalität des Adobe Readers hinaus. **Wichtig: Sie können die Abfrage zu einem Account überspringen!**
 
@@ -386,7 +392,7 @@ Diese Software ist viel mehr als ein Bildbetrachter und in vielen Bereichen nüt
 Programme zum Verwalten und Betrachten von Bildern. Dazu bieten sie zahlreiche weitere Optionen, von denen die Bearbeitung der IPTC-Daten einschließlich Im- und Export für ganze Bildsammlungen hervorzuheben sind. IPTC-Daten sind Metadaten zum Copyright, der Herkunft und dem Bildinhalt. Diese Daten sind von exorbitanter Bedeutung für die Recherche innerhalb einer umfangreichen Bildersammlung.
 
 - Offizielle Website: [https://www.xnview.con/de](https://www.xnview.con/de){target=_blank}
-- Einführung zu Metadaten von Bildern (IPTC, EXIF) und in das Schreiben von Metadaten für ganze Fotolisten aus MS Excel oder LO Calc mit dem Programm exiv2 auf GitHub [C. Rinne, Metadata und Bilder (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/ImageMetadata/ImageMetadata.pdf).{target=blank}
+- Einführung zu Metadaten von Bildern (IPTC, EXIF) und in das Schreiben von Metadaten für ganze Fotolisten aus MS Excel oder LO Calc mit dem Programm exiv2 auf GitHub [C. Rinne, Metadata und Bilder (PDF)](https://github.com/chrinne/Softwarebox_DGUF/raw/master/software/ImageMetadata/ImageMetadata.pdf).{target=blank}
 
 # Erweitert
 
@@ -420,7 +426,7 @@ Oft müssen einfache Textdateien editiert werden, sie wollen z. B. in einer Date
 Ein potenter Texteditor, bei dem kein Wunsch offen bleibt: Zeilenumbrüche oder Tabulatoren suchen und ersetzen (auch reguläre Ausdrücke), Zeilen sortieren, Spalten und Blöcke ausschneiden, Konvertierung des Zeichensatzes (ASCII, ANSI, UTF-8), Markdown-Editor mit Exportfunktionen oder auch komplexe Programmierung mit Syntax-Highlighting für viele Sprachen (u. a. HTML, SQL, R).
 
 - Offizielle Website: [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/){target=_blank}
-- Handreichung zu Notepad++ mit Exkursen zu regulären Ausdrücken (RegExp), Markdown und weiteren nützlichen Erweiterungen auf GitHub: [C. Rinne: Notepad++ ](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/NotepadPlusPlus/notepadplusplus.pdf){target=blank}.
+- Handreichung zu Notepad++ mit Exkursen zu regulären Ausdrücken (RegExp), Markdown und weiteren nützlichen Erweiterungen auf GitHub: [C. Rinne: Notepad++ ](https://github.com/chrinne/Softwarebox_DGUF/raw/master/software/NotepadPlusPlus/notepadplusplus.pdf){target=blank}.
 
 #### PSPad \newline 
 Dieser Editor spricht eher Programmierer als Zielgruppe an, er bietet gegenüber Notepad++ zusätzlich u. a. ein Browserfenster einschließlich ftp-Verbindungen und einer Logdatei.
@@ -442,7 +448,7 @@ Eine Literaturdatenbank ist ein Must-have für effizientes wissenschaftliches Ar
 Diese Software ist in der aktuellen Version inzwischen Standalone und kein Addon mehr für den Browser Firefox von Mozilla. Es bietet alle oben genannten Funktionen. Eine kompakte Einführung (*nutshell* oder *cheat sheet*) finden Sie bei der [UFG Kiel](https://www.ufg.uni-kiel.de/de/professuren-bereiche/ai/archinf-material/tpc-7-1-zotero-in-a-nutshell){target=_blank}.
 
 - Offizielle Website: [https://www.zotero.org/](https://www.zotero.org/){target=_blank}
-- Einführung, Zitierstil und weitere Infos auf GitHub: [C. Rinne, Zotero (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/zotero/zotero.pdf){target=_blank}
+- Einführung, Zitierstil und weitere Infos auf GitHub: [C. Rinne, Zotero (PDF)](https://github.com/chrinne/Softwarebox_DGUF/raw/master/software/zotero/zotero.pdf){target=_blank}
 
 #### Citavi (Windows, Mac) \newline 
 Eine Literaturdatenbank, die an einigen Universitäten für Studierende vergünstigt oder auch kostenfrei angeboten wird. Citavi Free ist kostenlos, es bietet alle Profi-Funktionen der anderen Citavi-Editionen, die Titelzahl ist aber auf nur 100 begrenzt.
@@ -499,7 +505,7 @@ Die ganze Welt am Schreibtisch. In den Satelliten- und Luftbildern lassen sich n
 |KML ist eine objektorientierte Programmiersprache basierend auf XML und kann im Editor, z.B. Notepad++ visualisiert werden. Es kann sich lohnen, die zugrunde liegende Syntax in den Grundzügen zu verstehen.|
 |KMZ-Dateien sind gezippte (komprimierte) KML-Dateien einschließlich ergänzender, zugehöriger Objekte.|
 
-Einen knappen Einstieg zu KML, GPS und zugehörigen Datenformaten auf GitHUb bietet; [C. Rinne: KML (GPS), XML & Auszeichnungssprachen (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/KML/kml.pdf){target=blank}
+Einen knappen Einstieg zu KML, GPS und zugehörigen Datenformaten auf GitHUb bietet; [C. Rinne: KML (GPS), XML & Auszeichnungssprachen (PDF)](https://github.com/chrinne/Softwarebox_DGUF/raw/master/software/KML/kml.pdf){target=blank}
 
 #### Diercke Globus Online (Windows, Mac) \newline 
 Sie suchen eine physische Karte einer Region für die Einführung in Ihr Thema und wollen nicht einen *screenshot* von Google Earth oder Google Maps verwenden? Die Demoversion von Diercke Globus Online ist eine perfekte Alternative.
@@ -733,7 +739,7 @@ Eine extrem schlankes und weit verbreitetes Datenbanksystem auf SQL-Basis (struc
 - Offizielle Website: [https://sqlite.org/](https://sqlite.org/){target=_blank}
 - GUI für SQLite: DB Browser for SQLite: ([https://sqlitebrowser.org/)](https://sqlitebrowser.org/){target=_blank}
 - ODBC-Schnittstelle: [https://www.ch-werner.de/sqliteodbc/](https://www.ch-werner.de/sqliteodbc/){target=_blank}
-- Handreichung zu SQL mit SQLite auf GitHub [C. Rinne, Datenbank & SQLite (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/Daten_SQLite/Datenbank_SQLite.pdf){target=blank}. 
+- Handreichung zu SQL mit SQLite auf GitHub [C. Rinne, Datenbank & SQLite (PDF)](https://github.com/chrinne/Softwarebox_DGUF/raw/master/software/Daten_SQLite/Datenbank_SQLite.pdf){target=blank}. 
 - Kurze Tutorials auf je einem A4-Blatt zum SQLiteManager und der Anbindung an MS Access finden Sie bei der Archäoinformatik in Kiel unter [Tutorials](https://www.ufg.uni-kiel.de/de/professuren-bereiche/archaeoinformatik){target=_blank}.
 
 #### BaseX
@@ -742,7 +748,7 @@ BaseX ist ein plattformunabhängiges und *open-source* Programm zur Arbeit mit X
 Mit XPath und XQuery (*FLWOR*) können hier mit SQL vergleichbare Abfragen ausgeführt werden. 
 
 - Offizielle Website: [https://basex.org/](https://basex.org/){target=blank}
-- Knappe Darstellung zu XML-Datenbanken in der Archäologie und BaseX [C. Rinne, Daten & XML (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/Daten_XML/Daten_XML.pdf){target=blank}
+- Knappe Darstellung zu XML-Datenbanken in der Archäologie und BaseX [C. Rinne, Daten & XML (PDF)](https://github.com/chrinne/Softwarebox_DGUF/raw/master/software/Daten_XML/Daten_XML.pdf){target=blank}
 
 #### Microsoft Access (Windows) \newline 
 Ein umfassendes Datenbanksystem im Desktopbereich, proprietär. Zahlreiche Vorlagen und Assistenten für Formulare und Berichte helfen bei der Bewältigung diverser Aufgaben. Die einfache Handhabung verleitet dazu, die Anforderungen bei der Konzeption von Datenbanken zu unterschätzen. MS Access ist Teil vom MS Office Professional.
@@ -838,7 +844,7 @@ GitHub und GitLab sind *a priori* Plattformen für Softwareentwicklung, können 
 - Offizielle Website: [https://about.gitlab.com/](https://about.gitlab.com/){target=_blank}
 - Einstiegstutorials bei GitHub [https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/){target=_blank}
 - Ein Intro bei YouTube: [https://www.youtube.com/watch?v=0fKg7e37bQE](https://www.youtube.com/watch?v=0fKg7e37bQE){target=_blank}
-- Hinweise zum Thema und Handreichung für den Einstieg: [C. Rinne, Git & Versionierung (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/Git_versioning/Git_versioning.pdf){target=blank}.
+- Hinweise zum Thema und Handreichung für den Einstieg: [C. Rinne, Git & Versionierung (PDF)](https://github.com/chrinne/Softwarebox_DGUF/raw/master/software/Git_versioning/Git_versioning.pdf){target=blank}.
 
 GitHub/GitLab kann unterschiedlich genutzt werden, hier nachfolgend zwei Beispiele aus der Archäologie in Deutschland:
 
@@ -948,7 +954,7 @@ Die Installationsanleitung für Windows-Systeme empfiehlt die Installation in ei
 
 - Quelle: [https://imagej.net](https://imagej.net)
 - Informationen: [ttps://imagej.net/Getting_started](https://imagej.net/Getting_started) 
-- Handreichung mit einem Beispiel aus der Archäologie: [C. Rinne, ImageJ (PDF)](https://github.com/chrinne/Softwarebox_DGUF/blob/master/software/imagej/imagej.pdf){target=blank}
+- Handreichung mit einem Beispiel aus der Archäologie: [C. Rinne, ImageJ (PDF)](https://github.com/chrinne/Softwarebox_DGUF/raw/master/software/imagej/imagej.pdf){target=blank}
 
 #### ImageMagic (Windows, Mac, Linux) \newline 
 Grafikprogramm mit umfangreichen Optionen auf der Befehlszeile, erlaubt u. a. das Auswerten von Farbanteilen oder der Koordinaten mit bestimmten Farbwerten. Somit sind viele automatisierte Prozesse zur Metrik von eingescannten Objektzeichnungen und statistische Analysen möglich.
