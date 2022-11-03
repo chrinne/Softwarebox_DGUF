@@ -118,6 +118,16 @@ Sie können auf Ihre Literaturdatenbank weltweit zugreifen.
 
 Unter "Settings > Privacy" können Sie Ihre Literaturdatenbank veröffentlichen. Davon getrennt kann dies auch für angehängte Notizen eingestellt werden (Vorsicht bei unverblümten Meinungsäußerungen in der Zusammenfassung oder den Notizen). Sie können das Indexieren Ihres Profils durch Suchmaschinen verhindern.
 
+## Arbeiten mit PDF und Kommentaren
+
+Mit der Version 6 verfügt Zotero über einen PDF-Reader und Editor für Kommentare [https://www.zotero.org/support/pdf_reader](https://www.zotero.org/support/pdf_reader). Das eröffnet einige sehr interessante Optionen, die wichtigste ist: 
+
+Markierungen und Kommentare in einem PDF können in Notizen in der Zoterodatenbank überführt, hier recherchiert und für die Navigation genutzt werden. **Wichtig**: Wenn Sie in Zotero markieren und kommentieren ist dies nur in Zotero vorhanden. Öffnen Sie lieber das PDF in Ihrem PDF-Reader und arbeiten Sie dort. Überführen Sie nachträglich alle Kommentare in die Literaturdatenbank (s.u.)
+
+Mit einem Doppelklick auf ein PDF oder "PDF öffnen" im Kontextmenü dazu wird das PDF in einem neuen Reiter von Zotero geöffnet. Links haben Sie wahlweise eine Seitenvorschau, eine Kommentarliste oder die Gliederung. Rechts können Sie mit den Icon oben rechts die Felder der Datenbank oder aber die Notizen zu diesem Dokument alle anderen Notizen einblenden. Die Notizen sind mit "Anmerkungen" und Datum als auch Uhrzeit versehen. Danach folgen 1. der markierte Abschnitt, 2. in Klammern das Zitat und 3. Ihr Kommentar. Klicken Sie links in der Liste der Notizen auf eine Notiz, wird diese vollständig angezeit, Sie können alles gut lesen und mit einem Klick auf einen Eintrag zu dieser Stelle im Dokument springen.  Zudem ergeben sich über die zugehörige Iconleiste zahlreiche weitere Optionen. Mit [...] > "In Bibliothek anzeigen" wird in der Liste Ihrer Zitate zu dem in der Liste der Notizen gewählten Eintrag gesprungen.
+
+Um Markierungen und Kommentare aus einem PDF in eine Notiz bei Zotero zu überführen öffnen Sie das PDF in Zotero. Wählen Sie rechts die Ansicht der Liste der vorhandenen Zitate. Klicken Sie oben bei "Eintragsnotizen" auf das [+]und wählen Sie "Eintragsnotizen aus Anmerkungen hinzufügen".
+
 ## Interessante Plugins 
 
 Zotero kann mit Plugins von Dritten an persönliche Bedürfnisse angepasst werden. Einige Beispiele: 
