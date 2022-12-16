@@ -49,7 +49,7 @@ require (RSQLite) || install.packages("RSQLite")
 library(RSQLite)
 ```
 
-Dann wird eine neue SQLite Datenbank im Arbeitsspeicher angelegt und zugleich eine Verbindung "db01" hergestellt. In einem anderen Programm müssten Sie ebenfalls eine neue Datenbank erstellen, die dann auch automatisch geöffnet würde. Um in R auf eine vorhandene Datenbank zuzugreifen, müssen Sie 'dbname = "<Dateiname>"' schreiben.
+Dann wird eine neue SQLite Datenbank im Arbeitsspeicher angelegt und zugleich eine Verbindung "db01" hergestellt. In einem anderen Programm müssten Sie ebenfalls eine neue Datenbank erstellen, die dann auch automatisch geöffnet würde. Um in R auf eine vorhandene Datenbank zuzugreifen, müssen Sie 'dbname = "\<Dateiname>"' schreiben.
 
 ```{r Datenbank im Arbeitsspeicher anlegen und Verbindung erstellen, echo=TRUE}
 db01<-dbConnect(RSQLite::SQLite(), dbname = ":memory:")
@@ -99,7 +99,7 @@ VALUES
 
 Die vorangehende Syntax nennt erst die Tabelle und die zu belegenden Felder (Attribute des Befundes), danach folgen eingeleitet durch *values* die Daten (*recordset*). Alle Werte werden duch "," getrennt, Text muss mit Anführungszeichen (" oder ') versehen werden und die Werte einer Datenzeile (*record*) stehen jeweils in Klammern. Beachten Sie bitte, dass die Anzahl und die Reihenfolge der Attribute und nachfolgend aufgeführten Werte sich entsprechen müssen.
 
-Die zentrale Syntax von *INSERT*ist also einfach:
+Die zentrale Syntax von *INSERT* ist also einfach:
 
 ```{}
 INSERT INTO table-name (attribute1, attr..) VALUES (value1, val...);
@@ -128,7 +128,7 @@ VALUES
 
 ## Daten abfragen : SELECT
 
-*SELECT* ist eine der wichtigsten Anweisungen und es kann alles abgefragt werden, was existiert. Wie zuvor erwähnt, steht Text in Anführungszeichen, beachten Sie also das Ergebnis der folgenden Abfrage.
+*SELECT* ist eine der wichtigsten Anweisungen und es kann alles abgefragt werden, was existiert. Wie zuvor erwähnt steht Text in Anführungszeichen, beachten Sie also das Ergebnis der folgenden Abfrage.
 
 ```{sql Einfache SELECT-Anweisung, connection=db01}
 SELECT 'col 1', 2, '3', 1+3, pi() AS magic;
@@ -142,7 +142,7 @@ SELECT * FROM tbl_features;
 
 ### Filtern
 
-Natürlich gibt es zahlreiche Möglichkeiten, die Abfrage anzupassen, um die  gewünschte Information zu erhalten. Das ist vor allem die Bedingung mit *WHERE*. Für Zahlen können folgende Operatoren verwendet werden: <, >, = , >=, <=, <>. 
+Natürlich gibt es zahlreiche Möglichkeiten die Abfrage anzupassen, um die  gewünschte Information zu erhalten. Das ist vor allem die Bedingung mit *WHERE*. Für Zahlen können folgende Operatoren verwendet werden: <, >, = , >=, <=, <>. 
 
 ```{sql Abfrage für Zahlenfelder, connection=db01}
 SELECT feature_nr, f_type, f_dating FROM tbl_features
@@ -171,7 +171,7 @@ Sie wollen sich einen Überblick verschaffen: Wieviele Befunde habe ich je Epoch
 
 - GROUP BY : Aggregiert den ausgewählten (FROM) Datenbestand (*recordset*) nach den genannten Attributen.
 - count() : Die Funktion liefert die Anzahl der aggregierten Datenzeilen.
-- group_concat() : Die Funktion ist SQLite spezifisch und liefert die verketten Werte mit dem angegebenen Trennzeichen.
+- group_concat() : Die Funktion ist SQLite spezifisch und liefert die verketteten Werte mit dem angegebenen Trennzeichen.
 - AS : Jeder Rückgabewert kann mit einem Etikett (*label*) versehen werden (s.o.), statt der Anweisung nach *SELECT* wird dann dieses als Spaltenüberschrift oder auch für Verweise verwendet. Achten Sie auf die Anführungszeichen wegen "." und "-" in "Bef.-Nr.". 
 
 ```{sql Gruppierte Abfrage nach der Datierung, connection=db01}
@@ -212,9 +212,11 @@ Für die Dublette nutzen wir die oben erstellte Abfrage nach den Dubletten als F
 
 ```{sql Abfrage der doppelten Befundnummern, connection=db01}
 SELECT * FROM tbl_features
-WHERE f_name IN (SELECT f_name FROM tbl_features
-GROUP BY f_name
-HAVING count(feature_nr) > 1);
+WHERE f_name IN 
+  (SELECT f_name FROM tbl_features
+  GROUP BY f_name
+  HAVING count(feature_nr) > 1)
+;
 ```
 
 ```{sql Doppelten Befundnummern korrigieren, connection=db01}
@@ -238,14 +240,14 @@ Wie oben erwähnt: die Strukturierung der Daten in diversen Tabellen und deren A
 Einige Hinweise:
 
 - Tabellennamen mit einem Präfix ("tbl_") sind in Datenbanken mit vielen anderen Tabellen, z.B. in SpatiaLite, schneller zu finden.
-- Bei allen Namen (Tabellen, Attribute etc) sollten Sie keine Leerzeichen oder Sonderzeichen wie Umlaute verwenden oder Zahlen an den Anfang setzen.
-- Namen sollten möglichst kurz, aber aussagekräftig und dem Inhalt angemessen sein. Seien Sie stringent und konsequent in der Namensgebung, z.B. stets im Plural (tbl_features).
+- Bei allen Namen (Tabellen, Attribute etc) sollten Sie keine Leerzeichen, ".", "-" oder Sonderzeichen wie Umlaute verwenden oder Zahlen an den Anfang setzen.
+- Namen sollten möglichst kurz, aber aussagekräftig und dem Inhalt angemessen sein. Seien Sie stringent bei der Schreibweise, z.B. Kleinbuchstaben, und konsequent in der Namensgebung, z.B. stets im Plural (tbl_features).
 - Nutzen Sie keine belegten Namen, z.B. für Funktionen: sum(),count(), pi() etc. Bei eingedeutschten Funktionen gilt das auch für summe() oder anzahl().  
 - Testen Sie Ihre Datenstruktur mit wenigen Datensätzen, bevor Sie das große Werk starten. 
 
 ## Tabelle erstellen
 
-Die folgende Tabelle soll Informationen zu Fundkontexten (Fundzettel) beinhalten. Hierbei ist wichtig, dass ein Fund nicht ohne Befund existieren soll und deshalb auf diesen als Fremdschlüssel verweist. Mit *constraint* wird noch ein ein eindeutiger Index für die Kombination von Befundnummer und Fundnummer erstellt. 
+Die folgende Tabelle soll Informationen zu Fundkontexten (Fundzettel) beinhalten. Hierbei ist wichtig, dass ein Fund nicht ohne Befund existieren soll und deshalb auf diesen als Fremdschlüssel verweist. Mit *constraint* wird noch ein eindeutiger Index für die Kombination von Befundnummer und Fundnummer erstellt. 
 
 ```{sql Tabelle für Fundkontexte ggf.löschen, connection=db01}
 DROP TABLE IF EXISTS "tbl_findcontexts";
@@ -266,7 +268,7 @@ CREATE TABLE "tbl_findcontexts" (
 
 Wie oben erwähnt, die grundlegende Syntax ist einfach: 
 ```CREATE TABLE <table name> (<attribute> data type[, <attribute> data type]);``` 
-Der Tabellenname und mindestens ein Attribut mit nachfolgendem Datentyp sind Pflicht. 
+Der Tabellenname und mindestens ein Attribut mit nachfolgendem Datentyp sind Pflicht.
 
 ## Datentypen
 
@@ -282,7 +284,7 @@ select date('now'), date('now','+1 day'), datetime('now'),
 
 Datum und Zeit werden als Text mit definierten Elementen gespeichert (YYYY-MM-DD HH:MM). Das ist im Grunde aber nur eine Repräsentation, denn Sie können mit dem Datum auch rechnen und die Rückgabe von *date()* auch multiplizieren. Die UNIX Zeit sind die Sekunden ab dem 1.1.1970 und das Julianische Datum ist eine Tageszählung seit -4713 (4713 v. Chr.) mit der Uhrzeit in Nachkommastellen.
 
-Datentypen sind in SQLite insgesamt ein sehr eigenes Thema, im Unterschied zu anderen SQL-Systemen werden diese sehr dynamisch in Klassen umgesetzt ([*datatypes*](https://www.sqlite.org/datatype3.html)). In Anlehnung an das Beispiel aus der verlinkten Erklärung am Ende des vorangehenden Satzes folgende Anweisungen. Beachte Sie bitte die Felddefinitionen und das Format der nachfolgend eingefügten Daten.
+Datentypen sind in SQLite insgesamt ein sehr eigenes Thema, im Unterschied zu anderen SQL-Systemen werden diese sehr dynamisch in Klassen umgesetzt ([*datatypes*](https://www.sqlite.org/datatype3.html)). In Anlehnung an das Beispiel aus der verlinkten Erklärung am Ende des vorangehenden Satzes folgende Anweisungen. Beachte Sie bitte die Felddefinitionen und das Format der nachfolgend eingefügten Daten, Sie erkennen es an der automatisch erfolgten Ausrichtung.
 
 ```{sql Tabelle Test zu Datentypen erstellen, connection=db01}
 create table test (i integer, t text, d integer); 
@@ -307,15 +309,20 @@ Den einzelnen Attributen können nach dem Datentyp bzw. der Datenklasse weitere 
 - *UNIQUE* : Die Werte müssen eindeutig sein, wobei auch hier NULL erlaubt ist, es sei denn, Sie ergänzen *NOT NULL*.
 - *NOT NULL* : Ein Wert muss angegeben werden.
 - *DEFAULT* '\<Wert>' : Weist dem Attribut einen Standardwert zu, im Beispiel das Systemdatum.
+- *CHECK*: Prüft eine Bedingung.
 - *AUTOINCREMENT* : Ist möglich, die SQLite-Dokumentation mahnt aber zur Vorsicht: es wird stets erhöht, einmal gelöschte Werte werden nicht erneut vergeben ([SQLite Autoincrement](https://www.sqlite.org/autoinc.html)).  
 
-## Schlüsselfelder und Indices
+## Schlüsselfelder, Indices und Check
 
 Tabellen und deren Attribute können weiteren Einschränkungen (*constraints*) unterliegen. Jede Einschränkung benötigt einen Namen und danach eine Anweisung, z.B. einen Wert zu prüfen. Für die Tabelle der Fundkontexte soll die Kombination aus Befundnummer und Fundnummer eindeutig sein. Die entsprechende Einschränkung lautet ```CONSTRAINT "feature_find" UNIQUE (feature_nr, find_nr)```. Wäre das Attribut findkontext_id nicht schon Primärschlüsselfeld, dann wäre mit ```CONSTRAINT "feature_find" PRIMARY KEY (feature_nr, find_nr)``` oder kurz ```PRIMARY KEY (feature_nr, find_nr)``` etwas sehr Ähnliches erzielt worden.
 
-Indices, auch mit dezidierter Eindeutigkeit, können nach der Tabellendefinition erstellt werden. Im vorgenannten Fall wäre die Anweisung dann: 
+Indices, auch mit dezidierter Eindeutigkeit, können nach der Tabellendefinition erstellt werden. Es dürfen aber keine Datensätze dieser nachträglichen Bedingung widersprechen. Im vorgenannten Fall wäre die Anweisung dann: 
 
 ```CREATE UNIQUE INDEX "feature_find" ON tbl_findcontexts (feature_nr, find_nr);```.
+
+Gesetzt den Fall, Sie wollen wirklich nur Zahlen in einem Feld verwenden Sie die Funktion *typeof()* zur Prüfung des Datentyps und schreiben Folgendes:
+
+```zahlenfeld integer check (typeof(zahlenfeld) = 'integer')``` 
 
 ## Externe Referenz und Fremdschlüssel
 
@@ -490,7 +497,7 @@ Die GUI gliedert sich unterhalb der Menü- und einer ergänzenden Icon-Leiste f�
 
 ### SQL ausführen
 
-In dem Register 'SQL ausführen' können Sie das gesamte SQL-Skript laden. Sie können aber nicht alle Anweisungen auf einmal ausführen, sondern müssen jeden Anweisung einzeln markieren und mit <strg> + <enter> einzeln ausführen.
+In dem Register 'SQL ausführen' können Sie das gesamte SQL-Skript laden. Sie können aber nicht alle Anweisungen auf einmal ausführen, sondern müssen jeden Anweisung einzeln markieren und mit \<strg> + \<enter> einzeln ausführen.
 
 ### Datenbank anhängen
 
@@ -509,7 +516,7 @@ Die SQLite-Datenbank können Sie in diverse Formate exportieren, u.a. SQL: Datei
 - alles exportieren und 
 - altes Schema überschreiben (DROP TABLE, dann CREATE TABLE).
 
-Die exportierte Datei beginnt mit ```BEGIN TRANSACTION;``` und endet mit ```COMMIT```, so dass alle Befehle in einem Vorgang abgearbeitet werden. Wichtig ist die Reihenfolge der abhängigen Tabellen bzw. der externen Referenzen, deren Tabellen zuerst erstellt und gefüllt werden müssen.  Beachten Sie auch, dass keine Kommentare vorhanden sind. Wenn Sie Ihre Datenbak in dieser Form Dritten zur Verfügung stellen, sollten Sie Kommentare auf jeden Fall noch manuell ergänzen.
+Die exportierte Datei beginnt mit ```BEGIN TRANSACTION;``` und endet mit ```COMMIT;```, so dass alle Befehle in einem Vorgang abgearbeitet werden. Wichtig ist die Reihenfolge der abhängigen Tabellen bzw. der externen Referenzen, deren Tabellen zuerst erstellt und gefüllt werden müssen.  Beachten Sie auch, dass keine Kommentare vorhanden sind. Wenn Sie Ihre Datenbak in dieser Form Dritten zur Verfügung stellen, sollten Sie Kommentare auf jeden Fall noch manuell ergänzen. Kommentarzeilen wird "--" vorangestellt. 
 
 ```{sql Export der Datenbank in SQL-Anweisungen (DUMP), eval=FALSE, connection=db01}
 BEGIN TRANSACTION;
