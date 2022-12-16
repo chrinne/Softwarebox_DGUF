@@ -63,7 +63,7 @@ Es gibt nicht ein einziges Programmfenster sondern eine zentral Menü- und Iconl
 
 Nachfolgen werden einzelne Anwendungsbeispiele vorgestellt.
 
-## Pfsotengruben in Graustufenbildern
+## Pfostengruben in Graustufenbildern
 
 Ziel ist die Ermittlung der Fläche von Pfostengruben in Plänen von  neolithischen Häusern. Das folgende Beispiel verwendet eine eingescannte Abbildung aus Luley (1988). Für die Auswertung wurde ein TIF genutzt, die hier dargestellte Datei ist ein JPG.
 
@@ -71,7 +71,7 @@ Ziel ist die Ermittlung der Fläche von Pfostengruben in Plänen von  neolithisc
 
 Dieses Bild ist ursprünglich schwarz-Weiß mit einem Druckraster, die Filterung der relevanten Farbflächen (Pixel) über einen Graustufen oder Farbwert also nur bedingt hilfreich. Es wird deshalb später zusätzlich mit Schwellwerten für die gemessene Fläche gearbeitet.
 
-Mit File > Open (\<Srtg> + <o>) öffnen Sie das Bild. Markieren Sie das Linien-Icon und zeichnen Sie mit gedrückter Maustaste eine Linie über eine definierte Länge des abgebildeten Maßstabes (dies ist eigentlich eine Auswahl, keine gezeichnete Linie). Mit Analyse > Set Scale wird Ihnen als erstes die markierte Länge angezeigt, ergänzen Sie bei "Known distance" die reale Distanz, z.B. 26.5, und unter "Unit of length" die Maßeinheit, hier "m". Wenn Sie die Option "Global" aktivieren gilt dieser Maßstab für alle offenen Bilder. Die Kopfzeile der Grafik weist nun die Dimensionen in der gewählten Einheit aus. 
+Mit File > Open (\<Srtg> + \<o>) öffnen Sie das Bild. Markieren Sie das Linien-Icon und zeichnen Sie mit gedrückter Maustaste eine Linie über eine definierte Länge des abgebildeten Maßstabes (dies ist eigentlich eine Auswahl, keine gezeichnete Linie). Mit Analyse > Set Scale wird Ihnen als erstes die markierte Länge angezeigt, ergänzen Sie bei "Known distance" die reale Distanz, z.B. 26.5, und unter "Unit of length" die Maßeinheit, hier "m". Wenn Sie die Option "Global" aktivieren gilt dieser Maßstab für alle offenen Bilder. Die Kopfzeile der Grafik weist nun die Dimensionen in der gewählten Einheit aus. 
 
 Mit Image > Adjust > Theshold (\<Strg> + \<Umsch> + \<t>) rufen Sie das Fenster zum Definieren von Schwellwerten auf. Mit den beiden Schiebereglern grenzen Sie die Graustufenwerte ein bis die Pfosten weitestgehend vollständig rot eingefärbt sind und vom Rest möglichst wenig oder nur kleinere Flächen markiert werden. Bestätigen sie zuletzt mit [Set] die angegebene Werte.
 
