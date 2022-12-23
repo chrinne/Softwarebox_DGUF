@@ -57,7 +57,7 @@ Notepad ++ gibt es ausschließlich für Windows. Die Homepage verweist auf [Scin
 
 Dieser Text will vor allem zwei Dinge: 1. die Bedeutung des "schlichten" Textformates und seiner Möglichkeiten hervorheben und 2. auf einige Möglichkeiten von Notepad++ hinweisen. 
 
-# Text und ohne Plugins
+# Arbeiten ohne Plugins
 
 Schon in der Grundkonfiguration gibt es bemerkenswerte Funktionalität.
 
@@ -76,7 +76,7 @@ Neben den Zeichen ist die Sprache ein zentrales Element der Verständigung. Die 
 ```d<-paste('x:', x_coord, sep=' ')``` oder ```concat('x: ', $x)``` oder ```verketten=("x: "; A1)```. 
 
 Schön wäre es, wenn Sie auch dies gleichfalls überlesen hätten. In allen Fällen werden Elemente verkettet, es sind Beispiele von Syntax aus R (Statistik), aus QGIS und MS Excel.
-Sprachen in der IT und hier bei Notepad ++ meint in der Regel eine der vielen Computersprachen die vor allem einen Zweck haben, sie müssen als Handlungsanweisung *maschinenlesbar* sein. In vielen Fällen sind sie zudem *menschenlesbar*, wie z.B.: ```select table1.var1, table1.var2 from table1;``` (SQL).
+Sprachen meint in der IT und hier bei Notepad ++ eine der vielen Computersprachen die vor allem einen Zweck haben, sie müssen als Handlungsanweisung *maschinenlesbar* sein. In vielen Fällen sind sie zudem *menschenlesbar*, wie z.B.: ```select table1.var1, table1.var2 from table1;``` (SQL).
 
 Lassen Sie sich von diesem Thema also nicht gleich ins Bockshorn jagen. (So ist das mit der Sprache, sie entwickelt und entfremdet sich bisweilen, das Verständnis bleibt hoffentlich.)
 
@@ -97,7 +97,18 @@ Der **\[Spaltenmodus]** erlaubt das Markieren und demzufolge Kopieren, Ausschnei
 
 ![Suchen Ersetzen in Notepad ++](./SuchenErsetzen.png){width=50%}  
 
-Neben allgemein üblichen Parametern die in diesem Fenster ausgewählt werden können, sind es die Optionen: Normal, Erweitert (\\n, \\r, \\t ...) und Reguläre Ausdrücke, die hervorzuheben sind. "Normal" entspricht einer allgemeinen Erwartung.
+Neben allgemein üblichen Parametern die in diesem Fenster ausgewählt werden können, sind es die Optionen: Normal, Erweitert (\\n, \\r, \\t ...) und Reguläre Ausdrücke (s.u.), die hervorzuheben sind. "Normal" entspricht einer allgemeinen Erwartung.
+
+Ein kurzer Hinweis auf die benachbarten Reiter, hier z. Bsp. die Option "In Dateien suchen". Hier können Sie (alle) Dateien eines Ordners einschließlich der Unterordner durchsuchen. Das Funktioniert natürlich nur bei textbasierten Dateiformaten, also .txt., .csv oder auch Skripten z.B. .R oder auch Auszeichnungssprachen, z.B. .geojson. Und es funktioniert ebenfalls bei .rtf, .xls und .doc auch wenn hier die angegebene Zeilenzahl nicht stimmt. Wegen der Kompression klappt es bei den neuen Formaten .xlsx und .docx leider nicht. 
+
+```
+Suche "(Ballyglass|Egolzwil)" (6 Treffer in 2 Dateien von 14 gesucht)
+  d:\temp\Fragen3.doc (3 Treffer)
+	Zeile  12: Ballybriest \ulnone[...]\fs22 Ballyglass \ulnone\[...]
+  d:\temp\Fragen3.rtf (3 Treffer)
+	Zeile  34: Egeh\'F8j \ulnone\[...]Egolzwil 4 \ulnone\[...]
+```
+Ergebnis einer Suche in mehreren Dateien incl. .doc, .xls oder .rtf mit dem regulären Ausdruck "(Ballyglass|Egolzwil)" für Ballyglass oder Egolzwil. 
 
 ### Reguläre Ausdrücke
 
@@ -110,7 +121,7 @@ Die zweite Option **Erweitert** bei [Suchen] & [Ersetzen] ist schnell erklärt:
 Sie können diese unsichtbaren Zeichen suchen und ersetzen. In diesem Kontext ist die Ansicht der unsichtbaren Symbole hilfreich (s.o.), der Zeilenumbruch setzt sich in der Regel zusammen aus \\[CR]\\[LF] also \\r\\n.
 
 Der dritte Punkt **Reguläre Zeichen** (*regular expressions*, *RegExp*) ist ein umfangreiches aber extrem spannendes Thema, die Regeln haben Allgemeingültigkeit, leider mit Variationen.
-Es können hier nur Grundlagen angerissen werden, weitere Informationen und Beispiele finde Sie u.a. auf folgenden Websites [Regulare Expressions](https://www.regular-expressions.info), [w3schools](https://www.w3schools.com/jsref/jsref_obj_regexp.asp) und  [reger](https://regexr.com).
+Es können hier nur Grundlagen angerissen werden, weitere Informationen und Beispiele finde Sie u.a. auf folgenden Websites [Regulare Expressions](https://www.regular-expressions.info), [w3schools](https://www.w3schools.com/jsref/jsref_obj_regexp.asp) und  [regexr](https://regexr.com).
 
 Aktivieren Sie unbedingt die Option "Groß-/Kleinbuchstaben beachten"!
 
@@ -150,13 +161,10 @@ Nur der mittlere Block soll ersetzt werden. Das mit den 3 Elementen wird mit Kla
 
 Auf diese Elemente können wir uns nun beziehen und diese getrennt behandeln: ```\1\3```. Übersetzt steht da: das 1. Element behalten, das 2. Element fällt weg, das 3. Element behalten. Fertig.  
 
-Auch wenn Sie es ggf. nicht wissen wollen, in R können RegEx mit der Funktion gsub() ausgeführt werden, in QGIS gibt es einige Funktionen, die sinnig mit "regexp_" beginnen und das ist bestimmt nicht alles. 
-
-**Anmerkung**: Der gesamte Komplex **Suchen & Ersetzen** kann auf alle offenen Dateien oder aber auf alle oder gefilterte Dateien eines Ordners angewendet werden.  
+Auch wenn Sie es ggf. nicht wissen wollen, in R können RegExp mit der Funktion gsub() ausgeführt werden, in QGIS gibt es einige Funktionen, die sinnig mit "regexp_" beginnen und das ist bestimmt nicht alles. 
 
 ## Drucken
 Sie können Textdateien auch drucken, es empfiehlt sich aber vorab das Layout unter **\[Einstellungen]** > **\[Optionen]** zu definieren. Also mindestens die Seitenränder (mm) angeben. Rein aus Gewohnheit setze ich das Elemennt *Page* in die Fußzeile rechts unten und *File name* zur Dokumentation unten links. 
-
 
 # Plugins
 
@@ -176,18 +184,14 @@ Es gibt ein weiteres Plugin Spell-Checker, der Funktionsumfang scheint aber deut
 ## TextFX.dll
 Diese Plugin steht leider nur für die 32-bit-Version von NPP zur Verfügung. Einige der Optionen finden Sie unter **\[Bearbeiten]**.
 
-## MarkdownViewer++ und MarkdownPanel
+## Markdown
 
 Zwei Aspekte müssen hier vorgestellt werden: 
 
 1. Was ist Markdown und wofür kann es nützlich sein? 
 2. Zwei Plugins die Markdown ermöglichen und jeweils Stärken als auch Schwächen haben.
 
-### Markdown
-
-[Markdown](https://markdown.de) ist eine Auszeichnungssprache mit einiger Ähnlichkeit zu HTML. Benötigt wird ein Texteditor oder auch ein spezieller Markdown-Editor (z.B. [Typora](https://typora.io/))[^2] oder Sie nutzen RStudio mit R-Markdown. Ziel ist es, sich auf das Schreiben zu konzentrieren ohne die überbordenden Funktionsleisten der Textverarbeitung. Wesentliche Layout-Elemente lassen sich durch einfache Auszeichnung bewerkstelligen. Kurze Texte, z.B. Protokolle oder auch diese Handreichung lassen sich schnell erstellen und als MD oder PDF (Portable Dokument File) verteilen. Da reiner Text vorliegt, ist kollaboratives Arbeiten in [GitHub](https://github.com/) möglich. Das Ziel ist **keine LaTeX-Alternative**, sondern schnelles plattformunabhängiges  Erstellen klar strukturierter Texte.
-
-[^2]: Bis zur Version 1.0.3 war Typora kostenfrei. Die älteren Versionen finden Sie unter [https://typora.io/releases/all](https://typora.io/releases/all) 
+[Markdown](https://markdown.de) ist eine Auszeichnungssprache mit einiger Ähnlichkeit zu HTML. Benötigt wird ein Texteditor oder auch ein spezieller Markdown-Editor (z.B. [Ghostwriter](https://github.com/KDE/ghostwriter)) oder Sie nutzen RStudio mit R-Markdown. Ziel ist es, sich auf das Schreiben zu konzentrieren ohne die überbordenden Funktionsleisten der Textverarbeitung. Wesentliche Layout-Elemente lassen sich durch einfache Auszeichnung bewerkstelligen. Kurze Texte, z.B. Protokolle oder auch diese Handreichung lassen sich schnell erstellen und als MD oder PDF (Portable Dokument File) verteilen. Da reiner Text vorliegt, ist kollaboratives Arbeiten in [GitHub](https://github.com/) möglich. Das Ziel ist **keine LaTeX-Alternative**, sondern schnelles plattformunabhängiges  Erstellen klar strukturierter Texte.
 
 Markdown schreiben ist einfach. Dabei ist auf Leerzeilen zwischen Absätzen oder vier Leerzeichen am Zeilenende als klare Trennung zu achten. Wichtige Layout-Elemente sind:
 ```
@@ -205,7 +209,7 @@ Eine Linie wird mit \--- erzeugt und
 Sonderzeichen wie *  oder \ müssen mit \ ausgezeichnet werden: \* \\
 
 | Spaltenüberschrift 1 | Spaltenüberschrift 2 | Spaltenüberschrift 3 |
-| ----|----|----|
+| :----|:----:|----:|
 | Inhalt 1 |Inhalt 2 | Inhalt 3 |
 
 Programmcode wie dieser Textabschnitt wird von drei *Accent grave* am Anfang 
@@ -234,7 +238,7 @@ Eine Linie wird mit --- erzeugt und
 Sonderzeichen wie \* oder \ müssen mit \ ausgezeichnet sein, um bedeutungslos zu werden.
 
 | Spaltenüberschrift 1 | Spaltenüberschrift 2 | Spaltenüberschrift 3 |
-| ----|----|----|
+| :----|:----:|----:|
 | Inhalt 1 |Inhalt 2 | Inhalt 3 |
 
 Programmcode wie dieser (obige) Textabschnitt wird von drei *Accent grave* am Anfang 
