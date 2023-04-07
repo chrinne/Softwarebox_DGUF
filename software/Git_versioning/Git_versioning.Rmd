@@ -10,16 +10,16 @@ header-includes:
   \renewcommand{\tablename}{Tab.}
 papersize: a4
 output:
-  pdf_document:
-    number_sections: true
-    toc: true
-    toc_depth: 2
-    df_print: kable
   html_document:
     toc: true
     toc_depth: 2
     toc_float: true
     number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -34,6 +34,8 @@ knitr::opts_chunk$set(echo = TRUE)
 # Grundlegende Information
 
 GIT ist eine freie Software für das verteilte Arbeiten an Dateien. Sie gewährleistet die Synchronisation und Kontrolle aller Änderungen oder kurz gesagt die Versionierung aller Dateien. Bei textbasierten Dateien, z.B. Markdown und csv-Tabellen, erfolgt dies auf Zeilenniveau. Die Kooperation an Projekten mit Texten, Daten, Abbildungen und Programmcode, z.B. R, ist damit ohne den sonst üblichen Aufwand und oft auftretende Verwirrung möglich.
+
+Wenn Sie eine gut lesbare, verständliche und umfassendere Einführung suchen, die neben GIT auch gleich die Verbindung mit R und RStudio behandelt, empfehle ich: [Happy Git and GitHub for the useR](https://happygitwithr.com/index.html) von Jenny Bryan, den [STAT 545 TA's](https://stat545.com/index.html#other-contributors) und Jim Hester. 
 
 Die Synchronisation erfolgt zu einem Server und einem dort betriebenen Dienst, hier sind zwei Webanwendungen sehr bekannt: [GITLab](https://gitlab.com/) und [GITHub](https://github.com/). Die lokale Kontrolle wird ebenfalls durch GIT gesteuert, dafür gibt es diverse grafische Oberflächen (GUI), z.B. [GIT Extensions](https://gitextensions.github.io/). Auch [R-Studio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-GIT-and-SVN) bietet einen vollständige *workflow* für die alltägliche Arbeit mit GIT. Für das Schreiben auf dem Server ist eine Authentifizierung notwendig die meist über einen ssh-key erfolgt.
 
@@ -53,10 +55,11 @@ Eine zentrale Datenhaltung kann innerhalb eines lokalen Netzwerkes mit Freigaben
 
 **Alternativ**: sammeln Sie Daten als CSV-Tabellen und synchronisieren (pushen) diese regelmäßig zum Repositorium. Wie Sie diese CSV-Tabelle lokal editieren ist fast egal, möglich sind MS Excel, LO Calc oder ein Texteditor. **Allerdings** ist der Wechsel zwischen MS Excel und LO Calc sehr umständlich und fehleranfällig, da MS Excel die Spalten mit einem ";" und LO Calc diese mit einem "," trennt. Optional können Sie auch ein anderes Trennzeichen verwenden, z.B. <TAB>. Allerdings werden diese Dateien mit der Endung .txt  oder .csv nicht mehr automatisch richtig erkannt und beim Speichern muss in MS Excel jedes mal das Trennzeichen definiert werden während im LO Calc  automatisch ein ',' gesetzt wird.
 Der **Vorteil** ist die Versionierung durch GIT, also das Protokoll der vollzogenen Änderungen, und die zentrale Ablage auf einem Server um dessen Sicherheit und Zugangsberechtigungen Sie sich nicht unmittelbar kümmern müssen.
+Eine weiter Option ist etwas weniger dynamisch aber ebenfalls sinnvoll. Wenn einzelne Autoren für bestimmte Datebereiche zuständig sind, die Datenerhebung eigentlich abgeschlossen ist und alle mit SQLite arbeiten, können Sie regelmäßig aktuelle *dumps* im Repositorium auf dem Server ablegen. *Dumps* beinhalten sowohl die Struktur als auch die Daten der Datenbank, können in SQL, also als Text gespeichert werden und erlauben die unmittelbar Rekonstruktion der gesamten Datenbank. 
 
 ### Texte Verfassen
 
-Sofern Sie sich an die Arbeit mit Rtudio und das Schreiben von Markdown gewöhnt haben, können Sie über GIT natürlich auch gemeinsam Texte, Artikel und ganze Bücher mit *Bookdown* schreiben. Sie sollten innerhalb von RStudio nicht mit einzelnen Dateien sondern mit Projekten und Versionskontrolle arbeiten. In diesem Projekt können Sie dann die benötigten Daten (CSV) als auch die Literatur als BibTeX-Datei pflegen und in Ihrem Text einbinden.  Tabellen, Analysen und resultierende Grafiken werden mittels R-Code auf Grundlage der vorliegenden Daten im Text generiert und sind stets aktuell.  Natürlich ist dies eine grundlegend andere Arbeitsweise als eine gemeinsame Ablage in der Cloud und die Versionierung von Hand, selbst bei der Verwendung von Online Office. Es ist eine Umstellung mit anfänglichen Reibungsverlusten und benötigt Einarbeitungszeit. 
+Sofern Sie sich an die Arbeit mit Rtudio und das Schreiben von Markdown gewöhnt haben, können Sie über GIT natürlich auch gemeinsam Texte, Artikel und ganze Bücher mit *Bookdown* schreiben. Sie sollten innerhalb von RStudio nicht mit einzelnen Dateien sondern mit Projekten und Versionskontrolle arbeiten. In diesem Projekt können Sie dann die benötigten Daten (CSV) als auch die Literatur als BibTeX-Datei pflegen und in Ihrem Text einbinden. Tabellen, Analysen und resultierende Grafiken werden mittels R-Code auf Grundlage der vorliegenden Daten im Text generiert und sind stets aktuell.  Natürlich ist dies eine grundlegend andere Arbeitsweise als eine gemeinsame Ablage in der Cloud und die Versionierung von Hand, selbst bei der Verwendung von Online Office. Es ist eine Umstellung mit anfänglichen Reibungsverlusten und benötigt Einarbeitungszeit. 
 
 Anmerkung: Wenn Sie dieses Thema *Online Texteditieren* interessiert, sehen Sie sich auch mal folgendes an [Fidus Writer](https://www.fiduswriter.org/). 
 
@@ -82,18 +85,18 @@ Laden Sie das Programmpaket (\*.msi) von PuTTy herunter [https://www.chiark.gree
 
 ### GIT für Windows
 
-Dann benötigen Sie [GIT](https://git-scm.com/download/win). GIT nutzt keinen eigenen Editor sondern fragt nach einem Verweis auf ein existierendes Programm. Ich nutze hier den Editor  [Notepad++](https://notepad-plus-plus.org/) den Sie ggf. vorab installieren sollten. 
+Dann benötigen Sie [GIT](https://gitforwindows.org/). GIT nutzt keinen eigenen Editor sondern fragt nach einem Verweis auf ein existierendes Programm. Ich nutze hier den Editor  [Notepad++](https://notepad-plus-plus.org/) den Sie ggf. vorab installieren sollten. 
 
-### GIT Extensions
+### GIT Anwendung (Client) - GIT Extensions
 
-Laden Sie sich die aktuelle Version (*.msi) von [GIT Extensions](https://gitextensions.github.io/) herunter. Zudem wird [kdiff3](https://sourceforge.net/projects/kdiff3) für die Synchronisation (merge) verwendet. Laden Sie auch dieses Programm herunter und installieren Sie es vorab mit den Vorgaben. Installieren Sie nun GIT Extensions und folgen Sie den Schritten der Installation mit den Vorgaben. Folgendes bedarf der Aufmerksamkeit:
+Sie finden auch weitere GIT Clients im Netz, die eingangs erwähnte Seite [Happy Git and GitHub for the useR](https://happygitwithr.com/git-client.html) verweist auf weitere Alternativen. Laden Sie sich die aktuelle Version (*.msi) von [GIT Extensions](https://gitextensions.github.io/) herunter. Zudem wird [kdiff3](https://sourceforge.net/projects/kdiff3) für die Synchronisation (merge) verwendet. Laden Sie auch dieses Programm herunter und installieren Sie es vorab mit den Vorgaben. Installieren Sie nun GIT Extensions und folgen Sie den Schritten der Installation mit den Vorgaben. Folgendes bedarf der Aufmerksamkeit:
 
- - Select SSH Client: verwenden Sie hier PuTTy.
+ - Select SSH Client: verwenden Sie hier PuTTy (s.o.).
  - Telemetry privacy policy: Im Prinzip handelt es sich um Geben und Nehmen. Sie nutzen die Software und geben Teile Ihres Nutzerverhaltens für die Optimierung derselben preis. Ihre Entscheidung.
 
 Starten Sie GIT Extensions. Vermutlich werden Sie zuerst mit einem Fenster zu den Einstellungen "Settings - Checkliste" konfrontiert, wenn nicht gehen Sie dorthin: Werkzeuge > Einstellungen. 
 
- - Benutzername und E-Mail-Adresse: Bitte entsprechendes eintragen
+ - Benutzername und E-Mail-Adresse: Der Name ist frei wählbar sollte Sie aber schon seriös erkennbar machen. Die E-Mail-Adresse ist für die Anmeldung am GIT-Server notwendig und muss der dort hinerlegten entsprechen.  
  - Direkt darunter im selben Fenster fehlen weitere Angaben
  - Merge-Werkzeuge: kdiff3
  - Pfad zu Merge-Werkzeug: \[Durchsuchen] und dort kdiff3 auswählen, die nächtste Zeile zu den Befehlen sollte automatisch ergänzt werden.
@@ -110,20 +113,19 @@ Sofern nach dem Start kein Fenster zum Öffnen oder Klonen von Repositorien ange
 - Zu klonendes Repository: Die SSH-URL aus dem Online-Repositorium, z.B. git\@cau-git.rz.uni-kiel.de:<Pfad/Name>.
 - Ziel: den Ordner in dem ein neuer Ordner für das Repositorium angelegt wird.
 - Zu erstellendes Unterverzeichnis: Wird automatisch sinnvoll ergänzt.
-- Branch: Standard ist Remote-HEAD
+- Branch: Standard ist Remote-HEAD, also die oberste Ebene (*master* oder *main*).
 
 Alles weitere nach Vorgabe. Mit [SSH-Schlüssel laden] können Sie jetzt ihren privaten Schlüssel laden und klonen. Direktes [Klonen] fragt nachträglich nach dem privaten Schlüssel. Der private Schlüssel muss mit dem hinterlegten Passwort authentifiziert werden. Danach sollte der Kopiervorgang erfolgreich laufen. 
 
 Nehmen Sie Änderungen immer in überschaubaren und möglichst abgeschlossenen Schritten vor. Nach einer Änderung wird Ihnen an dem Symbol "Committen" in der Menüleiste die Anzahl der geänderten Dateien angezeigt. Starten Sie über die Iconleiste "Committen" oder über Befehle > Committen den Upload. Markieren Sie oben links die zu kopierende Datei, die Änderungen werden rechts oben angezeigt. Fügen Sie alle zu *pushenden* Dateien mit "Stagen" in den Uploadbereich ein. Schreiben Sie rechts unten einen Kommentar zu den Änderungen. Mit [Committen] werden die Kommentare angehängt und ein Update-Paket erstellt das unmittelbar auch *gepushed* werden kann.
 
-Im unteren Bereich des Programmfensters haben Sie neben "Committen" vier weitere Reiter: Diff, Dateibaum, GPG, Konsole. Der Reiter Diff zeigt Ihnen die änderungen gegenüber der letzten Version, entsprechend der Ansicht vom letzten Commit. Der Reiter Dateibaum erlaubt das Editieren einzelner Dateien: links der dateibaum, recht ein Fenster mit dem Editor aus der Konfiguration von GIT Extensions. Mir fehlt hier die gewohnte Menüleiste meines Editors, deshalb nutze ich diesen Bereich nicht.
+Im unteren Bereich des Programmfensters haben Sie neben "Committen" vier weitere Reiter: Diff, Dateibaum, GPG, Konsole. Der Reiter Diff zeigt Ihnen die Änderungen gegenüber der letzten Version, entsprechend der Ansicht vom letzten Commit. Der Reiter Dateibaum erlaubt das Editieren einzelner Dateien: links der Dateibaum, recht ein Fenster mit dem Editor aus der Konfiguration von GIT Extensions. Mir fehlt hier die gewohnte Menüleiste meines Editors, deshalb nutze ich diesen Bereich nicht.
 
 ### RStudio & GIT
 
-Anleitungen hierzu finden Sie mehrfach im Internet, u.a. unter der wichtigen Überschrift **Reproducible Research** bei der [Uni Zürich](https://geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/). Auch hier wird ein ein SSH-Schlüssel und ein installiertes GIT vorausgesetzt (s.o.), ebenso natürlich die Installation von [R](https://www.r-project.org/) und [RStudio](https://www.rstudio.com/products/rstudio/#Desktop).
+Anleitungen hierzu finden Sie mehrfach im Internet (s.o.) oder auch unter der wichtigen Überschrift **Reproducible Research** bei der [Uni Zürich](https://geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/). Auch hier wird ein SSH-Schlüssel und ein installiertes GIT vorausgesetzt (s.o.), ebenso natürlich die Installation von [R](https://www.r-project.org/) und [RStudio](https://www.rstudio.com/products/rstudio/#Desktop).
 
-Ergänzend zu den Informationen der eingangs genannten Anleitung folgende Hinweise:
+Ergänzend zu den Informationen der eben genannten Anleitung aus Zürich folgende Hinweise:
 
- - Der Menüeintrag GIT ist nur sichtbar, wenn ein entsprechendes Projekt geöffnet ist.
- - Haben Sie GIT bereits konfiguriert, auch über GIT Extensions (s.o.), brauchen Sie den Abschnitt *Git Setup* nicht erneut ausführen. Um zu testen, ob Ihr Name und E-Mail korrekt hinterlegt sind öffnen Sie die Git Kommandozeile (Git Bash) und schreiben Sie folgende Befehle: ```git config --get user.name``` und dann ```git config --get user.email```. Die jeweilige Rückabe sollten Ihr Name und die E-Mail-Adresse sein.
- 
+ - Der Menüeintrag GIT in RStudio ist nur sichtbar, wenn ein entsprechendes Projekt geöffnet ist.
+ - Haben Sie GIT bereits konfiguriert, auch über GIT Extensions (s.o.), brauchen Sie den Abschnitt *Git Setup* nicht erneut ausführen. Um zu testen, ob Ihr Name und E-Mail korrekt hinterlegt sind öffnen Sie die Git Kommandozeile (Git Bash) und schreiben Sie folgende Befehle: ```git config --get user.name``` und dann ```git config --get user.email``` oder ```git config --global --list```.
