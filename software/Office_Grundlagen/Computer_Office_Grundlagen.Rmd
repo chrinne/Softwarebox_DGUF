@@ -1,0 +1,213 @@
+---
+title: "Office Grundlagen"
+subtitle: "Arbeiten mit dem Computer"
+author: 
+ - Christoph Rinne^[Christian-Albrechts-Universität zu Kiel, crinne@ufg.uni-kiel.de]
+date: "`r format(Sys.time(), '%d. %B %Y')`"
+license: "CC-BY 4.0"
+header-includes:
+  \renewcommand{\contentsname}{Inhalt}
+  \renewcommand{\figurename}{Abb.}
+  \renewcommand{\tablename}{Tab.}
+papersize: a4
+output:
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+fig_caption: true
+urlcolor: blue
+link-citations: true # make citations hyperlinks
+linkcolor: blue
+lang: de-DE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Vorbemerkung {-}
+ 
+Das folgende Skript war im Wintersemester 2022 als Einstieg und *handout* für den Kurs "Grundlagen effizienten wissenschaftlichen Arbeitens" am Institut für Ur- ud Frühgeschichte der Christian-Albrechts-Universität zu Kiel geplant. Es sollte die seit Jahren erkannte Diskrepanz in der grundlegenden IT-Kopetenz der Studierenden ausgleichen, zumal eine Verschärfung der Situation nach dem CoViD *lock down*  erwartet wurde.
+
+| Anmerkungen zum Layout bei Befehlen oder Anweisungen |
+|----|
+| - Menüpfade werden mit schlichten Pfeilen dargestellt: "Datei > Speichern". |
+| - Tastaturkürzel, die ich persönlich gerne Nutze, in Spitzklammern je Taste: \<strg> + \<c>. |
+| - Schalter auf Formularen werden in [] gesetzt: [OK] | 
+
+# Grundlagen und Organisation
+
+## Windows 10 allgemein
+
+Das wird nicht noch eine Alternative zu den vielen, online verfügbaren Hilfen rund um Windows. Vielmehr möchte ich den Blick auf spezifische Aspekte wenden, die mir bei der alltäglichen Arbeit mit Windows helfen.
+
+Jedes Objekt, z.B. die Datei oder der Ordner auf dem Desktop, hat Eigenschaften und kann etwas. Das Kontextmenü (rechte Mausklick auf das Objekt) bietet hierauf einen schnellen Zugriff.
+
+### Tastaturbefehle
+
+Auch hierzu finden Sie mehr im Internet, u.a. bei [MS](https://support.microsoft.com/de-de/windows/windows-tastaturkurzbefehle-3d444b08-3a00-abd6-67da-ecfc07e86b98). Wirklich wichtig oder auch nur nützlich sind folgende.
+
+In fast allen Anwendungen unter Windows gilt:
+
+- \<strg> + \<a> : markiert alles
+- \<strg> + \<c> : kopiert das Markierte
+- \<strg> + \<v> : fügt die Kopie (Zwischenablage) an der Cursorposition ein.
+
+Für Windows:
+
+- \<alt> + \<tab> : Wechselt zwischen den Anwendungen, bzw. den offenen Fenstern.
+- \<win> + \<e> : Öffnet den Explorer (Dateimanager).
+- \<win> + \<p> : Öffnet die Projektionseinstellungen, z.B. bei angeschlossenem Beamer für den Vortrag.
+- \<win> + \<d> : Wechselt zum Windows-Desktop, wenn Sie z.B. dort etwas abgelegt haben.
+- \<win> + \<s> oder \<win> + \<q> : Öffnet die Suche von Windows. Hierüber können u.a. schnell Programme gestartet werden.
+- \<win> + \<x> : Öffnet das Schnelllink-Menü für administrative Aufgaben in Windows.
+- \<win> + \<l> : Sperrt den Bildschirm und erfordert dann die Passworteingabe des Nutzers.
+
+### Windows Explorer
+
+Der Explorer ist der Dateimanager von Windows. Wenn Sie hiermit arbeiten, sollten Sie sich mit den unterschiedlichen Optionen unter dem Menü "Ansicht" einmalig befassen. Folgende Empfehlungen:
+
+ - Die Navigation am linken Rand sollte eingeschaltet sein "Ansicht > Navigationsbereich > Navigationsbereich". Die weiteren Optionen sind sicher von Vorlieben und Arbeitsweise abhängig.
+ - Unter "Ansicht > Layout" können Sie die Darstellung des Inhaltes bestimmen, z.B. Symbolgröße, Liste, Details. Befindet sich der Mauszeiger im Inhaltsbereich ist der Wechsel auch mit \<Strg> + \<Scrollrad> möglich. "**Ansicht > Details**" ist hier eine Ausnahme und meine bevorzugte Ansicht.
+ - Statt "Ansicht > Sortieren nach" klicken Sie in der Detailansicht auf die Kopfzeile der entsprechenden Spalte, z.B. "Name".
+ - Mit "Ansicht > Dateinamenerweiterungen" werden die Dateiendungen angezeigt, z.B. "pdf". Das Alphabet und die Lesekompetenz hat deutliche Vorteile gegenüber einer Vielzahl von Piktogrammen. 
+ 
+Mit "Ansicht > Optionen > Ordner- und Suchoptionen ändern" haben sie weitere Möglichkeiten, den Explorer zu konfigurieren. Unter dem Reiter "Ansicht" können Sie an erster Stelle die aktuellen Einstellungen als Vorgabe zur Darstellung aller Ordner übernehmen.
+
+Windows arbeitet viel mit **symbolischen Links** oder Verweisen. Den "Desktop" im Schnellzugriff finden Sie im üblichen Verzeichnisbaum unter "C:\\Benutzer\\\<user>\\Desktop" oder eigentlich sogar unter "C:\\Users\\\<user>\\Desktop" wenn Sie andere Programme als den Explorer nutzen oder oben im Explorer in die Adresszeile klicken. Gleiches gilt auch für "Programme" alias "Program Files".
+
+## Dateimanagement und Grundlagen zu Backupstrategien 
+Nicht alles, was auf ihrem Windows-PC möglich ist, wird in anderen Systemen korrekt dargestellt oder kann sogar ungültig sein (z.B. auf CD/DVD). Weitere Informationen finden Sie bei [Wikipedia](https://de.wikipedia.org/wiki/Dateiname).  Sinnvolle  Datei- und Ordnernamen:
+
+- sind möglichst kurz aber zugleich verständlich,
+- beschreiben den Inhalt der Datei,
+- beinhalten keine Sonderzeichen (ä, ö, ü, ß, *, <, ? etc.) oder Leerzeichen.
+
+Datensicherheit ist wichtig und hat viele Facetten, u.a.:
+
+1. Ist die Datei noch intakt?
+2. Hab ich die Software, incl. richtiger Version, um die Datei zu lesen? 
+3. Ist es die richtige Version der Datei? Habe ich ggf. noch eine ältere Variante? 
+
+Der letzte Punkt wird durch eine Versionierung oder die Sicherung von älteren Arbeitsständen gelöst. Eine einfache und robuste Variante ist es, die Versionen zu zählen (Referat_001.docx) oder mit einem Datum zu versehen (Referat_20221101.docx). Letzteres besser in der Version Jahr-Monat-Tag, da dann die Sortierung des Namens sinnvoller ist.
+
+Der zweite Punkt wird durch die Verwendung weit verbreiteter Software und geeigneter Dateiformate erreicht, z.B. PDF. 
+
+Der erste Punkt wird durch Kopien auf einem physikalisch getrennten Datenträger erreicht (USB-Stick, externe Festplatte). 
+
+## Diverse Programme 
+
+Es gibt viele freie Software und es gibt spezielle Angebote bei den Rechenzentren der Universitäten für Studierende. Aus dem großen Anwendungsbereich und immensen Angebot nur zwei Hinweise für den Datenaustausch und die Archivierung:
+
+### ZIP - gepackte Dateien
+
+Dateien können gepackt werden, weit verbreitet ist das zip-Format. Daneben gibt es aber noch weitere Möglichkeiten, z.B. rar, tar, gz. Der Windows Explorer kann zip-Dateien lesen, Sie können zip-Dateien dort im Navigationsbereich wie Ordner oder auch durch einen Doppelklick auf die Datei öffnen. Um eine zip-Datei zu erstellen markieren Sie eine oder mehrere Dateien bzw. Ordner und wählen Sie im Kontextmenü "Senden an > ZIP-komprimierter Ordner". Für alles andere schauen Sie sich mal [7-zip](https://www.7-zip.org/) an.
+
+### PDF - Dokumente für alle
+
+PDF steht für Portable Document Format. PDF ist ein Dateiformat für elektronische Dokumente (mehrheitlich Text und Bilder), das unabhängig vom ursprünglichen Anwendungsprogramm, vom Betriebssystem oder von der Hardwareplattform originalgetreu weitergegeben werden kann. Es ist damit das führende Austauschformat für Dokumente. Zudem können unterschiedliche Sicherheitsvorkehrungen aktiviert werden: Das Kopieren, Editieren, Drucken etc. der Datei kann so verhindert werden. PDF ist ein Containerformat mit vielen Optionen, nur die Spezifikation „PDF/A“ eignet sich zur Langzeitarchivierung. Weitere Informationen finden Sie bei [IANUS-FDZ](https://www.ianus-fdz.de/it-empfehlungen/node/186).   
+
+Das Format PDF wurde von Adobe entwickelt, viele Programme schreiben und lesen inzwischen PDF, z.B. LO Writer oder MS Word und Windows bietet vom System aus einen PDF-Drucker an. Hierzu gibt es zahlreiche Alternativen mit etwas mehr Funktionalität, eine ist der [pdf24-creator](https://de.pdf24.org/creator.html). 
+
+In PDF können einzelne Textabschnitte farblich markiert und mit Kommentaren versehen werden (nicht bei PDF/A). Dies ist in diversen Programmen möglich (u.a. [Adobe Acrobat Reader](https://get.adobe.com/de/reader/), [Foxit Reader](https://www.foxit.com/pdf-reader/)). Die Markierungen sind in der Seitenvorschau leicht zu finden und in der Liste der Kommentare kann leicht navigiert und nach Begriffen gesucht werden. Es ist eine ausgezeichnete Möglichkeit, wichtige Aussagen oder Passagen leicht wiederzufinden.
+
+# Libre Office (Version: 7.4.2.3 (x64))
+
+Dies ist ein minimalistischer Einstieg in die Arbeit mit einzelnen Anwendungen von Libre Office. Die Grundlegende Hilfe finden Sie im Internet bei [Libre Office](https://de.libreoffice.org/get-help/documentation/) oder im jeweiligen Programm mit \<F1>. Die wichtigsten Programme sind Writer, Calc und Impress.
+
+Autorenschaft und Anonymität sind beide wichtig. Wenn Sie bei Libre Office unter "Extras > Optionen > Benutzerdaten" Ihren Namen eintragen wird der bei PDF-Exporten in den Metadaten unter "Autor" automatisch eingetragen. 
+
+## Writer
+
+Mit Writer erstellen Sie Texte.
+
+### Formatvorlagen
+
+Ein Text besteht aus diversen Elementen, z.B. Titel, Untertitel, Überschriften, Abbildungsunterschriften und normalem Text. Diese Elemente sind meist unterschiedlich gestaltet. Zudem werden Elemente wie Überschriften oder Abbildungsunterschriften fortlaufen gezählt oder es wird auf diese verwiesen. Auch werden Inhaltsverzeichnisse automatisch erstellt, es gibt eine Gliederungsansicht bzw. den Navigator für schnelles Springen im Dokument (\<F5> und Doppelklick auf das jeweilige Element). Zahlreiche Formatvorlagen sind vordefiniert (\<F11>). 
+
+Im ersten *drop-down* der Menüleiste von LO Writer steht "Standard", darunter finden Sie weitere Vorgaben wie "Titel" etc. Die gewählte Formatvorlage wird auf den Absatz der aktuellen Cursorposition übertragen. Diese Formatvorlagen können für das aktuelle Dokument angepasst werden "Formatvorlagen > Formatvorlagen verwalten" oder \<F11>. 
+
+Sie wollen z.B. grundsätzlich eine andere und kleinere Schrift, einen größeren Zeilenabstand und zudem einen Abstand zwischen den einzelnen Absätzen. Die Alternative zu diesem "Durchschuss" wäre ein eingerückter Anfang, ein sogenannter hängender Absatz. In der Liste der Formatvorlagen (\<F11>) im Kontextmenü (rechte Mausklick) zu "Standard" müsssen Sie dann "Ändern..." wählen. Wechseln Sie zum Reiter Schrift und ändern Sie die Type z.B. auf Calibri und die Größe z.B. auf 11 pt. Wechseln Sie zum Reiter Einzüge und Abstände. Beim Zeilenabstand wählen Sie "Proportional" und tragen dann z.B. 120 (%) ein.  Bei "Abstand > Unter dem Absatz" tragen Sie "0,25 cm" ein. Bestätigen Sie mit [OK]. Die Änderungen gelten für alle Absätze der Formatvorlage Standard. 
+Die Überschriften und andere Formatvorlagen verwenden aber noch eine andere Schrifttype und müssten getrennt angepasst werden. Schauen Sie sich bei der Gelegenheit folgende Format-Eigenschaften einer Überschrift mal an: "Verwalten > Folgeformat", "Einzüge und Abstände > Einzug" und "Textfluss > Optionen". 
+
+### Überschriften nummerieren
+
+Die Nummerierung der Überschriften finden Sie nicht bei den Formatvorlagen sondern unter "Extras > Kapitelnummerierung". Das folgende Fenster ist intuitiv bedienbar. Für jede Ebene können hier unterschiedliche Parameter gesetzt werden. Die schnelle und einfache Variante ist hier zielführend: wählen Sie links "1-10" und in der Mitte unter Nummer: "1, 2, 3, ...".
+
+
+### Abbildung einfügen
+Es gibt hier viele Wege und Optionen. Folgende Aspekte sind wichtig:
+
+1. Ein Bild steht fest an einer Seitenposition und wird vom Text umflossen oder es steht im Absatz und wird mit dem Text verschoben. Hierbei kann das Bild auch in einem eigenen Absatz stehen. 
+2. Das Bild hat eine fest angefügte Bildunterschrift die auch nicht breiter als das Bild selbst seien sollte.
+
+Erstellen Sie sich ein Bild. Ich selbst mache schnell einen *screen shot* des Explorers: \<win> + \<e> (öffnen des Explorers), \<Alt> + \<Druck> (*screen shot*), \<Alt> + \<Tab> (wechselt wieder zu LO Writer) und dann am Ende eines Absatzes \<Strg> + \<v> (einfügen). Sie sehen am Ende des Absatzes einen [Anker] und die Abbildung oberhalb des Absatzes. 
+
+Rufen Sie über das Kontextmenü (rechte Mausklick) die Eigenschaften für das Bild auf. Alternativ mit einem Mausklick das Bild markieren und \<F4>. Im Reiter "Position und Größe" aktivieren Sie "Seitenverhältnis beibehalten" und ändern Sie dann die Breite auf 10 cm. Beachten Sie die Einstellung zur "Verankerung" und "Position". Mit [OK] beenden. Der Text umfließt das Bild. 
+
+Rufen Sie die Eigenschaften des Bildes erneut auf, wechseln Sie zum Reiter "Umlauf" und wählen Sie "Kein" bei "Einstellungen". Mit [OK] beenden. Das Bild steht nun allein oberhalb des Absatzes. Spielen Sie bei Gelegenheit mit den weiteren Einstellungen.
+
+Wählen Sie im Kontextmenü zum Bild nun "Beschriftung einfügen". Unter Beschriftung tragen Sie den Text ein und unter "Kategorie" wählen Sie nicht "Abbildung" aus sondern tippen einfach "Abb.". Mit [OK] bestätigen. Sie können den vorhanden Beschriftungstext direkt editieren. 
+
+Um den Text läuft ein leichter Rahmen mit dem durch einen Mausklick Bild und Text gewählt werden. Beide Elemente sind in einem Rahmen verknüpft. Rufen Sie zu diesem Rahmen die Eigenschaften auf (Kontextmenü). Wechseln Sie zum Reiter "Umlauf" und ändern Sie "Abstand > Unten" auf 0,25 cm. (Anmerkung: Hätten Sie beim Absatzformat einen Abstand oberhalb und unterhalb jedes Absatzes eingetragen sähe es jetzt anders aus.)
+
+Ändern Sie das Format der Abbildungsunterschrift auf 9 pt und ohne "Kursiv" über die Formatvorlage: \<F11> > Beschriftung > Abb. > Kontextmenü aufrufen > "ändern" > Reiter "Schrift".
+
+Gehen Sie an eine beliebige Position im Text, um dort einen Verweis auf die Abbildung einzufügen. Wählen Sie "Einfügen > Querverweis", wählen Sie bei dem Reiter "Querverweise" den Typ "Abb." und bei "Verweis verwenden" nur "Kategorie und Nummer". Mit [Einfügen] abschließen.
+
+
+### Inhaltsverzeichnis erstellen
+
+Fügen Sie unter dem Titel und vor der ersten Überschrift einen Absatz ein. Wählen Sie dann "Einfügen > Verzeichnis > Verzeichnis" und reduzieren Sie im folgenden Fenster bei "Verzeichnis erstellen > Auswerten bis Ebene" die Anzahl auf "3". Unter dem Reiter "Einträge" bei "Struktur und Formatierung" wird das Layout gestaltet. [E#] steht für die Kapitelnummer, wird es markiert können unterhalb weitere Parameter gesetzt werden. Das [T] steht für Tabulator und den Abstand vom Text bis zur Seitenzahl. Hier wird z.B. der "." als Füllzeichen angegeben. Ändern Sie nichts sondern bestätigen Sie mit [OK].
+
+## Calc
+
+Mit Calc erstellen Sie Tabellen, verwalten Daten, führen Berechnungen oder Statistik durch und erstellen zugehörige Grafiken, z.B. Balkendiagramme. Für den wirklich basalen Einstieg werden folgende Aspekte vorgestellt.
+
+### Zellen automatisch ausfüllen
+
+Zellen könne automatisch gefüllt werden. Hierzu zwei der zahlreichen Möglichkeiten. Markieren Sie die erste Spalte (A) durch einen Mausklick auf die Kopfzeile. Die gesamte Spalte ist nun blau unterlegt. Wählen Sie "Tabelle > Zellen ausfüllen > mit Reihen...". Im folgenden Formular belassen Sie Richtung: Unten, Reihentyp: Linear, ergänzen noch Startwert: 1, Endwert: 10, Zunahme: 1 und bestätigen mit [OK].
+
+Für die alternative Methode markieren Sie die Zelle A10 mit der "10", fassen mit der Maus das blaue Kästchen rechts unten am blauen Rahmen und ziehen bei gedrückter linker Maustaste bis in der Zelle A20 eine "20" steht. Drücken Sie während des Ziehens \<Strg> wird der Wert kopiert.
+
+### Zellbezüge und Funktionen
+
+Schreiben Sie in die Zelle B1 ```=WURZEL(A1)``` und vervielfältigen Sie diese Formel wie im vorangehenden Beispiel bis zur Zelle B20. Anmerkung: Sie können auch "a1" tippen. Beachten Sie bitte den fortlaufenden Zellbezug bis A20. Mit dem Icon **[$f~x~$]** unmittelbar über der Kopfzeile finden Sie eine Aufstellung zu allen verfügbaren Funktionen und deren Syntax. In die Zelle C1 schreiben Sie bitte ```=A1*100/A$20``` und ziehen auch diese Formel bis zur Zelle C20. Das "$" vor einem Zellbezug, wahlweise dem Buchstaben und/oder der Zahl, blockiert die automatische Fortschreibung. Schreiben Sie als vorletztes in die Zelle D1 ```=A1*100/SUMME(A$1:A$20)``` und ziehen Sie auch diese Formel bis zur Zelle D20. Der ":" definiert einen Zellbereich (von : bis), "$" sperrt die Fortschreibung und die Funktion "summe()" liefert die Summe eines Zellbereiches. Schreiben Sie als letztes in die Zelle E1 ```=ISTGERADE(A1)``` und vervielfältigen Sie auch diese Zelle.
+
+### Zellen verschieben
+
+Schreiben sie in die Zellen A21 bis D21 folgendes: Nr., Wurzel, % 20, % Summe und Gerade. Markieren Sie die gesamte Zeile 21 durch anklicken des Zeilenzählers "21". Mit gedrückter \<Alt>-Taste klicken Sie in eine der blau markierten Zellen und schieben mit gedrückter Maustaste diese Zeile nach ganz oben. Die Zeile wird als erste Zeile eingefügt, und alles andere verschoben. Ohne \<Alt> würde der vorhandene Zellinhalt überschrieben.
+
+### Pivot-Tabelle
+
+Vorhandene Daten können auf unterschiedliche Weise ausgewertet werden. Pivot-Tabellen aggregieren dafür die vorhanden Werte nach auswählbaren Kriterien. Markieren Sie den gesamten belegten Zellbereich (A1:E21) und wählen dann "Einfügen > Pivot-Tabelle ...". Im folgenden Fenster zur Quelle lassen Sie "Aktuelle Auswahl" und bestätigen Sie mit [OK]. Im folgenden Fenster ziehen Sie von den "Verfügbaren Feldern" rechts "Gerade" in den Bereich "Zeilenfelder" und "Wurzel" in den Bereich "Datenfelder". Nach einem Doppelklick auf den Eintrag "Summe - Wurzel" ändern Sie die Funktion für die Auswertung auf "Mittelwert". und bestätigen Sie mit [OK]. Bestätigen Sie [OK] für die Pivot-Tabelle.
+
+Sie haben nun ein neues Registerblatt mit der gewünschten Tabelle. Mit einem rechten Mausklick auf diese Tabelle rufen Sie das Kontextmenü auf und wählen hier "Eigenschaften", um die Pivotierung erneut zu bearbeiten. Öffnen Sie die Optionen und entfernen Sie den Haken bei Gesamtergebnis-Zeilen. Schließen Sie dieses Fenster mit [OK].
+
+### Grafik erstellen
+
+Wechseln Sie zum ursprünglichen Registerblatt "Tabelle1". Markieren Sie die Spalten A und B indem Sie auf die Kopfzeile "A" klicken und mit gedrückter Maustaste bis "B" ziehen.  Wählen Sie "Einfügen > Diagramm" und im folgenden Fenster den Diagrammtyp "XY (Streudiagramm)". Mit [Vor >] wechseln Sie über den  Datenbereich und die Datenreihe ohne eine Änderungen bis zu der Einstellung der Diagrammelemente und testen Sie hier diverse Optionen. Beenden Sie den Vorgang mit [Fertigstellen]. Testen Sie nachfolgend welche Elemente Sie markieren und über das Kontextmenü beeinflussen können.
+
+Wechseln Sie zum Registerblatt der Pivotabelle, klicken Sie in eine der Zellen der Pivotabelle und wählen nun ebenfalls "Einfügen > Diagramm". Das Diagramm erkennt die Pivot-Tabelle als Quelle und passt das Design des Digramms mit zwei Auswahlfeldern an. Trotzdem ich "Mittelwert" für die Daten gewählt hatte steht bei mir in der Legende "Summe", ein offensichtlich Fehler (*bug*). Deshalb deaktiviere ich die Legende und beschrifte die y-Achse mit "Mittelwert".
+
+
+## Libre Office Impress (MS Powerpoint) 
+
+Mit Impress erstellen Sie Präsentationen zu Ihren Vorträgen mit dem Ziel, die Inhalte besser und nachhaltig zu vermitteln. Dies können z.B. eine Gliedeung am Anfang (roadmap), Grafiken, Zahlen und Kernaussagen sowie eine Zusammenfassung am Ende sein. Von zentraler Bedeutung ist eine Reduktion auf Wesentliches und eine übersichtliche Gestaltung jeder Folie. Reflektieren Sie über das, was Sie bei anderen erleben und als gut oder störend empfinden.
+
+Nach dem Start bietet Impress die optionale Auswahl einer Dokumentvorlage an. Um ohne Vorlage zu starten wählen Sie [Schließen]. Sie können auch eigene Designs entwerfen und als Vorlage speichern.
+
+Die neue Präsentation wird automatische im **Breitformat 16:9** erstellt, viele Beamer haben aber immer noch das **Format 4:3**. Um die Projektionsfläche gut zu nutzen und Verzerrungen zu vermeiden sollten Sie dies anpassen unter: "Folie > Folieneigenschaften ..." oder im Kontextmenü links in der Folienübersicht oder rechts oben bei eingeblendeter Leiste zu den Folieneigenschaften.  
+
+### Layouts und Masteransicht
+
+Jede Folie kann auf unterschiedlichen Layouts beruhen, allgemein wird mit einer Titelfolie begonnen auf die "normale" Folien mit Titel- und Gliederungstext folgen. Wählen Sie am rechten Rand das oberste Icon unmittelbar unter den drei Strichen. Unter "Layout" haben Sie den direkten Zugriff auf die diversen Vorgaben. 
+
+Sie können jede Folie individuell anpassen, also z.B. die Schriftgröße des Folientitels ändern. Sollen alle Folientitel kleiner gestaltet werden, sollten Sie den jeweiligen Folienmaster ändern. Klicken Sie hierzu auf [Masteransicht] bei den Folieneigenschaften oberhalb des Layouts am rechten Rand.
