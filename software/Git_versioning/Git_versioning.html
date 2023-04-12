@@ -1486,7 +1486,7 @@ border-radius: 0px;
 
 <h1 class="title toc-ignore">GIT &amp; Versionierung</h1>
 <h4 class="author">Christoph Rinne<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></h4>
-<h4 class="date">07. April 2023</h4>
+<h4 class="date">12. April 2023</h4>
 
 </div>
 
@@ -1551,21 +1551,22 @@ diese CSV-Tabelle lokal editieren ist fast egal, möglich sind MS Excel,
 LO Calc oder ein Texteditor. <strong>Allerdings</strong> ist der Wechsel
 zwischen MS Excel und LO Calc sehr umständlich und fehleranfällig, da MS
 Excel die Spalten mit einem “;” und LO Calc diese mit einem “,” trennt.
-Optional können Sie auch ein anderes Trennzeichen verwenden, z.B. <TAB>.
-Allerdings werden diese Dateien mit der Endung .txt oder .csv nicht mehr
-automatisch richtig erkannt und beim Speichern muss in MS Excel jedes
-mal das Trennzeichen definiert werden während im LO Calc automatisch ein
-‘,’ gesetzt wird. Der <strong>Vorteil</strong> ist die Versionierung
-durch GIT, also das Protokoll der vollzogenen Änderungen, und die
-zentrale Ablage auf einem Server um dessen Sicherheit und
-Zugangsberechtigungen Sie sich nicht unmittelbar kümmern müssen. Eine
-weiter Option ist etwas weniger dynamisch aber ebenfalls sinnvoll. Wenn
-einzelne Autoren für bestimmte Datebereiche zuständig sind, die
-Datenerhebung eigentlich abgeschlossen ist und alle mit SQLite arbeiten,
-können Sie regelmäßig aktuelle <em>dumps</em> im Repositorium auf dem
-Server ablegen. <em>Dumps</em> beinhalten sowohl die Struktur als auch
-die Daten der Datenbank, können in SQL, also als Text gespeichert werden
-und erlauben die unmittelbar Rekonstruktion der gesamten Datenbank.</p>
+Optional können Sie auch ein anderes Trennzeichen verwenden, z.B.
+&lt;TAB&gt;. Allerdings werden diese Dateien mit der Endung .txt oder
+.csv nicht mehr automatisch richtig erkannt und beim Speichern muss in
+MS Excel jedes mal das Trennzeichen definiert werden während im LO Calc
+automatisch ein ‘,’ gesetzt wird. Der <strong>Vorteil</strong> ist die
+Versionierung durch GIT, also das Protokoll der vollzogenen Änderungen,
+und die zentrale Ablage auf einem Server um dessen Sicherheit und
+Zugangsberechtigungen Sie sich nicht unmittelbar kümmern müssen.</p>
+<p>Eine weiter Option ist etwas weniger dynamisch aber ebenfalls
+sinnvoll. Wenn einzelne Autoren für bestimmte Datebereiche zuständig
+sind, die Datenerhebung eigentlich abgeschlossen ist und alle mit SQLite
+arbeiten, können Sie regelmäßig aktuelle <em>dumps</em> im Repositorium
+auf dem Server ablegen. <em>Dumps</em> beinhalten sowohl die Struktur
+als auch die Daten der Datenbank, können in SQL, also als Text
+gespeichert werden und erlauben die unmittelbar Rekonstruktion der
+gesamten Datenbank.</p>
 </div>
 <div id="texte-verfassen" class="section level3" number="2.1.2">
 <h3><span class="header-section-number">2.1.2</span> Texte
