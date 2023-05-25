@@ -135,7 +135,7 @@ Ein Text besteht aus diversen Elementen, z.B. Titel, Untertitel, Überschriften,
 Im ersten *drop-down* der Menüleiste von LO Writer steht "Standard", darunter finden Sie weitere Vorgaben wie "Titel" etc. Die gewählte Formatvorlage wird auf den Absatz der aktuellen Cursorposition übertragen. Diese Formatvorlagen können für das aktuelle Dokument angepasst werden "Formatvorlagen > Formatvorlagen verwalten" oder \<F11>. 
 
 Sie wollen z.B. grundsätzlich eine andere und kleinere Schrift, einen größeren Zeilenabstand und zudem einen Abstand zwischen den einzelnen Absätzen. Die Alternative zu diesem "Durchschuss" wäre ein eingerückter Anfang, ein sogenannter hängender Absatz. In der Liste der Formatvorlagen (\<F11>) im Kontextmenü (rechte Mausklick) zu "Standard" müsssen Sie dann "Ändern..." wählen. Wechseln Sie zum Reiter Schrift und ändern Sie die Type z.B. auf Calibri und die Größe z.B. auf 11 pt. Wechseln Sie zum Reiter Einzüge und Abstände. Beim Zeilenabstand wählen Sie "Proportional" und tragen dann z.B. 120 (%) ein.  Bei "Abstand > Unter dem Absatz" tragen Sie "0,25 cm" ein. Bestätigen Sie mit [OK]. Die Änderungen gelten für alle Absätze der Formatvorlage Standard. 
-Die Überschriften und andere Formatvorlagen verwenden aber noch eine andere Schrifttype und müssten getrennt angepasst werden. Schauen Sie sich bei der Gelegenheit folgende Format-Eigenschaften einer Überschrift mal an: "Verwalten > Folgeformat", "Einzüge und Abstände > Einzug" und "Textfluss > Optionen". 
+Die Überschriften und andere Formatvorlagen verwenden aber noch eine andere Schrifttype und müssten getrennt angepasst werden. Schauen Sie sich bei der Gelegenheit folgende Format-Eigenschaften einer Überschrift mal an: "Verwalten > Folgeformat", "Einzüge und Abstände > Einzug" und "Textfluss > Optionen". Bei der zuletzt genannten Einstellung bedürfen die Begriffe Schusterjunge(reglung) und Hurenkinder(regelung) einer Erklärung [Wikipedia](https://de.wikipedia.org/wiki/Hurenkind_und_Schusterjunge). Diese unterbinden das Abschneiden einer einzelnen Zeile am Anfang oder am Ende eines Absatzes durch einen Seiten- oder Spaltenumbruch.
 
 ### Überschriften nummerieren
 
@@ -156,11 +156,11 @@ Rufen Sie die Eigenschaften des Bildes erneut auf, wechseln Sie zum Reiter "Umla
 
 Wählen Sie im Kontextmenü zum Bild nun "Beschriftung einfügen". Unter Beschriftung tragen Sie den Text ein und unter "Kategorie" wählen Sie nicht "Abbildung" aus sondern tippen einfach "Abb.". Mit [OK] bestätigen. Sie können den vorhanden Beschriftungstext direkt editieren. 
 
-Um den Text läuft ein leichter Rahmen mit dem durch einen Mausklick Bild und Text gewählt werden. Beide Elemente sind in einem Rahmen verknüpft. Rufen Sie zu diesem Rahmen die Eigenschaften auf (Kontextmenü). Wechseln Sie zum Reiter "Umlauf" und ändern Sie "Abstand > Unten" auf 0,25 cm. (Anmerkung: Hätten Sie beim Absatzformat einen Abstand oberhalb und unterhalb jedes Absatzes eingetragen sähe es jetzt anders aus.)
+Um den Text läuft ein leichter Rahmen mit dem durch einen Mausklick Bild und Text gewählt werden. Beide Elemente sind durch diesen Rahmen verknüpft. Rufen Sie zu diesem Rahmen die Eigenschaften auf (Kontextmenü). Wechseln Sie zum Reiter "Umlauf" und ändern Sie "Abstand > Unten" auf 0,25 cm. (Anmerkung: Hätten Sie beim Absatzformat einen Abstand oberhalb und unterhalb jedes Absatzes eingetragen sähe es jetzt anders aus.)
 
 Ändern Sie das Format der Abbildungsunterschrift auf 9 pt und ohne "Kursiv" über die Formatvorlage: \<F11> > Beschriftung > Abb. > Kontextmenü aufrufen > "ändern" > Reiter "Schrift".
 
-Gehen Sie an eine beliebige Position im Text, um dort einen Verweis auf die Abbildung einzufügen. Wählen Sie "Einfügen > Querverweis", wählen Sie bei dem Reiter "Querverweise" den Typ "Abb." und bei "Verweis verwenden" nur "Kategorie und Nummer". Mit [Einfügen] abschließen.
+Gehen Sie an eine beliebige Position im Text, um dort einen Verweis auf die Abbildung einzufügen. Wählen Sie "Einfügen > Querverweis", wählen Sie bei dem Reiter "Querverweise" den Typ "Abb." und bei "Verweis verwenden" nur "Kategorie und Nummer" und mit [Einfügen] abschließen.
 
 
 ### Inhaltsverzeichnis erstellen
@@ -200,14 +200,29 @@ Wechseln Sie zum Registerblatt der Pivotabelle, klicken Sie in eine der Zellen d
 
 ## Libre Office Impress (MS Powerpoint) 
 
-Mit Impress erstellen Sie Präsentationen zu Ihren Vorträgen mit dem Ziel, die Inhalte besser und nachhaltig zu vermitteln. Dies können z.B. eine Gliedeung am Anfang (roadmap), Grafiken, Zahlen und Kernaussagen sowie eine Zusammenfassung am Ende sein. Von zentraler Bedeutung ist eine Reduktion auf Wesentliches und eine übersichtliche Gestaltung jeder Folie. Reflektieren Sie über das, was Sie bei anderen erleben und als gut oder störend empfinden.
+Mit Impress erstellen Sie Präsentationen zu Ihren Vorträgen mit dem Ziel, die Inhalte besser und nachhaltig zu vermitteln. Dies erreichen Sie z.B. mit einer Gliederung am Anfang (roadmap), Grafiken, Zahlen, assoziativen Bildern und Kernaussagen sowie einer Zusammenfassung am Ende sein. Von zentraler Bedeutung ist eine Reduktion auf Wesentliches und eine übersichtliche Gestaltung jeder Folie. Reflektieren Sie über das, was Sie bei anderen erleben und als gut oder störend empfinden.
 
 Nach dem Start bietet Impress die optionale Auswahl einer Dokumentvorlage an. Um ohne Vorlage zu starten wählen Sie [Schließen]. Sie können auch eigene Designs entwerfen und als Vorlage speichern.
 
-Die neue Präsentation wird automatische im **Breitformat 16:9** erstellt, viele Beamer haben aber immer noch das **Format 4:3**. Um die Projektionsfläche gut zu nutzen und Verzerrungen zu vermeiden sollten Sie dies anpassen unter: "Folie > Folieneigenschaften ..." oder im Kontextmenü links in der Folienübersicht oder rechts oben bei eingeblendeter Leiste zu den Folieneigenschaften.  
+Eine neue Präsentation öffnet Ihnen im Regelfall zwei Folien, eine Titelfolie und eine "Standardfolie". Zudem Sollten Sie am linken Rand eine Folienübersicht und am rechten Rand eine Navigationsleiste mit Eigenschaften sehen. Beides kann mit einem kleinen Pfeil auf einem vertikalen Balken ein- und ausgeblendet werden oder über das Menü mit "Ansicht > Folienbereich" und "Ansicht > Seitenleiste" eingeblendet werden. Beide Bereich erlauben ein schnelles, effizientes Arbeiten, z.B. können Sie links in der Folienübersicht mit dem Kontextmenü (rechte Mauklick) eine weitere Folie ergänzen oder die Reihenfolge durch "Anfassen" und Schieben verändern. 
 
-### Layouts und Masteransicht
+### Layout der Folienvorlagen und Masteransicht
 
-Jede Folie kann auf unterschiedlichen Layouts beruhen, allgemein wird mit einer Titelfolie begonnen auf die "normale" Folien mit Titel- und Gliederungstext folgen. Wählen Sie am rechten Rand das oberste Icon unmittelbar unter den drei Strichen. Unter "Layout" haben Sie den direkten Zugriff auf die diversen Vorgaben. 
+Um das Folienlayout mit seinen teils unsichtbaren Elementen kennenzulernen, öffnen Sie als erstes bitte "Einfügen > Kopf- und Fußzeile". In der Voransicht sehen Sie neben Titelleiste und Inhalt auch die drei Elemente der Fußzeile, die hier aktiviert werden können. Ein wichtiges Element ist die Foliennummer, diese erlaubt es, bei einer folgenden Diskussion auf bestimmte Inhalte verweisen zu können.
 
-Sie können jede Folie individuell anpassen, also z.B. die Schriftgröße des Folientitels ändern. Sollen alle Folientitel kleiner gestaltet werden, sollten Sie den jeweiligen Folienmaster ändern. Klicken Sie hierzu auf [Masteransicht] bei den Folieneigenschaften oberhalb des Layouts am rechten Rand.
+Die neue Präsentation wird automatisch im **Breitformat 16:9** erstellt, viele Beamer haben aber immer noch das **Format 4:3**. Um die Projektionsfläche gut zu nutzen und Verzerrungen zu vermeiden sollten Sie dies anpassen unter: "Folie > Folieneigenschaften ..." oder im Kontextmenü links in der Folienübersicht oder rechts oben bei eingeblendeter Leiste zu den Folieneigenschaften. 
+
+In der rechten Seitenleiste können Sie die Eigenschaften für das jeweils ausgewählte Element beeinflussen. Ist kein Element markiert, sind es die Eigenschaften der Präsentation und der vorhandenen Folienvorlagen. Mit [Masteransicht] wird die jeweils aktive Vorlage dieser Präsentation editiert. Öffnen die Masteransicht zur "Standardfolie" (Titel und ein Inhaltsbereich), markieren Sie das Titelelement und ändern Sie die Textgröße auf z.B. 28 pt. Um die Masteransicht zu verlassen klicken Sie in einen leeren bereich der Folie und [Masteransicht schließen]. Wechsel Sie das Layout, Sie erkennen, die Titelgröße wurde in allen Layouts angepasst.
+
+Wechseln Sie erneut in die Masteransichtr der "Standardfolie", der Folieninhalt wird mit hierarchisch gestalteten Gliederungpunkten angezeigt. Wenn Sie jetzt rechts oben eine Schriftgröße wählen, gilt diese für alle Gliederungsebenen. Wollen Sie die Hierarchie der schriftgröße erhalten nutzen Sie die beiden [A]-Symbole unterhalb.  
+
+### Folieninhalte und Format
+
+Beim Folientitel wird die Größe des Elementes an den Inhalt angepasst. Bei einem engen Layout luft der Titel also ggf. in den Folieninhalt hinein.
+
+Beim Folieninhalt wird der Text automatisch an die Elementgröße angepasst, der Text wird also mit jeder neuen Zeile kleiner. Wollen Sie dies ändern markieren Sie den Textrahmen und deaktivieren Sie im Kontextmenü "Text automatisch anpassen". Sie können dies auch in der Masteransicht für alle Folien der Präsentation ändern.
+
+Statt der Gliederungspunkte können Sie bei den Eigenschaften rechts auch ein Listenformat mit automatischer Zählung auswählen. Die automatische Einrückung am linken Rand und der Abstand zwischen Zähler und Text wird bei den Eigenschaften des jeweilien Listenformates mit [Weitere Nummerierungen] eingestellt. Mit "Einrücken" wird der Abstand zwischen dem Rand der Textbox und der Aufzählung bestimmt, mit "Breite" wird der Abstand zwischen dem Rand der Textbox und dem Text nach der Aufzählung bestimmt. 
+
+Sie können einmal angepasste Layouts als eigene Präsentationsvorlagen speichern: Datei > Dokumentenvorlagen > Als Dokumentenvorlage speichern .... Hierbei können Sie ergänzend eine Vorlagenkategorie wählen, die zur strukturierten Ablage Ihrer Office-Vorlagen genutzt wird. Ihre perssönlichen Vorlagen werden unter ```c:\Users\<user name>\AppData\Roaming\LibreOffice\<version nr>\user\template\```
+abgelegt.
