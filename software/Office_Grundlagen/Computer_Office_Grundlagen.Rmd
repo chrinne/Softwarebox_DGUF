@@ -11,16 +11,16 @@ header-includes:
   \renewcommand{\tablename}{Tab.}
 papersize: a4
 output:
-  pdf_document:
-    number_sections: true
-    toc: true
-    toc_depth: 2
-    df_print: kable
   html_document:
     toc: true
     toc_depth: 2
     toc_float: true
     number_sections: true
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    df_print: kable
 fig_caption: true
 urlcolor: blue
 link-citations: true # make citations hyperlinks
@@ -200,11 +200,11 @@ Wechseln Sie zum Registerblatt der Pivotabelle, klicken Sie in eine der Zellen d
 
 ## Libre Office Impress (MS Powerpoint) 
 
-Mit Impress erstellen Sie Präsentationen zu Ihren Vorträgen mit dem Ziel, die Inhalte besser und nachhaltig zu vermitteln. Dies erreichen Sie z.B. mit einer Gliederung am Anfang (roadmap), Grafiken, Zahlen, assoziativen Bildern und Kernaussagen sowie einer Zusammenfassung am Ende sein. Von zentraler Bedeutung ist eine Reduktion auf Wesentliches und eine übersichtliche Gestaltung jeder Folie. Reflektieren Sie über das, was Sie bei anderen erleben und als gut oder störend empfinden.
+Mit Impress erstellen Sie Präsentationen zu Ihren Vorträgen mit dem Ziel, die Inhalte besser und nachhaltig zu vermitteln. Dies erreichen Sie z.B. mit einer Gliederung am Anfang (roadmap), Grafiken, Zahlen, assoziativen Bildern und Kernaussagen sowie einer Zusammenfassung am Ende. Von zentraler Bedeutung ist eine Reduktion auf Wesentliches und eine übersichtliche Gestaltung jeder Folie. Reflektieren Sie über das, was Sie bei anderen erleben und als gut oder störend empfinden.
 
-Nach dem Start bietet Impress die optionale Auswahl einer Dokumentvorlage an. Um ohne Vorlage zu starten wählen Sie [Schließen]. Sie können auch eigene Designs entwerfen und als Vorlage speichern.
+Nach dem Start bietet Impress die optionale Auswahl einer Dokumentvorlage an. Um ohne Vorlage zu starten wählen Sie [Schließen]. Sie können auch eigene Designs entwerfen und als Vorlage speichern (s.u.).
 
-Eine neue Präsentation öffnet Ihnen im Regelfall zwei Folien, eine Titelfolie und eine "Standardfolie". Zudem Sollten Sie am linken Rand eine Folienübersicht und am rechten Rand eine Navigationsleiste mit Eigenschaften sehen. Beides kann mit einem kleinen Pfeil auf einem vertikalen Balken ein- und ausgeblendet werden oder über das Menü mit "Ansicht > Folienbereich" und "Ansicht > Seitenleiste" eingeblendet werden. Beide Bereich erlauben ein schnelles, effizientes Arbeiten, z.B. können Sie links in der Folienübersicht mit dem Kontextmenü (rechte Mauklick) eine weitere Folie ergänzen oder die Reihenfolge durch "Anfassen" und Schieben verändern. 
+Eine neue Präsentation öffnet Ihnen im Regelfall zwei Folien, eine Titelfolie und eine "Standardfolie". Zudem Sollten Sie am linken Rand eine Folienübersicht und am rechten Rand eine Navigationsleiste mit Eigenschaften sehen. Beides kann mit dem kleinen Pfeil auf einem vertikalen Balken ein- und ausgeblendet werden oder über das Menü mit "Ansicht > Folienbereich" und "Ansicht > Seitenleiste" eingeblendet werden. Beide Bereiche erlauben ein schnelles, effizientes Arbeiten, z.B. können Sie links in der Folienübersicht mit dem Kontextmenü (rechte Mauklick) eine weitere Folie ergänzen oder die Reihenfolge durch "Anfassen" und Schieben verändern. 
 
 ### Layout der Folienvorlagen und Masteransicht
 
@@ -212,17 +212,17 @@ Um das Folienlayout mit seinen teils unsichtbaren Elementen kennenzulernen, öff
 
 Die neue Präsentation wird automatisch im **Breitformat 16:9** erstellt, viele Beamer haben aber immer noch das **Format 4:3**. Um die Projektionsfläche gut zu nutzen und Verzerrungen zu vermeiden sollten Sie dies anpassen unter: "Folie > Folieneigenschaften ..." oder im Kontextmenü links in der Folienübersicht oder rechts oben bei eingeblendeter Leiste zu den Folieneigenschaften. 
 
-In der rechten Seitenleiste können Sie die Eigenschaften für das jeweils ausgewählte Element beeinflussen. Ist kein Element markiert, sind es die Eigenschaften der Präsentation und der vorhandenen Folienvorlagen. Mit [Masteransicht] wird die jeweils aktive Vorlage dieser Präsentation editiert. Öffnen die Masteransicht zur "Standardfolie" (Titel und ein Inhaltsbereich), markieren Sie das Titelelement und ändern Sie die Textgröße auf z.B. 28 pt. Um die Masteransicht zu verlassen klicken Sie in einen leeren bereich der Folie und [Masteransicht schließen]. Wechsel Sie das Layout, Sie erkennen, die Titelgröße wurde in allen Layouts angepasst.
+In der rechten Seitenleiste können Sie die Eigenschaften für das jeweils ausgewählte Element beeinflussen. Ist kein Element markiert, sind es die Eigenschaften der Präsentation und der vorhandenen Folienvorlagen. Mit [Masteransicht] wird die jeweils aktive Vorlage dieser Präsentation editiert. Öffnen Sie die Masteransicht zur "Standardfolie" (Titel und ein Inhaltsbereich), markieren Sie das Titelelement und ändern Sie die Textgröße auf z.B. 28 pt. Um die Masteransicht zu verlassen klicken Sie in einen leeren Bereich der Folie und [Masteransicht schließen]. Wechseln Sie das Layout, Sie erkennen, die Titelgröße wurde in allen Layouts angepasst.
 
-Wechseln Sie erneut in die Masteransichtr der "Standardfolie", der Folieninhalt wird mit hierarchisch gestalteten Gliederungpunkten angezeigt. Wenn Sie jetzt rechts oben eine Schriftgröße wählen, gilt diese für alle Gliederungsebenen. Wollen Sie die Hierarchie der schriftgröße erhalten nutzen Sie die beiden [A]-Symbole unterhalb.  
+Wechseln Sie erneut in die Masteransichtr der "Standardfolie", der Folieninhalt wird mit hierarchisch gestalteten Gliederungpunkten angezeigt. Wenn Sie jetzt rechts oben eine Schriftgröße wählen, gilt diese für alle Gliederungsebenen. Wenn Sie die Hierarchie der schriftgröße erhalten wollen nutzen Sie die beiden [A]-Symbole unterhalb.  
 
 ### Folieninhalte und Format
 
-Beim Folientitel wird die Größe des Elementes an den Inhalt angepasst. Bei einem engen Layout luft der Titel also ggf. in den Folieninhalt hinein.
+Beim Folientitel wird die Größe des Elementes an den Inhalt angepasst. Bei einem engen Layout läuft der Titel also ggf. in den Folieninhalt hinein.
 
-Beim Folieninhalt wird der Text automatisch an die Elementgröße angepasst, der Text wird also mit jeder neuen Zeile kleiner. Wollen Sie dies ändern markieren Sie den Textrahmen und deaktivieren Sie im Kontextmenü "Text automatisch anpassen". Sie können dies auch in der Masteransicht für alle Folien der Präsentation ändern.
+Beim Folieninhalt wird die Textgröße automatisch an die Rahmengröße angepasst, der Text wird also mit jeder neuen Zeile kleiner. Wollen Sie dies ändern markieren Sie den Textrahmen und deaktivieren Sie im Kontextmenü "Text automatisch anpassen". Sie können dies auch in der Masteransicht für alle Folien der Präsentation ändern.
 
-Statt der Gliederungspunkte können Sie bei den Eigenschaften rechts auch ein Listenformat mit automatischer Zählung auswählen. Die automatische Einrückung am linken Rand und der Abstand zwischen Zähler und Text wird bei den Eigenschaften des jeweilien Listenformates mit [Weitere Nummerierungen] eingestellt. Mit "Einrücken" wird der Abstand zwischen dem Rand der Textbox und der Aufzählung bestimmt, mit "Breite" wird der Abstand zwischen dem Rand der Textbox und dem Text nach der Aufzählung bestimmt. 
+Statt der Gliederungspunkte können Sie bei den Eigenschaften rechts auch ein Listenformat mit automatischer Zählung auswählen. Die automatische Einrückung am linken Rand und der Abstand zwischen Zähler und Text wird bei den Eigenschaften des jeweiligen Listenformates mit [Weitere Nummerierungen] eingestellt. Mit "Einrücken" wird der Abstand zwischen dem Rand der Textbox und der Aufzählung bestimmt, mit "Breite" wird der Abstand zwischen dem Rand der Textbox und dem Text nach der Aufzählung bestimmt. 
 
-Sie können einmal angepasste Layouts als eigene Präsentationsvorlagen speichern: Datei > Dokumentenvorlagen > Als Dokumentenvorlage speichern .... Hierbei können Sie ergänzend eine Vorlagenkategorie wählen, die zur strukturierten Ablage Ihrer Office-Vorlagen genutzt wird. Ihre perssönlichen Vorlagen werden unter ```c:\Users\<user name>\AppData\Roaming\LibreOffice\<version nr>\user\template\```
+Sie können einmal angepasste Layouts als eigene Präsentationsvorlagen speichern: Datei > Dokumentenvorlagen > Als Dokumentenvorlage speichern .... Hierbei können Sie ergänzend eine Vorlagenkategorie wählen, die zur strukturierten Ablage Ihrer Office-Vorlagen genutzt wird. Ihre persönlichen Vorlagen werden unter ```c:\Users\<user name>\AppData\Roaming\LibreOffice\<version nr>\user\template\```
 abgelegt.
