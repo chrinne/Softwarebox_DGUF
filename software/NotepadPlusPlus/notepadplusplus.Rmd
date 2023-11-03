@@ -1,5 +1,6 @@
 ---
 title: "Notepad ++"
+subtitle: "Viel mehr als 'nur Text'"
 author: 
  - Christoph Rinne^[Christian-Albrechts-Universität zu Kiel, crinne@ufg.uni-kiel.de]
 date: "`r format(Sys.time(), '%d. %B %Y')`"
@@ -152,7 +153,7 @@ Der erste Fall oben ist zu simpel, eigentlich soll jede Koordinaten genau 5 Nach
 
   1. Suche genau 5 Ziffern nach einem Punkt: \\.[0-9]{5}    
   (Der "." bedeutet regulär irgend ein Zeichen, durch den "\\" wird er zum Zeichen ".")
-  2. Suche beliebig viele Ziffern: [0-9]\* 
+  2. Suche beliebig viele Ziffern: [0-9]\* oder \\d\*
   3. Suche ein Leerzeichen oder schließende Klammer: [ )] 
   
 Nur der mittlere Block soll ersetzt werden. Das mit den 3 Elementen wird mit Klammern () einfacher lesbar und! maschinenlesbar gegliedert: 
@@ -197,7 +198,7 @@ Markdown schreiben ist einfach. Dabei ist auf Leerzeilen zwischen Absätzen oder
 ```
 # Überschrift 1. Ordnung    
 
-# Überschrift 2. Ordnung    
+## Überschrift 2. Ordnung    
 
 - Gliederungsebene 1 
     - Gliederungsebene 2
@@ -205,7 +206,7 @@ Markdown schreiben ist einfach. Dabei ist auf Leerzeilen zwischen Absätzen oder
 
 Einfacher Text, *kursiver Text* und **fetter Text**.
 
-Eine Linie wird mit \--- erzeugt und 
+Eine Linie wird mit ---- erzeugt und 
 Sonderzeichen wie *  oder \ müssen mit \ ausgezeichnet werden: \* \\
 
 | Spaltenüberschrift 1 | Spaltenüberschrift 2 | Spaltenüberschrift 3 |
@@ -215,7 +216,7 @@ Sonderzeichen wie *  oder \ müssen mit \ ausgezeichnet werden: \* \\
 Programmcode wie dieser Textabschnitt wird von drei *Accent grave* am Anfang 
 und Ende eingeschlossen: 
 
-\``` code \``` (Hier beißt sich die Katze in den Schwanz, die "\" bitte ignorieren.) 
+``` code ``` 
 
 Ein *inline* Hyperlink sieht so aus [Markdown](https://markdown.de).
 
@@ -234,8 +235,8 @@ Die visuelle Umsetzung hängt etwas vom Editor und in Nodepad++ vom gewählten M
 
 Einfacher Text, *kursiver Text* und **fetter Text**.
 
-Eine Linie wird mit --- erzeugt und 
-Sonderzeichen wie \* oder \ müssen mit \ ausgezeichnet sein, um bedeutungslos zu werden.
+Eine Linie wird mit ---- erzeugt und 
+Sonderzeichen wie * oder \ müssen mit \ ausgezeichnet werden: \* \\
 
 | Spaltenüberschrift 1 | Spaltenüberschrift 2 | Spaltenüberschrift 3 |
 | :----|:----:|----:|
@@ -244,13 +245,30 @@ Sonderzeichen wie \* oder \ müssen mit \ ausgezeichnet sein, um bedeutungslos z
 Programmcode wie dieser (obige) Textabschnitt wird von drei *Accent grave* am Anfang 
 und Ende eingeschlossen: 
 
-``` code ``` (Hier beißt sich die Katze in den Schwanz, die "\\" bitte ignorieren.)
+``` code ``` 
 
-Ein *inline* Hyperlink sieht so aus [Markdown](https://markdown.de).
+Ein *inline* Hyperlink sieht so aus [Markdown](https://markdown.de). 
 
-Bilder werden ähnlich eingebunden ![Bildunterschrift](./image.png){width=10}
+Bilder werden ähnlich eingebunden ![Bildunterschrift](./image.png){width=10} 
 
-## MarkdownViwer++
+**Technische Anmerkungen**: 
+
+1. Markdown kann über das gezeigte hinaus in Varianten vorliegen. Weit verbreitet ist *pandoc* und *R-markdown*, dies beeinflusst die Umsetzung in html und pdf. 
+
+2. Das resultierende PDF ist meist im Format Letter und **nicht Din A4**. Das Ausgabeformat kann mit anderen Informationen (Metadaten) in einem sogenannten *YAML header* vorangestellt werden. Hier können allgemeine  Informationen und Anweisungen für bestimmte Formate, z.B. html und pdf, eingetragen werden. Zum Beispiel:
+
+```
+---
+author: Name
+title: Titel
+date: Datum
+papersize: a4
+---
+```
+
+Vor allem für *R-Markdown* kann dies sehr umfangreich genutzt werden. (r-project.org [The YAML Fieldguide](https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html))
+
+## MarkdownViewer++
 
 Dieses Plugin öffnet ein zweites Fenster, in dem die Umsetzung der Auszeichnung direkt visualisiert wird.  Ein Export zu PDF und HTML ist auf "Knopfdruck" möglich. Bei den Optionen können die Seitenränder (mm) für das PDF eingestellt werden. Leider hat dieses Plugin zwei Schwächen. 
 
@@ -267,6 +285,4 @@ Leider entsteht dann eine missliche Abhängigkeit vom Betriebssystem (\\ statt /
 
 ## MarkdownPanel
 
-Auch dieses Plugin öffnet ein zweites Fenster, in dem die Umsetzung der Auszeichnung direkt visualisiert wird. Der Export in PDF erfolgt über "*Druckvorschau*" im Kontextmenü (rechte Mausklick) der Voransicht. Hier können die Seitenränder verschoben werden und nachfolgend ist der Druck auf jeden installierten Drucker, z.B. PDF24 oder FoxitReader möglich. Die Umsetzung der Tabellen ist deutlich besser gelöst, ebenso die Darstellung von Code in dezenten Textboxen mit horizontalem Scrollbalken bei langem Code. Die Darstellung von Bilder ist mit der Standardsyntax von Markdown problemlos auch mit relativen Pfaden möglich. In diesen Punkten schneidet das Plugin deutlich besser ab.
-
-Hinzu kommen noch Seitenzählung und Druckdatum in der Druckvorschau. Ein wesentlicher Nachteil ist das erstellte PDF, nur die Code Abschnitte sind Text, der Rest wird als Bild hinterlegt. Damit ist diese Datei deutlich größer und vor allem in der Nachnutzung mangelhaft. Damit fällt dieses Plugin für eine PDF-fokussierte Nachnutzung leider aus.
+Auch dieses Plugin öffnet ein zweites Fenster, in dem die Umsetzung der Auszeichnung direkt visualisiert wird. Der Export in PDF erfolgt über "*Druckvorschau*" im Kontextmenü (rechte Mausklick) der Voransicht. Hier können die Seitenränder verschoben werden und nachfolgend ist der Druck auf jeden installierten Drucker, z.B. PDF24 oder FoxitReader möglich. Die Umsetzung der Tabellen ist deutlich besser gelöst, ebenso die Darstellung von Code in dezenten Textboxen mit horizontalem Scrollbalken bei langem Code. Die Darstellung von Bildern ist mit der Standardsyntax von Markdown problemlos auch mit relativen Pfaden möglich. In diesen Punkten schneidet das Plugin deutlich besser ab. Hinzu kommen noch Seitenzählung und Druckdatum in der Druckvorschau. Ein kleiner Nachteil: die Hyperlinks werden nur als Text und nicht dynamisch im PDF umgesetzt.
