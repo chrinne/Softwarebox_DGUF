@@ -106,6 +106,8 @@ Nach der Installation des jeweiligen Add-Ins (s. Einstellungen) finden Sie einen
 
 Texte in Markdown können mit Zitaten auf eine BibTeX-Datei mit Literatur verweisen. Besonders einfach ist dies z.B. in [RStudio](https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html) oder [Quarto](https://quarto.org/docs/authoring/citations.html). Die benötigte Literatur wird in Zotero z.B. aus einer Sammlung für den Artikel in eine (Better) BibTeX-Datei exportiert. Der erste Eintrag je Zitat ist der *citation key*, dieser wird als Verweis im Text eingefügt: ```[@rinneHandreichungZoteroYour2020, 1]```. Zudem muss ein Zitierstil vorliegen (csl-Datei) und auf diese sowie die BibTeX-Datei im Markdown-Dokument verwiesen werden (YAML-header).
 
+Die Standardvorgaben für den BibTeX-Export führen zu einer nicht korrekten Großschreibung im Titel. Dies und andere Einstellungen finden Sie unter "Bearbeiten > Einstellungen > Better BibTeX" (s.u. Plugin Better BibTeX). Unter "Miscellaneous" ziemlich weit unten den Haken bei [] "Title-Casing auf Titel anwenden" entfernen.
+
 ## Weitere lokale Einstellungen
 
 Unter "Bearbeiten > Einstellungen > Allgemein" wird vor allem die Verarbeitung von Dateianhängen verwaltet. Hier können Sie: das automatische Anhängen von Schnappschüssen oder zugehöriger Artikel (PDF) steuern, Dateien automatisch umbenennen lassen, PDF's in Zotero oder mit dem Standard des Betriebssystems (OS) öffnen und das Finden des Zitates in einem Bibliothekskatalog einstellen.
@@ -132,7 +134,7 @@ Mit einem Doppelklick auf ein PDF oder mit "PDF öffnen" im zugehörigen Kontext
 
 Zotero kann mit Plugins von Dritten an persönliche Bedürfnisse angepasst werden. Einige Beispiele: 
 
-### Better Bib Tex: [http://retorque.re/zotero-better-bibtex/](http://retorque.re/zotero-better-bibtex/) 
+### Better BibTex: [http://retorque.re/zotero-better-bibtex/](http://retorque.re/zotero-better-bibtex/) 
 
 Dieses Plugin ist für Sie von Interesse wenn Sie mit Markdown in RStudio oder Quarto arbeiten. Better BibTeX  ist eine Erweiterung von BibTeX. Es gab Diskussionen über eine Verlangsamung von Zotero durch dieses Plugin, dabei handelte sich um das verzögerte Laden durch die Indexierung.  Mit Zotero 7 ist dies behoben und BibTeX mit dem *citation key* offensichtlich weitgehend performant implementiert.
 
